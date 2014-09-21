@@ -1,0 +1,20 @@
+.alert {
+	border-radius: 0;
+	border: 0;
+}
+
+.alert-success {
+	background-color: lighten($color-green, 40%);
+}
+
+.alert-info {
+	background-color: lighten($color-blue, 40%);
+}
+
+.alert-warning {
+	background-color: lighten($color-yellow, 40%);
+}
+
+.alert-danger {
+	background-color: lighten($color-red, 40%);
+}

@@ -1,0 +1,81 @@
+// fixed top-panel & sidebar
+
+.navbar-static-top {
+	@media (min-width: 768px) {
+		width: 100%;
+		position: fixed;
+	}
+}
+
+#page-wrapper {
+	@media (min-width: 768px) {
+		padding-top: 40px;
+	}
+}
+
+.sidebar {
+	@media (min-width: 768px) {
+		position: fixed;
+	}
+}
+
+// top-panel
+
+.navbar {
+	// background-color: hsl(0, 0, 25%);
+	background-color: $color-dark-grey-1;
+	border-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-top-links li a.dropdown-toggle {
+	color: #fff;
+
+	&:hover {
+		background-color: $color-dark-grey-2;
+	}
+}
+
+.nav .open > a {
+	background-color: $color-dark-grey-3 !important;
+}
+
+.dropdown-menu > li > a {
+	color: $color-dark-grey-1;
+
+	&:hover {
+		background-color: $color-grey-3;
+	}
+}
+
+//
+
+#wrapper,
+#side-menu a {
+	background-color: #fff;
+}
+
+#page-wrapper {
+	border-left-color: $color-grey-4;
+}
+
+.sidebar {
+	background-color: #fff;
+}
+
+#side-menu li {
+	// border-bottom-color: $color-grey-4;
+	border-bottom-color: $color-grey-4;
+}
+
+#side-menu a {
+	// color: hsl(0, 0, 25%);
+	color: $color-dark-grey-1;
+
+	&:hover {
+		background-color: $color-grey-4;
+	}
+}

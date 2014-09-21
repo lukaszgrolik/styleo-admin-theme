@@ -1,0 +1,87 @@
+.panel {
+	box-shadow: none;
+	border-radius: 0;
+
+	& > .panel-heading {
+		color: #fff;
+		border-radius: 0;
+		border-bottom: 0;
+	}
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+	border-width: 0;
+}
+
+.panel-group .panel {
+	border-radius: 0;
+}
+
+.panel-default {
+	border-color: $color-grey-4;
+
+	& > .panel-heading {
+		color: $color-dark-grey-3;
+	}
+}
+
+.panel-primary {
+	border-color: $color-blue;
+
+	& > .panel-heading {
+		background-color: $color-blue;
+	}
+}
+
+.panel-success {
+	border-color: $color-green;
+
+	& > .panel-heading {
+		background-color: $color-green;
+	}
+}
+
+.panel-info {
+	border-color: $color-cyan;
+
+	& > .panel-heading {
+		background-color: $color-cyan;
+	}
+}
+
+.panel-warning {
+	border-color: $color-orange;
+
+	& > .panel-heading {
+		background-color: $color-orange;
+	}
+}
+
+.panel-danger {
+	border-color: $color-red;
+
+	& > .panel-heading {
+		background-color: $color-red;
+	}
+}
+
+.panel-footer {
+	// background-color: $color-grey-4;
+	background-color: #fff;
+	border-top: 0;
+}
+
+// wells
+
+.well {
+	background-color: $color-grey-3;
+	border-radius: 0;
+	box-shadow: none;
+	border-color: $color-grey-2;
+}
+
+// jumbotrons
+
+.jumbotron {
+	background-color: $color-grey-3;
+}

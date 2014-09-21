@@ -1,0 +1,43 @@
+.form-control,
+.input-group-addon {
+	border-radius: 0;
+	border-color: $color-grey-4;
+
+	.has-success & {
+		border-color: $color-green;
+	}
+
+	.has-warning & {
+		border-color: $color-orange;
+	}
+
+	.has-error & {
+		border-color: $color-red;
+	}
+}
+
+.form-control {
+	box-shadow: none !important;
+
+	&:focus {
+		border-color: $color-blue;
+	}
+}
+
+.input-group-addon {
+	background-color: $color-grey-3;
+}
+
+.control-label {
+	.has-success & {
+		color: $color-green;
+	}
+
+	.has-warning & {
+		color: $color-orange;
+	}
+
+	.has-error & {
+		color: $color-red;
+	}
+}

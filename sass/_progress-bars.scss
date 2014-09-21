@@ -1,0 +1,26 @@
+.progress {
+	background-color: $color-grey-4;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.progress-bar {
+	background-color: $color-blue;
+	box-shadow: none;
+}
+
+.progress-bar-success {
+	background-color: $color-green;
+}
+
+.progress-bar-info {
+	background-color: $color-cyan;
+}
+
+.progress-bar-warning {
+	background-color: $color-orange;
+}
+
+.progress-bar-danger {
+	background-color: $color-red;
+}

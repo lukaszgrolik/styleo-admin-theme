@@ -9,13 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Buttons | bg-admin-theme-1</title>
+    <title>Forms | bg-admin-theme-1</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Social Buttons CSS -->
-    <link href="sb-admin-2/css/plugins/social-buttons.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="sb-admin-2/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -33,6 +30,7 @@
     <link href="sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -305,16 +303,16 @@
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a class="active" href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="buttons.html">Buttons</a>
+                                    <a href="buttons.html">Buttons</a>
                                 </li>
                                 <li>
                                     <a href="notifications.html">Notifications</a>
@@ -377,212 +375,205 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <!-- Page Content -->
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Buttons</h1>
+                    <h1 class="page-header">Forms</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Default Buttons
+                            Basic Form Elements
                         </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <h4>Normal Buttons</h4>
-                            <p>
-                                <button type="button" class="btn btn-default">Default</button>
-                                <button type="button" class="btn btn-primary">Primary</button>
-                                <button type="button" class="btn btn-success">Success</button>
-                                <button type="button" class="btn btn-info">Info</button>
-                                <button type="button" class="btn btn-warning">Warning</button>
-                                <button type="button" class="btn btn-danger">Danger</button>
-                                <button type="button" class="btn btn-link">Link</button>
-                            </p>
-                            <br>
-                            <h4>Disabled Buttons</h4>
-                            <p>
-                                <button type="button" class="btn btn-default disabled">Default</button>
-                                <button type="button" class="btn btn-primary disabled">Primary</button>
-                                <button type="button" class="btn btn-success disabled">Success</button>
-                                <button type="button" class="btn btn-info disabled">Info</button>
-                                <button type="button" class="btn btn-warning disabled">Warning</button>
-                                <button type="button" class="btn btn-danger disabled">Danger</button>
-                                <button type="button" class="btn btn-link disabled">Link</button>
-                            </p>
-                            <br>
-                            <h4>Button Sizes</h4>
-                            <p>
-                                <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                                <button type="button" class="btn btn-primary">Default button</button>
-                                <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                                <button type="button" class="btn btn-primary btn-xs">Mini button</button>
-                                <br>
-                                <br>
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                            </p>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Circle Icon Buttons with Font Awesome Icons
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <h4>Normal Circle Buttons</h4>
-                            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i>
-                            </button>
-                            <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i>
-                            </button>
-                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i>
-                            </button>
-                            <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
-                            </button>
-                            <br>
-                            <br>
-                            <h4>Large Circle Buttons</h4>
-                            <button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-list"></i>
-                            </button>
-                            <button type="button" class="btn btn-success btn-circle btn-lg"><i class="fa fa-link"></i>
-                            </button>
-                            <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-warning btn-circle btn-lg"><i class="fa fa-times"></i>
-                            </button>
-                            <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-heart"></i>
-                            </button>
-                            <br>
-                            <br>
-                            <h4>Extra Large Circle Buttons</h4>
-                            <button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
-                            </button>
-                            <button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-link"></i>
-                            </button>
-                            <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-check"></i>
-                            </button>
-                            <button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-times"></i>
-                            </button>
-                            <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i>
-                            </button>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Outline Buttons with Smooth Transition
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <h4>Outline Buttons</h4>
-                            <p>
-                                <button type="button" class="btn btn-outline btn-default">Default</button>
-                                <button type="button" class="btn btn-outline btn-primary">Primary</button>
-                                <button type="button" class="btn btn-outline btn-success">Success</button>
-                                <button type="button" class="btn btn-outline btn-info">Info</button>
-                                <button type="button" class="btn btn-outline btn-warning">Warning</button>
-                                <button type="button" class="btn btn-outline btn-danger">Danger</button>
-                                <button type="button" class="btn btn-outline btn-link">Link</button>
-                            </p>
-                            <br>
-                            <h4>Outline Button Sizes</h4>
-                            <p>
-                                <button type="button" class="btn btn-outline btn-primary btn-lg">Large button</button>
-                                <button type="button" class="btn btn-outline btn-primary">Default button</button>
-                                <button type="button" class="btn btn-outline btn-primary btn-sm">Small button</button>
-                                <button type="button" class="btn btn-outline btn-primary btn-xs">Mini button</button>
-                                <br>
-                                <br>
-                                <button type="button" class="btn btn-outline btn-primary btn-lg btn-block">Block level button</button>
-                            </p>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Social Buttons with Font Awesome Icons
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <h4>Social Buttons</h4>
-                            <a class="btn btn-block btn-social btn-bitbucket">
-                                <i class="fa fa-bitbucket"></i> Sign in with Bitbucket
-                            </a>
-                            <a class="btn btn-block btn-social btn-dropbox">
-                                <i class="fa fa-dropbox"></i> Sign in with Dropbox
-                            </a>
-                            <a class="btn btn-block btn-social btn-facebook">
-                                <i class="fa fa-facebook"></i> Sign in with Facebook
-                            </a>
-                            <a class="btn btn-block btn-social btn-flickr">
-                                <i class="fa fa-flickr"></i> Sign in with Flickr
-                            </a>
-                            <a class="btn btn-block btn-social btn-github">
-                                <i class="fa fa-github"></i> Sign in with GitHub
-                            </a>
-                            <a class="btn btn-block btn-social btn-google-plus">
-                                <i class="fa fa-google-plus"></i> Sign in with Google
-                            </a>
-                            <a class="btn btn-block btn-social btn-instagram">
-                                <i class="fa fa-instagram"></i> Sign in with Instagram
-                            </a>
-                            <a class="btn btn-block btn-social btn-linkedin">
-                                <i class="fa fa-linkedin"></i> Sign in with LinkedIn
-                            </a>
-                            <a class="btn btn-block btn-social btn-pinterest">
-                                <i class="fa fa-pinterest"></i> Sign in with Pinterest
-                            </a>
-                            <a class="btn btn-block btn-social btn-tumblr">
-                                <i class="fa fa-tumblr"></i> Sign in with Tumblr
-                            </a>
-                            <a class="btn btn-block btn-social btn-twitter">
-                                <i class="fa fa-twitter"></i> Sign in with Twitter
-                            </a>
-                            <a class="btn btn-block btn-social btn-vk">
-                                <i class="fa fa-vk"></i> Sign in with VK
-                            </a>
-
-                            <hr>
-
-                            <div class="text-center">
-                                <a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-bitbucket"></i></a>
-                                <a class="btn btn-social-icon btn-dropbox"><i class="fa fa-dropbox"></i></a>
-                                <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-                                <a class="btn btn-social-icon btn-flickr"><i class="fa fa-flickr"></i></a>
-                                <a class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
-                                <a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-                                <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-                                <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-                                <a class="btn btn-social-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
-                                <a class="btn btn-social-icon btn-tumblr"><i class="fa fa-tumblr"></i></a>
-                                <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                                <a class="btn btn-social-icon btn-vk"><i class="fa fa-vk"></i></a>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Text Input</label>
+                                            <input class="form-control">
+                                            <p class="help-block">Example block-level help text here.</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Text Input with Placeholder</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Static Control</label>
+                                            <p class="form-control-static">email@example.com</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>File input</label>
+                                            <input type="file">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Text area</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Checkboxes</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 1
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 2
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Inline Checkboxes</label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">1
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">2
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">3
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Radio Buttons</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Inline Radio Buttons</label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Selects</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Multiple Selects</label>
+                                            <select multiple class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                    <h1>Disabled Form States</h1>
+                                    <form role="form">
+                                        <fieldset disabled>
+                                            <div class="form-group">
+                                                <label for="disabledSelect">Disabled input</label>
+                                                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="disabledSelect">Disabled select menu</label>
+                                                <select id="disabledSelect" class="form-control">
+                                                    <option>Disabled select</option>
+                                                </select>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">Disabled Checkbox
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Disabled Button</button>
+                                        </fieldset>
+                                    </form>
+                                    <h1>Form Validation States</h1>
+                                    <form role="form">
+                                        <div class="form-group has-success">
+                                            <label class="control-label" for="inputSuccess">Input with success</label>
+                                            <input type="text" class="form-control" id="inputSuccess">
+                                        </div>
+                                        <div class="form-group has-warning">
+                                            <label class="control-label" for="inputWarning">Input with warning</label>
+                                            <input type="text" class="form-control" id="inputWarning">
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="inputError">Input with error</label>
+                                            <input type="text" class="form-control" id="inputError">
+                                        </div>
+                                    </form>
+                                    <h1>Input Groups</h1>
+                                    <form role="form">
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">@</span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
                             </div>
+                            <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-6 -->
+                <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
         </div>

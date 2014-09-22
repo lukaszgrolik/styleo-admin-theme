@@ -31,9 +31,10 @@ pre {
   color: #fff !important; }
 
 .navbar-top-links li a.dropdown-toggle {
+  background-color: transparent !important;
   color: #fff; }
   .navbar-top-links li a.dropdown-toggle:hover {
-    background-color: #34495e; }
+    background-color: #34495e !important; }
 
 .nav .open > a {
   background-color: #7f8c8d !important; }

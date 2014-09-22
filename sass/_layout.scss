@@ -33,10 +33,11 @@
 }
 
 .navbar-top-links li a.dropdown-toggle {
+	background-color: transparent !important;
 	color: #fff;
 
 	&:hover {
-		background-color: $color-dark-grey-2;
+		background-color: $color-dark-grey-2 !important;
 	}
 }
 

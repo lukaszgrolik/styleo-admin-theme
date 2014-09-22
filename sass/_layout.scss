@@ -15,6 +15,7 @@
 
 .sidebar {
 	@media (min-width: 768px) {
+		overflow: auto;
 		position: fixed;
 	}
 }
@@ -53,6 +54,17 @@
 
 //
 
+.navbar-default .navbar-toggle {
+	background-color: transparent !important;
+	border-radius: 0;
+
+	&:hover {
+		background-color: $color-dark-grey-2 !important;
+	}
+}
+
+//
+
 #wrapper,
 #side-menu a {
 	background-color: #fff;
@@ -78,4 +90,10 @@
 	&:hover {
 		background-color: $color-grey-4;
 	}
+}
+
+//
+
+.page-header {
+	border-color: $color-grey-4;
 }

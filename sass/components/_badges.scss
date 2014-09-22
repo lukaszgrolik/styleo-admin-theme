@@ -1,0 +1,28 @@
+.timeline-badge {
+	background-color: $color-grey-1 !important;
+}
+
+.badge-primary,
+.timeline-badge.primary {
+	background-color: $color-blue !important;
+}
+
+.badge-success,
+.timeline-badge.success {
+	background-color: $color-green !important;
+}
+
+.badge-info,
+.timeline-badge.info {
+	background-color: $color-cyan !important;
+}
+
+.badge-warning,
+.timeline-badge.warning {
+	background-color: $color-orange !important;
+}
+
+.badge-danger,
+.timeline-badge.danger {
+	background-color: $color-red !important;
+}

@@ -9,16 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Panels and Wells | bg-admin-theme-1</title>
+    <title>Morris charts page - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="sb-admin-2/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="sb-admin-2/css/plugins/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
@@ -287,14 +284,14 @@
                         <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="flot.html">Flot Charts</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a class="active" href="morris.html">Morris.js Charts</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -305,11 +302,11 @@
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a class="active" href="panels-wells.html">Panels and Wells</a>
+                                    <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
                                 <li>
                                     <a href="buttons.html">Buttons</a>
@@ -378,151 +375,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Panels and Wells</h1>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Default Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            Primary Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            Success Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            Info Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-warning">
-                        <div class="panel-heading">
-                            Warning Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">
-                            Danger Panel
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                        </div>
-                        <div class="panel-footer">
-                            Panel Footer
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Collapsible Accordion Panel Group
-                        </div>
-                        <!-- .panel-heading -->
-                        <div class="panel-body">
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item #1</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible Group Item #2</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible Group Item #3</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                    <h1 class="page-header">Morris.js Charts</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -531,41 +384,11 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Basic Tabs
+                            Area Chart Example
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab">Home</a>
-                                </li>
-                                <li><a href="#profile" data-toggle="tab">Profile</a>
-                                </li>
-                                <li><a href="#messages" data-toggle="tab">Messages</a>
-                                </li>
-                                <li><a href="#settings" data-toggle="tab">Settings</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="home">
-                                    <h4>Home Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="profile">
-                                    <h4>Profile Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="messages">
-                                    <h4>Messages Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="settings">
-                                    <h4>Settings Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
+                            <div id="morris-area-chart"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -575,83 +398,60 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Pill Tabs
+                            Bar Chart Example
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#home-pills" data-toggle="tab">Home</a>
-                                </li>
-                                <li><a href="#profile-pills" data-toggle="tab">Profile</a>
-                                </li>
-                                <li><a href="#messages-pills" data-toggle="tab">Messages</a>
-                                </li>
-                                <li><a href="#settings-pills" data-toggle="tab">Settings</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="home-pills">
-                                    <h4>Home Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="profile-pills">
-                                    <h4>Profile Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="messages-pills">
-                                    <h4>Messages Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="settings-pills">
-                                    <h4>Settings Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
+                            <div id="morris-bar-chart"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="well">
-                        <h4>Normal Well</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Line Chart Example
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-line-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="well well-lg">
-                        <h4>Large Well</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Donut Chart Example
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-donut-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="well well-sm">
-                        <h4>Small Well</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
-                    </div>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
+                <!-- /.col-lg-6 -->
                 <div class="col-lg-12">
-                    <div class="jumbotron">
-                        <h1>Jumbotron</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing.</p>
-                        <p><a class="btn btn-primary btn-lg" role="button">Learn more</a>
-                        </p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Morris.js Usage
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <p>Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin, we are using the most recent version of Morris.js which includes the resize function, which makes the charts fully responsive. The documentation for Morris.js is available on their website, <a target="_blank" href="http://morrisjs.github.io/morris.js/">http://morrisjs.github.io/morris.js/</a>.</p>
+                            <a target="_blank" class="btn btn-default btn-lg btn-block" href="http://morrisjs.github.io/morris.js/">View Morris.js Documentation</a>
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-12 -->
+                <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
         </div>
@@ -669,10 +469,11 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Morris Charts JavaScript
+    <!-- Morris Charts JavaScript -->
     <script src="sb-admin-2/js/plugins/morris/raphael.min.js"></script>
     <script src="sb-admin-2/js/plugins/morris/morris.min.js"></script>
-    <script src="sb-admin-2/js/plugins/morris/morris-data.js"></script>-->
+    <!--<script src="sb-admin-2/js/plugins/morris/morris-data.js"></script>-->
+    <script src="js/plugins/morris/morris-data.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="sb-admin-2/js/sb-admin-2.js"></script>

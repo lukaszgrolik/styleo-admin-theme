@@ -1,0 +1,9 @@
+.timeline {
+
+}
+
+.timeline > li > .timeline-panel {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: $color-grey-4;
+}

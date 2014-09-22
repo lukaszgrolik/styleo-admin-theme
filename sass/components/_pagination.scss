@@ -1,0 +1,12 @@
+.pagination {
+	border-radius: 0;
+}
+
+.pagination > li > a {
+	color: $color-blue;
+	border-radius: 0 !important;
+}
+
+.pagination > .active > a {
+	background-color: $color-blue;
+}

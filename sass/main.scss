@@ -1,55 +1,19 @@
 @import 'colors';
 
-//
-
-body {
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 200;
-}
-
-.page-header {
-	border-color: $color-grey-4;
-}
-
+@import 'basic';
 @import 'layout';
-@import 'buttons';
-@import 'panels';
-@import 'tabs';
-@import 'progress-bars';
-@import 'alerts';
-@import 'modals';
-@import 'forms';
 
-.popover {
-	border-radius: 0;
-	box-shadow: none;
-}
-
-//
-
-.list-group {
-
-}
-
-.list-group-item {
-	border-radius: 0 !important;
-	border-color: $color-grey-4;
-}
-
-//
-
-.timeline {
-
-}
-
-.timeline > li > .timeline-panel {
-	border-radius: 0;
-	box-shadow: none;
-	border-color: $color-grey-4;
-}
+@import 'components/buttons';
+@import 'components/panels';
+@import 'components/tabs';
+@import 'components/progress-bars';
+@import 'components/alerts';
+@import 'components/modals';
+@import 'components/forms';
+@import 'components/popovers';
+@import 'components/list-groups';
+@import 'components/timeline';
+@import 'components/dropdown-menus';
+@import 'components/badges';
+@import 'components/pagination';
+@import 'components/texts';

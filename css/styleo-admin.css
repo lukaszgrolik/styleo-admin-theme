@@ -103,15 +103,22 @@ pre {
 .btn.btn-outline {
   background-color: #fff; }
   .btn.btn-outline.btn-primary {
+    color: #3498db;
     border: 1px solid #3498db !important; }
   .btn.btn-outline.btn-success {
+    color: #2ecc71;
     border: 1px solid #2ecc71 !important; }
   .btn.btn-outline.btn-info {
+    color: #1abc9c;
     border: 1px solid #1abc9c !important; }
   .btn.btn-outline.btn-warning {
+    color: #e67e22;
     border: 1px solid #e67e22 !important; }
   .btn.btn-outline.btn-danger {
+    color: #e74c3c;
     border: 1px solid #e74c3c !important; }
+  .btn.btn-outline.btn-primary:hover, .btn.btn-outline.btn-success:hover, .btn.btn-outline.btn-info:hover, .btn.btn-outline.btn-warning:hover, .btn.btn-outline.btn-danger:hover {
+    color: #fff; }
 
 .panel {
   -webkit-box-shadow: none;

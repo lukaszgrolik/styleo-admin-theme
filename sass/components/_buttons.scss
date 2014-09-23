@@ -58,23 +58,38 @@
 		background-color: #fff;
 
 		&.btn-primary {
+			color: $color-blue;
 			border: 1px solid $color-blue !important;
 		}
 
 		&.btn-success {
+			color: $color-green;
 			border: 1px solid $color-green !important;
 		}
 
 		&.btn-info {
+			color: $color-cyan;
 			border: 1px solid $color-cyan !important;
 		}
 
 		&.btn-warning {
+			color: $color-orange;
 			border: 1px solid $color-orange !important;
 		}
 
 		&.btn-danger {
+			color: $color-red;
 			border: 1px solid $color-red !important;
+		}
+
+		&.btn-primary,
+		&.btn-success,
+		&.btn-info,
+		&.btn-warning,
+		&.btn-danger {
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }

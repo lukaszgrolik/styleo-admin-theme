@@ -4,6 +4,7 @@ var watch = require('gulp-watch')
 var plugins = require('gulp-load-plugins')();
 
 var config = {
+	name: 'styleo-admin',
 	paths: {
 		web: '.',
 		src: '.',
@@ -29,59 +30,41 @@ gulp.task('livereload', function() {
 //
 
 gulp.task('sass', function() {
-	gulp.src(config.paths.src + '/sass/**/*.scss')
+	gulp.src(config.paths.src + '/sass/main.scss')
 	.pipe(plugins.plumber())
 	.pipe(plugins.sass())
 	.pipe(plugins.autoprefixer({
 		browsers: ['> 0.5%']
 	}))
-	.pipe(gulp.dest(config.paths.web + '/css'));
-});
-
-// Browserify task
-gulp.task('browserify', function() {
-	// Single point of entry (make sure not to src ALL your files, browserify will figure it out for you)
-	gulp.src(config.paths.src + '/js/main.js')
-	.pipe(plugins.browserify({
-	insertGlobals: true,
-	debug: true
+	.pipe(plugins.rename({
+		basename: config.name
 	}))
-	// Bundle to a single file
-	.pipe(plugins.concat('main.js'))
-	// Output it to our dist folder
-	.pipe(gulp.dest(config.paths.web + '/js'));
-});
-
-//
-//
-//
-
-gulp.task('compressCss', function() {
-	gulp.src(config.paths.web + '/css/main.css')
-	.pipe(plugins.minifyCss())
-	.pipe(plugins.rename('main.min.css'))
 	.pipe(gulp.dest(config.paths.web + '/css'))
-	.pipe(plugins.connect.reload())
+	.pipe(plugins.connect.reload());
 });
 
-gulp.task('compressJs', function() {
-	gulp.src(config.paths.web + '/js/main.js')
-	.pipe(plugins.uglify())
-	.pipe(plugins.rename('main.min.js'))
-	.pipe(gulp.dest(config.paths.web + '/js'))
-});
+//
+//
+//
+
+// gulp.task('compressCss', function() {
+// 	gulp.src(config.paths.web + '/css/' + config.name + '.css')
+// 	.pipe(plugins.minifyCss())
+// 	.pipe(plugins.rename({
+// 		// suffix: '.min'
+// 		basename: 'asfas'
+// 	}))
+// 	.pipe(gulp.dest(config.paths.web + '/css'))
+// 	.pipe(plugins.connect.reload())
+// });
 
 //
 //
 //
 
 gulp.task('watchSass', function() {
-	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass', 'compressCss']);
-});
-
-gulp.task('watchSrcJs', function() {
-	// Watch our scripts
-	gulp.watch(config.paths.src + '/js/**/*.js', ['browserify', 'compressJs']);
+	// gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass', 'compressCss']);
+	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('watchWeb', function() {
@@ -96,10 +79,7 @@ gulp.task('watchWeb', function() {
 gulp.task('default', [
 	'connect',
 	'sass',
-	// 'browserify',
-	'compressCss',
-	// 'compressJs',
+	// 'compressCss',
 	'watchSass',
-	// 'watchSrcJs',
 	'watchWeb'
 ]);

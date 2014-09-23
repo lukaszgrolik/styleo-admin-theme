@@ -28,7 +28,9 @@ pre {
   border-bottom: 0; }
 
 .navbar-default .navbar-brand {
-  color: #fff !important; }
+  color: #fff !important;
+  font-weight: 300;
+  text-transform: uppercase; }
 
 .navbar-top-links li a.dropdown-toggle {
   background-color: transparent !important;

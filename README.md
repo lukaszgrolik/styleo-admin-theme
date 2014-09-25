@@ -5,7 +5,7 @@
 ## Features
 
 - Built with Bootstrap 3
-- Responsive Design
+- Responsive design
 - HTML5 and CSS3
 - Flat UI with clean design
 - Very lightweight
@@ -36,12 +36,12 @@
 
 ## Credits
 
-- [http://getbootstrap.com/](Bootstrap)
-- [http://jquery.com/](jQuery)
-- [http://gulpjs.com/](Gulp)
-- [http://fontawesome.io/](Font Awesome)
-- [http://morrisjs.github.io/morris.js/](morris.js)
-- [http://www.flotcharts.org/](Flot)
-- [http://www.datatables.net/](DataTables)
-- [http://demo.onokumus.com/metisMenu/](metisMenu)
-- [http://www.google.com/fonts](Google Fonts)
+- [Bootstrap](http://getbootstrap.com/)
+- [jQuery](http://jquery.com/)
+- [Gulp](http://gulpjs.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [morris.js](http://morrisjs.github.io/morris.js/)
+- [Flot](http://www.flotcharts.org/)
+- [DataTables](http://www.datatables.net/)
+- [metisMenu](http://demo.onokumus.com/metisMenu/)
+- [Google Fonts](http://www.google.com/fonts)

@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch')
-
 var plugins = require('gulp-load-plugins')();
 
 var config = {
@@ -11,6 +10,8 @@ var config = {
 	}
 };
 
+//
+
 gulp.task('connect', function() {
 	plugins.connect.server({
 		root: config.paths.web,
@@ -19,14 +20,14 @@ gulp.task('connect', function() {
 	});
 });
 
+//
+
 gulp.task('livereload', function() {
 	// gulp.src(config.paths.web + '/**/*.{html,js}')
 	gulp.src(config.paths.web + '/*.html')
 	.pipe(plugins.connect.reload());
 });
 
-//
-//
 //
 
 gulp.task('sass', function() {
@@ -44,42 +45,20 @@ gulp.task('sass', function() {
 });
 
 //
-//
-//
-
-// gulp.task('compressCss', function() {
-// 	gulp.src(config.paths.web + '/css/' + config.name + '.css')
-// 	.pipe(plugins.minifyCss())
-// 	.pipe(plugins.rename({
-// 		// suffix: '.min'
-// 		basename: 'asfas'
-// 	}))
-// 	.pipe(gulp.dest(config.paths.web + '/css'))
-// 	.pipe(plugins.connect.reload())
-// });
-
-//
-//
-//
 
 gulp.task('watchSass', function() {
-	// gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass', 'compressCss']);
 	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('watchWeb', function() {
-	// gulp.watch(config.paths.web + '/**/*.{html,js}', ['livereload'])
 	gulp.watch(config.paths.web + '/*.html', ['livereload'])
 });
 
-//
-//
 //
 
 gulp.task('default', [
 	'connect',
 	'sass',
-	// 'compressCss',
 	'watchSass',
 	'watchWeb'
 ]);

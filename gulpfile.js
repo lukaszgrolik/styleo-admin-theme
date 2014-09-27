@@ -5,8 +5,8 @@ var plugins = require('gulp-load-plugins')();
 var config = {
 	name: 'styleo-admin',
 	paths: {
-		web: '.',
-		src: '.',
+		web: 'web',
+		src: 'src',
 	}
 };
 
@@ -25,7 +25,21 @@ gulp.task('connect', function() {
 gulp.task('livereload', function() {
 	// gulp.src(config.paths.web + '/**/*.{html,js}')
 	gulp.src(config.paths.web + '/*.html')
+	.pipe(plugins.plumber())
 	.pipe(plugins.connect.reload());
+});
+
+//
+
+gulp.task('templates', function() {
+	gulp.src(config.paths.src + '/templates/pages/**/*.swig')
+	.pipe(plugins.plumber())
+	.pipe(plugins.swig({
+		defaults: {
+			cache: false
+		}
+	}))
+	.pipe(gulp.dest(config.paths.web))
 });
 
 //
@@ -46,6 +60,10 @@ gulp.task('sass', function() {
 
 //
 
+gulp.task('watchTemplates', function() {
+	gulp.watch(config.paths.src + '/templates/**/*.swig', ['templates']);
+});
+
 gulp.task('watchSass', function() {
 	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 });
@@ -58,7 +76,9 @@ gulp.task('watchWeb', function() {
 
 gulp.task('default', [
 	'connect',
+	'templates',
 	'sass',
+	'watchTemplates',
 	'watchSass',
 	'watchWeb'
 ]);

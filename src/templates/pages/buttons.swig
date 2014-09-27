@@ -226,7 +226,11 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Additional Buttons</div>
             <!-- /.panel-heading -->
@@ -473,13 +477,17 @@
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Buttons sizes</div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <p>All kinds of buttons can be any size.</p>
-                <p>
+                <p class="text-center">
                     <button type="button" class="btn btn-primary btn-lg">LARGE BUTTON</button>
                     <button type="button" class="btn color-yellow sharp raised">DEFAULT BUTTON</button>
                     <button type="button" class="btn btn-success btn-sm round gradient">SMALL BUTTON</button>

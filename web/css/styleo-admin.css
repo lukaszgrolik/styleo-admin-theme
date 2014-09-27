@@ -380,9 +380,6 @@ pre {
   .nav-tabs > li > a:hover, .nav-pills > li > a:hover {
     background-color: #f5f5f5; }
 
-.tab-content {
-  background-color: #fff; }
-
 .progress {
   background-color: #ecf0f1;
   border-radius: 0;

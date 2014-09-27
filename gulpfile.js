@@ -55,7 +55,18 @@ gulp.task('sass', function() {
 		basename: config.name
 	}))
 	.pipe(gulp.dest(config.paths.web + '/css'))
-	.pipe(plugins.connect.reload());
+	.pipe(plugins.size({
+		showFiles: true
+	}))
+	.pipe(plugins.minifyCss())
+	.pipe(plugins.rename({
+		basename: config.name + '.min'
+	}))
+	.pipe(gulp.dest(config.paths.web + '/css'))
+	.pipe(plugins.size({
+		showFiles: true
+	}))
+	.pipe(plugins.connect.reload())
 });
 
 //

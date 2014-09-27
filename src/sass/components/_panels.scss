@@ -1,6 +1,7 @@
 .panel {
 	box-shadow: none;
 	border-radius: 0;
+	border: none;
 
 	& > .panel-heading {
 		color: #fff;
@@ -24,7 +25,12 @@
 }
 
 .panel-default {
-	border-color: $color-grey-4;
+	// border-color: $color-grey-4;
+
+	& > .panel-heading {
+		background-color: #fff;
+		border-bottom: 1px solid $color-grey-1;
+	}
 
 	& > .panel-heading {
 		color: $color-dark-grey-3;

@@ -5,13 +5,6 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Buttons</h1>
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-<div class="row">
-    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Standard Buttons</div>
             <!-- /.panel-heading -->
@@ -505,4 +498,56 @@
     <!-- /.col-lg-12 -->
 </div>
 <!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Social Buttons with Font Awesome Icons
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <a class="btn btn-block btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Sign in with Facebook
+                </a>
+                <a class="btn btn-block btn-social btn-github">
+                    <i class="fa fa-github"></i> Sign in with GitHub
+                </a>
+                <a class="btn btn-block btn-social btn-google-plus">
+                    <i class="fa fa-google-plus"></i> Sign in with Google
+                </a>
+                <a class="btn btn-block btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i> Sign in with Twitter
+                </a>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Social Buttons with Font Awesome Icons
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-bitbucket"></i></a>
+                    <a class="btn btn-social-icon btn-dropbox"><i class="fa fa-dropbox"></i></a>
+                    <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-flickr"><i class="fa fa-flickr"></i></a>
+                    <a class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
+                    <a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
+                    <a class="btn btn-social-icon btn-tumblr"><i class="fa fa-tumblr"></i></a>
+                    <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-vk"><i class="fa fa-vk"></i></a>
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+    </div>
+</div>
 {% endblock %}

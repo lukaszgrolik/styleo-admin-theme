@@ -336,6 +336,13 @@
 
     <!-- Page Content -->
     <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{% block title %}{% endblock %}</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
         {% block content2 %}{% endblock %}
     </div>
     <!-- /#page-wrapper -->

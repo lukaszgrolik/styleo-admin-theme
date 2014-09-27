@@ -1,4 +1,5 @@
 body {
+  background-color: #f5f5f5;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3 {
@@ -71,7 +72,8 @@ pre {
     background-color: #ecf0f1; }
 
 .page-header {
-  border-color: #ecf0f1; }
+  color: #000;
+  border-color: #e0e0e0; }
 
 .btn {
   border: 0 !important; }
@@ -364,19 +366,22 @@ pre {
     color: #d62a1a; }
 
 .well {
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #e0e0e0; }
+  border: 0; }
 
 .jumbotron {
-  background-color: #f5f5f5; }
+  background-color: #fff; }
 
 .nav-tabs > li > a, .nav-pills > li > a {
   border-radius: 0; }
   .nav-tabs > li > a:hover, .nav-pills > li > a:hover {
     background-color: #f5f5f5; }
+
+.tab-content {
+  background-color: #fff; }
 
 .progress {
   background-color: #ecf0f1;
@@ -487,6 +492,30 @@ pre {
 .badge-danger, .timeline-badge.danger {
   background-color: #e74c3c !important; }
 
+.badge-yellow {
+  background-color: #f1c40f; }
+
+.badge-violet {
+  background-color: #9b59b6; }
+
+.badge-brown {
+  background-color: #be643c; }
+
+.badge-light-grey {
+  background-color: #95a5a6; }
+
+.badge-dark-grey {
+  background-color: #7f8c8d; }
+
+.badge-light-navy {
+  background-color: #34495e; }
+
+.badge-dark-navy {
+  background-color: #2c3e50; }
+
+.badge.sharp {
+  border-radius: 0; }
+
 .pagination {
   border-radius: 0; }
 
@@ -514,3 +543,42 @@ pre {
 
 .text-danger {
   color: #e74c3c; }
+
+.label-primary {
+  background-color: #3498db !important; }
+
+.label-success {
+  background-color: #2ecc71 !important; }
+
+.label-info {
+  background-color: #1abc9c !important; }
+
+.label-warning {
+  background-color: #e67e22 !important; }
+
+.label-danger {
+  background-color: #e74c3c !important; }
+
+.label-yellow {
+  background-color: #f1c40f; }
+
+.label-violet {
+  background-color: #9b59b6; }
+
+.label-brown {
+  background-color: #be643c; }
+
+.label-light-grey {
+  background-color: #95a5a6; }
+
+.label-dark-grey {
+  background-color: #7f8c8d; }
+
+.label-light-navy {
+  background-color: #34495e; }
+
+.label-dark-navy {
+  background-color: #2c3e50; }
+
+.label.sharp {
+  border-radius: 0; }

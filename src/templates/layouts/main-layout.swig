@@ -56,6 +56,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="sb-admin-2/js/sb-admin-2.js"></script>
 
+    <script src="js/styleo-admin.js"></script>
+
     {% block bodyEnd %}{% endblock %}
 
 </body>

@@ -1,0 +1,32 @@
+.label-primary {
+	background-color: $color-blue !important;
+}
+
+.label-success {
+	background-color: $color-green !important;
+}
+
+.label-info {
+	background-color: $color-cyan !important;
+}
+
+.label-warning {
+	background-color: $color-orange !important;
+}
+
+.label-danger {
+	background-color: $color-red !important;
+}
+
+.label-yellow { background-color: $color-yellow; }
+.label-violet { background-color: $color-violet; }
+.label-brown { background-color: $color-brown; }
+.label-light-grey { background-color: $color-light-grey; }
+.label-dark-grey { background-color: $color-dark-grey; }
+.label-light-navy { background-color: $color-light-navy; }
+.label-dark-navy { background-color: $color-dark-navy; }
+
+.label.sharp {
+	border-radius: 0;
+}
+

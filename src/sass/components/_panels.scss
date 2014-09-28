@@ -19,16 +19,27 @@
 }
 
 .panel,
-.panel > .panel-heading,
+
 .panel-group .panel {
 	&.sharp {
-		border-radius: 0;
+		&,
+		& > .panel-heading,
+		& > .panel-footer {
+			border-radius: 0;
+		}
+
 	}
 }
 
+// .panel > .panel-heading, {
+// 	border-radius: 0
+// }
+
 .panel-footer {
 	// background-color: $color-grey-4;
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: $color-grey-1;
+	color: #fff;
 	border-top: 0;
 }
 
@@ -48,14 +59,6 @@
 	& > .panel-heading {
 		background-color: $color-blue;
 	}
-
-	& .panel-footer {
-		color: $color-blue;
-	}
-
-	& a:hover > .panel-footer {
-		color: darken($color-blue, 10%);
-	}
 }
 
 .panel-success {
@@ -63,14 +66,6 @@
 
 	& > .panel-heading {
 		background-color: $color-green;
-	}
-
-	& .panel-footer {
-		color: $color-green;
-	}
-
-	& a:hover > .panel-footer {
-		color: darken($color-green, 10%);
 	}
 }
 
@@ -80,14 +75,6 @@
 	& > .panel-heading {
 		background-color: $color-cyan;
 	}
-
-	& .panel-footer {
-		color: $color-cyan;
-	}
-
-	& a:hover > .panel-footer {
-		color: darken($color-cyan, 10%);
-	}
 }
 
 .panel-warning {
@@ -96,14 +83,6 @@
 	& > .panel-heading {
 		background-color: $color-orange;
 	}
-
-	& .panel-footer {
-		color: $color-orange;
-	}
-
-	& a:hover > .panel-footer {
-		color: darken($color-orange, 10%);
-	}
 }
 
 .panel-danger {
@@ -111,14 +90,6 @@
 
 	& > .panel-heading {
 		background-color: $color-red;
-	}
-
-	& .panel-footer {
-		color: $color-red;
-	}
-
-	& a:hover > .panel-footer {
-		color: darken($color-red, 10%);
 	}
 }
 

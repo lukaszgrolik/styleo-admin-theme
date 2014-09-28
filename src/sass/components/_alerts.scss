@@ -1,20 +1,54 @@
 .alert {
-	border-radius: 0;
+	color: #fff;
 	border: 0;
+
+	&.sharp {
+		border-radius: 0;
+	}
+
+	&.bordered {
+		border-left-width: 15px;
+		border-left-style: solid;
+	}
+}
+
+.alert-sm {
+	padding: 10px;
+
+	&.bordered {
+		border-left-width: 10px;
+	}
+}
+
+.alert-xs {
+	padding: 5px;
+
+	&.bordered {
+		border-left-width: 5px;
+	}
+}
+
+.alert-primary {
+	background-color: $color-blue;
+	border-left-color: darken($color-blue, 20%) !important;
 }
 
 .alert-success {
-	background-color: lighten($color-green, 40%);
+	background-color: $color-green;
+	border-left-color: darken($color-green, 20%) !important;
 }
 
 .alert-info {
-	background-color: lighten($color-blue, 40%);
+	background-color: $color-cyan;
+	border-left-color: darken($color-cyan, 20%) !important;
 }
 
 .alert-warning {
-	background-color: lighten($color-yellow, 40%);
+	background-color: $color-orange;
+	border-left-color: darken($color-orange, 20%) !important;
 }
 
 .alert-danger {
-	background-color: lighten($color-red, 40%);
+	background-color: $color-red;
+	border-left-color: darken($color-red, 20%) !important;
 }

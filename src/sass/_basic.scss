@@ -1,12 +1,28 @@
+@function get-font-list($name) {
+	$ssp: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	$rw: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	// $result: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	@if $name == 'ssp' {
+		$result: $ssp;
+	} @else if $name == 'rw' {
+		$result: $rw;
+	}
+
+	@return $result;
+}
+
 body {
 	background-color: $color-grey-3;
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	// font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: get-font-list(ssp);
 }
 
 h1,
 h2,
 h3 {
-	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	// font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: get-font-list(rw);
 	font-weight: 200;
 }
 

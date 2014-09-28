@@ -172,21 +172,10 @@
         </div>
     </div>
 
-    <div class="col-lg-2">
+    <div class="col-lg-4">
         <div class="panel panel-default raised gradient">
             <div class="panel-heading">
                 Raised Gradient Panel
-            </div>
-            <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-2">
-        <div class="panel panel-default sharp bordered">
-            <div class="panel-heading">
-                Default Panel
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -240,21 +229,10 @@
         </div>
     </div>
 
-    <div class="col-lg-2">
+    <div class="col-lg-4">
         <div class="panel panel-primary raised gradient">
             <div class="panel-heading">
                 Raised Gradient Panel
-            </div>
-            <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-2">
-        <div class="panel panel-primary sharp bordered">
-            <div class="panel-heading">
-                Default Panel
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>

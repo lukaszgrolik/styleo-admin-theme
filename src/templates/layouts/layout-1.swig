@@ -21,6 +21,12 @@
         </div>
         <!-- /.navbar-header -->
 
+        <ul class="nav navbar-top-links navbar-left main-breadcrumbs">
+            <li><a href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>
+            <li><a href="#">UI Elements</a></li>
+            <li><a href="#">Panels</a></li>
+        </ul>
+
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -424,12 +430,13 @@
 
     <!-- Page Content -->
     <div id="page-wrapper">
-        <div class="row">
+        <h1 class="page-header">{% block title %}{% endblock %}</h1>
+        {# <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">{% block title %}{% endblock %}</h1>
             </div>
             <!-- /.col-lg-12 -->
-        </div>
+        </div> #}
         <!-- /.row -->
         {% block content2 %}{% endblock %}
     </div>

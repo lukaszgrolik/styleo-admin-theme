@@ -1,6 +1,5 @@
 .form-control,
 .input-group-addon {
-	border-radius: 0;
 	border-color: $color-grey-4;
 
 	.has-success & {
@@ -13,6 +12,13 @@
 
 	.has-error & {
 		border-color: $color-red;
+	}
+}
+
+.form-control,
+.input-group-addon {
+	&.sharp {
+		border-radius: 0;
 	}
 }
 

@@ -4,17 +4,13 @@
 
 {% block content2 %}
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Default Panel
             </div>
             <div class="panel-body">
                 <form role="form">
-                    <div class="form-group">
-                        <label for="xsinput">Extra Small Input</label>
-                        <input class="form-control input-xs" id="xsinput" placeholder="Extra Small Input" type="text">
-                    </div>
                     <div class="form-group">
                         <label for="sminput">Small Input</label>
                         <input class="form-control input-sm" id="sminput" placeholder="Small Input" type="text">
@@ -27,16 +23,12 @@
                         <label for="lginput">Large Input</label>
                         <input class="form-control input-lg" id="lginput" placeholder="Large Input" type="text">
                     </div>
-                    <div class="form-group">
-                        <label for="xlginput">Extra Large Input</label>
-                        <input class="form-control input-xl" id="xlginput" placeholder="Extra Large Input" type="text">
-                    </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-4">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Default Panel
@@ -44,9 +36,29 @@
             <div class="panel-body">
                 <form role="form">
                     <div class="form-group">
-                        <label for="xsinput">Extra Small Input</label>
-                        <input class="form-control input-xs" id="xsinput" placeholder="Extra Small Input" disabled="disabled" type="text">
+                        <label for="sminput">Small Input</label>
+                        <input class="form-control sharp input-sm" id="sminput" placeholder="Small Input" type="text">
                     </div>
+                    <div class="form-group">
+                        <label for="definpu">Default Input</label>
+                        <input class="form-control sharp" id="definput" placeholder="Default Input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="lginput">Large Input</label>
+                        <input class="form-control sharp input-lg" id="lginput" placeholder="Large Input" type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <form role="form">
                     <div class="form-group">
                         <label for="sminput">Small Input</label>
                         <input class="form-control input-sm" id="sminput" placeholder="Small Input" disabled="disabled" type="text">
@@ -58,10 +70,6 @@
                     <div class="form-group">
                         <label for="lginput">Large Input</label>
                         <input class="form-control input-lg" id="lginput" placeholder="Large Input" disabled="disabled" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="xlginput">Extra Large Input</label>
-                        <input class="form-control input-xl" id="xlginput" placeholder="Extra Large Input" disabled="disabled" type="text">
                     </div>
                 </form>
             </div>

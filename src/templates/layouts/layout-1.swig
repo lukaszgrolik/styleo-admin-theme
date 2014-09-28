@@ -15,7 +15,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Styleo Admin 1.0</a>
+            <div class="navbar-header-logo-area clearfix">
+                <a class="navbar-brand" href="index.html">Styleo Admin 1.0</a>
+            </div>
         </div>
         <!-- /.navbar-header -->
 
@@ -253,7 +255,7 @@
                                 <a href="basic-elements.html">Basic Elements</a>
                             </li>
                             <li>
-                                <a href="panels-wells.html">Panels and Wells<span class="label label-primary pull-right">New</span></a>
+                                <a href="panels-wells.html">Panels and Wells<span class="label label-primary pull-right">NEW</span></a>
                             </li>
                             <li>
                                 <a href="tabs-accordions.html">Tabs &amp; Accordions</a>

@@ -1,7 +1,26 @@
 .progress {
 	background-color: $color-grey-4;
-	border-radius: 0;
 	box-shadow: none;
+
+	&.progress-xs {
+		height: 5px;
+	}
+
+	&.progress-sm {
+		height: 10px;
+	}
+
+	&.progress-lg {
+		height: 25px;
+	}
+
+	&.progress-xl {
+		height: 30px;
+	}
+
+	&.sharp {
+		border-radius: 0;
+	}
 }
 
 .progress-bar {

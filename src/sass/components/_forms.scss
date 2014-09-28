@@ -31,7 +31,25 @@
 }
 
 .input-group-addon {
-	background-color: $color-grey-3;
+	background-color: $color-grey-4;
+
+	.has-success &,
+	.has-warning &,
+	.has-error & {
+		color: #fff;
+	}
+
+	.has-success & {
+		background-color: $color-green;
+	}
+
+	.has-warning & {
+		background-color: $color-orange;
+	}
+
+	.has-error & {
+		background-color: $color-red;
+	}
 }
 
 .control-label {

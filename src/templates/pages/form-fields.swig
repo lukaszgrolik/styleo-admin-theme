@@ -2,12 +2,73 @@
 
 {% block title %}Form Fields{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">UI Elements</a></li>
+<li><a href="#">Form Fields</a></li>
+{% endblock %}
+
+{% block headEnd %}
+{# <link rel="stylesheet" href="css/plugins/icheck/flat/flat.css"> #}
+<link rel="stylesheet" href="css/plugins/icheck/flat/blue.css">
+<link rel="stylesheet" href="css/plugins/icheck/flat/green.css">
+<link rel="stylesheet" href="css/plugins/icheck/flat/orange.css">
+<link rel="stylesheet" href="css/plugins/icheck/flat/red.css">
+{% endblock %}
+
+{% block bodyEnd %}
+<script src="js/plugins/icheck/icheck.js"></script>
+
+<script>
+$(function() {
+    $('[type="checkbox"], [type="radio"]').iCheck({
+        checkboxClass: 'icheckbox_flat-blue',
+        radioClass: 'iradio_flat-blue'
+    });
+
+    $('.colored-success').iCheck({
+        checkboxClass: 'icheckbox_flat-green',
+        radioClass: 'iradio_flat-green'
+    });
+
+    $('.colored-warning').iCheck({
+        checkboxClass: 'icheckbox_flat-orange',
+        radioClass: 'iradio_flat-orange'
+    });
+
+    $('.colored-danger').iCheck({
+        checkboxClass: 'icheckbox_flat-red',
+        radioClass: 'iradio_flat-red'
+    });
+});
+</script>
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Field Types
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="sminput">Default Input</label>
+                        <input class="form-control" id="sminput" placeholder="Small Input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="definpu">Sharp Input</label>
+                        <input class="form-control sharp" id="definput" placeholder="Default Input" type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Field Sizes
             </div>
             <div class="panel-body">
                 <form role="form">
@@ -27,178 +88,52 @@
             </div>
         </div>
     </div>
-
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Default Panel
-            </div>
-            <div class="panel-body">
-                <form role="form">
-                    <div class="form-group">
-                        <label for="sminput">Small Input</label>
-                        <input class="form-control sharp input-sm" id="sminput" placeholder="Small Input" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="definpu">Default Input</label>
-                        <input class="form-control sharp" id="definput" placeholder="Default Input" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="lginput">Large Input</label>
-                        <input class="form-control sharp input-lg" id="lginput" placeholder="Large Input" type="text">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Default Panel
-            </div>
-            <div class="panel-body">
-                <form role="form">
-                    <div class="form-group">
-                        <label for="sminput">Small Input</label>
-                        <input class="form-control input-sm" id="sminput" placeholder="Small Input" disabled="disabled" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="definpu">Default Input</label>
-                        <input class="form-control" id="definput" placeholder="Default Input" disabled="disabled" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="lginput">Large Input</label>
-                        <input class="form-control input-lg" id="lginput" placeholder="Large Input" disabled="disabled" type="text">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Field Types
             </div>
             <div class="panel-body">
-                <form role="form">
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control input-xs" type="text">
-                            <i class="fa fa-times purple"></i>
-                        </span>
+                <form class="form-horizontal" action="#">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Input Text</label>
+                    <div class="col-sm-6">
+                      <input class="form-control" type="text">
                     </div>
-                    <div class="form-group">
-                        <span class="input-icon">
-                            <input class="form-control input-sm" type="text">
-                            <i class="glyphicon glyphicon-search blue"></i>
-                        </span>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Input Password</label>
+                    <div class="col-sm-6">
+                      <input class="form-control" type="password">
                     </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control" type="text">
-                            <i class="fa fa-user darkorange"></i>
-                        </span>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Placeholder Input</label>
+                    <div class="col-sm-6">
+                      <input class="form-control" placeholder="Placeholder text" type="text">
                     </div>
-                    <div class="form-group">
-                        <span class="input-icon">
-                            <input class="form-control input-lg" type="text">
-                            <i class="fa fa-envelope palegreen"></i>
-                        </span>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Disabled Input</label>
+                    <div class="col-sm-6">
+                      <input disabled="disabled" class="form-control" placeholder="Disabled input text" type="text">
                     </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control input-xl" type="text">
-                            <i class="glyphicon glyphicon-lock maroon"></i>
-                        </span>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Readonly Input</label>
+                    <div class="col-sm-6">
+                      <input readonly="readonly" class="form-control" value="Readonly input text" type="text">
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Default Panel
-            </div>
-            <div class="panel-body">
-                <form role="form">
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control input-xs" type="text">
-                            <i class="fa fa-times sky circular"></i>
-                        </span>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Textarea</label>
+                    <div class="col-sm-6">
+                      <textarea class="form-control"></textarea>
                     </div>
-                    <div class="form-group">
-                        <span class="input-icon">
-                            <input class="form-control input-sm" type="text">
-                            <i class="glyphicon glyphicon-search danger circular"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control" type="text">
-                            <i class="fa fa-user success circular"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon">
-                            <input class="form-control input-lg" type="text">
-                            <i class="fa fa-envelope info circular"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right">
-                            <input class="form-control input-xl" type="text">
-                            <i class="glyphicon glyphicon-earphone darkpink circular"></i>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Default Panel
-            </div>
-            <div class="panel-body">
-                <form role="form">
-                    <div class="form-group">
-                        <span class="input-icon icon-right inverted">
-                            <input class="form-control input-xs" type="text">
-                            <i class="fa fa-times bg-purple"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon inverted">
-                            <input class="form-control input-sm" type="text">
-                            <i class="glyphicon glyphicon-search bg-blue"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right inverted">
-                            <input class="form-control" type="text">
-                            <i class="fa fa-user bg-darkorange"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon inverted">
-                            <input class="form-control input-lg" type="text">
-                            <i class="fa fa-envelope bg-palegreen"></i>
-                        </span>
-                    </div>
-                    <div class="form-group">
-                        <span class="input-icon icon-right inverted">
-                            <input class="form-control input-xl" type="text">
-                            <i class="glyphicon glyphicon-lock bg-pink"></i>
-                        </span>
-                    </div>
+                  </div>
                 </form>
             </div>
         </div>
@@ -209,7 +144,7 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Input Groups
             </div>
             <div class="panel-body">
                 <form role="form">
@@ -232,13 +167,8 @@
                             <span class="input-group-addon">.0</span>
                         </div>
                     </div>
+
                     <h5>Sizing</h5>
-                    <div class="form-group">
-                        <div class="input-group input-group-xs">
-                            <span class="input-group-addon">@</span>
-                            <input class="form-control" type="text">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <div class="input-group input-group-sm">
                             <span class="input-group-addon">@</span>
@@ -257,12 +187,7 @@
                             <input class="form-control" type="text">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="input-group input-group-xl">
-                            <span class="input-group-addon">@</span>
-                            <input class="form-control" type="text">
-                        </div>
-                    </div>
+
                     <h5>With Icon</h5>
                     <div class="form-group">
                         <div class="input-group">
@@ -284,7 +209,7 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Button Addons
             </div>
             <div class="panel-body">
                 <form role="form">
@@ -421,7 +346,7 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Validation States
             </div>
             <div class="panel-body">
                 <form role="form">
@@ -433,7 +358,8 @@
                     <div class="form-group has-warning has-feedback">
                         <label class="control-label" for="inputWarning2">Input with warning</label>
                         <input class="form-control" id="inputWarning2" value="Unconvincing Value" type="text">
-                        <span class="fa fa-warning form-control-feedback"></span>
+                        {# <span class="fa fa-warning form-control-feedback"></span> #}
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
                     </div>
                     <div class="form-group has-error has-feedback">
                         <label class="control-label" for="inputError2">Input with error</label>
@@ -443,7 +369,7 @@
                     <div class="form-group has-info has-feedback">
                         <label class="control-label" for="inputinfo2">Input With Info</label>
                         <input class="form-control" id="inputinfo2" value="You've Got Mail!" type="text">
-                        <span class="fa fa-envelope form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                     </div>
                 </form>
             </div>
@@ -453,7 +379,7 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Input Group Validation States
             </div>
             <div class="panel-body">
                 <form role="form">
@@ -485,6 +411,42 @@
             </div>
         </div>
     </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Sharp Input Group Validation States
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class=" input-group has-success">
+                            <span class="input-group-addon sharp">@</span>
+                            <input class="form-control sharp" placeholder="Username" value="Success" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group has-warning">
+                            <span class="input-group-addon sharp">@</span>
+                            <input class="form-control sharp" placeholder="Username" value="Warning" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group has-error">
+                            <span class="input-group-addon sharp">@</span>
+                            <input class="form-control sharp" placeholder="Username" value="Error" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group has-info">
+                            <span class="input-group-addon sharp">@</span>
+                            <input class="form-control sharp" placeholder="Username" value="Info" type="text">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">
@@ -496,23 +458,15 @@
             <div class="panel-body">
                 <h5>Checkboxes</h5>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="checkbox">
                             <label>
                                 <input checked="checked" type="checkbox">
-                                <span class="text">Basic</span>
+                                <span class="text">Default</span>
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
-                        <div class="checkbox">
-                            <label>
-                                <input class="inverted" checked="checked" type="checkbox">
-                                <span class="text">Inverted</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="checkbox">
                             <label>
                                 <input class="colored-success" checked="checked" type="checkbox">
@@ -520,25 +474,7 @@
                             </label>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
-                        <div class="checkbox">
-                            <label>
-                                <input class="colored-danger" checked="checked" type="checkbox">
-                                <span class="text">Danger</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
-                        <div class="checkbox">
-                            <label>
-                                <input class="colored-blue" checked="checked" type="checkbox">
-                                <span class="text">Blue</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="checkbox">
                             <label>
                                 <input class="colored-warning" checked="checked" type="checkbox">
@@ -546,8 +482,18 @@
                             </label>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
+                        <div class="checkbox">
+                            <label>
+                                <input class="colored-danger" checked="checked" type="checkbox">
+                                <span class="text">Danger</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
+
                 <hr class="wide">
+
                 <h5>Radio Buttons</h5>
                 <div class="control-group">
                     <div class="radio">
@@ -676,19 +622,19 @@
                     <div class="row">
                         <div class="col-xs-4">
                             <label>
-                                <input class="checkbox-slider colored-blue" type="checkbox">
+                                <input class="checkbox-slider colored-primary" type="checkbox">
                                 <span class="text"></span>
                             </label>
                         </div>
                         <div class="col-xs-4">
                             <label>
-                                <input class="checkbox-slider slider-icon colored-blue" type="checkbox">
+                                <input class="checkbox-slider slider-icon colored-primary" type="checkbox">
                                 <span class="text"></span>
                             </label>
                         </div>
                         <div class="col-xs-4">
                             <label>
-                                <input class="checkbox-slider toggle colored-blue" type="checkbox">
+                                <input class="checkbox-slider toggle colored-primary" type="checkbox">
                                 <span class="text"></span>
                             </label>
                         </div>
@@ -820,6 +766,134 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control input-xs" type="text">
+                            <i class="fa fa-times purple"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input class="form-control input-sm" type="text">
+                            <i class="glyphicon glyphicon-search blue"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control" type="text">
+                            <i class="fa fa-user darkorange"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input class="form-control input-lg" type="text">
+                            <i class="fa fa-envelope palegreen"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control input-xl" type="text">
+                            <i class="glyphicon glyphicon-lock maroon"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control input-xs" type="text">
+                            <i class="fa fa-times sky circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input class="form-control input-sm" type="text">
+                            <i class="glyphicon glyphicon-search danger circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control" type="text">
+                            <i class="fa fa-user success circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon">
+                            <input class="form-control input-lg" type="text">
+                            <i class="fa fa-envelope info circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control input-xl" type="text">
+                            <i class="glyphicon glyphicon-earphone darkpink circular"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <span class="input-icon icon-right inverted">
+                            <input class="form-control input-xs" type="text">
+                            <i class="fa fa-times bg-purple"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon inverted">
+                            <input class="form-control input-sm" type="text">
+                            <i class="glyphicon glyphicon-search bg-blue"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right inverted">
+                            <input class="form-control" type="text">
+                            <i class="fa fa-user bg-darkorange"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon inverted">
+                            <input class="form-control input-lg" type="text">
+                            <i class="fa fa-envelope bg-palegreen"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right inverted">
+                            <input class="form-control input-xl" type="text">
+                            <i class="glyphicon glyphicon-lock bg-pink"></i>
+                        </span>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

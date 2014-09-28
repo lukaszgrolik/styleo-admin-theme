@@ -2,8 +2,12 @@
 
 }
 
-.modal-content {
+.modal-content.sharp {
 	border-radius: 0;
 	box-shadow: none;
 	border: 0;
+}
+
+.modal-header {
+	font-family: get-font-list(rw);
 }

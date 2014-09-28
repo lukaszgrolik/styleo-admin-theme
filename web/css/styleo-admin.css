@@ -550,11 +550,14 @@ pre {
   background-color: #e74c3c;
   border-left-color: #a82115 !important; }
 
-.modal-content {
+.modal-content.sharp {
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0; }
+
+.modal-header {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .form-control, .input-group-addon {
   border-color: #ecf0f1; }

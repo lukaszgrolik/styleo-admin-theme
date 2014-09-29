@@ -104,6 +104,14 @@
                         Popover on right
                     </button>
                 </div>
+                <h4>Hoverable Popover With Title</h4>
+                <p>This is just an example of popover use in a paragrhap content without a title writen by <a href="javascript:;" data-toggle="popover" data-content="This is a popover without a title!" data-placement="top">Author</a>, and there is another example with a title <a href="javascript:;" data-toggle="popover" data-original-title="Popover Title" data-content="This is a popover with a title!" data-placement="top">Tooltip</a> options.</p>
+                <div class="spacer2 text-center">
+                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> On Top</button>
+                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in left" data-content="This is the popover content space, put your ideas here!" data-placement="left" data-trigger="hover"><i class="fa fa-chevron-circle-left"></i> On Left</button>
+                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in right" data-content="This is the popover content space, put your ideas here!" data-placement="right" data-trigger="hover"><i class="fa fa-chevron-circle-right"></i> On Right</button>
+                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in bottom" data-content="This is the popover content space, put your ideas here!" data-placement="bottom" data-trigger="hover"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
+                </div>
             </div>
             <!-- .panel-body -->
         </div>

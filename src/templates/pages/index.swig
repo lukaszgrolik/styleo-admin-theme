@@ -7,6 +7,12 @@
 <link href="sb-admin-2/css/plugins/timeline.css" rel="stylesheet">
 {% endblock %}
 
+{% block bodyEnd %}
+<script src="sb-admin-2/js/plugins/morris/raphael.min.js"></script>
+<script src="sb-admin-2/js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
+{% endblock %}
+
 {% block content2 %}
 <!-- /.row -->
 <div class="row">
@@ -552,10 +558,4 @@
     <!-- /.col-lg-4 -->
 </div>
 <!-- /.row -->
-{% endblock %}
-
-{% block bodyEnd %}
-<script src="sb-admin-2/js/plugins/morris/raphael.min.js"></script>
-<script src="sb-admin-2/js/plugins/morris/morris.min.js"></script>
-<script src="js/plugins/morris/morris-data.js"></script>
 {% endblock %}

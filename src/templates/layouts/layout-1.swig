@@ -292,6 +292,9 @@
                                     <li>
                                         <a href="icons-font-awesome.html">Font Awesome</a>
                                     </li>
+                                    <li>
+                                        <a href="icons-glyphicons.html">Glyphicons</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>

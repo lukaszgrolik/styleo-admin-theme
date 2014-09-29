@@ -4,7 +4,7 @@
 
 {% block breadcrumbs %}
 <li><a href="#">UI Elements</a></li>
-<li><a href="#">Tabs & Accordions</a></li>
+<li><a href="#">Tabs &amp; Accordions</a></li>
 {% endblock %}
 
 {% block content2 %}

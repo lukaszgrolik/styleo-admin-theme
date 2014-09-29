@@ -3,7 +3,7 @@
 {% block title %}Blank page{% endblock %}
 
 {% block breadcrumbs %}
-<li><a href="#">Blank Page</a></li>
+<li><a href="#">Timeline</a></li>
 {% endblock %}
 
 {% block headEnd%}

@@ -146,12 +146,14 @@
 
 		&:hover {
 			// text-decoration: underline;
-			color: $color-grey-4;
+			// color: $color-grey-4;
+			color: $color-dark-navy;
 		}
 
 		&:before {
 			content: ' / ';
 			color: #fff;
+			font-weight: normal !important;
 		}
 	}
 
@@ -161,6 +163,10 @@
 		&:before {
 			content: none;
 		}
+	}
+
+	li:last-child a {
+		font-weight: bold;
 	}
 
 	@media (min-width: 768px) {

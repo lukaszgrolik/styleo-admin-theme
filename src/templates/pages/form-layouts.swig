@@ -2,6 +2,11 @@
 
 {% block title %}Form Layouts{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">Forms</a></li>
+<li><a href="#">Form Layouts</a></li>
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">

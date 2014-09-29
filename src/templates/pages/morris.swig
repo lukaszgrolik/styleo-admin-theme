@@ -2,6 +2,11 @@
 
 {% block title %}Morris{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">Charts</a></li>
+<li><a href="#">Morris</a></li>
+{% endblock %}
+
 {% block headEnd %}
 <link href="sb-admin-2/css/plugins/morris.css" rel="stylesheet">
 {% endblock %}

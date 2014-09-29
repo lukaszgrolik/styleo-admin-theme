@@ -2,6 +2,11 @@
 
 {% block title %}Panels{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">UI Elements</a></li>
+<li><a href="#">Panels</a></li>
+{% endblock %}
+
 {% block content2 %}
 <h2>Panel Types</h2>
 

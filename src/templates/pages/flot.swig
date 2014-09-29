@@ -2,6 +2,11 @@
 
 {% block title %}Flot{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">Charts</a></li>
+<li><a href="#">Flot</a></li>
+{% endblock %}
+
 {% block content2 %}
 <!-- /.row -->
 <div class="row">

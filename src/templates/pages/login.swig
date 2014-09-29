@@ -2,6 +2,10 @@
 
 {% block title %}Login page{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">Login Page</a></li>
+{% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="row">

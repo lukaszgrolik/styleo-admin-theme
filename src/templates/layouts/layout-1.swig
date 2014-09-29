@@ -301,14 +301,14 @@
                         <a href="#"><i class="fa fa-table fa-fw"></i> Tables<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="tables-default.html">Default Tables</a>
+                                <a href="tables-simple.html">Simple Tables</a>
                             </li>
                             <li>
                                 <a href="tables-datatable.html">DataTables</a>
                             </li>
-                            <li>
+                            {# <li>
                                 <a href="tables-jqgrid.html">jqGrid Tables</a>
-                            </li>
+                            </li> #}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
@@ -353,6 +353,9 @@
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="maps-google.html">Google Maps</a>
+                            </li>
+                            <li>
+                                <a href="maps-vector.html">Vector Maps</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->

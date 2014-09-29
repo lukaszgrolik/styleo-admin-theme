@@ -1,0 +1,12 @@
+{
+  "name": "styleo-admin-theme",
+  "private": true,
+  "dependencies": {
+    "bootstrapvalidator": "~0.5.2",
+    "fuelux": "~3.0.2",
+    "ckeditor": "~4.4.5",
+    "summernote": "~0.5.9",
+    "jvectormap": "~1.2.2",
+    "bower-jvectormap": "~1.2.2"
+  }
+}

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Styleo Admin 1.0 | Form Wizard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Social Buttons CSS -->
+    <link href="sb-admin-2/css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="sb-admin-2/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/styleo-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+<link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css">
+<link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css">
+
+
+
+</head>
+
+<body>
+
+    
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header-logo-area clearfix">
+                <a class="navbar-brand" href="index.html">Styleo Admin 1.0</a>
+            </div>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-left main-breadcrumbs">
+            <li><a href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>
+            
+<li><a href="#">Forms</a></li>
+<li><a href="#">Form Wizard</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span class="pull-right text-muted">
+                                    <em>Yesterday</em>
+                                </span>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span class="pull-right text-muted">
+                                    <em>Yesterday</em>
+                                </span>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span class="pull-right text-muted">
+                                    <em>Yesterday</em>
+                                </span>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>Read All Messages</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-messages -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-tasks">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 1</strong>
+                                    <span class="pull-right text-muted">40% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 2</strong>
+                                    <span class="pull-right text-muted">20% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                        <span class="sr-only">20% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 3</strong>
+                                    <span class="pull-right text-muted">60% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span class="sr-only">60% Complete (warning)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 4</strong>
+                                    <span class="pull-right text-muted">80% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>See All Tasks</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-tasks -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="pull-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-alerts -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="basic-elements.html">Basic Elements</a>
+                            </li>
+                            <li>
+                                <a href="panels.html">Panels<span class="label label-primary pull-right">NEW</span></a>
+                            </li>
+                            <li>
+                                <a href="wells.html">Wells<span class="label label-primary pull-right">NEW</span></a>
+                            </li>
+                            <li>
+                                <a href="tabs-accordions.html">Tabs &amp; Accordions</a>
+                            </li>
+                            <li>
+                                <a class="active" href="buttons.html">Buttons<span class="badge badge-success pull-right">7</span></a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">Notifications</a>
+                            </li>
+                            <li>
+                                <a href="alerts.html">Alerts</a>
+                            </li>
+                            <li>
+                                <a href="progress-bars.html">Progress Bars</a>
+                            </li>
+                            <li>
+                                <a href="typography.html">Typography</a>
+                            </li>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                            <li>
+                                <a href="#">Icons <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="icons-font-awesome.html">Font Awesome</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table fa-fw"></i> Tables<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="tables-simple.html">Simple Tables</a>
+                            </li>
+                            <li>
+                                <a href="tables-datatable.html">DataTables</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit fa-fw"></i> Forms<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="form-layouts.html">Form Layouts</a>
+                            </li>
+                            <li>
+                                <a href="form-fields.html">Form Fields</a>
+                            </li>
+                            <li>
+                                <a href="data-pickers.html">Data pickers</a>
+                            </li>
+                            <li>
+                                <a href="form-wizard.html">Form Wizard</a>
+                            </li>
+                            <li>
+                                <a href="form-validation.html">Validation</a>
+                            </li>
+                            <li>
+                                <a href="form-editors.html">Editors</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="flot.html">Flot Charts</a>
+                            </li>
+                            <li>
+                                <a href="morris.html">Morris.js Charts</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-map-marker fa-fw"></i> Maps<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="maps-google.html">Google Maps</a>
+                            </li>
+                            <li>
+                                <a href="maps-vector.html">Vector Maps</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-files-o fa-fw"></i> Pages<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Register</a>
+                            </li>
+                            <li>
+                                <a href="timeline.html">Timeline</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Pricing Tables</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="invoice.html">Invoice</a>
+                            </li>
+                            <li>
+                                <a href="search-results.html">Search results</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Error 404</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Error 500</a>
+                            </li>
+                            <li>
+                                <a href="blank.html">Blank Page</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        
+        
+        <!-- /.row -->
+        
+<div class="row">
+    <div class="col-md-12">
+        <div class="wizard" data-initialize="wizard" id="myWizard">
+    <ul class="steps">
+        <li data-step="1"><span class="badge">1</span>Campaign<span class="chevron"></span></li>
+        <li data-step="2"><span class="badge">2</span>Recipients<span class="chevron"></span></li>
+        <li data-step="3"><span class="badge">3</span>Template<span class="chevron"></span></li>
+        <li data-step="4"><span class="badge">4</span>Preview<span class="chevron"></span></li>
+        <li data-step="5"><span class="badge">5</span>Send<span class="chevron"></span></li>
+    </ul>
+    <div class="actions">
+        <button class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+        <button class="btn btn-default btn-next" data-last="Complete">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
+    </div>
+    <div class="step-content">
+        <div class="step-pane active sample-pane alert" data-step="1">
+            <h4>Setup Campaign</h4>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. </p>
+        </div>
+        <div class="step-pane sample-pane bg-info alert" data-step="2">
+            <h4>Choose Recipients</h4>
+            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
+            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens. </p>
+        </div>
+        <div class="step-pane sample-pane bg-danger alert" data-step="3">
+            <h4>Design Template</h4>
+            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify. </p>
+            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard. </p>
+            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach. </p>
+        </div>
+        <div class="step-pane sample-pane bg-warning alert" data-step="4">
+            <h4>Preview Message</h4>
+            <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed endive groundnut broccoli arugula. Beetroot water spinach okra water chestnut ricebean pea catsear courgette.</p>
+            <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut. Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
+            <p>Ja­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
+        </div>
+        <div class="step-pane sample-pane bg-success alert" data-step="5">
+            <h4>Send Message</h4>
+            <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage. Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+            <p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic. JÃ­cama garlic courgette coriander radicchio plantain scallion cauliflower fava bean desert raisin spring onion chicory bunya nuts. Sea lettuce water spinach gram fava bean leek dandelion silver beet eggplant bush tomato. </p>
+            <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd.  </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="row wizard-row">
+  <div class="col-md-12 fuelux">
+    <div class="block-wizard">
+      <div id="wizard1" class="wizard wizard-ux">
+        <ul class="steps">
+          <li data-target="#step1" class="active">Step 1<span class="chevron"></span></li>
+          <li data-target="#step2">Step 2<span class="chevron"></span></li>
+          <li data-target="#step3">Step 3<span class="chevron"></span></li>
+        </ul>
+        <div class="actions">
+          <button type="button" class="btn btn-xs btn-prev btn-primary"> <i class="icon-arrow-left"></i>Prev</button>
+          <button type="button" class="btn btn-xs btn-next btn-primary" data-last="Finish">Next<i class="icon-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="step-content">
+        <form class="form-horizontal group-border-dashed" action="#" data-parsley-namespace="data-parsley-" data-parsley-validate novalidate>
+          <div class="step-pane active" id="step1">
+            <div class="form-group no-padding">
+              <div class="col-sm-7">
+                <h3 class="hthin">User Info</h3>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">User Name</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="User name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">E-Mail</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="User E-Mail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Password</label>
+              <div class="col-sm-6">
+                <input type="password" class="form-control" placeholder="Enter your password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Verify Password</label>
+              <div class="col-sm-6">
+                <input type="password" class="form-control" placeholder="Enter your password again">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default">Cancel</button>
+                <button data-wizard="#wizard1" class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="step-pane" id="step2">
+            <div class="form-group no-padding">
+              <div class="col-sm-7">
+                <h3 class="hthin">Notifications</h3>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-7">
+                <label class="control-label">E-Mail Notifications</label>
+                <p>This option allow you to recieve email notifications by us.</p>
+              </div>
+              <div class="col-sm-3">
+                <input class="switch" data-size="small" type="checkbox" checked>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-7">
+                <label class="control-label">Phone Notifications</label>
+                <p>Allow us to send phone notifications to your cell phone.</p>
+              </div>
+              <div class="col-sm-3">
+                <input class="switch" data-size="small" type="checkbox" checked>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-7">
+                <label class="control-label">Global Notifications</label>
+                <p>Allow us to send notifications to your dashboard.</p>
+              </div>
+              <div class="col-sm-3">
+               <input class="switch" data-size="small" type="checkbox" checked>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button data-wizard="#wizard1" class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+                <button data-wizard="#wizard1" class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="step-pane" id="step3">
+            <div class="form-group no-padding">
+              <div class="col-sm-7">
+                <h3 class="hthin">Configuration</h3>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <label class="control-label">Buy Credits: <span id="credits">$0</span></label>
+                <p>This option allow you to buy an amount of credits.</p>
+
+                <input id="credit_slider" type="text" class="bslider form-control" value="0" />
+              </div>
+              <div class="col-sm-6">
+                <label class="control-label">Change Plan</label>
+                <p>Change your plan many times as you want.</p>
+                <select class="select2">
+                   <optgroup label="Personal">
+                     <option value="p1">Basic</option>
+                     <option value="p2">Medium</option>
+                   </optgroup>
+                   <optgroup label="Company">
+                     <option value="p3">Standard</option>
+                     <option value="p4">Silver</option>
+                     <option value="p5">Gold</option>
+                   </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <label class="control-label">Payment Rate: <span id="rate">0%</span></label>
+                <p>Choose your payment rate to calculate how much money you will recieve.</p>
+
+                <input id="rate_slider"  data-slider-min="0" data-slider-max="100" type="text" class="bslider form-control" value="0" />
+              </div>
+              <div class="col-sm-6">
+                <label class="control-label">Keywords</label>
+                <p>Write your keywords to do a successful CEO with web search engines.</p>
+                <input class="tags" type="hidden" value="brown,blue,green" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button data-wizard="#wizard1" class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+                <button data-wizard="#wizard1" class="btn btn-success wizard-next"><i class="fa fa-check"></i> Complete</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+    <!-- /#wrapper -->
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="sb-admin-2/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="sb-admin-2/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="sb-admin-2/js/sb-admin-2.js"></script>
+
+    <script src="js/styleo-admin.js"></script>
+
+    
+<script src="bower_components/fuelux/js/wizard.js"></script>
+
+<script>
+$(function() {
+    $('.wizard-ux, .wizard').wizard();
+
+    $(".wizard-next").click(function(e){
+      var id = $(this).data("wizard");
+      // $(id).wizard('next');
+      e.preventDefault();
+    });
+
+    $(".wizard-previous").click(function(e){
+      var id = $(this).data("wizard");
+      $(id).wizard('previous');
+      e.preventDefault();
+    });
+});
+</script>
+
+
+</body>
+
+</html>

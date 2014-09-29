@@ -2,6 +2,11 @@
 
 {% block title %}Buttons{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">UI Elements</a></li>
+<li><a href="#">Buttons</a></li>
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
     <div class="col-lg-12">

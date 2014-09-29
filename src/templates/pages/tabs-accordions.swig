@@ -2,7 +2,14 @@
 
 {% block title %}Tabs &amp; Accordions{% endblock %}
 
+{% block breadcrumbs %}
+<li><a href="#">UI Elements</a></li>
+<li><a href="#">Tabs & Accordions</a></li>
+{% endblock %}
+
 {% block content2 %}
+<h2>Tabs</h2>
+
 <div class="row">
     <div class="col-lg-6">
         <div class="panel panel-default">
@@ -138,6 +145,9 @@
     <!-- /.col-lg-6 -->
 </div>
 <!-- /.row -->
+
+<h2>Accordions</h2>
+
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">

@@ -8,19 +8,18 @@
 {% endblock %}
 
 {% block headEnd %}
-{# <link rel="stylesheet" href="css/plugins/icheck/flat/flat.css"> #}
-<link rel="stylesheet" href="css/plugins/icheck/flat/blue.css">
-<link rel="stylesheet" href="css/plugins/icheck/flat/green.css">
-<link rel="stylesheet" href="css/plugins/icheck/flat/orange.css">
-<link rel="stylesheet" href="css/plugins/icheck/flat/red.css">
+<link rel="stylesheet" href="bower_components/iCheck/skins/flat/blue.css">
+<link rel="stylesheet" href="bower_components/iCheck/skins/flat/green.css">
+<link rel="stylesheet" href="bower_components/iCheck/skins/flat/orange.css">
+<link rel="stylesheet" href="bower_components/iCheck/skins/flat/red.css">
 
-<link rel="stylesheet" href="css/plugins/select2/select2.css">
+<link rel="stylesheet" href="bower_components/select2/select2.css">
 {# <link rel="stylesheet" href="css/plugins/select2/select2-bootstrap.css"> #}
 {% endblock %}
 
 {% block bodyEnd %}
-<script src="js/plugins/icheck/icheck.js"></script>
-<script src="js/plugins/select2/select2.js"></script>
+<script src="bower_components/iCheck/icheck.js"></script>
+<script src="bower_components/select2/select2.js"></script>
 
 <script>
 $(function() {

@@ -7,6 +7,19 @@
 <li><a href="#">Basic Elements</a></li>
 {% endblock %}
 
+{% block bodyEnd %}
+<script>
+// tooltip demo
+$('.tooltip-demo').tooltip({
+    selector: "[data-toggle=tooltip]",
+    container: "body"
+});
+
+// popover demo
+$('[data-toggle=popover]').popover()
+</script>
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
@@ -215,7 +228,7 @@
                 Button Dropdowns
             </div>
             <div class="panel-body">
-                <div id="dropdownbuttons">
+                <div id="dropdownbuttons" class="text-center">
                     <div class="btn-group">
                         <a class="btn btn-default " href="javascript:void(0);">Default</a>
                         <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
@@ -236,9 +249,9 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-info " href="javascript:void(0);">info</a>
-                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-info">
+                        <a class="btn btn-primary " href="javascript:void(0);">Primary</a>
+                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-primary">
                             <li>
                                 <a href="javascript:void(0);">Action</a>
                             </li>
@@ -255,9 +268,9 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-primary " href="javascript:void(0);">Primary</a>
-                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-primary">
+                        <a class="btn btn-info " href="javascript:void(0);">Info</a>
+                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-info">
                             <li>
                                 <a href="javascript:void(0);">Action</a>
                             </li>
@@ -343,7 +356,7 @@
                 Split Button Dropdowns
             </div>
             <div class="panel-body">
-                <div id="dropdownbuttons">
+                <div id="dropdownbuttons2" class="text-center">
                     <div class="btn-group">
                         <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Default <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
@@ -363,8 +376,8 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Info <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-info">
+                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Primary <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-primary">
                             <li>
                                 <a href="javascript:void(0);">Action</a>
                             </li>
@@ -381,8 +394,8 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Primary <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-primary">
+                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Info <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-info">
                             <li>
                                 <a href="javascript:void(0);">Action</a>
                             </li>
@@ -462,6 +475,52 @@
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                Tooltips and Popovers
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <h4>Tooltip Demo</h4>
+                <div class="tooltip-demo text-center">
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><i class="fa fa-chevron-circle-right"></i> On Right</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fa fa-chevron-circle-up"></i> On Top</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><i class="fa fa-chevron-circle-left"></i> On Left</button>
+                </div>
+                <br>
+                <h4>Clickable Popover Demo</h4>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <i class="fa fa-chevron-circle-right"></i> On Right
+                    </button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <i class="fa fa-chevron-circle-up"></i> On Top
+                    </button>
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <i class="fa fa-chevron-circle-down"></i> On Bottom
+                    </button>
+
+                    <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                        <i class="fa fa-chevron-circle-left"></i> On Left
+                    </button>
+                </div>
+                <h4>Hoverable Popover With Title</h4>
+                <p>This is just an example of popover use in a paragrhap content without a title writen by <a href="javascript:;" data-toggle="popover" data-content="This is a popover without a title!" data-placement="top">Author</a>, and there is another example with a title <a href="javascript:;" data-toggle="popover" data-original-title="Popover Title" data-content="This is a popover with a title!" data-placement="top">Tooltip</a> options.</p>
+                <div class="spacer2 text-center">
+                    <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in right" data-content="This is the popover content space, put your ideas here!" data-placement="right" data-trigger="hover"><i class="fa fa-chevron-circle-right"></i> On Right</button>
+                    <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> On Top</button>
+                    <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in bottom" data-content="This is the popover content space, put your ideas here!" data-placement="bottom" data-trigger="hover"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
+                    <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in left" data-content="This is the popover content space, put your ideas here!" data-placement="left" data-trigger="hover"><i class="fa fa-chevron-circle-left"></i> On Left</button>
+                </div>
+            </div>
+            <!-- .panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-6 -->
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 <i class="fa fa-bell fa-fw"></i> List
             </div>
             <!-- /.panel-heading -->
@@ -530,26 +589,25 @@
 </div>
 
 <div class="row">
-	<div class="col-lg-12">
+	<div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Pagination
             </div>
             <div class="panel-body">
-                <h6>Default</h6>
-                <ul class="pagination">
-                    <li class="disabled"><a href="#">«</a></li>
-                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">»</a></li>
-                </ul>
-                <hr class="wide">
-                <h6>Sizes</h6>
                 <div>
                     <ul class="pagination pagination-lg">
+                        <li class="disabled"><a href="#">«</a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="pagination">
                         <li class="disabled"><a href="#">«</a></li>
                         <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
                         <li><a href="#">2</a></li>
@@ -570,20 +628,25 @@
                         <li><a href="#">»</a></li>
                     </ul>
                 </div>
+
                 <hr class="wide">
-                <h6>Pager</h6>
+
+                <h5>Pager</h5>
+
                 <div>
                     <ul class="pager">
-                        <li class="disabled"><a href="#">← Older</a></li>
-                        <li><a href="#">Newer →</a></li>
+                        <li class="disabled"><a href="#" class="btn btn-primary sharp">← Older</a></li>
+                        <li><a href="#" class="btn btn-primary sharp">Newer →</a></li>
                     </ul>
                 </div>
-                <div class="horizontal-space"></div>
+
                 <hr class="wide">
-                <h6>Aligned Pager</h6>
+
+                <h5>Aligned Pager</h5>
+
                 <ul class="pager">
-                    <li class="previous"><a href="#">← Older</a></li>
-                    <li class="next"><a href="#">Newer →</a></li>
+                    <li class="previous"><a href="#" class="btn btn-primary sharp">← Older</a></li>
+                    <li class="next"><a href="#" class="btn btn-primary sharp">Newer →</a></li>
                 </ul>
             </div>
         </div>

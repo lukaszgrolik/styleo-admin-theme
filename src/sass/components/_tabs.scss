@@ -1,9 +1,16 @@
 .nav-tabs > li > a,
 .nav-pills > li > a {
-	border-radius: 0;
+	// border-radius: 0;
 
 	&:hover {
 		background-color: $color-grey-3;
+	}
+}
+
+.sharp {
+	.nav-tabs > li > a,
+	.nav-pills > li > a {
+		border-radius: 0;
 	}
 }
 
@@ -38,7 +45,12 @@
 
 .tab-content {
 	background-color: #fff;
+	border-radius: 0 0 4px 4px;
 	padding: 15px;
+
+	.sharp & {
+		border-radius: 0;
+	}
 }
 
 .tabs-container.bordered {
@@ -48,12 +60,12 @@
 		}
 
 		li.active a {
-			border-left: 1px solid $color-light-grey !important;
-			border-right: 1px solid $color-light-grey !important;
+			border-left: 1px solid $color-grey-1 !important;
+			border-right: 1px solid $color-grey-1 !important;
 		}
 	}
 
 	.tab-content {
-		border: 1px solid $color-light-grey;
+		border: 1px solid $color-grey-1;
 	}
 }

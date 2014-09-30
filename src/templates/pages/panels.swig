@@ -130,6 +130,76 @@
     </div>
 </div>
 
+<h2>Filled Panels</h2>
+
+<div class="row">
+    <div class="col-lg-2">
+        <div class="panel filled panel-default">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-primary filled">
+            <div class="panel-heading">
+                Primary Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-success filled">
+            <div class="panel-heading">
+                Success Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-info filled">
+            <div class="panel-heading">
+                Info Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-warning filled">
+            <div class="panel-heading">
+                Warning Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-danger filled">
+            <div class="panel-heading">
+                Danger Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2>Panel Heading Types</h2>
 
 <div class="row">
@@ -236,6 +306,63 @@
 
     <div class="col-lg-4">
         <div class="panel panel-primary raised gradient">
+            <div class="panel-heading">
+                Raised Gradient Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+        <div class="panel panel-primary filled">
+            <div class="panel-heading">
+                Default Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-primary separated filled">
+            <div class="panel-heading">
+                Separated Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-primary raised filled">
+            <div class="panel-heading">
+                Raised Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-primary gradient filled">
+            <div class="panel-heading">
+                Gradient Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-primary raised gradient filled">
             <div class="panel-heading">
                 Raised Gradient Panel
             </div>
@@ -363,9 +490,44 @@
     </div>
 
     <div class="col-lg-4">
+        <div class="panel panel-success sharp gradient filled">
+            <div class="panel-heading">
+                Filled Sharp Gradient Success Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-info raised filled">
+            <div class="panel-heading">
+                Filled Raised Info Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-warning raised gradient filled">
+            <div class="panel-heading">
+                Filled Raised Gradient Warning Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
         <div class="panel panel-primary sharp bordered">
             <div class="panel-heading">
-                Sharp Bordered Primary Panel
+                Sharp Bordered Primary Panel With Footer
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -377,7 +539,7 @@
     </div>
 </div>
 
-<h2>Collection</h2>
+<h2>Showcase</h2>
 
 <div class="row">
     <div class="col-lg-2">

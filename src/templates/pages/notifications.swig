@@ -7,6 +7,10 @@
 <li><a href="#">Notifications</a></li>
 {% endblock %}
 
+{% block bodyEnd %}
+
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
@@ -73,65 +77,5 @@
         <!-- /.panel -->
     </div>
     <!-- /.col-lg-6 -->
-
-    <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Tooltips and Popovers
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <h4>Tooltip Demo</h4>
-                <div class="tooltip-demo">
-                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-                </div>
-                <br>
-                <h4>Clickable Popover Demo</h4>
-                <div class="tooltip-demo">
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on left
-                    </button>
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on top
-                    </button>
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on bottom
-                    </button>
-                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                        Popover on right
-                    </button>
-                </div>
-                <h4>Hoverable Popover With Title</h4>
-                <p>This is just an example of popover use in a paragrhap content without a title writen by <a href="javascript:;" data-toggle="popover" data-content="This is a popover without a title!" data-placement="top">Author</a>, and there is another example with a title <a href="javascript:;" data-toggle="popover" data-original-title="Popover Title" data-content="This is a popover with a title!" data-placement="top">Tooltip</a> options.</p>
-                <div class="spacer2 text-center">
-                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> On Top</button>
-                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in left" data-content="This is the popover content space, put your ideas here!" data-placement="left" data-trigger="hover"><i class="fa fa-chevron-circle-left"></i> On Left</button>
-                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in right" data-content="This is the popover content space, put your ideas here!" data-placement="right" data-trigger="hover"><i class="fa fa-chevron-circle-right"></i> On Right</button>
-                    <button data-toggle="popover" type="button" class="btn btn-primary" data-original-title="Popover in bottom" data-content="This is the popover content space, put your ideas here!" data-placement="bottom" data-trigger="hover"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
-                </div>
-            </div>
-            <!-- .panel-body -->
-        </div>
-        <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-6 -->
 </div>
-<!-- /.row -->
-{% endblock %}
-
-{% block bodyEnd %}
-<script>
-// tooltip demo
-$('.tooltip-demo').tooltip({
-    selector: "[data-toggle=tooltip]",
-    container: "body"
-})
-
-// popover demo
-$("[data-toggle=popover]")
-    .popover()
-</script>
 {% endblock %}

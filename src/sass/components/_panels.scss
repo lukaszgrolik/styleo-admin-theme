@@ -209,3 +209,67 @@
 .panel-danger.raised > .panel-heading {
 	border-bottom-color: darken($color-red, 20%);
 }
+
+//
+
+.panel.filled {
+	color: #fff;
+
+	.panel-body {
+		padding-top: 0;
+	}
+
+	&.separated,
+	&.raised {
+		.panel-body {
+			padding-top: 15px;
+		}
+	}
+
+	&.separated {
+		.panel-heading {
+			color: #fff;
+			border-bottom-color: #fff;
+		}
+	}
+}
+
+.panel-default.filled {
+	background-color: $color-light-grey;
+
+	.panel-heading {
+		background-color: $color-light-grey;
+		color: #fff;
+		border-bottom: 0;
+	}
+}
+
+.panel-primary.filled {
+	background-color: $color-blue;
+
+	&.separated .panel-heading {background-color: $color-blue;}
+}
+
+.panel-success.filled {
+	background-color: $color-green;
+
+	&.separated .panel-heading {background-color: $color-green;}
+}
+
+.panel-info.filled {
+	background-color: $color-cyan;
+
+	&.separated .panel-heading {background-color: $color-cyan;}
+}
+
+.panel-warning.filled {
+	background-color: $color-orange;
+
+	&.separated .panel-heading {background-color: $color-orange;}
+}
+
+.panel-danger.filled {
+	background-color: $color-red;
+
+	&.separated .panel-heading {background-color: $color-red;}
+}

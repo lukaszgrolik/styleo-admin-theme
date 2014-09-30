@@ -48,6 +48,14 @@
                     <button type="button" class="btn btn-danger disabled">DANGER</button>
                 </p>
                 <p>
+                    <button type="button" class="btn btn-default active">DEFAULT</button>
+                    <button type="button" class="btn btn-primary active">PRIMARY</button>
+                    <button type="button" class="btn btn-success active">SUCCESS</button>
+                    <button type="button" class="btn btn-info active">INFO</button>
+                    <button type="button" class="btn btn-warning active">WARNING</button>
+                    <button type="button" class="btn btn-danger active">DANGER</button>
+                </p>
+                <p>
                     <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i></button>
                     <button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i></button>
@@ -486,7 +494,7 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">Buttons sizes</div>
             <!-- /.panel-heading -->
@@ -508,9 +516,48 @@
         </div>
         <!-- /.panel -->
     </div>
-    <!-- /.col-lg-12 -->
+    <!-- /.col-lg-6 -->
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Button Groups
+            </div>
+
+            <div class="panel-body">
+                <div class="text-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary sharp">PRIMARY</button>
+                        <button type="button" class="btn btn-success sharp">SUCCESS</button>
+                        <button type="button" class="btn btn-info sharp">INFO</button>
+                        <button type="button" class="btn btn-warning sharp">WARNING</button>
+                        <button type="button" class="btn btn-danger sharp">DANGER</button>
+                    </div>
+
+                    <hr class="wide">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary sharp raised gradient">PRIMARY</button>
+                        <button type="button" class="btn btn-success sharp raised gradient">SUCCESS</button>
+                        <button type="button" class="btn btn-info sharp raised gradient">INFO</button>
+                        <button type="button" class="btn btn-warning sharp raised gradient">WARNING</button>
+                        <button type="button" class="btn btn-danger sharp raised gradient">DANGER</button>
+                    </div>
+
+                    <hr class="wide">
+
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-primary sharp">PRIMARY</button>
+                        <button type="button" class="btn btn-success sharp">SUCCESS</button>
+                        <button type="button" class="btn btn-info sharp">INFO</button>
+                        <button type="button" class="btn btn-warning sharp">WARNING</button>
+                        <button type="button" class="btn btn-danger sharp">DANGER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- /.row -->
 
 <div class="row">
     <div class="col-lg-6">

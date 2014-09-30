@@ -218,11 +218,14 @@
             </li>
             <!-- /.dropdown -->
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                <a class="dropdown-toggle nav-profile-photo-link" data-toggle="dropdown" href="#">
+                    {# <i class="fa fa-user fa-fw"></i> #}
+                    <img src="images/avatar6.jpg" class="nav-profile-photo" alt="">
+                    <span>Jane Smith</span>
+                    <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
                     </li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>
@@ -397,7 +400,7 @@
                         <a href="#"><i class="fa fa-files-o fa-fw"></i> Pages<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Profile</a>
+                                <a href="profile.html"><i class="fa fa-dashboard fa-fw"></i> Profile</a>
                             </li>
                             <li>
                                 <a href="login.html">Login</a>
@@ -409,7 +412,7 @@
                                 <a href="timeline.html">Timeline</a>
                             </li>
                             <li>
-                                <a href="register.html">Pricing Tables</a>
+                                <a href="pricing-tables.html">Pricing Tables</a>
                             </li>
                             <li>
                                 <a href="gallery.html">Gallery</a>
@@ -421,10 +424,10 @@
                                 <a href="search-results.html">Search results</a>
                             </li>
                             <li>
-                                <a href="register.html">Error 404</a>
+                                <a href="error-404.html">Error 404</a>
                             </li>
                             <li>
-                                <a href="register.html">Error 500</a>
+                                <a href="error-500.html">Error 500</a>
                             </li>
                             <li>
                                 <a href="blank.html">Blank Page</a>

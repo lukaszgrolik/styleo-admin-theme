@@ -11,8 +11,11 @@
 
     <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title>
 
+    <link rel="shortcut icon" href="favicon.ico">
+
     <!-- Bootstrap Core CSS -->
-    <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet">
+    {# <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet"> #}
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Social Buttons CSS -->
     <link href="sb-admin-2/css/plugins/social-buttons.css" rel="stylesheet">
@@ -25,7 +28,8 @@
     <link href="css/styleo-admin.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    {# <link href="sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> #}
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
 
@@ -45,10 +49,12 @@
     {% block content %}{% endblock %}
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="sb-admin-2/js/jquery-1.11.0.js"></script>
+    <!--<script src="sb-admin-2/js/jquery-1.11.0.js"></script>-->
+    <script src="bower_components/jquery-1.11.0/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="sb-admin-2/js/bootstrap.min.js"></script>
+    <!--<script src="sb-admin-2/js/bootstrap.min.js"></script>-->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>

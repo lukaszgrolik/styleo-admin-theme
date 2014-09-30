@@ -171,7 +171,13 @@
 			}
 		}
 
-
+		&:hover {
+			&.btn-primary {background-color: $color-blue;}
+			&.btn-success {background-color: $color-green;}
+			&.btn-info {background-color: $color-cyan;}
+			&.btn-warning {background-color: $color-orange;}
+			&.btn-danger {background-color: $color-red;}
+		}
 
 		&.color-yellow {
 			color: $color-yellow;

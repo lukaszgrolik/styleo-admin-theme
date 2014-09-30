@@ -6,3 +6,54 @@
 		background-color: $color-grey-3;
 	}
 }
+
+.tabs-container {
+	margin-bottom: 20px;
+}
+
+.nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 0;
+
+	li {
+		box-shadow: none !important;
+		margin: 0;
+	}
+
+	li a {
+		background-color: transparent !important;
+		color: $color-dark-grey;
+		border: 0 !important;
+
+		&:hover {
+			color: $color-dark-navy;
+		}
+	}
+
+	li.active a {
+		background-color: #fff !important;
+		border-top: 3px solid $color-blue !important;
+	}
+}
+
+.tab-content {
+	background-color: #fff;
+	padding: 15px;
+}
+
+.tabs-container.bordered {
+	.nav-tabs {
+		li {
+			margin-bottom: -1px;
+		}
+
+		li.active a {
+			border-left: 1px solid $color-light-grey !important;
+			border-right: 1px solid $color-light-grey !important;
+		}
+	}
+
+	.tab-content {
+		border: 1px solid $color-light-grey;
+	}
+}

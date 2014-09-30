@@ -40,7 +40,7 @@ gulp.task('templates', function() {
 		}
 	}))
 	.pipe(gulp.dest(config.paths.web))
-	.pipe(plugins.connect.reload());
+	// .pipe(plugins.connect.reload());
 });
 
 //
@@ -92,5 +92,5 @@ gulp.task('default', [
 	'sass',
 	'watchTemplates',
 	'watchSass',
-	// 'watchWeb'
+	'watchWeb'
 ]);

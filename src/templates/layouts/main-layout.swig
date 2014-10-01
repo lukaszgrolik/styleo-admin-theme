@@ -1,3 +1,59 @@
+{% set mainMenu = [
+    {
+        slug: 'index',
+        title: 'Dashboard',
+        iconClass: 'fa-dashboard'
+    },
+    {
+        slug: 'ui-elements',
+        title: 'UI Elements',
+        iconClass: 'fa-wrench',
+        items: [
+            {
+                slug: 'basic-elements',
+                title: 'Basic Elements'
+            },
+            {
+                slug: 'icons',
+                title: 'Icons',
+                items: [
+                    {
+                        slug: 'font-awesome',
+                        title: 'Font Awesome'
+                    },
+                    {
+                        slug: 'glyphicons',
+                        title: 'Glyphicons'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        slug: 'forms',
+        title: 'Forms',
+        iconClass: 'fa-edit',
+    },
+    {
+        slug: 'charts',
+        title: 'Charts',
+        iconClass: 'fa-bar-chart',
+    },
+    {
+        slug: 'maps',
+        title: 'Maps',
+        iconClass: 'fa-map-marker',
+    }
+] %}
+
+{% macro getPageTitleBySlug(slug) %}
+aaa
+{% endmacro %}
+
+{% macro getPageIsCurrentParent(slug) %}
+aaa
+{% endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +65,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title>
+    {# <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title> #}
+    {# <title>Styleo Admin 1.0 | {{getPageTitleBySlug(currentPageSlug)}}</title> #}
+    <title>Styleo Admin 1.0 | {{currentPageSlug}}</title>
 
     <link rel="shortcut icon" href="favicon.ico">
 

@@ -1,5 +1,7 @@
 {% extends '../layouts/layout-1.swig' %}
 
+{% set currentPageSlug = 'index' %}
+
 {% block title %}Dashboard{% endblock %}
 
 {% block headEnd%}

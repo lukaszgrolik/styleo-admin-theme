@@ -1,5 +1,7 @@
 {% extends '../layouts/layout-1.swig' %}
 
+{% set currentPageSlug = 'font-awesome' %}
+
 {% block title %}Icons - Font Awesome{% endblock %}
 
 {% block breadcrumbs %}

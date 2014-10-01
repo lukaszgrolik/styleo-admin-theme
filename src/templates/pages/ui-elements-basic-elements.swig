@@ -1,11 +1,13 @@
 {% extends '../layouts/layout-1.swig' %}
 
+{% set currentPageSlug = 'basic-elements' %}
+
 {% block title %}Basic elements{% endblock %}
 
-{% block breadcrumbs %}
+{# {% block breadcrumbs %}
 <li><a href="#">UI Elements</a></li>
 <li><a href="#">Basic Elements</a></li>
-{% endblock %}
+{% endblock %} #}
 
 {% block bodyEnd %}
 <script>

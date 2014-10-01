@@ -188,3 +188,24 @@ hr.wide {
 .navbar-top-links li {
 	vertical-align: top;
 }
+
+//
+
+#side-menu {
+	li.current {
+
+		border-left: 5px solid;
+	}
+
+	li.top-current {
+		border-left-color: $color-blue;
+	}
+
+	li.sub-current {
+		border-left-color: $color-green;
+	}
+
+	li.sub-sub-current {
+		border-left-color: $color-red;
+	}
+}

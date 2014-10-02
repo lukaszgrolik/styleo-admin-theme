@@ -30,8 +30,16 @@
     routes:
     - slug: ui-elements-icons-font-awesome
       name: Font Awesome
+      iconClass: fa-flag
+      label:
+        class: badge badge-primary
+        text: 479
     - slug: ui-elements-icons-glyphicons
       name: Glyphicons
+      iconClass: fa-plus-square
+      label:
+        class: badge badge-primary
+        text: 200
 - slug: tables
   name: Tables
   iconClass: fa-table
@@ -76,25 +84,46 @@
   routes:
   - slug: pages-profile
     name: Profile
-  - slug: pages-login-page
-    name: Login Page
+    iconClass: fa-users
+  - slug: pages-login
+    name: Login
+    iconClass: fa-sign-in
   - slug: pages-register
-    name: Register Page
+    name: Register
+    iconClass: fa-user
   - slug: pages-lock-screen
     name: Lock Screen
+    iconClass: fa-lock
+  - slug: pages-forgotten-password
+    name: Forgotten Password
+    iconClass: fa-key
   - slug: pages-timeline
     name: Timeline
+    iconClass: fa-clock-o
+    label:
+      class: label label-warning
+      text: NEW
   - slug: pages-pricing-tables
     name: Pricing Tables
+    iconClass: fa-credit-card
   - slug: pages-gallery
     name: Gallery
+    iconClass: fa-th
+    label:
+      class: label label-danger
+      text: NEW
   - slug: pages-invoice
     name: Invoice
+    iconClass: fa-file-text-o
   - slug: pages-search-results
     name: Search Results
+    iconClass: fa-search
   - slug: pages-error-404
     name: Error 404
+    iconClass: fa-warning
   - slug: pages-error-500
     name: Error 500
+    iconClass: fa-warning
   - slug: pages-blank-page
     name: Blank Page
+    iconClass: fa-edit

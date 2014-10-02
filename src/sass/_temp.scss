@@ -204,7 +204,9 @@ hr.wide {
 		border-left-color: $color-blue;
 
 		> a {
+			background-color: lighten($color-blue, 40%);
 			color: $color-blue;
+			padding-left: 15px - 5px;
 		}
 	}
 
@@ -212,7 +214,9 @@ hr.wide {
 		border-left-color: $color-green;
 
 		> a {
+			background-color: lighten($color-green, 40%);
 			color: $color-green;
+			padding-left: 37px - 5px;
 		}
 	}
 
@@ -220,7 +224,120 @@ hr.wide {
 		border-left-color: $color-red;
 
 		> a {
+			background-color: lighten($color-red, 40%);
 			color: $color-red;
+			padding-left: 52px - 5px;
 		}
 	}
+}
+
+//
+
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger {
+	color: #fff;
+}
+
+.bg-primary {background-color: lighten($color-blue, 30%)}
+.bg-success {background-color: lighten($color-green, 30%)}
+.bg-info {background-color: lighten($color-cyan, 30%)}
+.bg-warning {background-color: lighten($color-orange, 30%)}
+.bg-danger {background-color: lighten($color-red, 30%)}
+
+//
+
+label.custom-checkfield-label {
+	cursor: pointer;
+	padding-left: 0;
+
+	input {
+		visibility: hidden;
+		position: absolute;
+		left: -9999px;
+	}
+
+	.custom-checkfield {
+		background-color: #fff;
+		width: 16px;
+		height: 16px;
+		border: 3px solid $color-blue;
+		display: inline-block;
+		vertical-align: middle;
+
+		&.custom-checkfield-radio {
+			border-radius: 50%;
+		}
+	}
+
+	input:checked + .custom-checkfield {
+		background-color: $color-blue;
+	}
+
+	&.success  {
+		.custom-checkfield {border-color: $color-green}
+		input:checked + .custom-checkfield {background-color: $color-green;}
+	}
+
+	&.info  {
+		.custom-checkfield {border-color: $color-cyan}
+		input:checked + .custom-checkfield {background-color: $color-cyan;}
+	}
+
+	&.warning  {
+		.custom-checkfield {border-color: $color-orange}
+		input:checked + .custom-checkfield {background-color: $color-orange;}
+	}
+
+	&.danger  {
+		.custom-checkfield {border-color: $color-red}
+		input:checked + .custom-checkfield {background-color: $color-red;}
+	}
+
+	input:disabled + .custom-checkfield {
+		border-color: $color-light-grey;
+	}
+
+	input:disabled:checked + .custom-checkfield {
+		background-color: $color-light-grey;
+	}
+}
+
+//
+
+label.custom-switch-label {
+	background-color: $color-blue;
+	width: 32px;
+	height: 16px + 2 * 3px;
+	border: 3px solid $color-blue;
+	display: inline-block;
+	position: relative;
+
+	input {
+		visibility: hidden;
+		position: absolute;
+		left: -9999px;
+	}
+
+	.custom-switch {
+		background-color: #fff;
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+	}
+
+	input:checked .custom-switch {
+		right: 0;
+		width: 100px
+	}
+}
+
+//
+
+.single-window {
+	margin-top: 25%;
 }

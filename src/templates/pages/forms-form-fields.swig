@@ -491,6 +491,209 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <strong>Pure CSS</strong> Checkbox &amp; Radio Inputs
+            </div>
+
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label no-padding-right">Checkboxes</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option Primary</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="custom-checkfield-label success">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option Success</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="custom-checkfield-label info">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option Info</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="custom-checkfield-label warning">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option Warning</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="custom-checkfield-label danger">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option Danger</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label no-padding-right">Checkboxes Inline</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox-inline">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option 1</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option 2</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="checkbox">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option 3</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label no-padding-right">Disabled checkboxes</label>
+                        <div class="col-sm-10">
+                            <div class="checkbox-inline">
+                                <label class="custom-checkfield-label">
+                                    <input type="checkbox" disabled="disabled">
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option 1</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="checkbox" disabled>
+                                    <span class="custom-checkfield"></span>
+                                    <span class="text">Option 2</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="wide">
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label no-padding-right">Radio</label>
+                        <div class="col-sm-10">
+                            <div class="radio">
+                                <label class="custom-checkfield-label">
+                                    <input name="custom-checkfield-radio-1" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 1 </span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="custom-checkfield-label success">
+                                    <input name="custom-checkfield-radio-1" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 2 </span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="custom-checkfield-label info">
+                                    <input name="custom-checkfield-radio-1" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 2 </span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="custom-checkfield-label warning">
+                                    <input name="custom-checkfield-radio-1" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 3 </span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label class="custom-checkfield-label danger">
+                                    <input name="custom-checkfield-radio-1" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 4 </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label no-padding-right">Radio Inline</label>
+                        <div class="col-sm-10">
+                            <div class="radio-inline">
+                                <label class="custom-checkfield-label">
+                                    <input name="custom-checkfield-radio-2" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 1 </span>
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label class="custom-checkfield-label">
+                                    <input name="custom-checkfield-radio-2" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 2 </span>
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label class="custom-checkfield-label">
+                                    <input name="custom-checkfield-radio-2" checked="checked" type="radio">
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 3 </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label no-padding-right">Disabled radio</label>
+                        <div class="col-sm-10">
+                            <div class="radio-inline">
+                                <label class="custom-checkfield-label">
+                                    <input type="radio" disabled>
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 1</span>
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label class="custom-checkfield-label">
+                                    <input checked="checked" type="radio" disabled>
+                                    <span class="custom-checkfield custom-checkfield-radio"></span>
+                                    <span class="text">Option 2</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Pure CSS</strong> Switches
+            </div>
+
+            <div class="panel-body">
+                <label class="custom-switch-label">
+                    <input type="checkbox">
+                    <span class="custom-switch"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 Sliders with <strong>Bootstrap Sliders</strong> Plugin
             </div>
 
@@ -666,13 +869,13 @@ $(function() {
                     <h5>With Icon</h5>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user darkorange"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
                             <input class="form-control" placeholder="Username" type="text">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon bg-blue bordered-blue"><i class="fa fa-envelope-o"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
                             <input class="form-control" placeholder="Email Address" type="text">
                         </div>
                     </div>

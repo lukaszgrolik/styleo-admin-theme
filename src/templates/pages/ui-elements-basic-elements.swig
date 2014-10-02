@@ -217,6 +217,25 @@ $('[data-toggle=popover]').popover()
 </div>
 
 <div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Background Colors
+            </div>
+            <div class="panel-body">
+                <div class="text-center">
+                    <p class="bg-primary">Primary Color Background</p>
+                    <p class="bg-success">Success Color Background</p>
+                    <p class="bg-info">Info Color Background</p>
+                    <p class="bg-warning">Warning Color Background</p>
+                    <p class="bg-danger">Danger Color Background</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
             <div class="panel-heading">

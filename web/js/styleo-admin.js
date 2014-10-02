@@ -1,11 +1,15 @@
 $(function() {
 
+    var sidebarSel = '.sidebar';
+
     sbAdmin2FeaturesInit();
-    sidebarMenuHeight();
+
+    if ($(sidebarSel).length) {
+        sidebarMenuHeight();
+    }
 
     // needed for showing scrollbar when sidebar menu has greater height than sidebar itself (fixed sidebar only)
     function sidebarMenuHeight() {
-        var sidebarSel = '.sidebar';
         var distanceFromSidebarToTop = 0;
         var newSidebarHeight = 0;
 

@@ -6,13 +6,13 @@
 			<ul class="nav nav-second-level">
 				{% for route1 in route.routes %}
 					<li class="{% if getBreadcrumbsRoutes(currentRouteSlug)[1] and route1.slug == getBreadcrumbsRoutes(currentRouteSlug)[1].slug %}current {% if route1.routes %}active{% endif %}{% endif %}">
-						<a href="{% if route1.routes %}#{% else %}{{route1.slug}}.html{% endif %}">{{route1.name}}{% if route1.routes %}<span class="fa arrow"></span>{% endif %}</a>
+						<a href="{% if route1.routes %}#{% else %}{{route1.slug}}.html{% endif %}"><i class="{% if route1.iconClass %}fa fa-fw {{route1.iconClass}}{% endif %}"></i> {{route1.name}}{% if route1.routes %}<span class="fa arrow"></span>{% elseif route1.label %}<span class="{{route1.label.class}} pull-right">{{route1.label.text}}</span>{% endif %}</a>
 
 						{% if route1.routes %}
 							<ul class="nav nav-third-level">
 								{% for route2 in route1.routes %}
 									<li class="{% if getBreadcrumbsRoutes(currentRouteSlug)[2] and route2.slug == getBreadcrumbsRoutes(currentRouteSlug)[2].slug %}current{% endif %}">
-										<a href="{{route2.slug}}.html">{{route2.name}}</a>
+										<a href="{{route2.slug}}.html"><i class="{% if route2.iconClass %}fa fa-fw {{route2.iconClass}}{% endif %}"></i> {{route2.name}} {% if route2.label %}<span class="{{route2.label.class}} pull-right">{{route2.label.text}}</span>{% endif %}</a>
 									</li>
 								{% endfor %}
 							</ul>

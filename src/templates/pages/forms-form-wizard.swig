@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Form Wizard{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Forms</a></li>
-<li><a href="#">Form Wizard</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'forms-form-wizard' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css">

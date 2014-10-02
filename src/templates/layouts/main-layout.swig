@@ -1,4 +1,4 @@
-{% set mainMenu = [
+{# {% set mainMenu = [
     {
         slug: 'index',
         title: 'Dashboard',
@@ -44,7 +44,7 @@
         title: 'Maps',
         iconClass: 'fa-map-marker',
     }
-] %}
+] %} #}
 
 {% macro getPageTitleBySlug(slug) %}
 aaa
@@ -67,7 +67,7 @@ aaa
 
     {# <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title> #}
     {# <title>Styleo Admin 1.0 | {{getPageTitleBySlug(currentPageSlug)}}</title> #}
-    <title>Styleo Admin 1.0 | {{currentPageSlug}}</title>
+    <title>Styleo Admin 1.0 | {{getRouteBySlug(currentRouteSlug).name}}</title>
 
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -118,7 +118,7 @@ aaa
     <script src="sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="sb-admin-2/js/sb-admin-2.js"></script>
+    <!-- <script src="sb-admin-2/js/sb-admin-2.js"></script>-->
 
     <script src="js/styleo-admin.js"></script>
 

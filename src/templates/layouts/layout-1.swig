@@ -22,7 +22,7 @@
         <!-- /.navbar-header -->
 
         <ul class="nav navbar-top-links navbar-left main-breadcrumbs">
-            {% include '../partials/breadcrumbs.swig' %}
+            {% include '../partials/breadcrumbs-menu-items.swig' %}
         </ul>
 
         <ul class="nav navbar-top-links navbar-right">
@@ -252,7 +252,8 @@
                         </div>
                         <!-- /input-group -->
                     </li>
-                    {% include '../partials/main-menu.swig' %}
+                    {% include '../partials/main-menu-items.swig' %}
+
 
                 </ul>
             </div>

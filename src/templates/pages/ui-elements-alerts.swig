@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Alerts{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Alerts</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-alerts' %}
 
 {% block content2 %}
 <div class="row">

@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Form Layouts{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Forms</a></li>
-<li><a href="#">Form Layouts</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'forms-form-layouts' %}
 
 {% block content2 %}
 <div class="row">

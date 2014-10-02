@@ -1,10 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Blank page{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Blank Page</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'pages-blank-page' %}
 
 {% block headEnd %}
 

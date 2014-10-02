@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Tabs &amp; Accordions{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Tabs &amp; Accordions</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-tabs-accordions' %}
 
 {% block content2 %}
 <h2>Tabs</h2>

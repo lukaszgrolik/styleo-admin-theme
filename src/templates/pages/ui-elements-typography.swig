@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Typography{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Typography</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-typography' %}
 
 {% block content2 %}
 <div class="row">

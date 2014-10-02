@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}DataTables{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Tables</a></li>
-<li><a href="#">DataTables</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'tables-datatables' %}
 
 {% block headEnd %}
 <link href="sb-admin-2/css/plugins/dataTables.bootstrap.css" rel="stylesheet">

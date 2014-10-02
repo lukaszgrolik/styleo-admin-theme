@@ -1,14 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% set currentPageSlug = 'font-awesome' %}
-
-{% block title %}Icons - Font Awesome{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Icons</a></li>
-<li><a href="#">Font Awesome</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-icons-font-awesome' %}
 
 {% block content2 %}
 <div class="row">

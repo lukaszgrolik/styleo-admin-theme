@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Vector Maps{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Maps</a></li>
-<li><a href="#">Vector Maps</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'maps-vector-maps' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">

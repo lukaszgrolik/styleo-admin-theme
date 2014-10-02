@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Google Maps{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Maps</a></li>
-<li><a href="#">Google Maps</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'maps-google-maps' %}
 
 {% block headEnd %}
 

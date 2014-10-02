@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Buttons{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Buttons</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-buttons' %}
 
 {% block content2 %}
 <div class="row">

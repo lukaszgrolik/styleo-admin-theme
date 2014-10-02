@@ -1,8 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% set currentPageSlug = 'index' %}
-
-{% block title %}Dashboard{% endblock %}
+{% set currentRouteSlug = 'index' %}
 
 {% block headEnd%}
 <link href="sb-admin-2/css/plugins/morris.css" rel="stylesheet">

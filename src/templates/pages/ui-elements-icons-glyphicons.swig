@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Glyphicons{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Icons</a></li>
-<li><a href="#">Glyphicons</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-icons-glyphicons' %}
 
 {% block headEnd %}
 

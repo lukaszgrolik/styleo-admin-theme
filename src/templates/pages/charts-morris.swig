@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Morris{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Charts</a></li>
-<li><a href="#">Morris</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'charts-morris' %}
 
 {% block headEnd %}
 <link href="sb-admin-2/css/plugins/morris.css" rel="stylesheet">

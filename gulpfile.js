@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch')
 var plugins = require('gulp-load-plugins')();
+var swigExtras = require('swig-extras');
+var swigLocals = require('./build-utils');
 
 var config = {
 	name: 'styleo-admin',
@@ -35,8 +37,12 @@ gulp.task('templates', function() {
 	gulp.src(config.paths.src + '/templates/pages/**/*.swig')
 	.pipe(plugins.plumber())
 	.pipe(plugins.swig({
+		setup: function(swig) {
+			swigExtras.useFilter(swig, 'trim');
+		},
 		defaults: {
-			cache: false
+			cache: false,
+			locals: swigLocals
 		}
 	}))
 	.pipe(gulp.dest(config.paths.web))

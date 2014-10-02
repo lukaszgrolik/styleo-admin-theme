@@ -1,10 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Blank page{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Timeline</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'pages-timeline' %}
 
 {% block headEnd%}
 <link href="sb-admin-2/css/plugins/timeline.css" rel="stylesheet">

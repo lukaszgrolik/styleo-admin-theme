@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Form Fields{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Forms</a></li>
-<li><a href="#">Form Fields</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'forms-form-fields' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/blue.css">

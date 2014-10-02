@@ -193,19 +193,34 @@ hr.wide {
 
 #side-menu {
 	li.current {
-
 		border-left: 5px solid;
+
+		> a {
+			font-weight: bold;
+		}
 	}
 
-	li.top-current {
+	> li.current {
 		border-left-color: $color-blue;
+
+		> a {
+			color: $color-blue;
+		}
 	}
 
-	li.sub-current {
+	.nav-second-level > li.current {
 		border-left-color: $color-green;
+
+		> a {
+			color: $color-green;
+		}
 	}
 
-	li.sub-sub-current {
+	.nav-third-level > li.current  {
 		border-left-color: $color-red;
+
+		> a {
+			color: $color-red;
+		}
 	}
 }

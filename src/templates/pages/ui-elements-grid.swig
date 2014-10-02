@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Grid{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Grid</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-grid' %}
 
 {% block content2 %}
 <div class="row">

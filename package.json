@@ -10,6 +10,8 @@
     "gulp-sass": "^0.7.3",
     "gulp-size": "^1.1.0",
     "gulp-swig": "^0.7.2",
-    "gulp-watch": "^1.0.5"
+    "gulp-watch": "^1.0.5",
+    "swig-extras": "0.0.1",
+    "yamljs": "^0.2.0"
   }
 }

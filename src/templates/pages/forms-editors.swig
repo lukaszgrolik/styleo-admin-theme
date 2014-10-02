@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Blank page{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Forms</a></li>
-<li><a href="#">Editors</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'forms-editors' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/summernote/dist/summernote.css">

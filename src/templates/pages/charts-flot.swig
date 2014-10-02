@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Flot{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Charts</a></li>
-<li><a href="#">Flot</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'charts-flot' %}
 
 {% block content2 %}
 <!-- /.row -->

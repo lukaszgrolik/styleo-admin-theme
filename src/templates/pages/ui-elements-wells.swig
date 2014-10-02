@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Wells{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Wells</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-wells' %}
 
 {% block content2 %}
 <h2>Well Sizes</h2>

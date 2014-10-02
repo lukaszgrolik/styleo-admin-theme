@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Panels{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">UI Elements</a></li>
-<li><a href="#">Panels</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'ui-elements-panels' %}
 
 {% block content2 %}
 <h2>Panel Types</h2>

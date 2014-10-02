@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Simple Tables{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Tables</a></li>
-<li><a href="#">Simple Tables</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'tables-simple-responsive-tables' %}
 
 {% block headEnd %}
 {% endblock %}

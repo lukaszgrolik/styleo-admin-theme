@@ -1,10 +1,6 @@
 {% extends '../layouts/main-layout.swig' %}
 
-{% block title %}Login page{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Login Page</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'pages-login-page' %}
 
 {% block content %}
 <div class="container">

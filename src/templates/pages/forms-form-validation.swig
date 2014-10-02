@@ -1,11 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% block title %}Form Validation{% endblock %}
-
-{% block breadcrumbs %}
-<li><a href="#">Forms</a></li>
-<li><a href="#">Validation</a></li>
-{% endblock %}
+{% set currentRouteSlug = 'forms-form-validation' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/bootstrapvalidator/dist/css/bootstrapValidator.css">

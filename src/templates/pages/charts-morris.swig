@@ -3,7 +3,13 @@
 {% set currentRouteSlug = 'charts-morris' %}
 
 {% block headEnd %}
-<link href="sb-admin-2/css/plugins/morris.css" rel="stylesheet">
+<link href="bower_components/morrisjs/morris.css" rel="stylesheet">
+{% endblock %}
+
+{% block bodyEnd %}
+<script src="bower_components/raphael/raphael-min.js"></script>
+<script src="bower_components/morrisjs/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
 {% endblock %}
 
 {% block content2 %}
@@ -72,8 +78,3 @@
 <!-- /.row -->
 {% endblock %}
 
-{% block bodyEnd %}
-<script src="sb-admin-2/js/plugins/morris/raphael.min.js"></script>
-<script src="sb-admin-2/js/plugins/morris/morris.min.js"></script>
-<script src="js/plugins/morris/morris-data.js"></script>
-{% endblock %}

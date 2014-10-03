@@ -65,3 +65,62 @@
 		color: $color-red;
 	}
 }
+
+//
+
+.form-control-feedback {
+	.has-success & {
+		color: $color-green;
+	}
+
+	.has-warning & {
+		color: $color-orange;
+	}
+
+	.has-error & {
+		color: $color-red;
+	}
+}
+
+//
+
+.input-icon {
+	position: relative;
+	display: block;
+
+	input {
+		// background-color: pink;
+		// padding-left: 35px;
+		&.input-lg {
+			+ i {
+				font-size: 26px;
+			}
+		}
+	}
+
+	i {
+		position: absolute;
+		top: 10px;
+	}
+
+	&:not(.icon-right) {
+		input {
+			padding-left: 30px;
+		}
+
+		i {
+			left: 10px;
+		}
+	}
+
+	&.icon-right {
+		input {
+			padding-right: 30px;
+		}
+
+		i {
+
+			right: 15px;
+		}
+	}
+}

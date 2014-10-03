@@ -1,0 +1,49 @@
+.slider {
+	.slider-track {
+		background: $color-grey-4;
+		box-shadow: none;
+	}
+
+	.slider-selection {
+		background: $color-light-grey;
+	}
+
+	.slider-handle {
+		background: lighten($color-light-grey, 20%);
+		opacity: 1;
+		box-shadow: none;
+		border: 3px solid #fff;
+	}
+
+	&.sharp {
+		.slider-track,
+		.slider-selection {
+			border-radius: 0;
+		}
+	}
+}
+
+.slider-primary {
+	.slider-selection {background: $color-blue;}
+	.slider-handle {background: lighten($color-blue, 20%);}
+}
+
+.slider-success {
+	.slider-selection {background: $color-green;}
+	.slider-handle {background: lighten($color-green, 20%);}
+}
+
+.slider-info {
+	.slider-selection {background: $color-cyan;}
+	.slider-handle {background: lighten($color-cyan, 20%);}
+}
+
+.slider-warning {
+	.slider-selection {background: $color-orange;}
+	.slider-handle {background: lighten($color-orange, 20%);}
+}
+
+.slider-danger {
+	.slider-selection {background: $color-red;}
+	.slider-handle {background: lighten($color-red, 20%);}
+}

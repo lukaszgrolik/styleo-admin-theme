@@ -2,6 +2,16 @@
 
 {% set currentRouteSlug = 'charts-flot' %}
 
+{% block bodyEnd %}
+<script src="bower_components/flot/excanvas.js"></script>
+<script src="bower_components/flot/jquery.flot.js"></script>
+<script src="bower_components/flot/jquery.flot.time.js"></script>
+<script src="bower_components/flot/jquery.flot.pie.js"></script>
+<script src="bower_components/flot/jquery.flot.resize.js"></script>
+<script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="js/plugins/flot/flot-data.js"></script>
+{% endblock %}
+
 {% block content2 %}
 <!-- /.row -->
 <div class="row">
@@ -89,11 +99,3 @@
 <!-- /.row -->
 {% endblock %}
 
-{% block bodyEnd %}
-<script src="sb-admin-2/js/plugins/flot/excanvas.min.js"></script>
-<script src="sb-admin-2/js/plugins/flot/jquery.flot.js"></script>
-<script src="sb-admin-2/js/plugins/flot/jquery.flot.pie.js"></script>
-<script src="sb-admin-2/js/plugins/flot/jquery.flot.resize.js"></script>
-<script src="sb-admin-2/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-<script src="js/plugins/flot/flot-data.js"></script>
-{% endblock %}

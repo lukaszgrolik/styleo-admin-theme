@@ -72,21 +72,18 @@ aaa
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Bootstrap Core CSS -->
-    {# <link href="sb-admin-2/css/bootstrap.min.css" rel="stylesheet"> #}
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Social Buttons CSS -->
-    <link href="sb-admin-2/css/plugins/social-buttons.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="sb-admin-2/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
 
     <!-- Custom CSS -->
-    <link href="sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
     <link href="css/styleo-admin.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    {# <link href="sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> #}
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
@@ -107,19 +104,15 @@ aaa
     {% block content %}{% endblock %}
 
     <!-- jQuery Version 1.11.0 -->
-    <!--<script src="sb-admin-2/js/jquery-1.11.0.js"></script>-->
     <script src="bower_components/jquery-1.11.0/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <!--<script src="sb-admin-2/js/bootstrap.min.js"></script>-->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <!-- <script src="sb-admin-2/js/sb-admin-2.js"></script>-->
-
     <script src="js/styleo-admin.js"></script>
 
     {% block bodyEnd %}{% endblock %}

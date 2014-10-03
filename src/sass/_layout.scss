@@ -181,3 +181,62 @@
 	border-bottom: 1px solid $color-grey-2;
 	margin-bottom: 30px;
 }
+
+//
+
+.nav-profile-photo-link {
+	padding-left: 5px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+.nav-profile-photo {
+	height: 40px;
+	margin-right: 5px;
+}
+
+.navbar-top-links li {
+	vertical-align: top;
+}
+
+//
+
+#side-menu {
+	li.current {
+		border-left: 5px solid;
+
+		> a {
+			font-weight: bold;
+		}
+	}
+
+	> li.current {
+		border-left-color: $color-blue;
+
+		> a {
+			background-color: lighten($color-blue, 40%);
+			color: $color-blue;
+			padding-left: 15px - 5px;
+		}
+	}
+
+	.nav-second-level > li.current {
+		border-left-color: $color-green;
+
+		> a {
+			background-color: lighten($color-green, 40%);
+			color: $color-green;
+			padding-left: 37px - 5px;
+		}
+	}
+
+	.nav-third-level > li.current  {
+		border-left-color: $color-red;
+
+		> a {
+			background-color: lighten($color-red, 40%);
+			color: $color-red;
+			padding-left: 52px - 5px;
+		}
+	}
+}

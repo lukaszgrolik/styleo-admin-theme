@@ -3,12 +3,12 @@
 {% set currentRouteSlug = 'tables-datatables' %}
 
 {% block headEnd %}
-<link href="sb-admin-2/css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+<link href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
 {% endblock %}
 
 {% block bodyEnd %}
-<script src="sb-admin-2/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="sb-admin-2/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
 <script>
 $(document).ready(function() {

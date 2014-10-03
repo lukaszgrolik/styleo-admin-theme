@@ -1,0 +1,13 @@
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger {
+	color: #fff;
+}
+
+.bg-primary {background-color: lighten($color-blue, 30%)}
+.bg-success {background-color: lighten($color-green, 30%)}
+.bg-info {background-color: lighten($color-cyan, 30%)}
+.bg-warning {background-color: lighten($color-orange, 30%)}
+.bg-danger {background-color: lighten($color-red, 30%)}

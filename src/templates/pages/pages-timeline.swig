@@ -3,7 +3,7 @@
 {% set currentRouteSlug = 'pages-timeline' %}
 
 {% block headEnd%}
-<link href="sb-admin-2/css/plugins/timeline.css" rel="stylesheet">
+
 {% endblock %}
 
 {% block bodyEnd %}

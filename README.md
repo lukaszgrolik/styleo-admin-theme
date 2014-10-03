@@ -45,3 +45,16 @@
 - [DataTables](http://www.datatables.net/)
 - [metisMenu](http://demo.onokumus.com/metisMenu/)
 - [Google Fonts](http://www.google.com/fonts)
+
+- [CKEditor]
+- [Summernote]
+- [select2]
+- [iCheck]
+- [bootstrap-datepicker]
+- [bootstrap-daterangepicker]
+- [bootstrap-social]
+- [bootstrapvalidator]
+- [switchery]
+- [fuelux]
+- [jvectormap]
+- [seiyria-bootstrap-slider]

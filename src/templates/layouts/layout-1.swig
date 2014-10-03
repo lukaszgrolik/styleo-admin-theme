@@ -28,42 +28,67 @@
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-envelope fa-fw"></i>
+                    <i class="badge badge-danger badge-number">3</i>
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                    <em>Yesterday</em>
-                                </span>
+                    <li class="message-item">
+                        <a href="#" class="message-link clearfix">
+                            <div class="message-avatar">
+                                <img src="images/avatar6.jpg" alt="Divyia Austin">
                             </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            <div class="message">
+                                <div class="message-sender">
+                                    Divyia Austin
+                                </div>
+                                <div class="message-time">
+                                    2 minutes ago
+                                </div>
+                                <div class="message-body">
+                                    Here's the recipe for apple pie
+                                    to identify the sending application when the senders image is shown for the main icon
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                    <em>Yesterday</em>
-                                </span>
+                    <li class="message-item">
+                        <a href="#" class="message-link clearfix">
+                            <div class="message-avatar">
+                                <img src="images/avatar6.jpg" alt="Divyia Austin">
                             </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            <div class="message">
+                                <div class="message-sender">
+                                    Divyia Austin
+                                </div>
+                                <div class="message-time">
+                                    2 minutes ago
+                                </div>
+                                <div class="message-body">
+                                    Here's the recipe for apple pie
+                                    to identify the sending application when the senders image is shown for the main icon
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="divider"></li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <strong>John Smith</strong>
-                                <span class="pull-right text-muted">
-                                    <em>Yesterday</em>
-                                </span>
+                    <li class="message-item">
+                        <a href="#" class="message-link clearfix">
+                            <div class="message-avatar">
+                                <img src="images/avatar6.jpg" alt="Divyia Austin">
                             </div>
-                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            <div class="message">
+                                <div class="message-sender">
+                                    Divyia Austin
+                                </div>
+                                <div class="message-time">
+                                    2 minutes ago
+                                </div>
+                                <div class="message-body">
+                                    Here's the recipe for apple pie
+                                    to identify the sending application when the senders image is shown for the main icon
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="divider"></li>
@@ -79,7 +104,8 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-tasks fa-fw"></i>
+                    <i class="badge badge-danger badge-number">3</i>
                 </a>
                 <ul class="dropdown-menu dropdown-tasks">
                     <li>
@@ -158,7 +184,8 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-bell fa-fw"></i>
+                    <i class="badge badge-danger badge-number">3</i>
                 </a>
                 <ul class="dropdown-menu dropdown-alerts">
                     <li>
@@ -224,7 +251,7 @@
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> My Profile</a>
                     </li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>

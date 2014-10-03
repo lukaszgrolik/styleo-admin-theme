@@ -46,9 +46,21 @@
 .navbar-top-links li a.dropdown-toggle {
 	background-color: transparent !important;
 	color: #fff;
+	padding-left: 9px;
+	padding-right: 9px;
+	position: relative;
+	z-index: 1;
 
 	&:hover {
 		background-color: $color-dark-grey-2 !important;
+	}
+
+	.badge-number {
+		font-style: normal;
+		position: absolute;
+		z-index: 20;
+		right: 0;
+		top: 8px;
 	}
 }
 
@@ -188,9 +200,11 @@
 	padding-left: 5px !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
+	margin-left: 20px;
 }
 
 .nav-profile-photo {
+	border-radius: 50%;
 	height: 40px;
 	margin-right: 5px;
 }
@@ -238,5 +252,70 @@
 			color: $color-red;
 			padding-left: 52px - 5px;
 		}
+	}
+}
+
+//
+
+.dropdown-messages {
+	padding: 0 !important;
+
+	.divider {
+		margin: 0;
+	}
+
+	.message-item {
+		// border-top: 1px solid red;
+		padding: 5px !important;
+	}
+
+	.message-link {
+		padding: 0 !important;
+		display: block;
+		clear: both;
+	}
+
+	.message-avatar,
+	.message {
+		float: left;
+		// display: inline-block;
+		// vertical-align: top;
+	}
+
+	.message-avatar {
+		width: 15%;
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+			display: inline-block;
+		}
+	}
+
+	.message {
+		font-size: 12px;
+		padding: 0 15px;
+		width: 85%;
+	}
+
+	.message-sender,
+	.message-time {
+		display: inline-block;
+	}
+
+	.message-sender {
+
+	}
+
+	.message-time {
+		font-weight: 300;
+		font-style: italic;
+		float: right;
+	}
+
+	.message-body {
+		font-weight: 300;
+		margin-top: 5px;
+
 	}
 }

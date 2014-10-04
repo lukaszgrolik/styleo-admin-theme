@@ -65,6 +65,13 @@
     name: Form Validation
   - slug: forms-editors
     name: Editors
+    routes:
+    - slug: forms-editors-simple-wysiwyg
+      name: Simple WYSIWYG Editors
+    - slug: forms-editors-markdown
+      name: Markdown Editors
+    - slug: forms-editors-ckeditor
+      name: CKEditor
 - slug: charts
   name: Charts
   iconClass: fa-bar-chart

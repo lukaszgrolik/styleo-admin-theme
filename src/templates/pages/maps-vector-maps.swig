@@ -9,11 +9,17 @@
 {% block bodyEnd %}
 <script src="bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="bower_components/bower-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-
+<script src="js/plugins/jvectormap/jquery-jvectormap-us-merc-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-fr-merc-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-uk-mill-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-in-mill-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-au-mill-en.js"></script>
+<script src="js/plugins/jvectormap/jquery-jvectormap-ca-lcc-en.js"></script>
 
 <script>
 $(function() {
-	/*Map*/
+  /*Map*/
   $('#world-map').vectorMap({
       map: 'world_mill_en',
       backgroundColor: '#383A41',
@@ -122,31 +128,31 @@ $(function() {
       }
     });
 
-  $('#vector-map').vectorMap({
-    map: 'map',
-    backgroundColor: 'transparent',
-    regionStyle: {
-        initial: {
-          fill: '#D9DADE',
-          "fill-opacity": 0.8,
-          stroke: 'none',
-          "stroke-width": 0,
-          "stroke-opacity": 1
-        },
-        hover: {
-          "fill-opacity": 0.8
-        }
-      },
-    markerStyle:{
-      initial:{
-        r: 10
-      }
-    },
-    markers: [
-        {coords: [100, 100], name: 'Marker 1', style: {fill: '#acb1b6',stroke:'#cfd5db',"stroke-width": 3}},
-        {coords: [200, 200], name: 'Marker 2', style: {fill: '#acb1b6',stroke:'#cfd5db',"stroke-width": 3}},
-    ]
-  });
+  // $('#vector-map').vectorMap({
+  //   map: 'map',
+  //   backgroundColor: 'transparent',
+  //   regionStyle: {
+  //       initial: {
+  //         fill: '#D9DADE',
+  //         "fill-opacity": 0.8,
+  //         stroke: 'none',
+  //         "stroke-width": 0,
+  //         "stroke-opacity": 1
+  //       },
+  //       hover: {
+  //         "fill-opacity": 0.8
+  //       }
+  //     },
+  //   markerStyle:{
+  //     initial:{
+  //       r: 10
+  //     }
+  //   },
+  //   markers: [
+  //       {coords: [100, 100], name: 'Marker 1', style: {fill: '#acb1b6',stroke:'#cfd5db',"stroke-width": 3}},
+  //       {coords: [200, 200], name: 'Marker 2', style: {fill: '#acb1b6',stroke:'#cfd5db',"stroke-width": 3}},
+  //   ]
+  // });
 
     $('#canada-map').vectorMap({
       map: 'ca_lcc_en',
@@ -166,83 +172,106 @@ $(function() {
 
 {% block content2 %}
 <div class="row">
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>United States</h3>
-			</div>
-			<div class="content" id="usa-map" style="height: 380px;"></div>
-		</div>
-	</div>
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        World Map
+      </div>
+      <div class="panel-body">
+        <div id="world-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>France</h3>
-			</div>
-			<div class="content" id="france-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        United States
+      </div>
+      <div class="panel-body">
+        <div id="usa-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>United Kingdom</h3>
-			</div>
-			<div class="content" id="uk-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        France
+      </div>
+      <div class="panel-body">
+        <div id="france-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>Chicago</h3>
-			</div>
-			<div class="content" id="chicago-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        United Kingdom
+      </div>
+      <div class="panel-body">
+        <div id="uk-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>Australia</h3>
-			</div>
-			<div class="content" id="australia-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Chicago
+      </div>
+      <div class="panel-body">
+        <div id="chicago-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>India</h3>
-			</div>
-			<div class="content" id="india-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Australia
+      </div>
+      <div class="panel-body">
+        <div id="australia-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>Custom Map</h3>
-			</div>
-			<div class="content" id="vector-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        India
+      </div>
+      <div class="panel-body">
+        <div id="india-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-6 col-md-6">
-		<div class="block-flat">
-			<div class="header">
-				<h3>Canada</h3>
-			</div>
-			<div class="content" id="canada-map" style="height: 380px;">
-			</div>
-		</div>
-	</div>
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Custom Map
+      </div>
+
+      <div class="panel-body">
+        <div id="vector-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Canada
+      </div>
+      <div class="panel-body">
+        <div id="canada-map" style="height: 380px;"></div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

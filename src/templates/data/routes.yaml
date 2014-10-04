@@ -1,6 +1,6 @@
 - slug: index
   name: Dashboard
-  iconClass: fa-dashboard
+  iconClass: fa-home
 - slug: ui-elements
   name: UI Elements
   iconClass: fa-wrench
@@ -25,6 +25,9 @@
     name: Typography
   - slug: ui-elements-grid
     name: Grid
+    label:
+      class: label label-default
+      text: 12 COLUMNS
   - slug: ui-elements-icons
     name: Icons
     routes:
@@ -115,6 +118,9 @@
   - slug: pages-invoice
     name: Invoice
     iconClass: fa-file-text-o
+  - slug: pages-calendar
+    name: Calendar
+    iconClass: fa-calendar
   - slug: pages-search-results
     name: Search Results
     iconClass: fa-search
@@ -126,4 +132,7 @@
     iconClass: fa-warning
   - slug: pages-blank-page
     name: Blank Page
-    iconClass: fa-edit
+    iconClass: fa-file-o
+- slug: documentation
+  name: Documentation
+  iconClass: fa-graduation-cap

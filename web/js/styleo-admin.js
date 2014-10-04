@@ -8,6 +8,8 @@ $(function() {
         sidebarMenuHeight();
     }
 
+    $('.nano').nanoScroller();
+
     // needed for showing scrollbar when sidebar menu has greater height than sidebar itself (fixed sidebar only)
     function sidebarMenuHeight() {
         var distanceFromSidebarToTop = 0;

@@ -21,7 +21,10 @@
     "flot": "~0.8.3",
     "DataTables": "~1.10.2",
     "flot.tooltip": "~0.8.4",
-    "bootstrap-social": "~4.7.0",
-    "datatables-plugins": "*"
+    "bootstrap-social": "~4.8.0",
+    "datatables-plugins": "*",
+    "nanoscroller": "~0.8.4",
+    "fullcalendar": "~2.1.1",
+    "jquery-ui": "~1.11.1"
   }
 }

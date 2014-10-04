@@ -80,6 +80,8 @@ aaa
     <!-- MetisMenu CSS -->
     <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
 
+    <link rel="stylesheet" href="bower_components/nanoscroller/bin/css/nanoscroller.css">
+
     <!-- Custom CSS -->
     <link href="css/styleo-admin.css" rel="stylesheet">
 
@@ -111,6 +113,9 @@ aaa
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+
+    <script src="bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/styleo-admin.js"></script>

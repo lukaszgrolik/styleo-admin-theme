@@ -55,8 +55,10 @@
   name: Forms
   iconClass: fa-edit
   routes:
-  - slug: forms-form-fields
-    name: Form Fields
+  - slug: forms-form-text-fields
+    name: Form Text Fields
+  - slug: forms-form-controls-plugins
+    name: 'Form Controls & Plugins'
   - slug: forms-form-layouts
     name: Form Layouts
   - slug: forms-form-wizard

@@ -82,6 +82,8 @@ aaa
 
     <link rel="stylesheet" href="bower_components/nanoscroller/bin/css/nanoscroller.css">
 
+    {% block headEnd %}{% endblock %}
+
     <!-- Custom CSS -->
     <link href="css/styleo-admin.css" rel="stylesheet">
 
@@ -96,9 +98,6 @@ aaa
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    {% block headEnd %}{% endblock %}
-
 </head>
 
 <body>

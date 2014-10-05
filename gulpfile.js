@@ -38,6 +38,7 @@ gulp.task('templates', function() {
 	.pipe(plugins.plumber())
 	.pipe(plugins.swig({
 		setup: function(swig) {
+			swigExtras.useTag(swig, 'markdown');
 			swigExtras.useFilter(swig, 'trim');
 		},
 		defaults: {
@@ -78,7 +79,7 @@ gulp.task('sass', function() {
 //
 
 gulp.task('watch', function() {
-	gulp.watch(config.paths.src + '/templates/**/*.swig', ['templates']);
+	gulp.watch([config.paths.src + '/templates/**/*.swig', '*.md'], ['templates']);
 	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 	// gulp.watch(config.paths.web + '/*.html', ['livereload']);
 });

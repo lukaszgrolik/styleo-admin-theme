@@ -57,16 +57,22 @@
   routes:
   - slug: forms-form-text-fields
     name: Form Text Fields
+    iconClass: fa-pencil
   - slug: forms-form-controls-plugins
     name: 'Form Controls & Plugins'
+    iconClass: fa-dot-circle-o
   - slug: forms-form-layouts
     name: Form Layouts
+    iconClass: fa-th-large
   - slug: forms-form-wizard
     name: Form Wizard
+    iconClass: fa-magic
   - slug: forms-form-validation
     name: Form Validation
+    iconClass: fa-check
   - slug: forms-editors
     name: Editors
+    iconClass: fa-edit
     routes:
     - slug: forms-editors-simple-wysiwyg
       name: Simple WYSIWYG Editors

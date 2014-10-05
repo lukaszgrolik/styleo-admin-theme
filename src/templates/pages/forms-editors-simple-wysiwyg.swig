@@ -53,7 +53,7 @@ $(function() {
 			</div>
 
 			<div class="panel-body">
-				<textarea id="bootstrap-wysihtml5" style="width: 100%; height: 200px;">></textarea>
+				<textarea id="bootstrap-wysihtml5" style="width: 100%; height: 200px;"></textarea>
 			</div>
 		</div>
 	</div>

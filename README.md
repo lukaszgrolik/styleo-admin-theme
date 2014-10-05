@@ -58,3 +58,24 @@
 - [fuelux]
 - [jvectormap]
 - [seiyria-bootstrap-slider]
+
+## Test
+
+`foo/bar/baz`
+
+```
+web
+  css
+  js
+  images
+src
+  sass
+  templates
+README.md
+```
+
+```css
+a {
+  padding: 0;
+}
+```

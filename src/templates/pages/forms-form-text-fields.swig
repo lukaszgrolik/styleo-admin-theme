@@ -177,6 +177,73 @@
     </div>
 
     <div class="col-lg-6">
+        <div class="panel panel-info raised gradient">
+            <div class="panel-heading">
+                <i class="fa fa-flag"></i>
+                Input Icons
+            </div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control" id="userameInput" placeholder="Username" type="text">
+                            <i class="glyphicon glyphicon-user circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control" id="emailInput" placeholder="Email Address" type="text">
+                            <i class="fa fa-envelope-o circular"></i>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon icon-right">
+                            <input class="form-control" id="passwordInput" placeholder="Password" type="text">
+                            <i class="fa fa-lock circular"></i>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <span class="input-icon icon-right">
+                                    <input class="form-control" placeholder="Name" type="text">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <span class="input-icon icon-right">
+                                    <input class="form-control" placeholder="Phone" type="text">
+                                    <i class="glyphicon glyphicon-earphone"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <span class="input-icon icon-right">
+                                    <input class="form-control date-picker" id="id-date-picker-1" data-date-format="dd-mm-yyyy" placeholder="Birth Date" type="text">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <span class="input-icon icon-right">
+                                    <input class="form-control" placeholder="Mobile" type="text">
+                                    <i class="glyphicon glyphicon-phone"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Button Addons

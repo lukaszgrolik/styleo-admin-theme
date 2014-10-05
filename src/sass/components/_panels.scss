@@ -5,8 +5,9 @@
 	& > .panel-heading {
 		color: #fff;
 		font-family: get-font-list(rw);
-		font-size: 16px;
-		font-weight: 400;
+		font-size: 18px;
+		font-weight: 300;
+		padding-top: 15px;
 		border-bottom: 0;
 	}
 }
@@ -157,27 +158,27 @@
 //
 
 .panel-default.gradient > .panel-heading {
-	background: linear-gradient(to bottom, #fff 50%, lighten($color-grey-3, 3%) 50%);
+	background: linear-gradient(to bottom, #fff 55%, lighten($color-grey-3, 3%) 45%);
 }
 
 .panel-primary.gradient > .panel-heading {
-	background: linear-gradient(to bottom, lighten($color-blue, 10%) 50%, $color-blue 50%);
+	background: linear-gradient(to bottom, lighten($color-blue, 10%) 55%, $color-blue 45%);
 }
 
 .panel-success.gradient > .panel-heading {
-	background: linear-gradient(to bottom, lighten($color-green, 10%) 50%, $color-green 50%);
+	background: linear-gradient(to bottom, lighten($color-green, 10%) 55%, $color-green 45%);
 }
 
 .panel-info.gradient > .panel-heading {
-	background: linear-gradient(to bottom, lighten($color-cyan, 10%) 50%, $color-cyan 50%);
+	background: linear-gradient(to bottom, lighten($color-cyan, 10%) 55%, $color-cyan 40%);
 }
 
 .panel-warning.gradient > .panel-heading {
-	background: linear-gradient(to bottom, lighten($color-orange, 10%) 50%, $color-orange 50%);
+	background: linear-gradient(to bottom, lighten($color-orange, 10%) 55%, $color-orange 45%);
 }
 
 .panel-danger.gradient > .panel-heading {
-	background: linear-gradient(to bottom, lighten($color-red, 10%) 50%, $color-red 50%);
+	background: linear-gradient(to bottom, lighten($color-red, 10%) 55%, $color-red 45%);
 }
 
 //

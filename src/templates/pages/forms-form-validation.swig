@@ -94,7 +94,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Field Types
+                Form
             </div>
             <div class="panel-body">
                 <form id="registrationForm1" method="post" class="form-horizontal"
@@ -102,9 +102,6 @@ $(function() {
                       data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
                       data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
                       data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
-                    <div class="form-title">
-                        Basic Validator With HTML Attributes
-                    </div>
                     <div class="form-group">
                         <label class="col-lg-4 control-label">Full name</label>
                         <div class="col-lg-4">
@@ -190,13 +187,9 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Field Types
+                Sign Up Form
             </div>
             <div class="panel-body">
-                <div class="page-header">
-                    <h2>Sign up</h2>
-                </div>
-
                 <!-- Change the "action" attribute to your back-end URL -->
                 <form id="registrationForm2" method="post" class="form-horizontal" action="...">
                     <div class="form-group">

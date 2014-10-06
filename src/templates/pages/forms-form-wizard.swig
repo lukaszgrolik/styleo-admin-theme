@@ -4,8 +4,6 @@
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css">
-<link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css">
-
 {% endblock %}
 
 {% block bodyEnd %}

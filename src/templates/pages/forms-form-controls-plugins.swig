@@ -7,15 +7,16 @@
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/green.css">
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/orange.css">
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/red.css">
-
 <link rel="stylesheet" href="bower_components/select2/select2.css">
-
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker3.css">
 <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css">
-
 <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/css/bootstrap-slider.css">
-
 <link rel="stylesheet" href="bower_components/switchery/dist/switchery.css">
+{# <link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css"> #}
+<link rel="stylesheet" href="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
+<link rel="stylesheet" href="bower_components/jquery-minicolors/jquery.minicolors.css">
+<link rel="stylesheet" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/dropzone/downloads/css/dropzone.css">
 {% endblock %}
 
 {% block bodyEnd %}
@@ -26,6 +27,10 @@
 <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
 <script src="bower_components/switchery/dist/switchery.js"></script>
+<script src="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+<script src="bower_components/jquery-minicolors/jquery.minicolors.min.js"></script>
+<script src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
+<script src="bower_components/dropzone/downloads/dropzone.min.js"></script>
 
 <script>
 $(function() {
@@ -66,7 +71,7 @@ $(function() {
 
     $('.slider-input').slider();
 
-    //
+    // Switches
 
     $('.custom-checkbox-switchery').each(function() {
         var options = {
@@ -96,6 +101,61 @@ $(function() {
 
         new Switchery($(this)[0], options);
     });
+
+    // Spinners
+
+    $("input[name='cleaninit']").TouchSpin();
+    $("input[name='demo1']").TouchSpin({
+      min: 0,
+      max: 100,
+      step: 0.1,
+      decimals: 2,
+      boostat: 5,
+      maxboostedstep: 10,
+      postfix: '%'
+    });
+    $("input[name='demo2']").TouchSpin({
+      min: -1000000000,
+      max: 1000000000,
+      stepinterval: 50,
+      maxboostedstep: 10000000,
+      prefix: '$'
+    });
+    $("input[name='demo4']").TouchSpin({
+      postfix: "a button",
+      postfix_extraclass: "btn btn-default"
+    });
+
+    // Color Pickers
+
+    $('.colorpicker').each(function () {
+        $(this).minicolors({
+            control: $(this).attr('data-control') || 'hue',
+            defaultValue: $(this).attr('data-defaultValue') || '',
+            inline: $(this).attr('data-inline') === 'true',
+            letterCase: $(this).attr('data-letterCase') || 'lowercase',
+            opacity: $(this).attr('data-opacity'),
+            position: $(this).attr('data-position') || 'bottom left',
+            theme: 'bootstrap',
+            change: function (hex, opacity) {
+                if (!hex) {
+                    return;
+                }
+
+                if (opacity) {
+                    hex += ', ' + opacity;
+                }
+
+                try {
+                    console.log(hex);
+                } catch (e) {}
+            },
+        });
+    });
+
+    // File Upload
+
+    // $("#my-dropzone").dropzone({ url: "/file/post" });
 });
 </script>
 {% endblock %}
@@ -396,6 +456,70 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
+                File Upload with <strong>Jasny Bootstrap</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Basic Input</label>
+                    <div class="col-sm-6">
+                      <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <span class="btn btn-primary btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <span class="fileinput-filename"></span>
+                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Thumbnail Input</label>
+                    <div class="col-sm-6">
+                      <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                        <div>
+                          <span class="btn btn-primary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                          <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Thumbnail Input</label>
+                    <div class="col-sm-6">
+                      <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                          <img src="http://placehold.it/190x140/7761A7/ffffff" alt="...">
+                        </div>
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                        <div>
+                          <span class="btn btn-primary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                          <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Multiple Files Upload with <strong>Dropzone</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <form action="#" class="dropzone" id="my-dropzone" enctype="multipart/form-data"></form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 Switches with <strong>Switchery</strong> Plugin
             </div>
             <div class="panel-body">
@@ -438,6 +562,166 @@ $(function() {
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin</div>
+            <div class="panel-body">
+                <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Init with empty value</label>
+                    <div class="col-sm-9">
+                      <input id="cleaninit" type="text" value="" name="cleaninit" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Example with postfix</label>
+                    <div class="col-sm-9">
+                      <input id="demo1" type="text" value="55" name="demo1" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Example with prefix</label>
+                    <div class="col-sm-9">
+                      <input id="demo2" type="text" value="0" name="demo2" class="col-md-8 form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Button postfix</label>
+                    <div class="col-sm-9">
+                      <input id="demo4" type="text" value="" name="demo4" class="input-sm">
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Color Pickers with <strong>jQuery MiniColors</strong> Plugin</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="hue-demo">Hue (default)</label>
+                            <input type="text" id="hue-demo" class="form-control colorpicker" data-control="hue" value="#ff6161">
+                        </div>
+                        <div class="form-group">
+                            <label for="saturation-demo">Saturation</label>
+                            <input type="text" id="saturation-demo" class="form-control colorpicker" data-control="saturation" value="#0088cc">
+                        </div>
+                        <div class="form-group">
+                            <label for="brightness-demo">Brightness</label>
+                            <input type="text" id="brightness-demo" class="form-control colorpicker" data-control="brightness" value="#00ffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="wheel-demo">Wheel</label>
+                            <input type="text" id="wheel-demo" class="form-control colorpicker" data-control="wheel" value="#ff99ee">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="text-field">Text field</label>
+                            <br>
+                            <input type="text" id="text-field" class="form-control colorpicker" value="#70c24a">
+                        </div>
+                        <div class="form-group">
+                            <label for="hidden-input">Hidden Input</label>
+                            <br>
+                            <input type="hidden" id="hidden-input" class="colorpicker" value="#5DB2FF" style="width:34px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="inline">Inline</label>
+                            <br>
+                            <input type="text" id="inline" class="form-control colorpicker" data-inline="true" value="#4fc8db">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="position-bottom-left">bottom left (default)</label>
+                            <input type="text" id="position-bottom-left" class="form-control colorpicker" data-position="bottom left" value="#11a9cc">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-top-left">top left</label>
+                            <input type="text" id="position-top-left" class="form-control colorpicker" data-position="top left" value="#8cc474">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-bottom-right">bottom right</label>
+                            <input type="text" id="position-bottom-right" class="form-control colorpicker" data-position="bottom right" value="#f4b400">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-top-right">top right</label>
+                            <input type="text" id="position-top-right" class="form-control colorpicker" data-position="top right" value="#bc5679">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="opacity">Opacity</label>
+                            <br>
+                            <input type="text" id="opacity" class="form-control colorpicker" data-opacity=".5" value="#766fa8">
+                            <span class="help-block">
+                                Opacity can be assigned by including the <code>data-opacity</code> attribute
+                                or by setting the <code>opacity</code> option to <code>true</code>.
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="default-value">Default Value</label>
+                            <br>
+                            <input type="text" id="default-value" class="form-control colorpicker" data-defaultvalue="#ff6600">
+                            <span class="help-block">
+                                This field has a default value assigned to it, so it will never be empty.
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="letter-case">Letter Case</label>
+                            <br>
+                            <input type="text" id="letter-case" class="form-control colorpicker" data-lettercase="uppercase" value="#abcdef">
+                            <span class="help-block">
+                                This field will always be uppercase.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{# <hr class="wide" />
+<h5>Simple ColorPicker</h5>
+<select data-toggle="simplecolorpicker">
+    <option value="#ac725e" />#ac725e
+    <option value="#d06b64" />#d06b64
+    <option value="#f83a22" />#f83a22
+    <option value="#fa573c" />#fa573c
+    <option value="#ff7537" />#ff7537
+    <option value="#ffad46" selected="" />#ffad46
+    <option value="#42d692" />#42d692
+    <option value="#16a765" />#16a765
+    <option value="#7bd148" />#7bd148
+    <option value="#b3dc6c" />#b3dc6c
+    <option value="#fbe983" />#fbe983
+    <option value="#fad165" />#fad165
+    <option value="#92e1c0" />#92e1c0
+    <option value="#9fe1e7" />#9fe1e7
+    <option value="#9fc6e7" />#9fc6e7
+    <option value="#4986e7" />#4986e7
+    <option value="#9a9cff" />#9a9cff
+    <option value="#b99aff" />#b99aff
+    <option value="#c2c2c2" />#c2c2c2
+    <option value="#cabdbf" />#cabdbf
+    <option value="#cca6ac" />#cca6ac
+    <option value="#f691b2" />#f691b2
+    <option value="#cd74e6" />#cd74e6
+    <option value="#a47ae2" />#a47ae2
+    <option value="#555" />#555
+</select> #}
 
 {# <div class="row">
     <div class="col-lg-6">

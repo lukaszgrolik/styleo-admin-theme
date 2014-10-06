@@ -4,6 +4,14 @@
 		box-shadow: none;
 	}
 
+	&.slider-horizontal .slider-track {
+		height: 3px;
+	}
+
+	&.slider-vertical .slider-track {
+		width: 3px;
+	}
+
 	.slider-selection {
 		background: $color-light-grey;
 	}
@@ -15,12 +23,22 @@
 		border: 3px solid #fff;
 	}
 
+	&.slider-horizontal .slider-handle {
+		margin-top: -9px;
+	}
+
+	&.slider-vertical .slider-handle {
+		margin-left: -9px;
+	}
+
 	&.sharp {
 		.slider-track,
 		.slider-selection {
 			border-radius: 0;
 		}
 	}
+
+
 }
 
 .slider-primary {

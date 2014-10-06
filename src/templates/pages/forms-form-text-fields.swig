@@ -6,6 +6,21 @@
 {% endblock %}
 
 {% block bodyEnd %}
+<script src="bower_components/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+<script>
+$(function() {
+    $('[data-mask="date"]').mask('99/99/9999');
+    $('[data-mask="phone"]').mask('(999) 999-9999');
+    $('[data-mask="phone-ext"]').mask('(999) 999-9999? x99999');
+    $('[data-mask="phone-int"]').mask('+33 999 999 999');
+    $('[data-mask="taxid"]').mask('99-9999999');
+    $('[data-mask="ssn"]').mask('999-99-9999');
+    $('[data-mask="product-key"]').mask('a*-999-a999');
+    $('[data-mask="percent"]').mask('99%');
+    $('[data-mask="currency"]').mask('$999,999,999.99');
+});
+</script>
 {% endblock %}
 
 {% block content2 %}
@@ -58,6 +73,75 @@
                       <textarea class="form-control"></textarea>
                     </div>
                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Input Masks
+            </div>
+
+            <div class="panel-body">
+                <form class="form-horizontal group-border-dashed" action="#" novalidate>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Date</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="date" class="form-control" placeholder="DD/MM/YYYY" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Phone</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="phone" class="form-control" placeholder="(999) 999-9999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Phone + Optional Ext.</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="phone-ext" class="form-control" placeholder="(999) 999-9999? x99999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Int Phone</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="phone-int" class="form-control" placeholder="+33 999 999 999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Tax Id</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="taxid" class="form-control" placeholder="99-9999999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">SSN</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="ssn" class="form-control" placeholder="999-99-9999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Product Key</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="product-key" class="form-control" placeholder="a*-999-a999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Percent</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="percent" class="form-control" placeholder="99%" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Currency</label>
+                        <div class="col-sm-9">
+                            <input type="text" data-mask="currency" class="form-control text-right" placeholder="$0" />
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

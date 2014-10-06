@@ -4,12 +4,77 @@
 
 {% block content2 %}
 <div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Button Shapes</div>
+            <div class="panel-body text-center">
+                <button type="button" class="btn btn-primary">DEFAULT</button>
+                <button type="button" class="btn btn-primary sharp">SHARP</button>
+                <button type="button" class="btn btn-primary round">ROUND</button>
+                <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Button Types</div>
+            <div class="panel-body text-center">
+                <button type="button" class="btn btn-primary">DEFAULT</button>
+                <button type="button" class="btn btn-primary btn-outline">OUTLINE</button>
+                <button type="button" class="btn btn-primary raised">RAISED</button>
+                <button type="button" class="btn btn-primary gradient">GRADIENT</button>
+                <button type="button" class="btn btn-primary raised gradient">RAISED GRADIENT</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Button Sizes</div>
+            <div class="panel-body text-center">
+                <button type="button" class="btn btn-primary btn-xs">EXTRA SMALL</button>
+                <button type="button" class="btn btn-primary btn-sm">SMALL</button>
+                <button type="button" class="btn btn-primary">DEFAULT</button>
+                <button type="button" class="btn btn-primary btn-lg">LARGE</button>
+                <button type="button" class="btn btn-primary btn-xl">EXTRA LARGE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Button Colors</div>
+            <div class="panel-body text-center">
+                <div>
+                    <button type="button" class="btn btn-default">DEFAULT</button>
+                    <button type="button" class="btn btn-primary">PRIMARY</button>
+                    <button type="button" class="btn btn-success">SUCCESS</button>
+                    <button type="button" class="btn btn-info">INFO</button>
+                    <button type="button" class="btn btn-warning">WARNING</button>
+                    <button type="button" class="btn btn-danger">DANGER</button>
+                </div>
+
+                <hr class="wide">
+
+                <div>
+                    <button type="button" class="btn btn-yellow">YELLOW</button>
+                    <button type="button" class="btn btn-violet">VIOLET</button>
+                    <button type="button" class="btn btn-brown">BROWN</button>
+                    <button type="button" class="btn btn-navy">NAVY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Standard Buttons</div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <h4>Normal Buttons</h4>
+            <div class="panel-heading">Normal Buttons</div>
+            <div class="panel-body text-center">
                 <p>
                     <button type="button" class="btn btn-default">DEFAULT</button>
                     <button type="button" class="btn btn-primary">PRIMARY</button>
@@ -17,6 +82,10 @@
                     <button type="button" class="btn btn-info">INFO</button>
                     <button type="button" class="btn btn-warning">WARNING</button>
                     <button type="button" class="btn btn-danger">DANGER</button>
+                    <button type="button" class="btn btn-yellow">YELLOW</button>
+                    <button type="button" class="btn btn-violet">VIOLET</button>
+                    <button type="button" class="btn btn-brown">BROWN</button>
+                    <button type="button" class="btn btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default sharp">DEFAULT</button>
@@ -25,6 +94,10 @@
                     <button type="button" class="btn btn-info sharp">INFO</button>
                     <button type="button" class="btn btn-warning sharp">WARNING</button>
                     <button type="button" class="btn btn-danger sharp">DANGER</button>
+                    <button type="button" class="btn btn-yellow sharp">YELLOW</button>
+                    <button type="button" class="btn btn-violet sharp">VIOLET</button>
+                    <button type="button" class="btn btn-brown sharp">BROWN</button>
+                    <button type="button" class="btn btn-navy sharp">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default round">DEFAULT</button>
@@ -33,22 +106,22 @@
                     <button type="button" class="btn btn-info round">INFO</button>
                     <button type="button" class="btn btn-warning round">WARNING</button>
                     <button type="button" class="btn btn-danger round">DANGER</button>
+                    <button type="button" class="btn btn-yellow round">YELLOW</button>
+                    <button type="button" class="btn btn-violet round">VIOLET</button>
+                    <button type="button" class="btn btn-brown round">BROWN</button>
+                    <button type="button" class="btn btn-navy round">NAVY</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-default disabled">DEFAULT</button>
-                    <button type="button" class="btn btn-primary disabled">PRIMARY</button>
-                    <button type="button" class="btn btn-success disabled">SUCCESS</button>
-                    <button type="button" class="btn btn-info disabled">INFO</button>
-                    <button type="button" class="btn btn-warning disabled">WARNING</button>
-                    <button type="button" class="btn btn-danger disabled">DANGER</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-default active">DEFAULT</button>
-                    <button type="button" class="btn btn-primary active">PRIMARY</button>
-                    <button type="button" class="btn btn-success active">SUCCESS</button>
-                    <button type="button" class="btn btn-info active">INFO</button>
-                    <button type="button" class="btn btn-warning active">WARNING</button>
-                    <button type="button" class="btn btn-danger active">DANGER</button>
+                    <button type="button" class="btn btn-default" disabled>DEFAULT</button>
+                    <button type="button" class="btn btn-primary" disabled>PRIMARY</button>
+                    <button type="button" class="btn btn-success" disabled>SUCCESS</button>
+                    <button type="button" class="btn btn-info" disabled>INFO</button>
+                    <button type="button" class="btn btn-warning" disabled>WARNING</button>
+                    <button type="button" class="btn btn-danger" disabled>DANGER</button>
+                    <button type="button" class="btn btn-yellow" disabled>YELLOW</button>
+                    <button type="button" class="btn btn-violet" disabled>VIOLET</button>
+                    <button type="button" class="btn btn-brown" disabled>BROWN</button>
+                    <button type="button" class="btn btn-navy" disabled>NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i></button>
@@ -57,10 +130,21 @@
                     <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i></button>
                     <button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-yellow btn-circle"><i class="fa fa-user"></i></button>
+                    <button type="button" class="btn btn-violet btn-circle"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-brown btn-circle"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-navy btn-circle"><i class="fa fa-home"></i></button>
                 </p>
-                <br>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <h4>Outline Buttons</h4>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Outline Buttons</div>
+            <div class="panel-body text-center">
                 <p>
                     <button type="button" class="btn btn-outline btn-default">DEFAULT</button>
                     <button type="button" class="btn btn-outline btn-primary">PRIMARY</button>
@@ -68,6 +152,10 @@
                     <button type="button" class="btn btn-outline btn-info">INFO</button>
                     <button type="button" class="btn btn-outline btn-warning">WARNING</button>
                     <button type="button" class="btn btn-outline btn-danger">DANGER</button>
+                    <button type="button" class="btn btn-outline btn-yellow">YELLOW</button>
+                    <button type="button" class="btn btn-outline btn-violet">VIOLET</button>
+                    <button type="button" class="btn btn-outline btn-brown">BROWN</button>
+                    <button type="button" class="btn btn-outline btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-outline btn-default sharp">DEFAULT</button>
@@ -76,6 +164,10 @@
                     <button type="button" class="btn btn-outline btn-info sharp">INFO</button>
                     <button type="button" class="btn btn-outline btn-warning sharp">WARNING</button>
                     <button type="button" class="btn btn-outline btn-danger sharp">DANGER</button>
+                    <button type="button" class="btn btn-outline sharp btn-yellow">YELLOW</button>
+                    <button type="button" class="btn btn-outline sharp btn-violet">VIOLET</button>
+                    <button type="button" class="btn btn-outline sharp btn-brown">BROWN</button>
+                    <button type="button" class="btn btn-outline sharp btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-outline btn-default round">DEFAULT</button>
@@ -84,14 +176,22 @@
                     <button type="button" class="btn btn-outline btn-info round">INFO</button>
                     <button type="button" class="btn btn-outline btn-warning round">WARNING</button>
                     <button type="button" class="btn btn-outline btn-danger round">DANGER</button>
+                    <button type="button" class="btn btn-outline round btn-yellow">YELLOW</button>
+                    <button type="button" class="btn btn-outline round btn-violet">VIOLET</button>
+                    <button type="button" class="btn btn-outline round btn-brown">BROWN</button>
+                    <button type="button" class="btn btn-outline round btn-navy">NAVY</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-outline btn-default disabled">DEFAULT</button>
-                    <button type="button" class="btn btn-outline btn-primary disabled">PRIMARY</button>
-                    <button type="button" class="btn btn-outline btn-success disabled">SUCCESS</button>
-                    <button type="button" class="btn btn-outline btn-info disabled">INFO</button>
-                    <button type="button" class="btn btn-outline btn-warning disabled">WARNING</button>
-                    <button type="button" class="btn btn-outline btn-danger disabled">DANGER</button>
+                    <button type="button" class="btn btn-outline btn-default" disabled>DEFAULT</button>
+                    <button type="button" class="btn btn-outline btn-primary" disabled>PRIMARY</button>
+                    <button type="button" class="btn btn-outline btn-success" disabled>SUCCESS</button>
+                    <button type="button" class="btn btn-outline btn-info" disabled>INFO</button>
+                    <button type="button" class="btn btn-outline btn-warning" disabled>WARNING</button>
+                    <button type="button" class="btn btn-outline btn-danger" disabled>DANGER</button>
+                    <button type="button" class="btn btn-outline btn-yellow" disabled>YELLOW</button>
+                    <button type="button" class="btn btn-outline btn-violet" disabled>VIOLET</button>
+                    <button type="button" class="btn btn-outline btn-brown" disabled>BROWN</button>
+                    <button type="button" class="btn btn-outline btn-navy" disabled>NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-outline btn-default btn-circle"><i class="fa fa-check"></i></button>
@@ -100,10 +200,21 @@
                     <button type="button" class="btn btn-outline btn-info btn-circle"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-outline btn-warning btn-circle"><i class="fa fa-times"></i></button>
                     <button type="button" class="btn btn-outline btn-danger btn-circle"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-yellow btn-circle btn-outline"><i class="fa fa-user"></i></button>
+                    <button type="button" class="btn btn-violet btn-circle btn-outline"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-brown btn-circle btn-outline"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-navy btn-circle btn-outline"><i class="fa fa-home"></i></button>
                 </p>
-                <br>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <h4>Raised Buttons</h4>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Raised Buttons</div>
+            <div class="panel-body text-center">
                 <p>
                     <button type="button" class="btn btn-default raised">DEFAULT</button>
                     <button type="button" class="btn btn-primary raised">PRIMARY</button>
@@ -111,6 +222,10 @@
                     <button type="button" class="btn btn-info raised">INFO</button>
                     <button type="button" class="btn btn-warning raised">WARNING</button>
                     <button type="button" class="btn btn-danger raised">DANGER</button>
+                    <button type="button" class="btn raised btn-yellow">YELLOW</button>
+                    <button type="button" class="btn raised btn-violet">VIOLET</button>
+                    <button type="button" class="btn raised btn-brown">BROWN</button>
+                    <button type="button" class="btn raised btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default sharp raised">DEFAULT</button>
@@ -119,6 +234,10 @@
                     <button type="button" class="btn btn-info sharp raised">INFO</button>
                     <button type="button" class="btn btn-warning sharp raised">WARNING</button>
                     <button type="button" class="btn btn-danger sharp raised">DANGER</button>
+                    <button type="button" class="btn sharp raised btn-yellow">YELLOW</button>
+                    <button type="button" class="btn sharp raised btn-violet">VIOLET</button>
+                    <button type="button" class="btn sharp raised btn-brown">BROWN</button>
+                    <button type="button" class="btn sharp raised btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default round raised">DEFAULT</button>
@@ -127,6 +246,10 @@
                     <button type="button" class="btn btn-info round raised">INFO</button>
                     <button type="button" class="btn btn-warning round raised">WARNING</button>
                     <button type="button" class="btn btn-danger round raised">DANGER</button>
+                    <button type="button" class="btn round raised btn-yellow">YELLOW</button>
+                    <button type="button" class="btn round raised btn-violet">VIOLET</button>
+                    <button type="button" class="btn round raised btn-brown">BROWN</button>
+                    <button type="button" class="btn round raised btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default raised disabled">DEFAULT</button>
@@ -135,6 +258,10 @@
                     <button type="button" class="btn btn-info raised disabled">INFO</button>
                     <button type="button" class="btn btn-warning raised disabled">WARNING</button>
                     <button type="button" class="btn btn-danger raised disabled">DANGER</button>
+                    <button type="button" disabled class="btn raised btn-yellow">YELLOW</button>
+                    <button type="button" disabled class="btn raised btn-violet">VIOLET</button>
+                    <button type="button" disabled class="btn raised btn-brown">BROWN</button>
+                    <button type="button" disabled class="btn raised btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default btn-circle raised"><i class="fa fa-check"></i></button>
@@ -143,10 +270,21 @@
                     <button type="button" class="btn btn-info btn-circle raised"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-warning btn-circle raised"><i class="fa fa-times"></i></button>
                     <button type="button" class="btn btn-danger btn-circle raised"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-yellow btn-circle raised"><i class="fa fa-user"></i></button>
+                    <button type="button" class="btn btn-violet btn-circle raised"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-brown btn-circle raised"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-navy btn-circle raised"><i class="fa fa-home"></i></button>
                 </p>
-                <br>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <h4>Gradient Buttons</h4>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Gradient Buttons</div>
+            <div class="panel-body text-center">
                 <p>
                     <button type="button" class="btn btn-default gradient">DEFAULT</button>
                     <button type="button" class="btn btn-primary gradient">PRIMARY</button>
@@ -154,6 +292,10 @@
                     <button type="button" class="btn btn-info gradient">INFO</button>
                     <button type="button" class="btn btn-warning gradient">WARNING</button>
                     <button type="button" class="btn btn-danger gradient">DANGER</button>
+                    <button type="button" class="btn gradient btn-yellow">YELLOW</button>
+                    <button type="button" class="btn gradient btn-violet">VIOLET</button>
+                    <button type="button" class="btn gradient btn-brown">BROWN</button>
+                    <button type="button" class="btn gradient btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default sharp gradient">DEFAULT</button>
@@ -162,6 +304,10 @@
                     <button type="button" class="btn btn-info sharp gradient">INFO</button>
                     <button type="button" class="btn btn-warning sharp gradient">WARNING</button>
                     <button type="button" class="btn btn-danger sharp gradient">DANGER</button>
+                    <button type="button" class="btn gradient sharp btn-yellow">YELLOW</button>
+                    <button type="button" class="btn gradient sharp btn-violet">VIOLET</button>
+                    <button type="button" class="btn gradient sharp btn-brown">BROWN</button>
+                    <button type="button" class="btn gradient sharp btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default round gradient">DEFAULT</button>
@@ -170,14 +316,22 @@
                     <button type="button" class="btn btn-info round gradient">INFO</button>
                     <button type="button" class="btn btn-warning round gradient">WARNING</button>
                     <button type="button" class="btn btn-danger round gradient">DANGER</button>
+                    <button type="button" class="btn round gradient btn-yellow">YELLOW</button>
+                    <button type="button" class="btn round gradient btn-violet">VIOLET</button>
+                    <button type="button" class="btn round gradient btn-brown">BROWN</button>
+                    <button type="button" class="btn round gradient btn-navy">NAVY</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-default gradient disabled">DEFAULT</button>
-                    <button type="button" class="btn btn-primary gradient disabled">PRIMARY</button>
-                    <button type="button" class="btn btn-success gradient disabled">SUCCESS</button>
-                    <button type="button" class="btn btn-info gradient disabled">INFO</button>
-                    <button type="button" class="btn btn-warning gradient disabled">WARNING</button>
-                    <button type="button" class="btn btn-danger gradient disabled">DANGER</button>
+                    <button type="button" class="btn btn-default gradient" disabled>DEFAULT</button>
+                    <button type="button" class="btn btn-primary gradient" disabled>PRIMARY</button>
+                    <button type="button" class="btn btn-success gradient" disabled>SUCCESS</button>
+                    <button type="button" class="btn btn-info gradient" disabled>INFO</button>
+                    <button type="button" class="btn btn-warning gradient" disabled>WARNING</button>
+                    <button type="button" class="btn btn-danger gradient" disabled>DANGER</button>
+                    <button type="button" class="btn gradient btn-yellow" disabled>YELLOW</button>
+                    <button type="button" class="btn gradient btn-violet" disabled>VIOLET</button>
+                    <button type="button" class="btn gradient btn-brown" disabled>BROWN</button>
+                    <button type="button" class="btn gradient btn-navy" disabled>NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default btn-circle gradient"><i class="fa fa-check"></i></button>
@@ -186,10 +340,21 @@
                     <button type="button" class="btn btn-info btn-circle gradient"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-warning btn-circle gradient"><i class="fa fa-times"></i></button>
                     <button type="button" class="btn btn-danger btn-circle gradient"><i class="fa fa-heart"></i></button>
+                    <button type="button" class="btn btn-yellow btn-circle gradient"><i class="fa fa-user"></i></button>
+                    <button type="button" class="btn btn-violet btn-circle gradient"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-brown btn-circle gradient"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-navy btn-circle gradient"><i class="fa fa-home"></i></button>
                 </p>
-                <br>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <h4>Raised Gradient Buttons</h4>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Raised Gradient Buttons</div>
+            <div class="panel-body text-center">
                 <p>
                     <button type="button" class="btn btn-default raised gradient">DEFAULT</button>
                     <button type="button" class="btn btn-primary raised gradient">PRIMARY</button>
@@ -197,6 +362,10 @@
                     <button type="button" class="btn btn-info raised gradient">INFO</button>
                     <button type="button" class="btn btn-warning raised gradient">WARNING</button>
                     <button type="button" class="btn btn-danger raised gradient">DANGER</button>
+                    <button type="button" class="btn raised gradient btn-yellow">YELLOW</button>
+                    <button type="button" class="btn raised gradient btn-violet">VIOLET</button>
+                    <button type="button" class="btn raised gradient btn-brown">BROWN</button>
+                    <button type="button" class="btn raised gradient btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default sharp raised gradient">DEFAULT</button>
@@ -205,6 +374,10 @@
                     <button type="button" class="btn btn-info sharp raised gradient">INFO</button>
                     <button type="button" class="btn btn-warning sharp raised gradient">WARNING</button>
                     <button type="button" class="btn btn-danger sharp raised gradient">DANGER</button>
+                    <button type="button" class="btn raised gradient raised btn-yellow">YELLOW</button>
+                    <button type="button" class="btn raised gradient raised btn-violet">VIOLET</button>
+                    <button type="button" class="btn raised gradient raised btn-brown">BROWN</button>
+                    <button type="button" class="btn raised gradient raised btn-navy">NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default round raised gradient">DEFAULT</button>
@@ -213,14 +386,22 @@
                     <button type="button" class="btn btn-info round raised gradient">INFO</button>
                     <button type="button" class="btn btn-warning round raised gradient">WARNING</button>
                     <button type="button" class="btn btn-danger round raised gradient">DANGER</button>
+                    <button type="button" class="btn raised gradient round btn-yellow">YELLOW</button>
+                    <button type="button" class="btn raised gradient round btn-violet">VIOLET</button>
+                    <button type="button" class="btn raised gradient round btn-brown">BROWN</button>
+                    <button type="button" class="btn raised gradient round btn-navy">NAVY</button>
                 </p>
                 <p>
-                    <button type="button" class="btn btn-default raised gradient disabled">DEFAULT</button>
-                    <button type="button" class="btn btn-primary raised gradient disabled">PRIMARY</button>
-                    <button type="button" class="btn btn-success raised gradient disabled">SUCCESS</button>
-                    <button type="button" class="btn btn-info raised gradient disabled">INFO</button>
-                    <button type="button" class="btn btn-warning raised gradient disabled">WARNING</button>
-                    <button type="button" class="btn btn-danger raised gradient disabled">DANGER</button>
+                    <button type="button" class="btn btn-default raised gradient" disabled>DEFAULT</button>
+                    <button type="button" class="btn btn-primary raised gradient" disabled>PRIMARY</button>
+                    <button type="button" class="btn btn-success raised gradient" disabled>SUCCESS</button>
+                    <button type="button" class="btn btn-info raised gradient" disabled>INFO</button>
+                    <button type="button" class="btn btn-warning raised gradient" disabled>WARNING</button>
+                    <button type="button" class="btn btn-danger raised gradient" disabled>DANGER</button>
+                    <button type="button" class="btn raised gradient btn-yellow" disabled>YELLOW</button>
+                    <button type="button" class="btn raised gradient btn-violet" disabled>VIOLET</button>
+                    <button type="button" class="btn raised gradient btn-brown" disabled>BROWN</button>
+                    <button type="button" class="btn raised gradient btn-navy" disabled>NAVY</button>
                 </p>
                 <p>
                     <button type="button" class="btn btn-default btn-circle raised gradient"><i class="fa fa-check"></i></button>
@@ -229,257 +410,10 @@
                     <button type="button" class="btn btn-info btn-circle raised gradient"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-warning btn-circle raised gradient"><i class="fa fa-times"></i></button>
                     <button type="button" class="btn btn-danger btn-circle raised gradient"><i class="fa fa-heart"></i></button>
-                </p>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Additional Buttons</div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <h4>Normal Buttons</h4>
-                <p>
-                    <button type="button" class="btn color-yellow">YELLOW</button>
-                    <button type="button" class="btn color-violet">VIOLET</button>
-                    <button type="button" class="btn color-brown">BROWN</button>
-                    <button type="button" class="btn color-light-grey">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow sharp">YELLOW</button>
-                    <button type="button" class="btn color-violet sharp">VIOLET</button>
-                    <button type="button" class="btn color-brown sharp">BROWN</button>
-                    <button type="button" class="btn color-light-grey sharp">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey sharp">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy sharp">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy sharp">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round">YELLOW</button>
-                    <button type="button" class="btn color-violet round">VIOLET</button>
-                    <button type="button" class="btn color-brown round">BROWN</button>
-                    <button type="button" class="btn color-light-grey round">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round disabled">YELLOW</button>
-                    <button type="button" class="btn color-violet round disabled">VIOLET</button>
-                    <button type="button" class="btn color-brown round disabled">BROWN</button>
-                    <button type="button" class="btn color-light-grey round disabled">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round disabled">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round disabled">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round disabled">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow btn-circle"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-violet btn-circle"><i class="fa fa-list"></i></button>
-                    <button type="button" class="btn color-brown btn-circle"><i class="fa fa-link"></i></button>
-                    <button type="button" class="btn color-light-grey btn-circle"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-dark-grey btn-circle"><i class="fa fa-times"></i></button>
-                    <button type="button" class="btn color-light-navy btn-circle"><i class="fa fa-heart"></i></button>
-                    <button type="button" class="btn color-dark-navy btn-circle"><i class="fa fa-envelope"></i></button>
-                </p>
-                <br>
-
-                <h4>Outline Buttons</h4>
-                <p>
-                    <button type="button" class="btn btn-outline color-yellow">YELLOW</button>
-                    <button type="button" class="btn btn-outline color-violet">VIOLET</button>
-                    <button type="button" class="btn btn-outline color-brown">BROWN</button>
-                    <button type="button" class="btn btn-outline color-light-grey">LIGHT GREY</button>
-                    <button type="button" class="btn btn-outline color-dark-grey">DARK GREY</button>
-                    <button type="button" class="btn btn-outline color-light-navy">LIGHT NAVY</button>
-                    <button type="button" class="btn btn-outline color-dark-navy">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-outline color-yellow sharp">YELLOW</button>
-                    <button type="button" class="btn btn-outline color-violet sharp">VIOLET</button>
-                    <button type="button" class="btn btn-outline color-brown sharp">BROWN</button>
-                    <button type="button" class="btn btn-outline color-light-grey sharp">LIGHT GREY</button>
-                    <button type="button" class="btn btn-outline color-dark-grey sharp">DARK GREY</button>
-                    <button type="button" class="btn btn-outline color-light-navy sharp">LIGHT NAVY</button>
-                    <button type="button" class="btn btn-outline color-dark-navy sharp">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-outline color-yellow round">YELLOW</button>
-                    <button type="button" class="btn btn-outline color-violet round">VIOLET</button>
-                    <button type="button" class="btn btn-outline color-brown round">BROWN</button>
-                    <button type="button" class="btn btn-outline color-light-grey round">LIGHT GREY</button>
-                    <button type="button" class="btn btn-outline color-dark-grey round">DARK GREY</button>
-                    <button type="button" class="btn btn-outline color-light-navy round">LIGHT NAVY</button>
-                    <button type="button" class="btn btn-outline color-dark-navy round">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-outline color-yellow round disabled">YELLOW</button>
-                    <button type="button" class="btn btn-outline color-violet round disabled">VIOLET</button>
-                    <button type="button" class="btn btn-outline color-brown round disabled">BROWN</button>
-                    <button type="button" class="btn btn-outline color-light-grey round disabled">LIGHT GREY</button>
-                    <button type="button" class="btn btn-outline color-dark-grey round disabled">DARK GREY</button>
-                    <button type="button" class="btn btn-outline color-light-navy round disabled">LIGHT NAVY</button>
-                    <button type="button" class="btn btn-outline color-dark-navy round disabled">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn btn-outline color-yellow btn-circle"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn btn-outline color-violet btn-circle"><i class="fa fa-list"></i></button>
-                    <button type="button" class="btn btn-outline color-brown btn-circle"><i class="fa fa-link"></i></button>
-                    <button type="button" class="btn btn-outline color-light-grey btn-circle"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn btn-outline color-dark-grey btn-circle"><i class="fa fa-times"></i></button>
-                    <button type="button" class="btn btn-outline color-light-navy btn-circle"><i class="fa fa-heart"></i></button>
-                    <button type="button" class="btn btn-outline color-dark-navy btn-circle"><i class="fa fa-envelope"></i></button>
-                </p>
-                <br>
-
-                <h4>Raised Buttons</h4>
-                <p>
-                    <button type="button" class="btn color-yellow raised">YELLOW</button>
-                    <button type="button" class="btn color-violet raised">VIOLET</button>
-                    <button type="button" class="btn color-brown raised">BROWN</button>
-                    <button type="button" class="btn color-light-grey raised">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey raised">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy raised">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy raised">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow sharp raised">YELLOW</button>
-                    <button type="button" class="btn color-violet sharp raised">VIOLET</button>
-                    <button type="button" class="btn color-brown sharp raised">BROWN</button>
-                    <button type="button" class="btn color-light-grey sharp raised">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey sharp raised">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy sharp raised">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy sharp raised">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round raised">YELLOW</button>
-                    <button type="button" class="btn color-violet round raised">VIOLET</button>
-                    <button type="button" class="btn color-brown round raised">BROWN</button>
-                    <button type="button" class="btn color-light-grey round raised">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round raised">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round raised">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round raised">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round raised disabled">YELLOW</button>
-                    <button type="button" class="btn color-violet round raised disabled">VIOLET</button>
-                    <button type="button" class="btn color-brown round raised disabled">BROWN</button>
-                    <button type="button" class="btn color-light-grey round raised disabled">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round raised disabled">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round raised disabled">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round raised disabled">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow btn-circle raised"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-violet btn-circle raised"><i class="fa fa-list"></i></button>
-                    <button type="button" class="btn color-brown btn-circle raised"><i class="fa fa-link"></i></button>
-                    <button type="button" class="btn color-light-grey btn-circle raised"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-dark-grey btn-circle raised"><i class="fa fa-times"></i></button>
-                    <button type="button" class="btn color-light-navy btn-circle raised"><i class="fa fa-heart"></i></button>
-                    <button type="button" class="btn color-dark-navy btn-circle raised"><i class="fa fa-envelope"></i></button>
-                </p>
-                <br>
-
-                <h4>Gradient Buttons</h4>
-                <p>
-                    <button type="button" class="btn color-yellow gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow sharp gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet sharp gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown sharp gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey sharp gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey sharp gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy sharp gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy sharp gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet round gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown round gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey round gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round gradient disabled">YELLOW</button>
-                    <button type="button" class="btn color-violet round gradient disabled">VIOLET</button>
-                    <button type="button" class="btn color-brown round gradient disabled">BROWN</button>
-                    <button type="button" class="btn color-light-grey round gradient disabled">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round gradient disabled">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round gradient disabled">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round gradient disabled">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow btn-circle gradient"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-violet btn-circle gradient"><i class="fa fa-list"></i></button>
-                    <button type="button" class="btn color-brown btn-circle gradient"><i class="fa fa-link"></i></button>
-                    <button type="button" class="btn color-light-grey btn-circle gradient"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-dark-grey btn-circle gradient"><i class="fa fa-times"></i></button>
-                    <button type="button" class="btn color-light-navy btn-circle gradient"><i class="fa fa-heart"></i></button>
-                    <button type="button" class="btn color-dark-navy btn-circle gradient"><i class="fa fa-envelope"></i></button>
-                </p>
-                <br>
-
-                <h4>Raised Gradient Buttons</h4>
-                <p>
-                    <button type="button" class="btn color-yellow raised gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet raised gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown raised gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey raised gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey raised gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy raised gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy raised gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow sharp raised gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet sharp raised gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown sharp raised gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey sharp raised gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey sharp raised gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy sharp raised gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy sharp raised gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round raised gradient">YELLOW</button>
-                    <button type="button" class="btn color-violet round raised gradient">VIOLET</button>
-                    <button type="button" class="btn color-brown round raised gradient">BROWN</button>
-                    <button type="button" class="btn color-light-grey round raised gradient">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round raised gradient">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round raised gradient">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round raised gradient">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow round raised gradient disabled">YELLOW</button>
-                    <button type="button" class="btn color-violet round raised gradient disabled">VIOLET</button>
-                    <button type="button" class="btn color-brown round raised gradient disabled">BROWN</button>
-                    <button type="button" class="btn color-light-grey round raised gradient disabled">LIGHT GREY</button>
-                    <button type="button" class="btn color-dark-grey round raised gradient disabled">DARK GREY</button>
-                    <button type="button" class="btn color-light-navy round raised gradient disabled">LIGHT NAVY</button>
-                    <button type="button" class="btn color-dark-navy round raised gradient disabled">DARK NAVY</button>
-                </p>
-                <p>
-                    <button type="button" class="btn color-yellow btn-circle raised gradient"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-violet btn-circle raised gradient"><i class="fa fa-list"></i></button>
-                    <button type="button" class="btn color-brown btn-circle raised gradient"><i class="fa fa-link"></i></button>
-                    <button type="button" class="btn color-light-grey btn-circle raised gradient"><i class="fa fa-check"></i></button>
-                    <button type="button" class="btn color-dark-grey btn-circle raised gradient"><i class="fa fa-times"></i></button>
-                    <button type="button" class="btn color-light-navy btn-circle raised gradient"><i class="fa fa-heart"></i></button>
-                    <button type="button" class="btn color-dark-navy btn-circle raised gradient"><i class="fa fa-envelope"></i></button>
+                    <button type="button" class="btn btn-yellow btn-circle raised gradient"><i class="fa fa-user"></i></button>
+                    <button type="button" class="btn btn-violet btn-circle raised gradient"><i class="fa fa-bar-chart-o"></i></button>
+                    <button type="button" class="btn btn-brown btn-circle raised gradient"><i class="fa fa-cog"></i></button>
+                    <button type="button" class="btn btn-navy btn-circle raised gradient"><i class="fa fa-home"></i></button>
                 </p>
             </div>
             <!-- /.panel-body -->
@@ -497,9 +431,9 @@
                 <p>All kinds of buttons can be any size.</p>
                 <p class="text-center">
                     <button type="button" class="btn btn-primary btn-lg">LARGE BUTTON</button>
-                    <button type="button" class="btn color-yellow sharp raised">DEFAULT BUTTON</button>
+                    <button type="button" class="btn btn-yellow sharp raised">DEFAULT BUTTON</button>
                     <button type="button" class="btn btn-success btn-sm round gradient">SMALL BUTTON</button>
-                    <button type="button" class="btn btn-outline color-light-navy btn-xs">MINI BUTTON</button>
+                    <button type="button" class="btn btn-outline btn-navy btn-xs">MINI BUTTON</button>
                     <button type="button" class="btn btn-warning btn-circle gradient"><i class="fa fa-link"></i></button>
                     <button type="button" class="btn btn-default btn-circle btn-lg raised"><i class="fa fa-check"></i></button>
                     <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i></button>
@@ -541,12 +475,24 @@
 
                     <hr class="wide">
 
-                    <div class="btn-group-vertical">
-                        <button type="button" class="btn btn-primary sharp">PRIMARY</button>
-                        <button type="button" class="btn btn-success sharp">SUCCESS</button>
-                        <button type="button" class="btn btn-info sharp">INFO</button>
-                        <button type="button" class="btn btn-warning sharp">WARNING</button>
-                        <button type="button" class="btn btn-danger sharp">DANGER</button>
+                    <div class="row">
+                        <div class="col-lg-3 col-lg-push-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary">PRIMARY</button>
+                                <button type="button" class="btn btn-success">SUCCESS</button>
+                                <button type="button" class="btn btn-info">INFO</button>
+                                <button type="button" class="btn btn-warning">WARNING</button>
+                                <button type="button" class="btn btn-danger">DANGER</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-lg-push-3">
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-yellow">YELLOW</button>
+                                <button type="button" class="btn btn-violet">VIOLET</button>
+                                <button type="button" class="btn btn-brown">BROWN</button>
+                                <button type="button" class="btn btn-navy">NAVY</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -555,10 +501,10 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Social Buttons with Font Awesome Icons
+                Social Buttons
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -579,10 +525,10 @@
         </div>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-lg-9">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Social Buttons with Font Awesome Icons
+                Social Icon Buttons
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">

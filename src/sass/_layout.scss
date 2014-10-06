@@ -227,6 +227,12 @@
 		border-left: 5px solid $color-grey-4;
 	}
 
+	li a {
+		&:focus {
+			outline: 1px dotted $color-grey-1;
+		}
+	}
+
 	li.current {
 		> a {
 			font-weight: bold;

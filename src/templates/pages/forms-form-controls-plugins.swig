@@ -730,25 +730,25 @@ $(function() {
                 <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Init with empty value</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-3">
                       <input id="cleaninit" type="text" value="" name="cleaninit" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Example with postfix</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-3">
                       <input id="demo1" type="text" value="55" name="demo1" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Example with prefix</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-3">
                       <input id="demo2" type="text" value="0" name="demo2" class="col-md-8 form-control">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Button postfix</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-3">
                       <input id="demo4" type="text" value="" name="demo4" class="input-sm">
                     </div>
                   </div>

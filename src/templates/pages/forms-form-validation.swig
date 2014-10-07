@@ -18,124 +18,124 @@ $(function() {
 
     $('form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            username: {
-                message: 'The username is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The username is required and cannot be empty'
-                    },
-                    stringLength: {
-                        min: 6,
-                        max: 30,
-                        message: 'The username must be more than 6 and less than 30 characters long'
-                    },
-                    regexp: {
-                        regexp: /^[a-zA-Z0-9]+$/,
-                        message: 'The username can only consist of alphabetical and number'
-                    },
-                    different: {
-                        field: 'password',
-                        message: 'The username and password cannot be the same as each other'
-                    }
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'The email address is required and cannot be empty'
-                    },
-                    emailAddress: {
-                        message: 'The email address is not a valid'
-                    }
-                }
-            },
-            password: {
-                validators: {
-                    notEmpty: {
-                        message: 'The password is required and cannot be empty'
-                    },
-                    different: {
-                        field: 'username',
-                        message: 'The password cannot be the same as username'
-                    },
-                    stringLength: {
-                        min: 8,
-                        message: 'The password must have at least 8 characters'
-                    }
-                }
-            },
-            birthday: {
-                validators: {
-                    notEmpty: {
-                        message: 'The date of birth is required'
-                    },
-                    date: {
-                        format: 'YYYY/MM/DD',
-                        message: 'The date of birth is not valid'
-                    }
-                }
-            },
-            gender: {
-                validators: {
-                    notEmpty: {
-                        message: 'The gender is required'
-                    }
-                }
-            }
-        }
+        // feedbackIcons: {
+        //     valid: 'glyphicon glyphicon-ok',
+        //     invalid: 'glyphicon glyphicon-remove',
+        //     validating: 'glyphicon glyphicon-refresh'
+        // },
+        // fields: {
+        //     username: {
+        //         message: 'The username is not valid',
+        //         validators: {
+        //             notEmpty: {
+        //                 message: 'The username is required and cannot be empty'
+        //             },
+        //             stringLength: {
+        //                 min: 6,
+        //                 max: 30,
+        //                 message: 'The username must be more than 6 and less than 30 characters long'
+        //             },
+        //             regexp: {
+        //                 regexp: /^[a-zA-Z0-9]+$/,
+        //                 message: 'The username can only consist of alphabetical and number'
+        //             },
+        //             different: {
+        //                 field: 'password',
+        //                 message: 'The username and password cannot be the same as each other'
+        //             }
+        //         }
+        //     },
+        //     email: {
+        //         validators: {
+        //             notEmpty: {
+        //                 message: 'The email address is required and cannot be empty'
+        //             },
+        //             emailAddress: {
+        //                 message: 'The email address is not a valid'
+        //             }
+        //         }
+        //     },
+        //     password: {
+        //         validators: {
+        //             notEmpty: {
+        //                 message: 'The password is required and cannot be empty'
+        //             },
+        //             different: {
+        //                 field: 'username',
+        //                 message: 'The password cannot be the same as username'
+        //             },
+        //             stringLength: {
+        //                 min: 8,
+        //                 message: 'The password must have at least 8 characters'
+        //             }
+        //         }
+        //     },
+        //     birthday: {
+        //         validators: {
+        //             notEmpty: {
+        //                 message: 'The date of birth is required'
+        //             },
+        //             date: {
+        //                 format: 'YYYY/MM/DD',
+        //                 message: 'The date of birth is not valid'
+        //             }
+        //         }
+        //     },
+        //     gender: {
+        //         validators: {
+        //             notEmpty: {
+        //                 message: 'The gender is required'
+        //             }
+        //         }
+        //     }
+        // }
     });
 
-    $('#accountForm').bootstrapValidator({
-        // Only disabled elements are excluded
-        // The invisible elements belonging to inactive tabs must be validated
-        excluded: [':disabled'],
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        submitHandler: function (validator, form, submitButton) {
-            // Do nothing
-        },
-        fields: {
-            fullName: {
-                validators: {
-                    notEmpty: {
-                        message: 'The full name is required'
-                    }
-                }
-            },
-            company: {
-                validators: {
-                    notEmpty: {
-                        message: 'The company name is required'
-                    }
-                }
-            },
-            address: {
-                validators: {
-                    notEmpty: {
-                        message: 'The address is required'
-                    }
-                }
-            },
-            city: {
-                validators: {
-                    notEmpty: {
-                        message: 'The city is required'
-                    }
-                }
-            }
-        }
-    });
+    // $('#accountForm').bootstrapValidator({
+    //     // Only disabled elements are excluded
+    //     // The invisible elements belonging to inactive tabs must be validated
+    //     excluded: [':disabled'],
+    //     feedbackIcons: {
+    //         valid: 'glyphicon glyphicon-ok',
+    //         invalid: 'glyphicon glyphicon-remove',
+    //         validating: 'glyphicon glyphicon-refresh'
+    //     },
+    //     submitHandler: function (validator, form, submitButton) {
+    //         // Do nothing
+    //     },
+    //     fields: {
+    //         fullName: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: 'The full name is required'
+    //                 }
+    //             }
+    //         },
+    //         company: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: 'The company name is required'
+    //                 }
+    //             }
+    //         },
+    //         address: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: 'The address is required'
+    //                 }
+    //             }
+    //         },
+    //         city: {
+    //             validators: {
+    //                 notEmpty: {
+    //                     message: 'The city is required'
+    //                 }
+    //             }
+    //         }
+    //     }
+    // });
 
-    $('#html5Form').bootstrapValidator();
+    // $('#html5Form').bootstrapValidator();
 
     // $('.parsley-form').parsley();
 });
@@ -280,7 +280,7 @@ $(function() {
                         <li class=""><a href="#address-tab" data-toggle="tab">Address</a></li>
                     </ul>
 
-                    <form id="accountForm" method="post" class="form-horizontal bv-form " novalidate="novalidate">
+                    <form method="post" class="form-horizontal bv-form " novalidate="novalidate">
                         <div class="tab-content tabs-flat">
                             <div class="tab-pane active" id="info-tab">
                                 <div class="form-group">
@@ -406,41 +406,41 @@ $(function() {
                 Form
             </div>
             <div class="panel-body">
-                <form class="form-horizontal group-border-dashed parsley-form" action="#">
+                <form class="form-horizontal group-border-dashed" action="#">
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Required</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required placeholder="Type something" />
+                      <input type="text" class="form-control" required placeholder="Type something" data-bv-message="The username is not valid" data-bv-notempty="true" data-bv-notempty-message="The username is required and cannot be empty" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Min Length</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-minlength="6" placeholder="Min 6 chars." />
+                      <input type="text" class="form-control" required placeholder="Min 6 chars." />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Max Length</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-maxlength="6" placeholder="Max 6 chars." />
+                      <input type="text" class="form-control" required placeholder="Max 6 chars." />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Range Length</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-length="[5,10]" placeholder="Text between 5 - 10 chars length" />
+                      <input type="text" class="form-control" required placeholder="Text between 5 - 10 chars length" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Min Value</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-min="6" placeholder="Min value is 6" />
+                      <input type="text" class="form-control" required placeholder="Min value is 6" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Max Value</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-max="6" placeholder="Max value is 6" />
+                      <input type="text" class="form-control" required placeholder="Max value is 6" />
                     </div>
                   </div>
                   <div class="form-group">
@@ -452,7 +452,7 @@ $(function() {
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Regular Exp</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" required data-parsley-pattern="#[A-Fa-f0-9]{6}" placeholder="Hex. Color" />
+                      <input type="text" class="form-control" required placeholder="Hex. Color" />
                     </div>
                   </div>
                   <div class="form-group">
@@ -461,20 +461,20 @@ $(function() {
                       <input type="password" id="pass2" class="form-control" required placeholder="Password" />
                     </div>
                     <div class="col-sm-3">
-                      <input type="password" class="form-control" required data-parsley-equalto="#pass2" placeholder="Re-Type Password" />
+                      <input type="password" class="form-control" required placeholder="Re-Type Password" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Min check</label>
                     <div class="col-sm-6">
                       <div class="radio">
-                        <label for="ck1"> <input id="ck1" name="ck1" type="checkbox" data-parsley-multiple="groups"  value="bar" data-parsley-mincheck="2"> Option 1</label>
+                        <label for="ck1"> <input id="ck1" name="ck1" type="checkbox" data-parsley-multiple="groups"  value="bar"> Option 1</label>
                       </div>
                       <div class="radio">
-                        <label for="ck2"> <input id="ck2" name="ck2" type="checkbox" data-parsley-multiple="groups" value="bar2" data-parsley-mincheck="2"> Option 2</label>
+                        <label for="ck2"> <input id="ck2" name="ck2" type="checkbox" value="bar2"> Option 2</label>
                       </div>
                       <div class="radio">
-                        <label for="ck3"> <input id="ck3" name="ck3" type="checkbox" data-parsley-multiple="groups"  value="bar3" data-parsley-mincheck="2" required > Option 3</label>
+                        <label for="ck3"> <input id="ck3" name="ck3" type="checkbox" value="bar3" required > Option 3</label>
                       </div>
                     </div>
                   </div>
@@ -482,44 +482,44 @@ $(function() {
                     <label class="col-sm-3 control-label">Max check</label>
                     <div class="col-sm-6">
                       <div class="radio">
-                        <label> <input type="checkbox" value="bar" name="e1" data-parsley-multiple="group1"> Option 1</label>
+                        <label> <input type="checkbox" value="bar" name="e1"> Option 1</label>
                       </div>
                       <div class="radio">
-                        <label> <input type="checkbox" value="bar" name="e2" data-parsley-multiple="group1"> Option 2</label>
+                        <label> <input type="checkbox" value="bar" name="e2"> Option 2</label>
                       </div>
                       <div class="radio">
-                        <label> <input type="checkbox" value="bar" name="e3" data-parsley-multiple="group1" data-parsley-maxcheck="1"> Option 3</label>
+                        <label> <input type="checkbox" value="bar" name="e3"> Option 3</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">E-Mail</label>
                     <div class="col-sm-6">
-                      <input type="email" class="form-control" required parsley-type="email" placeholder="Enter a valid e-mail" />
+                      <input type="email" class="form-control" required placeholder="Enter a valid e-mail" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">URL</label>
                     <div class="col-sm-6">
-                      <input parsley-type="url" type="url" class="form-control" required placeholder="URL" />
+                      <input type="url" class="form-control" required placeholder="URL" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Digits</label>
                     <div class="col-sm-6">
-                      <input data-parsley-type="digits" type="text" class="form-control" required placeholder="Enter only digits" />
+                      <input type="text" class="form-control" required placeholder="Enter only digits" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Number</label>
                     <div class="col-sm-6">
-                      <input data-parsley-type="number" type="text" class="form-control" required placeholder="Enter only numbers" />
+                      <input type="text" class="form-control" required placeholder="Enter only numbers" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-3 control-label">Alphanumeric</label>
                     <div class="col-sm-6">
-                      <input data-parsley-type="alphanum" type="text" class="form-control" required placeholder="Enter alphanumeric value" />
+                      <input type="text" class="form-control" required placeholder="Enter alphanumeric value" />
                     </div>
                   </div>
                   <div class="form-group">

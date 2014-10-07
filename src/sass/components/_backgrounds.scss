@@ -2,7 +2,11 @@
 .bg-success,
 .bg-info,
 .bg-warning,
-.bg-danger {
+.bg-danger,
+.bg-yellow,
+.bg-violet,
+.bg-brown,
+.bg-navy {
 	color: #fff;
 }
 
@@ -11,3 +15,7 @@
 .bg-info {background-color: lighten($color-cyan, 30%)}
 .bg-warning {background-color: lighten($color-orange, 30%)}
 .bg-danger {background-color: lighten($color-red, 30%)}
+.bg-yellow {background-color: lighten($color-yellow, 30%)}
+.bg-violet {background-color: lighten($color-violet, 30%)}
+.bg-brown {background-color: lighten($color-brown, 30%)}
+.bg-navy {background-color: lighten($color-navy, 30%)}

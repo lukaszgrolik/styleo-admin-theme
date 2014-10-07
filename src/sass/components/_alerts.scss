@@ -52,3 +52,23 @@
 	background-color: $color-red;
 	border-left-color: darken($color-red, 20%) !important;
 }
+
+.alert-yellow {
+	background-color: $color-yellow;
+	border-left-color: darken($color-yellow, 20%) !important;
+}
+
+.alert-violet {
+	background-color: $color-violet;
+	border-left-color: darken($color-violet, 20%) !important;
+}
+
+.alert-brown {
+	background-color: $color-brown;
+	border-left-color: darken($color-brown, 20%) !important;
+}
+
+.alert-navy {
+	background-color: $color-navy;
+	border-left-color: darken($color-navy, 20%) !important;
+}

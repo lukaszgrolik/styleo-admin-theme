@@ -28,18 +28,11 @@
 	box-shadow: none;
 }
 
-.progress-bar-success {
-	background-color: $color-green;
-}
-
-.progress-bar-info {
-	background-color: $color-cyan;
-}
-
-.progress-bar-warning {
-	background-color: $color-orange;
-}
-
-.progress-bar-danger {
-	background-color: $color-red;
-}
+.progress-bar-success {background-color: $color-green;}
+.progress-bar-info {background-color: $color-cyan;}
+.progress-bar-warning {background-color: $color-orange;}
+.progress-bar-danger {background-color: $color-red;}
+.progress-bar-yellow {background-color: $color-yellow;}
+.progress-bar-violet {background-color: $color-violet;}
+.progress-bar-brown {background-color: $color-brown;}
+.progress-bar-navy {background-color: $color-navy;}

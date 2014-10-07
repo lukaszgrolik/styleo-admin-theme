@@ -31,6 +31,22 @@
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                     <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
                 </div>
+                <div class="alert alert-yellow">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
+                </div>
+                <div class="alert alert-violet">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
+                </div>
+                <div class="alert alert-brown">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
+                </div>
+                <div class="alert alert-navy">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
+                </div>
             </div>
             <!-- .panel-body -->
         </div>

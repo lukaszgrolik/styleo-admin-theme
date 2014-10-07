@@ -65,3 +65,23 @@
 	.slider-selection {background: $color-red;}
 	.slider-handle {background: lighten($color-red, 20%);}
 }
+
+.slider-yellow {
+	.slider-selection {background: $color-yellow;}
+	.slider-handle {background: lighten($color-yellow, 20%);}
+}
+
+.slider-violet {
+	.slider-selection {background: $color-violet;}
+	.slider-handle {background: lighten($color-violet, 20%);}
+}
+
+.slider-brown {
+	.slider-selection {background: $color-brown;}
+	.slider-handle {background: lighten($color-brown, 20%);}
+}
+
+.slider-navy {
+	.slider-selection {background: $color-navy;}
+	.slider-handle {background: lighten($color-navy, 20%);}
+}

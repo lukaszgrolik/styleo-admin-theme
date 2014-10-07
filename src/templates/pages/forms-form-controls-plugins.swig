@@ -3,10 +3,10 @@
 {% set currentRouteSlug = 'forms-form-controls-plugins' %}
 
 {% block headEnd %}
-<link rel="stylesheet" href="bower_components/iCheck/skins/flat/blue.css">
+{# <link rel="stylesheet" href="bower_components/iCheck/skins/flat/blue.css">
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/green.css">
 <link rel="stylesheet" href="bower_components/iCheck/skins/flat/orange.css">
-<link rel="stylesheet" href="bower_components/iCheck/skins/flat/red.css">
+<link rel="stylesheet" href="bower_components/iCheck/skins/flat/red.css"> #}
 <link rel="stylesheet" href="bower_components/select2/select2.css">
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker3.css">
 <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css">
@@ -35,28 +35,63 @@
 <script>
 $(function() {
     // $('[type="checkbox"], [type="radio"]').iCheck({
-    $('.custom-checkbox-icheck').iCheck({
-        checkboxClass: 'icheckbox_flat-blue',
-        radioClass: 'iradio_flat-blue'
+    $('.custom-checkbox-icheck').each(function() {
+        var colorClass = '';
+        var sizeClass = '';
+
+        if ($(this).hasClass('success')) {
+            colorClass = 'success';
+        } else if ($(this).hasClass('info')) {
+            colorClass = 'info';
+        } else if ($(this).hasClass('warning')) {
+            colorClass = 'warning';
+        } else if ($(this).hasClass('danger')) {
+            colorClass = 'danger';
+        } else if ($(this).hasClass('yellow')) {
+            colorClass = 'yellow';
+        } else if ($(this).hasClass('violet')) {
+            colorClass = 'violet';
+        } else if ($(this).hasClass('brown')) {
+            colorClass = 'brown';
+        } else if ($(this).hasClass('navy')) {
+            colorClass = 'navy';
+        }
+
+        if ($(this).hasClass('small')) {
+            sizeClass = 'small';
+        } else if ($(this).hasClass('large')) {
+            sizeClass = 'large';
+        }
+
+        var baseClass = 'custom-control-checkbox-icheck';
+        var checkboxClass = baseClass + ' ' + baseClass + '-checkbox ' + colorClass + ' ' + sizeClass;
+        var radioClass = baseClass + ' ' + baseClass + '-radio ' + colorClass + ' ' + sizeClass;
+
+        $(this).iCheck({
+            checkboxClass: checkboxClass,
+            radioClass: radioClass
+        });
     });
 
-    // $('.colored-success').iCheck({
-    $('.custom-checkbox-icheck.success').iCheck({
-        checkboxClass: 'icheckbox_flat-green',
-        radioClass: 'iradio_flat-green'
-    });
 
-    // $('.colored-warning').iCheck({
-    $('.custom-checkbox-icheck.warning').iCheck({
-        checkboxClass: 'icheckbox_flat-orange',
-        radioClass: 'iradio_flat-orange'
-    });
 
-    // $('.colored-danger').iCheck({
-    $('.custom-checkbox-icheck.danger').iCheck({
-        checkboxClass: 'icheckbox_flat-red',
-        radioClass: 'iradio_flat-red'
-    });
+    // // $('.colored-success').iCheck({
+    // $('.custom-checkbox-icheck.success').iCheck({
+    //     checkboxClass: 'icheckbox_flat-green',
+    //     radioClass: 'iradio_flat-green'
+    // });
+
+    // // $('.colored-warning').iCheck({
+    // $('.custom-checkbox-icheck.warning').iCheck({
+    //     checkboxClass: 'icheckbox_flat-orange',
+    //     radioClass: 'iradio_flat-orange'
+    // });
+
+    // // $('.colored-danger').iCheck({
+    // $('.custom-checkbox-icheck.danger').iCheck({
+    //     checkboxClass: 'icheckbox_flat-red',
+    //     radioClass: 'iradio_flat-red'
+    // });
 
     //
 
@@ -87,6 +122,14 @@ $(function() {
             options.color = '#e67e22';
         } else if ($(this).hasClass('danger')) {
             options.color = '#e74c3c';
+        } else if ($(this).hasClass('yellow')) {
+            options.color = '#f1c40f';
+        } else if ($(this).hasClass('violet')) {
+            options.color = '#9b59b6';
+        } else if ($(this).hasClass('brown')) {
+            options.color = '#be643c';
+        } else if ($(this).hasClass('navy')) {
+            options.color = '#34495e';
         }
 
         if ($(this).hasClass('small')) {
@@ -171,29 +214,79 @@ $(function() {
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right">Checkboxes</label>
-                        <div class="col-sm-9">
+                        <div class="col-sm-3">
                             <div class="checkbox">
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck">
-                                    <span class="text">Option 1</span>
+                                    <span class="text">Primary</span>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck success">
-                                    <span class="text">Option 2</span>
+                                    <span class="text">Success</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck info">
+                                    <span class="text">Info</span>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck warning">
-                                    <span class="text">Option 3</span>
+                                    <span class="text">Warning</span>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck danger">
-                                    <span class="text">Option 3</span>
+                                    <span class="text">Danger</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck yellow">
+                                    <span class="text">Yellow</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck violet">
+                                    <span class="text">Violet</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck brown">
+                                    <span class="text">Brown</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck navy">
+                                    <span class="text">Navy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck small">
+                                    <span class="text">Small</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck">
+                                    <span class="text">Default</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck large">
+                                    <span class="text">Large</span>
                                 </label>
                             </div>
                         </div>
@@ -243,52 +336,103 @@ $(function() {
 
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right">Radio</label>
-                        <div class="col-sm-9">
+                        <div class="col-sm-3">
                             <div class="radio">
                                 <label>
                                     <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck">
-                                    <span class="text">Option 1 </span>
+                                    <span class="text">Primary</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck success">
-                                    <span class="text">Option 2 </span>
+                                    <span class="text">Success</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck info">
+                                    <span class="text">Info</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck warning">
-                                    <span class="text">Option 3 </span>
+                                    <span class="text">Warning</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
                                     <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck danger">
-                                    <span class="text">Option 4 </span>
+                                    <span class="text">Danger</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck yellow">
+                                    <span class="text">Yellow</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck violet">
+                                    <span class="text">Violet</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck brown">
+                                    <span class="text">Brown</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck navy">
+                                    <span class="text">Navy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck small">
+                                    <span class="text">Small</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck">
+                                    <span class="text">Default</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck large">
+                                    <span class="text">Large</span>
                                 </label>
                             </div>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-3 control-label no-padding-right">Radio Inline</label>
                         <div class="col-sm-9">
                             <div class="radio-inline">
                                 <label>
                                     <input name="form-field-radio2" checked="checked" type="radio" class="custom-checkbox-icheck">
-                                    <span class="text">Option 1 </span>
+                                    <span class="text">Option 1</span>
                                 </label>
                             </div>
                             <div class="radio-inline">
                                 <label>
                                     <input name="form-field-radio2" checked="checked" type="radio" class="custom-checkbox-icheck">
-                                    <span class="text">Option 2 </span>
+                                    <span class="text">Option 2</span>
                                 </label>
                             </div>
                             <div class="radio-inline">
                                 <label>
                                     <input name="form-field-radio2" checked="checked" type="radio" class="custom-checkbox-icheck">
-                                    <span class="text">Option 3 </span>
+                                    <span class="text">Option 3</span>
                                 </label>
                             </div>
                         </div>
@@ -367,6 +511,18 @@ $(function() {
                             </div>
                             <div class="slider slider-danger">
                                 <input type="text" class="slider-input" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="40">
+                            </div>
+                            <div class="slider slider-yellow">
+                                <input type="text" class="slider-input" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="20">
+                            </div>
+                            <div class="slider slider-violet">
+                                <input type="text" class="slider-input" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="40">
+                            </div>
+                            <div class="slider slider-brown">
+                                <input type="text" class="slider-input" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="60">
+                            </div>
+                            <div class="slider slider-navy">
+                                <input type="text" class="slider-input" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="80">
                             </div>
                         </div>
                     </div>
@@ -540,6 +696,10 @@ $(function() {
                             <input type="checkbox" class="custom-checkbox-switchery info" checked />
                             <input type="checkbox" class="custom-checkbox-switchery warning" checked />
                             <input type="checkbox" class="custom-checkbox-switchery danger" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery yellow" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery violet" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery brown" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery navy" checked />
                         </div>
                     </div>
                     <div class="form-group">

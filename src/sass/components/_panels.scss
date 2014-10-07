@@ -93,6 +93,38 @@
 	}
 }
 
+.panel-yellow {
+	border-color: $color-yellow;
+
+	& > .panel-heading {
+		background-color: $color-yellow;
+	}
+}
+
+.panel-violet {
+	border-color: $color-violet;
+
+	& > .panel-heading {
+		background-color: $color-violet;
+	}
+}
+
+.panel-brown {
+	border-color: $color-brown;
+
+	& > .panel-heading {
+		background-color: $color-brown;
+	}
+}
+
+.panel-navy {
+	border-color: $color-navy;
+
+	& > .panel-heading {
+		background-color: $color-navy;
+	}
+}
+
 //
 
 .panel.separated > .panel-heading {
@@ -125,6 +157,22 @@
 	border-bottom-color: $color-red;
 }
 
+.panel-yellow.separated > .panel-heading {
+	border-bottom-color: $color-yellow;
+}
+
+.panel-violet.separated > .panel-heading {
+	border-bottom-color: $color-violet;
+}
+
+.panel-brown.separated > .panel-heading {
+	border-bottom-color: $color-brown;
+}
+
+.panel-navy.separated > .panel-heading {
+	border-bottom-color: $color-navy;
+}
+
 //
 
 .panel.bordered {
@@ -153,6 +201,22 @@
 	&.panel-danger {
 		border-color: $color-red;
 	}
+
+	&.panel-yellow {
+		border-color: $color-yellow;
+	}
+
+	&.panel-violet {
+		border-color: $color-violet;
+	}
+
+	&.panel-brown {
+		border-color: $color-brown;
+	}
+
+	&.panel-navy {
+		border-color: $color-navy;
+	}
 }
 
 //
@@ -179,6 +243,22 @@
 
 .panel-danger.gradient > .panel-heading {
 	background: linear-gradient(to bottom, lighten($color-red, 10%) 55%, $color-red 45%);
+}
+
+.panel-yellow.gradient > .panel-heading {
+	background: linear-gradient(to bottom, lighten($color-yellow, 10%) 55%, $color-yellow 45%);
+}
+
+.panel-violet.gradient > .panel-heading {
+	background: linear-gradient(to bottom, lighten($color-violet, 10%) 55%, $color-violet 45%);
+}
+
+.panel-brown.gradient > .panel-heading {
+	background: linear-gradient(to bottom, lighten($color-brown, 10%) 55%, $color-brown 45%);
+}
+
+.panel-navy.gradient > .panel-heading {
+	background: linear-gradient(to bottom, lighten($color-navy, 10%) 55%, $color-navy 45%);
 }
 
 //
@@ -209,6 +289,22 @@
 
 .panel-danger.raised > .panel-heading {
 	border-bottom-color: darken($color-red, 20%);
+}
+
+.panel-yellow.raised > .panel-heading {
+	border-bottom-color: darken($color-yellow, 20%);
+}
+
+.panel-violet.raised > .panel-heading {
+	border-bottom-color: darken($color-violet, 20%);
+}
+
+.panel-brown.raised > .panel-heading {
+	border-bottom-color: darken($color-brown, 20%);
+}
+
+.panel-navy.raised > .panel-heading {
+	border-bottom-color: darken($color-navy, 20%);
 }
 
 //
@@ -273,4 +369,28 @@
 	background-color: $color-red;
 
 	&.separated .panel-heading {background-color: $color-red;}
+}
+
+.panel-yellow.filled {
+	background-color: $color-yellow;
+
+	&.separated .panel-heading {background-color: $color-yellow;}
+}
+
+.panel-violet.filled {
+	background-color: $color-violet;
+
+	&.separated .panel-heading {background-color: $color-violet;}
+}
+
+.panel-brown.filled {
+	background-color: $color-brown;
+
+	&.separated .panel-heading {background-color: $color-brown;}
+}
+
+.panel-navy.filled {
+	background-color: $color-navy;
+
+	&.separated .panel-heading {background-color: $color-navy;}
 }

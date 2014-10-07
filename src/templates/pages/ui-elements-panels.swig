@@ -123,6 +123,50 @@
             </div>
         </div>
     </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                Yellow Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-violet">
+            <div class="panel-heading">
+                Violet Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-brown">
+            <div class="panel-heading">
+                Brown Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-navy">
+            <div class="panel-heading">
+                Navy Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <h2>Filled Panels</h2>
@@ -187,6 +231,50 @@
         <div class="panel panel-danger filled">
             <div class="panel-heading">
                 Danger Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-yellow filled">
+            <div class="panel-heading">
+                Yellow Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-violet filled">
+            <div class="panel-heading">
+                Violet Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-brown filled">
+            <div class="panel-heading">
+                Brown Panel
+            </div>
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-navy filled">
+            <div class="panel-heading">
+                Navy Panel
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>

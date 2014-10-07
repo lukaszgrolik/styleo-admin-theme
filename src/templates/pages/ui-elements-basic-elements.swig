@@ -54,17 +54,8 @@ $('[data-toggle=popover]').popover()
 	                <span class="label label-brown">
 	                    BROWN
 	                </span>
-	                <span class="label label-light-grey">
-	                    LIGHT GREY
-	                </span>
-	                <span class="label label-dark-grey">
-	                    DARK GREY
-	                </span>
-	                <span class="label label-light-navy">
-	                    LIGHT NAVY
-	                </span>
-	                <span class="label label-dark-navy">
-	                    DARK NAVY
+	                <span class="label label-navy">
+	                    NAVY
 	                </span>
 
 	                <hr>
@@ -99,17 +90,8 @@ $('[data-toggle=popover]').popover()
 	                <span class="label sharp label-brown">
 	                    BROWN
 	                </span>
-	                <span class="label sharp label-light-grey">
-	                    LIGHT GREY
-	                </span>
-	                <span class="label sharp label-dark-grey">
-	                    DARK GREY
-	                </span>
-	                <span class="label sharp label-light-navy">
-	                    LIGHT NAVY
-	                </span>
-	                <span class="label sharp label-dark-navy">
-	                    DARK NAVY
+	                <span class="label sharp label-navy">
+	                    NAVY
 	                </span>
                 </div>
             </div>
@@ -153,16 +135,7 @@ $('[data-toggle=popover]').popover()
 	                <span class="badge badge-brown">
 	                    3
 	                </span>
-	                <span class="badge badge-light-grey">
-	                    4
-	                </span>
-	                <span class="badge badge-dark-grey">
-	                    5
-	                </span>
-	                <span class="badge badge-light-navy">
-	                    6
-	                </span>
-	                <span class="badge badge-dark-navy">
+	                <span class="badge badge-navy">
 	                    7
 	                </span>
 
@@ -198,16 +171,7 @@ $('[data-toggle=popover]').popover()
 	                <span class="badge sharp badge-brown">
 	                    3
 	                </span>
-	                <span class="badge sharp badge-light-grey">
-	                    4
-	                </span>
-	                <span class="badge sharp badge-dark-grey">
-	                    5
-	                </span>
-	                <span class="badge sharp badge-light-navy">
-	                    6
-	                </span>
-	                <span class="badge sharp badge-dark-navy">
+	                <span class="badge sharp badge-navy">
 	                    7
 	                </span>
             	</div>
@@ -229,6 +193,10 @@ $('[data-toggle=popover]').popover()
                     <p class="bg-info">Info Color Background</p>
                     <p class="bg-warning">Warning Color Background</p>
                     <p class="bg-danger">Danger Color Background</p>
+                    <p class="bg-yellow">Yellow Background</p>
+                    <p class="bg-violet">Violet Background</p>
+                    <p class="bg-brown">Brown Background</p>
+                    <p class="bg-navy">Navy Background</p>
                 </div>
             </div>
         </div>

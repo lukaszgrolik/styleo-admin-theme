@@ -74,6 +74,10 @@
                 <p class="text-info">This is an example of info text.</p>
                 <p class="text-warning">This is an example of warning text.</p>
                 <p class="text-danger">This is an example of danger text.</p>
+                <p class="text-yellow">This is an example of yellow text.</p>
+                <p class="text-violet">This is an example of violet text.</p>
+                <p class="text-brown">This is an example of brown text.</p>
+                <p class="text-navy">This is an example of navy text.</p>
             </div>
             <!-- /.panel-body -->
         </div>

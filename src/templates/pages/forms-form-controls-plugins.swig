@@ -345,49 +345,49 @@ $(function() {
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck success">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck success">
                                     <span class="text">Success</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck info">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck info">
                                     <span class="text">Info</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck warning">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck warning">
                                     <span class="text">Warning</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck danger">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck danger">
                                     <span class="text">Danger</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck yellow">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck yellow">
                                     <span class="text">Yellow</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck violet">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck violet">
                                     <span class="text">Violet</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck brown">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck brown">
                                     <span class="text">Brown</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck navy">
+                                    <input name="form-field-radio" type="radio" class="custom-checkbox-icheck navy">
                                     <span class="text">Navy</span>
                                 </label>
                             </div>
@@ -395,19 +395,19 @@ $(function() {
                         <div class="col-sm-3">
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck small">
+                                    <input name="form-field-radio-2" type="radio" class="custom-checkbox-icheck small">
                                     <span class="text">Small</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck">
+                                    <input name="form-field-radio-2" checked="checked" type="radio" class="custom-checkbox-icheck">
                                     <span class="text">Default</span>
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input name="form-field-radio" checked="checked" type="radio" class="custom-checkbox-icheck large">
+                                    <input name="form-field-radio-2" type="radio" class="custom-checkbox-icheck large">
                                     <span class="text">Large</span>
                                 </label>
                             </div>
@@ -419,7 +419,7 @@ $(function() {
                         <div class="col-sm-9">
                             <div class="radio-inline">
                                 <label>
-                                    <input name="form-field-radio2" checked="checked" type="radio" class="custom-checkbox-icheck">
+                                    <input name="form-field-radio2" type="radio" class="custom-checkbox-icheck">
                                     <span class="text">Option 1</span>
                                 </label>
                             </div>
@@ -431,7 +431,7 @@ $(function() {
                             </div>
                             <div class="radio-inline">
                                 <label>
-                                    <input name="form-field-radio2" checked="checked" type="radio" class="custom-checkbox-icheck">
+                                    <input name="form-field-radio2" type="radio" class="custom-checkbox-icheck">
                                     <span class="text">Option 3</span>
                                 </label>
                             </div>
@@ -612,6 +612,57 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
+                Switches with <strong>Switchery</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Switch Sizes</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery small" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery large" checked />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Switch Colors</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery success" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery info" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery warning" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery danger" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery yellow" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery violet" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery brown" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery navy" checked />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Disabled Switch</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery" checked disabled />
+                            <input type="checkbox" class="custom-checkbox-switchery" disabled />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Sharp Switch</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery sharp small" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery sharp success" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery sharp large danger" checked />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 File Upload with <strong>Jasny Bootstrap</strong> Plugin
             </div>
             <div class="panel-body">
@@ -672,56 +723,6 @@ $(function() {
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Switches with <strong>Switchery</strong> Plugin
-            </div>
-            <div class="panel-body">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Switch Sizes</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery small" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery large" checked />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Switch Colors</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery success" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery info" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery warning" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery danger" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery yellow" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery violet" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery brown" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery navy" checked />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Disabled Switch</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery" checked disabled />
-                            <input type="checkbox" class="custom-checkbox-switchery" disabled />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Sharp Switch</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery sharp small" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery sharp success" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery sharp large danger" checked />
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">

@@ -187,30 +187,39 @@ $('[data-toggle=popover]').popover()
                 Background Colors
             </div>
             <div class="panel-body">
-                <div class="text-center">
-                    <p class="bg-primary">Primary Color Background</p>
-                    <p class="bg-success">Success Color Background</p>
-                    <p class="bg-info">Info Color Background</p>
-                    <p class="bg-warning">Warning Color Background</p>
-                    <p class="bg-danger">Danger Color Background</p>
-                    <p class="bg-yellow">Yellow Background</p>
-                    <p class="bg-violet">Violet Background</p>
-                    <p class="bg-brown">Brown Background</p>
-                    <p class="bg-navy">Navy Background</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <p class="bg-primary">Primary Color Background</p>
+                            <p class="bg-success">Success Color Background</p>
+                            <p class="bg-info">Info Color Background</p>
+                            <p class="bg-warning">Warning Color Background</p>
+                            <p class="bg-danger">Danger Color Background</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <p class="bg-yellow">Yellow Background</p>
+                            <p class="bg-violet">Violet Background</p>
+                            <p class="bg-brown">Brown Background</p>
+                            <p class="bg-navy">Navy Background</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-	<div class="col-lg-12">
-		<div class="panel panel-default">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
             <div class="panel-heading">
                 Button Dropdowns
             </div>
             <div class="panel-body">
-                <div id="dropdownbuttons" class="text-center">
+                <p>See <a href="ui-elements-buttons.html">Buttons</a> page for more examples.</p>
+
+                <div class="text-center">
                     <div class="btn-group">
                         <a class="btn btn-default " href="javascript:void(0);">Default</a>
                         <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
@@ -250,96 +259,6 @@ $('[data-toggle=popover]').popover()
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-info " href="javascript:void(0);">Info</a>
-                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-info">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-success " href="javascript:void(0);">Success</a>
-                        <a class="btn btn-success  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-success">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-warning " href="javascript:void(0);">Warning</a>
-                        <a class="btn btn-warning  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-warning">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-danger " href="javascript:void(0);">Danger</a>
-                        <a class="btn btn-danger  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-danger">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-</div>
-
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Split Button Dropdowns
-            </div>
-            <div class="panel-body">
-                <div id="dropdownbuttons2" class="text-center">
-                    <div class="btn-group">
                         <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Default <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -375,78 +294,6 @@ $('[data-toggle=popover]').popover()
                             </li>
                         </ul>
                     </div>
-                    <div class="btn-group">
-                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Info <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-info">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-success  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Success <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-success">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-warning  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Warning <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-warning">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn btn-danger  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Danger <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu dropdown-danger">
-                            <li>
-                                <a href="javascript:void(0);">Action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Another action</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="javascript:void(0);">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -461,7 +308,7 @@ $('[data-toggle=popover]').popover()
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <h4>Tooltip Demo</h4>
+                <h4>Hoverable Tooltips</h4>
                 <div class="tooltip-demo text-center">
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><i class="fa fa-chevron-circle-right"></i> On Right</button>
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fa fa-chevron-circle-up"></i> On Top</button>
@@ -469,7 +316,8 @@ $('[data-toggle=popover]').popover()
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><i class="fa fa-chevron-circle-left"></i> On Left</button>
                 </div>
                 <br>
-                <h4>Clickable Popover Demo</h4>
+
+                <h4>Clickable Popovers</h4>
                 <div class="text-center">
                     <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                         <i class="fa fa-chevron-circle-right"></i> On Right
@@ -485,14 +333,20 @@ $('[data-toggle=popover]').popover()
                         <i class="fa fa-chevron-circle-left"></i> On Left
                     </button>
                 </div>
-                <h4>Hoverable Popover With Title</h4>
-                <p>This is just an example of popover use in a paragrhap content without a title writen by <a href="javascript:;" data-toggle="popover" data-content="This is a popover without a title!" data-placement="top">Author</a>, and there is another example with a title <a href="javascript:;" data-toggle="popover" data-original-title="Popover Title" data-content="This is a popover with a title!" data-placement="top">Tooltip</a> options.</p>
+                <br>
+
+                <h4>Hoverable Popovers with Titles</h4>
                 <div class="spacer2 text-center">
                     <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in right" data-content="This is the popover content space, put your ideas here!" data-placement="right" data-trigger="hover"><i class="fa fa-chevron-circle-right"></i> On Right</button>
                     <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in top" data-content="This is the popover content space, put your ideas here!" data-placement="top" data-trigger="hover"><i class="fa fa-chevron-circle-up"></i> On Top</button>
                     <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in bottom" data-content="This is the popover content space, put your ideas here!" data-placement="bottom" data-trigger="hover"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
                     <button data-toggle="popover" type="button" class="btn btn-success" data-original-title="Popover in left" data-content="This is the popover content space, put your ideas here!" data-placement="left" data-trigger="hover"><i class="fa fa-chevron-circle-left"></i> On Left</button>
                 </div>
+                <br>
+
+                <h4>Popovers as Tooltips</h4>
+
+                <p>Click <a href="javascript:;" data-toggle="popover" data-content="This is a popover without a title!" data-placement="top">here</a> to see a popover without a title and click <a href="javascript:;" data-toggle="popover" data-original-title="Popover Title" data-content="This is a popover with a title!" data-placement="top">here</a> to see a popover with a title.</p>
             </div>
             <!-- .panel-body -->
         </div>
@@ -503,26 +357,26 @@ $('[data-toggle=popover]').popover()
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <i class="fa fa-bell fa-fw"></i> List
+                <i class="fa fa-bell fa-fw"></i> List Group
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="list-group">
                     <span class="list-group-item">
-                        New Comment
+                        Default List Group Item
                     </span>
                     <a href="#" class="list-group-item">
-                        New Comment
+                        List Group Item as a Link
                     </a>
                     <a href="#" class="list-group-item">
-                        <i class="fa fa-comment fa-fw"></i> New Comment
+                        <i class="fa fa-comment fa-fw"></i> List Group Item with Icon
                     </a>
                     <a href="#" class="list-group-item">
-                        <i class="fa fa-comment fa-fw"></i> New Comment
+                        <i class="fa fa-comment fa-fw"></i> List Group Item with Text
                         <span class="pull-right text-muted small"><em>4 minutes ago</em>
                         </span>
                     </a>
-                    <a href="#" class="list-group-item">
+                    {# <a href="#" class="list-group-item">
                         <i class="fa fa-twitter fa-fw"></i> 3 New Followers
                         <span class="pull-right text-muted small"><em>12 minutes ago</em>
                         </span>
@@ -561,75 +415,72 @@ $('[data-toggle=popover]').popover()
                         <i class="fa fa-money fa-fw"></i> Payment Received
                         <span class="pull-right text-muted small"><em>Yesterday</em>
                         </span>
-                    </a>
+                    </a> #}
                 </div>
                 <!-- /.list-group -->
             </div>
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-</div>
+    </div>
+{# </div>
 
-<div class="row">
+<div class="row"> #}
 	<div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Pagination
             </div>
             <div class="panel-body">
-                <div>
-                    <ul class="pagination pagination-lg">
-                        <li class="disabled"><a href="#">«</a></li>
-                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="pagination pagination-lg">
+                            <li class="disabled"><a href="#">«</a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">«</a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+
+                        <ul class="pagination pagination-sm">
+                            <li class="disabled"><a href="#">«</a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </div>
+
+                {# <hr class="wide"> #}
+
+                    <div class="col-lg-6">
+                        <h5>Pager</h5>
+
+                        <ul class="pager">
+                            <li><a href="#" class="btn btn-primary"><i class="fa fa-fw fa-arrow-circle-left"></i> Older</a></li>
+                            <li><a href="#" class="btn btn-primary">Newer <i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
+                        </ul>
+
+                        <h5>Aligned Pager</h5>
+
+                        <ul class="pager">
+                            <li class="previous"><a href="#" class="btn btn-primary"><i class="fa fa-fw fa-arrow-circle-left"></i> Older</a></li>
+                            <li class="next"><a href="#" class="btn btn-primary">Newer <i class="fa fa-fw fa-arrow-circle-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#">«</a></li>
-                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="pagination pagination-sm">
-                        <li class="disabled"><a href="#">«</a></li>
-                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">»</a></li>
-                    </ul>
-                </div>
-
-                <hr class="wide">
-
-                <h5>Pager</h5>
-
-                <div>
-                    <ul class="pager">
-                        <li class="disabled"><a href="#" class="btn btn-primary sharp">← Older</a></li>
-                        <li><a href="#" class="btn btn-primary sharp">Newer →</a></li>
-                    </ul>
-                </div>
-
-                <hr class="wide">
-
-                <h5>Aligned Pager</h5>
-
-                <ul class="pager">
-                    <li class="previous"><a href="#" class="btn btn-primary sharp">← Older</a></li>
-                    <li class="next"><a href="#" class="btn btn-primary sharp">Newer →</a></li>
-                </ul>
             </div>
         </div>
     </div>

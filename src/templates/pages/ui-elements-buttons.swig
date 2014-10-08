@@ -501,6 +501,410 @@
 </div>
 
 <div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Button Dropdowns
+            </div>
+            <div class="panel-body">
+                <div class="text-center">
+                    <div class="btn-group">
+                        <a class="btn btn-default " href="javascript:void(0);">Default</a>
+                        <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-primary " href="javascript:void(0);">Primary</a>
+                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-primary">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-info " href="javascript:void(0);">Info</a>
+                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-info">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-success " href="javascript:void(0);">Success</a>
+                        <a class="btn btn-success  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-success">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-warning " href="javascript:void(0);">Warning</a>
+                        <a class="btn btn-warning  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-warning">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-danger " href="javascript:void(0);">Danger</a>
+                        <a class="btn btn-danger  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="wide">
+
+                    <div class="btn-group">
+                        <a class="btn btn-yellow " href="javascript:void(0);">Yellow</a>
+                        <a class="btn btn-yellow  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-violet " href="javascript:void(0);">Violet</a>
+                        <a class="btn btn-violet  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-brown " href="javascript:void(0);">Brown</a>
+                        <a class="btn btn-brown  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-navy " href="javascript:void(0);">Navy</a>
+                        <a class="btn btn-navy  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Split Button Dropdowns
+            </div>
+            <div class="panel-body">
+                <div class="text-center">
+                    <div class="btn-group">
+                        <a class="btn btn-default  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Default <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-primary  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Primary <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-primary">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-info  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Info <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-info">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-success  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Success <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-success">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-warning  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Warning <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-warning">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-danger  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Danger <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="wide">
+
+                    <div class="btn-group">
+                        <a class="btn btn-yellow  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Yellow <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-violet  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Violet <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-brown  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Brown <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn btn-navy  dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Navy <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);">Action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Another action</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="javascript:void(0);">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-lg-3">
         <div class="panel panel-default">
             <div class="panel-heading">

@@ -37,9 +37,8 @@
 							12345 North Main Street<br /> New York, 2233845<br />
 							<div class="contact">
 								<p><span>Email:</span> email@example.com</p>
-								<p><span>Phone:</span> (1800) 765 - 4321</p>
-								<p><span>Fax:</span> (1800) 765 - 4322</p>
-								</div>
+								<p><span>Phone:</span> (1800) 765 - 4321<br><span>Fax:</span> (1800) 765 - 4322</p>
+							</div>
 						</address>
 					</div>
 					<div class="col-sm-6 col-print-6 text-right">
@@ -49,9 +48,8 @@
 							28435 East Main Street<br /> New York, 2233845<br />
 							<div class="contact">
 								<p><span>Email:</span> email@example.com</p>
-								<p><span>Phone:</span> (1800) 888 - 4321</p>
-								<p><span>Fax:</span> (1800) 888 - 4322</p>
-								</div>
+								<p><span>Phone:</span> (1800) 888 - 4321<br><span>Fax:</span> (1800) 888 - 4322</p>
+							</div>
 						</address>
 					</div>
 				</div>

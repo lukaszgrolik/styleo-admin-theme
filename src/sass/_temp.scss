@@ -466,3 +466,133 @@ label.custom-switch-label {
 	font-size: 2em;
 	font-weight: bold;
 }
+
+//
+
+.fuelux .wizard {
+	box-shadow: none;
+
+	> .steps li {
+		border-radius: 0 !important;
+
+		&.active {
+			background-color: lighten($color-blue, 30%);
+			// color: #fff;
+
+			.badge {
+				background-color: $color-blue !important;
+			}
+
+			.chevron:before {
+				border-left-color: lighten($color-blue, 30%);
+			}
+		}
+	}
+
+	> .actions {
+		background-color: transparent;
+	}
+
+	> .step-content {
+		background-color: #fff;
+	}
+}
+
+//
+
+.table > tbody > tr.info > td,
+.table > tbody > tr > td.info {
+
+}
+
+.table > tbody > tr {
+	&.primary > td,
+	> td.primary {
+		background-color: lighten($color-blue, 40%) !important;
+	}
+
+	&.primary:hover > td,
+	> td.primary:hover {
+		background-color: lighten($color-blue, 35%) !important;
+	}
+
+	&.success > td,
+	> td.success {
+		background-color: lighten($color-green, 42.5%) !important;
+	}
+
+	&.success:hover > td,
+	> td.success:hover {
+		background-color: lighten($color-green, 37.5%) !important;
+	}
+
+	&.info > td,
+	> td.info {
+		background-color: lighten($color-cyan, 50%) !important;
+	}
+
+	&.info:hover > td,
+	> td.info:hover {
+		background-color: lighten($color-cyan, 45%) !important;
+	}
+
+	&.warning > td,
+	> td.warning {
+		background-color: lighten($color-orange, 40%) !important;
+	}
+
+	&.warning:hover > td,
+	> td.warning:hover {
+		background-color: lighten($color-orange, 35%) !important;
+	}
+
+	&.danger > td,
+	> td.danger {
+		background-color: lighten($color-red, 37.5%) !important;
+	}
+
+	&.danger:hover > td,
+	> td.danger:hover {
+		background-color: lighten($color-red, 32.5%) !important;
+	}
+
+	&.yellow > td,
+	> td.yellow {
+		background-color: lighten($color-yellow, 40%) !important;
+	}
+
+	&.yellow:hover > td,
+	> td.yellow:hover {
+		background-color: lighten($color-yellow, 35%) !important;
+	}
+
+	&.violet > td,
+	> td.violet {
+		background-color: lighten($color-violet, 40%) !important;
+	}
+
+	&.violet:hover > td,
+	> td.violet:hover {
+		background-color: lighten($color-violet, 35%) !important;
+	}
+
+	&.brown > td,
+	> td.brown {
+		background-color: lighten($color-brown, 45%) !important;
+	}
+
+	&.brown:hover > td,
+	> td.brown:hover {
+		background-color: lighten($color-brown, 40%) !important;
+	}
+
+	&.navy > td,
+	> td.navy {
+		background-color: lighten($color-navy, 60%) !important;
+	}
+
+	&.navy:hover > td,
+	> td.navy:hover {
+		background-color: lighten($color-navy, 55%) !important;
+	}
+}

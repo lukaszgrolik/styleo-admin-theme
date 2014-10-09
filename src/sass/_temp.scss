@@ -596,3 +596,46 @@ label.custom-switch-label {
 		background-color: lighten($color-navy, 55%) !important;
 	}
 }
+
+//
+
+.sidebar .sidebar-search {
+	padding: 5px;
+	padding-left: 20px;
+}
+
+.custom-search-form {
+	// padding: 0;
+	// border-bottom: 1px solid $color-grey-4;
+
+	.form-control::placeholder,
+	.form-control {
+		color: $color-dark-grey;
+	}
+
+	.form-control,
+	.btn {
+		// padding-top: 0;
+		// padding-bottom: 0;
+		// padding: 0;
+		// padding-bottom: 3px;
+		border: 0 !important;
+	}
+
+	.btn {
+		color: $color-light-grey;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+//
+
+.sidebar .sidebar-search {
+	// padding-top: 10px;
+	// padding-bottom: 5px;
+	// padding-top: 0;
+	// padding-bottom: 0;
+}

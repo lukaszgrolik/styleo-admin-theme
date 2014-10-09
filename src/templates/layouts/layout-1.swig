@@ -16,7 +16,10 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="navbar-header-logo-area clearfix">
-                <a class="navbar-brand" href="index.html">Styleo Admin 1.0</a>
+                <a class="navbar-brand" href="index.html">
+                    <span class="fa fa-fw fa-rocket"></span>
+                    Styleo Admin
+                </a>
             </div>
         </div>
         <!-- /.navbar-header -->
@@ -515,10 +518,10 @@
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="Search...">
                             <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                         </div>
                         <!-- /input-group -->
                     </li>

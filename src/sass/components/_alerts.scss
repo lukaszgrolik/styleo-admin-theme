@@ -12,7 +12,17 @@
 	}
 }
 
+.alert-xs {
+	font-size: 12px;
+	padding: 5px;
+
+	&.bordered {
+		border-left-width: 5px;
+	}
+}
+
 .alert-sm {
+	font-size: 13px;
 	padding: 10px;
 
 	&.bordered {
@@ -20,11 +30,21 @@
 	}
 }
 
-.alert-xs {
-	padding: 5px;
+.alert-lg {
+	font-size: 15px;
+	padding: 20px;
 
 	&.bordered {
-		border-left-width: 5px;
+		border-left-width: 20px;
+	}
+}
+
+.alert-xl {
+	font-size: 16px;
+	padding: 25px;
+
+	&.bordered {
+		border-left-width: 25px;
 	}
 }
 

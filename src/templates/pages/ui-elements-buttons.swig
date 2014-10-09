@@ -423,9 +423,29 @@
 </div>
 
 <div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Button with Icons</div>
+            <div class="panel-body text-center">
+                <button type="button" class="btn btn-default"><i class="fa fa-flag"></i> DEFAULT</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-comments"></i> PRIMARY</button>
+                <button type="button" class="btn btn-success"><i class="fa fa-check"></i> SUCCESS</button>
+                <button type="button" class="btn btn-info"><i class="fa fa-info-circle"></i> INFO</button>
+                <button type="button" class="btn btn-warning"><i class="fa fa-warning"></i> WARNING</button>
+                <button type="button" class="btn btn-danger"><i class="fa fa-times"></i> DANGER</button>
+                <button type="button" class="btn btn-yellow"><i class="fa fa-star"></i> YELLOW</button>
+                <button type="button" class="btn btn-violet"><i class="fa fa-child"></i> VIOLET</button>
+                <button type="button" class="btn btn-brown"><i class="fa fa-support"></i> BROWN</button>
+                <button type="button" class="btn btn-navy"><i class="fa fa-shopping-cart"></i> NAVY</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-lg-6">
         <div class="panel panel-default">
-            <div class="panel-heading">Buttons sizes</div>
+            <div class="panel-heading">Button Sizes</div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <p>All kinds of buttons can be any size.</p>

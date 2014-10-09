@@ -4,7 +4,7 @@
 		{% if slug == 'index' %}
 			<i class="fa fa-fw fa-home"></i>
 		{% endif %}
-		{{text}}
+		<span class="link-text">{{text}}</span>
 	</a>
 </li>
 {% endmacro %}

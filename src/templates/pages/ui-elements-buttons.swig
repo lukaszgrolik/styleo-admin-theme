@@ -445,10 +445,8 @@
 <div class="row">
     <div class="col-lg-6">
         <div class="panel panel-default">
-            <div class="panel-heading">Button Sizes</div>
-            <!-- /.panel-heading -->
+            <div class="panel-heading">Button Examples</div>
             <div class="panel-body">
-                <p>All kinds of buttons can be any size.</p>
                 <p class="text-center">
                     <button type="button" class="btn btn-primary btn-lg">LARGE BUTTON</button>
                     <button type="button" class="btn btn-yellow sharp raised">DEFAULT BUTTON</button>

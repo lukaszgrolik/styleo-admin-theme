@@ -58,7 +58,7 @@ $('[data-toggle=popover]').popover()
 	                    NAVY
 	                </span>
 
-	                <hr>
+	                <hr class="wide">
 
 	                <span class="label sharp label-default">
 	                    DEFAULT
@@ -139,7 +139,7 @@ $('[data-toggle=popover]').popover()
 	                    7
 	                </span>
 
-	                <hr>
+	                <hr class="wide">
 
 	                <span class="badge sharp badge-default">
                     	1

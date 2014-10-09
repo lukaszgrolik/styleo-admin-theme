@@ -1,6 +1,4 @@
 .btn {
-	// border-radius: 0;
-	// box-sizing: border-box;
 	border: 0 !important;
 }
 
@@ -21,7 +19,8 @@
 }
 
 .btn {
-	&.btn-default {
+	&.btn-default,
+	.open > &.dropdown-toggle.btn-default {
 		border: 1px solid $color-grey-4 !important;
 
 		&:hover {
@@ -29,7 +28,8 @@
 		}
 	}
 
-	&.btn-primary {
+	&.btn-primary,
+	.open > &.dropdown-toggle.btn-primary {
 		background-color: $color-blue;
 
 		&:hover {
@@ -37,7 +37,8 @@
 		}
 	}
 
-	&.btn-success {
+	&.btn-success,
+	.open > &.dropdown-toggle.btn-success {
 		background-color: $color-green;
 
 		&:hover {
@@ -45,7 +46,8 @@
 		}
 	}
 
-	&.btn-info {
+	&.btn-info,
+	.open > &.dropdown-toggle.btn-info {
 		background-color: $color-cyan;
 
 		&:hover {
@@ -53,7 +55,8 @@
 		}
 	}
 
-	&.btn-warning {
+	&.btn-warning,
+	.open > &.dropdown-toggle.btn-warning {
 		background-color: $color-orange;
 
 		&:hover {
@@ -61,7 +64,8 @@
 		}
 	}
 
-	&.btn-danger {
+	&.btn-danger,
+	.open > &.dropdown-toggle.btn-danger {
 		background-color: $color-red;
 
 		&:hover {

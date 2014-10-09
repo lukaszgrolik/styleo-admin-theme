@@ -3,17 +3,12 @@
 {% set currentRouteSlug = 'forms-form-controls-plugins' %}
 
 {% block headEnd %}
-{# <link rel="stylesheet" href="bower_components/iCheck/skins/flat/blue.css">
-<link rel="stylesheet" href="bower_components/iCheck/skins/flat/green.css">
-<link rel="stylesheet" href="bower_components/iCheck/skins/flat/orange.css">
-<link rel="stylesheet" href="bower_components/iCheck/skins/flat/red.css"> #}
 <link rel="stylesheet" href="bower_components/select2/select2.css">
 <link rel="stylesheet" href="bower_components/bootstrap-datepicker/css/datepicker3.css">
 <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css">
 <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/css/bootstrap-slider.css">
 <link rel="stylesheet" href="bower_components/switchery/dist/switchery.css">
 {# <link rel="stylesheet" href="bower_components/fuelux/dist/css/fuelux.css"> #}
-<link rel="stylesheet" href="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
 <link rel="stylesheet" href="bower_components/jquery-minicolors/jquery.minicolors.css">
 <link rel="stylesheet" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/dropzone/downloads/css/dropzone.css">
@@ -27,7 +22,6 @@
 <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
 <script src="bower_components/switchery/dist/switchery.js"></script>
-<script src="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 <script src="bower_components/jquery-minicolors/jquery.minicolors.min.js"></script>
 <script src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
 <script src="bower_components/dropzone/downloads/dropzone.min.js"></script>
@@ -61,6 +55,8 @@ $(function() {
             sizeClass = 'small';
         } else if ($(this).hasClass('large')) {
             sizeClass = 'large';
+        } else if ($(this).hasClass('extra-large')) {
+            sizeClass = 'extra-large';
         }
 
         var baseClass = 'custom-control-checkbox-icheck';
@@ -136,6 +132,8 @@ $(function() {
             options.className += ' switchery-sm';
         } else if ($(this).hasClass('large')) {
             options.className += ' switchery-lg';
+        } else if ($(this).hasClass('extra-large')) {
+            options.className += ' switchery-xl';
         }
 
         if ($(this).hasClass('sharp')) {
@@ -145,29 +143,7 @@ $(function() {
         new Switchery($(this)[0], options);
     });
 
-    // Spinners
 
-    $("input[name='cleaninit']").TouchSpin();
-    $("input[name='demo1']").TouchSpin({
-      min: 0,
-      max: 100,
-      step: 0.1,
-      decimals: 2,
-      boostat: 5,
-      maxboostedstep: 10,
-      postfix: '%'
-    });
-    $("input[name='demo2']").TouchSpin({
-      min: -1000000000,
-      max: 1000000000,
-      stepinterval: 50,
-      maxboostedstep: 10000000,
-      prefix: '$'
-    });
-    $("input[name='demo4']").TouchSpin({
-      postfix: "a button",
-      postfix_extraclass: "btn btn-default"
-    });
 
     // Color Pickers
 
@@ -270,7 +246,7 @@ $(function() {
                                 </label>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="checkbox">
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck small">
@@ -287,6 +263,12 @@ $(function() {
                                 <label>
                                     <input checked="checked" type="checkbox" class="custom-checkbox-icheck large">
                                     <span class="text">Large</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input checked="checked" type="checkbox" class="custom-checkbox-icheck extra-large">
+                                    <span class="text">Extra Large</span>
                                 </label>
                             </div>
                         </div>
@@ -392,7 +374,7 @@ $(function() {
                                 </label>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <div class="radio">
                                 <label>
                                     <input name="form-field-radio-2" type="radio" class="custom-checkbox-icheck small">
@@ -409,6 +391,12 @@ $(function() {
                                 <label>
                                     <input name="form-field-radio-2" type="radio" class="custom-checkbox-icheck large">
                                     <span class="text">Large</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="form-field-radio-2" type="radio" class="custom-checkbox-icheck extra-large">
+                                    <span class="text">Extra Large</span>
                                 </label>
                             </div>
                         </div>
@@ -550,6 +538,61 @@ $(function() {
             </div>
         </div>
     </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Switches with <strong>Switchery</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Switch Sizes</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery small" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery large" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery extra-large" checked />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Switch Colors</label>
+                        <div class="col-sm-9">
+                            <p>
+                                <input type="checkbox" class="custom-checkbox-switchery" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery success" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery info" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery warning" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery danger" checked />
+                            </p>
+
+                            <p>
+                                <input type="checkbox" class="custom-checkbox-switchery yellow" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery violet" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery brown" checked />
+                                <input type="checkbox" class="custom-checkbox-switchery navy" checked />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Disabled Switch</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery" checked disabled />
+                            <input type="checkbox" class="custom-checkbox-switchery" disabled />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Sharp Switch</label>
+                        <div class="col-sm-9">
+                            <input type="checkbox" class="custom-checkbox-switchery sharp small" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery sharp success" checked />
+                            <input type="checkbox" class="custom-checkbox-switchery sharp large danger" checked />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">
@@ -611,56 +654,101 @@ $(function() {
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">
-                Switches with <strong>Switchery</strong> Plugin
-            </div>
+            <div class="panel-heading">Color Pickers with <strong>jQuery MiniColors</strong> Plugin</div>
             <div class="panel-body">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Switch Sizes</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery small" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery large" checked />
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="hue-demo">Hue Control (default)</label>
+                            <input type="text" id="hue-demo" class="form-control colorpicker" data-control="hue" value="#e74c3c">
+                        </div>
+                        <div class="form-group">
+                            <label for="saturation-demo">Saturation Control</label>
+                            <input type="text" id="saturation-demo" class="form-control colorpicker" data-control="saturation" value="#2ecc71">
+                        </div>
+                        <div class="form-group">
+                            <label for="brightness-demo">Brightness Control</label>
+                            <input type="text" id="brightness-demo" class="form-control colorpicker" data-control="brightness" value="#1abc9c">
+                        </div>
+                        <div class="form-group">
+                            <label for="wheel-demo">Wheel Control</label>
+                            <input type="text" id="wheel-demo" class="form-control colorpicker" data-control="wheel" value="#9b59b6">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Switch Colors</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery success" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery info" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery warning" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery danger" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery yellow" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery violet" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery brown" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery navy" checked />
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="text-field">Text Field</label>
+                            <br>
+                            <input type="text" id="text-field" class="form-control colorpicker" value="#2ecc71">
+                        </div>
+                        <div class="form-group">
+                            <label for="hidden-input">Hidden Input</label>
+                            <br>
+                            <input type="hidden" id="hidden-input" class="colorpicker" value="#3498db" style="width:34px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="inline">Inline  Control</label>
+                            <br>
+                            <input type="text" id="inline" class="form-control colorpicker" data-inline="true" value="#95a5a6">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Disabled Switch</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery" checked disabled />
-                            <input type="checkbox" class="custom-checkbox-switchery" disabled />
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="position-bottom-left">Control on bottom left (default)</label>
+                            <input type="text" id="position-bottom-left" class="form-control colorpicker" data-position="bottom left" value="#2c3e50">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-top-left">Control on top left</label>
+                            <input type="text" id="position-top-left" class="form-control colorpicker" data-position="top left" value="#f1c40f">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-bottom-right">Control on bottom right</label>
+                            <input type="text" id="position-bottom-right" class="form-control colorpicker" data-position="bottom right" value="#e67e22">
+                        </div>
+                        <div class="form-group">
+                            <label for="position-top-right">Control on top right</label>
+                            <input type="text" id="position-top-right" class="form-control colorpicker" data-position="top right" value="#e74c3c">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Sharp Switch</label>
-                        <div class="col-sm-9">
-                            <input type="checkbox" class="custom-checkbox-switchery sharp small" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery sharp success" checked />
-                            <input type="checkbox" class="custom-checkbox-switchery sharp large danger" checked />
+
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="opacity">Opacity</label>
+                            <br>
+                            <input type="text" id="opacity" class="form-control colorpicker" data-opacity=".5" value="#1abc9c">
+                            <span class="help-block">
+                                Opacity can be assigned by including the <code>data-opacity</code> attribute
+                                or by setting the <code>opacity</code> option to <code>true</code>.
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="default-value">Default Value</label>
+                            <br>
+                            <input type="text" id="default-value" class="form-control colorpicker" data-defaultvalue="#9b59b6">
+                            <span class="help-block">
+                                This field has a default value assigned to it, so it will never be empty.
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label for="letter-case">Letter Case</label>
+                            <br>
+                            <input type="text" id="letter-case" class="form-control colorpicker" data-lettercase="uppercase" value="#be643c">
+                            <span class="help-block">
+                                This field will always be uppercase.
+                            </span>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 File Upload with <strong>Jasny Bootstrap</strong> Plugin
@@ -694,7 +782,7 @@ $(function() {
                     <div class="col-sm-6">
                       <div class="fileinput fileinput-new" data-provides="fileinput">
                         <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                          <img src="http://placehold.it/190x140/7761A7/ffffff" alt="...">
+                          <img src="http://placehold.it/190x140/2ecc71/ffffff" alt="...">
                         </div>
                         <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                         <div>
@@ -708,10 +796,8 @@ $(function() {
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Multiple Files Upload with <strong>Dropzone</strong> Plugin
@@ -723,137 +809,6 @@ $(function() {
     </div>
 </div>
 
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin</div>
-            <div class="panel-body">
-                <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
-                  <div class="form-group">
-                    <label class="col-sm-3 control-label">Init with empty value</label>
-                    <div class="col-sm-3">
-                      <input id="cleaninit" type="text" value="" name="cleaninit" />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-3 control-label">Example with postfix</label>
-                    <div class="col-sm-3">
-                      <input id="demo1" type="text" value="55" name="demo1" />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-3 control-label">Example with prefix</label>
-                    <div class="col-sm-3">
-                      <input id="demo2" type="text" value="0" name="demo2" class="col-md-8 form-control">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-3 control-label">Button postfix</label>
-                    <div class="col-sm-3">
-                      <input id="demo4" type="text" value="" name="demo4" class="input-sm">
-                    </div>
-                  </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Color Pickers with <strong>jQuery MiniColors</strong> Plugin</div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="hue-demo">Hue (default)</label>
-                            <input type="text" id="hue-demo" class="form-control colorpicker" data-control="hue" value="#ff6161">
-                        </div>
-                        <div class="form-group">
-                            <label for="saturation-demo">Saturation</label>
-                            <input type="text" id="saturation-demo" class="form-control colorpicker" data-control="saturation" value="#0088cc">
-                        </div>
-                        <div class="form-group">
-                            <label for="brightness-demo">Brightness</label>
-                            <input type="text" id="brightness-demo" class="form-control colorpicker" data-control="brightness" value="#00ffff">
-                        </div>
-                        <div class="form-group">
-                            <label for="wheel-demo">Wheel</label>
-                            <input type="text" id="wheel-demo" class="form-control colorpicker" data-control="wheel" value="#ff99ee">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="text-field">Text field</label>
-                            <br>
-                            <input type="text" id="text-field" class="form-control colorpicker" value="#70c24a">
-                        </div>
-                        <div class="form-group">
-                            <label for="hidden-input">Hidden Input</label>
-                            <br>
-                            <input type="hidden" id="hidden-input" class="colorpicker" value="#5DB2FF" style="width:34px;">
-                        </div>
-                        <div class="form-group">
-                            <label for="inline">Inline</label>
-                            <br>
-                            <input type="text" id="inline" class="form-control colorpicker" data-inline="true" value="#4fc8db">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="position-bottom-left">bottom left (default)</label>
-                            <input type="text" id="position-bottom-left" class="form-control colorpicker" data-position="bottom left" value="#11a9cc">
-                        </div>
-                        <div class="form-group">
-                            <label for="position-top-left">top left</label>
-                            <input type="text" id="position-top-left" class="form-control colorpicker" data-position="top left" value="#8cc474">
-                        </div>
-                        <div class="form-group">
-                            <label for="position-bottom-right">bottom right</label>
-                            <input type="text" id="position-bottom-right" class="form-control colorpicker" data-position="bottom right" value="#f4b400">
-                        </div>
-                        <div class="form-group">
-                            <label for="position-top-right">top right</label>
-                            <input type="text" id="position-top-right" class="form-control colorpicker" data-position="top right" value="#bc5679">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <label for="opacity">Opacity</label>
-                            <br>
-                            <input type="text" id="opacity" class="form-control colorpicker" data-opacity=".5" value="#766fa8">
-                            <span class="help-block">
-                                Opacity can be assigned by including the <code>data-opacity</code> attribute
-                                or by setting the <code>opacity</code> option to <code>true</code>.
-                            </span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="default-value">Default Value</label>
-                            <br>
-                            <input type="text" id="default-value" class="form-control colorpicker" data-defaultvalue="#ff6600">
-                            <span class="help-block">
-                                This field has a default value assigned to it, so it will never be empty.
-                            </span>
-                        </div>
-                        <div class="form-group">
-                            <label for="letter-case">Letter Case</label>
-                            <br>
-                            <input type="text" id="letter-case" class="form-control colorpicker" data-lettercase="uppercase" value="#abcdef">
-                            <span class="help-block">
-                                This field will always be uppercase.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 {# <hr class="wide" />
 <h5>Simple ColorPicker</h5>
 <select data-toggle="simplecolorpicker">

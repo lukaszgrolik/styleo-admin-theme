@@ -345,12 +345,18 @@ label.custom-switch-label {
 }
 
 .switchery {
+	@include switchery(36px, 18px, 18px);
+
 	&.switchery-sm {
-		@include switchery(35px, 20px, 30px);
+		@include switchery(28px, 14px, 14px);
 	}
 
 	&.switchery-lg {
-		@include switchery(70px, 40px, 40px);
+		@include switchery(52px, 26px, 26px);
+	}
+
+	&.switchery-xl {
+		@include switchery(72px, 36px, 36px);
 	}
 
 	&.sharp {
@@ -429,6 +435,11 @@ label.custom-switch-label {
 	&.large {
 		font-size: 26px;
 		width: 26px;
+	}
+
+	&.extra-large {
+		font-size: 36px;
+		width: 36px;
 	}
 
 	&.success {color: $color-green;}

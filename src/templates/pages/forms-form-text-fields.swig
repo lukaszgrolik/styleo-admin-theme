@@ -3,13 +3,17 @@
 {% set currentRouteSlug = 'forms-form-text-fields' %}
 
 {% block headEnd %}
+<link rel="stylesheet" href="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css">
 {% endblock %}
 
 {% block bodyEnd %}
 <script src="bower_components/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+<script src="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 
 <script>
 $(function() {
+    // Masks
+
     $('[data-mask="date"]').mask('99/99/9999');
     $('[data-mask="phone"]').mask('(999) 999-9999');
     $('[data-mask="phone-ext"]').mask('(999) 999-9999? x99999');
@@ -19,6 +23,30 @@ $(function() {
     $('[data-mask="product-key"]').mask('a*-999-a999');
     $('[data-mask="percent"]').mask('99%');
     $('[data-mask="currency"]').mask('$999,999,999.99');
+
+    // Spinners
+
+    $("input[name='cleaninit']").TouchSpin();
+    $("input[name='demo1']").TouchSpin({
+      min: 0,
+      max: 100,
+      step: 0.1,
+      decimals: 2,
+      boostat: 5,
+      maxboostedstep: 10,
+      postfix: '%'
+    });
+    $("input[name='demo2']").TouchSpin({
+      min: -1000000000,
+      max: 1000000000,
+      stepinterval: 50,
+      maxboostedstep: 10000000,
+      prefix: '$'
+    });
+    $("input[name='demo4']").TouchSpin({
+      postfix: "a button",
+      postfix_extraclass: "btn btn-default"
+    });
 });
 </script>
 {% endblock %}
@@ -73,75 +101,6 @@ $(function() {
                       <textarea class="form-control"></textarea>
                     </div>
                   </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Input Masks
-            </div>
-
-            <div class="panel-body">
-                <form class="form-horizontal group-border-dashed" action="#" novalidate>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Date</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="date" class="form-control" placeholder="DD/MM/YYYY" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Phone</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="phone" class="form-control" placeholder="(999) 999-9999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Phone + Optional Ext.</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="phone-ext" class="form-control" placeholder="(999) 999-9999? x99999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Int Phone</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="phone-int" class="form-control" placeholder="+33 999 999 999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Tax Id</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="taxid" class="form-control" placeholder="99-9999999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">SSN</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="ssn" class="form-control" placeholder="999-99-9999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Product Key</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="product-key" class="form-control" placeholder="a*-999-a999" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Percent</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="percent" class="form-control" placeholder="99%" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Currency</label>
-                        <div class="col-sm-9">
-                            <input type="text" data-mask="currency" class="form-control text-right" placeholder="$0" />
-                        </div>
-                    </div>
                 </form>
             </div>
         </div>
@@ -515,6 +474,111 @@ $(function() {
                             <input class="form-control" placeholder="Username" value="Info" type="text">
                         </div>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Input Masks with <strong>jQuery Masked Input</strong> Plugin
+            </div>
+
+            <div class="panel-body">
+                <form class="form-horizontal group-border-dashed" action="#" novalidate>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Date</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="date" class="form-control" placeholder="DD/MM/YYYY" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Phone</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="phone" class="form-control" placeholder="(999) 999-9999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Phone + Optional Ext.</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="phone-ext" class="form-control" placeholder="(999) 999-9999? x99999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Int Phone</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="phone-int" class="form-control" placeholder="+33 999 999 999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Tax Id</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="taxid" class="form-control" placeholder="99-9999999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">SSN</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="ssn" class="form-control" placeholder="999-99-9999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Product Key</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="product-key" class="form-control" placeholder="a*-999-a999" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Percent</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="percent" class="form-control" placeholder="99%" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Currency</label>
+                        <div class="col-sm-6">
+                            <input type="text" data-mask="currency" class="form-control text-right" placeholder="$0" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin</div>
+            <div class="panel-body">
+                <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Init with empty value</label>
+                    <div class="col-sm-3">
+                      <input id="cleaninit" type="text" value="" name="cleaninit" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Example with postfix</label>
+                    <div class="col-sm-3">
+                      <input id="demo1" type="text" value="55" name="demo1" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Example with prefix</label>
+                    <div class="col-sm-3">
+                      <input id="demo2" type="text" value="0" name="demo2" class="col-md-8 form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Button postfix</label>
+                    <div class="col-sm-3">
+                      <input id="demo4" type="text" value="" name="demo4" class="input-sm">
+                    </div>
+                  </div>
                 </form>
             </div>
         </div>

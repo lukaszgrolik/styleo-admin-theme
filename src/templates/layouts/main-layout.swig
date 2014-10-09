@@ -45,6 +45,89 @@
         iconClass: 'fa-map-marker',
     }
 ] %} #}
+{# {% include '../config/routes.swig' %} #}
+{% set routes = [
+    {
+        slug: 'index',
+        name: 'Dashboard',
+        iconClass: 'fa-home'
+    },
+    {
+        slug: 'ui-elements',
+        name: 'UI Elements',
+        iconClass: 'fa-wrench',
+        routes: [
+            {
+                slug: 'ui-elements-basic-elements',
+                name: 'Basic Elements'
+            },
+            {
+                slug: 'ui-elements-panels',
+                name: 'Panels'
+            },
+            {
+                slug: 'ui-elements-wells',
+                name: 'Wells'
+            },
+            {
+                slug: 'ui-elements-tabs-accordions',
+                name: 'Tabs & Accordions'
+            },
+            {
+                slug: 'ui-elements-buttons',
+                name: 'Buttons'
+            },
+            {
+                slug: 'ui-elements-notifications',
+                name: 'Notifications'
+            },
+            {
+                slug: 'ui-elements-alerts',
+                name: 'Alerts'
+            },
+            {
+                slug: 'ui-elements-progress-bars',
+                name: 'Progress Bars'
+            },
+            {
+                slug: 'ui-elements-typography',
+                name: 'Typography'
+            },
+            {
+                slug: 'ui-elements-grid',
+                name: 'Grid',
+                label: {
+                    class: 'label label-default',
+                    text: '12 COLUMNS'
+                }
+            },
+            {
+                slug: 'ui-elements-icons',
+                name: 'Icons',
+                routes: [
+                    {
+                        slug: 'ui-elements-icons-font-awesome',
+                        name: 'Font Awesome',
+                        iconClass: 'fa-flag',
+                        label: {
+                            class: 'badge badge-primary',
+                            text: 479
+                        }
+                    },
+                    {
+                        slug: 'ui-elements-icons-glyphicons',
+                        name: 'Glyphicons',
+                        iconClass: 'fa-plus-square',
+                        label: {
+                            class: 'badge badge-primary',
+                            text: 200
+                        }
+                    }
+                ]
+            },
+        ]
+    }
+] %}
 
 {% macro getPageTitleBySlug(slug) %}
 aaa
@@ -67,7 +150,7 @@ aaa
 
     {# <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title> #}
     {# <title>Styleo Admin 1.0 | {{getPageTitleBySlug(currentPageSlug)}}</title> #}
-    <title>Styleo Admin 1.0 | {{getRouteBySlug(currentRouteSlug).name}}</title>
+    <title>Styleo Admin 1.0 | {{getRouteBySlug(routes, currentRouteSlug).name}}</title>
 
     <link rel="shortcut icon" href="favicon.ico">
 

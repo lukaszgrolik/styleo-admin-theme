@@ -52,7 +52,7 @@
 	z-index: 1;
 
 	&:hover {
-		background-color: $color-dark-grey-2 !important;
+		background-color: lighten($color-blue, 10%) !important;
 	}
 
 	.badge-number {

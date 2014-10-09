@@ -10,7 +10,7 @@
 {% endmacro %}
 
 {% if currentRouteSlug != 'index' %}
-	{% set indexRoute = getRouteBySlug('index') %}
+	{% set indexRoute = getRouteBySlug(routes, 'index') %}
 	{{ bcMenuItem(indexRoute.slug, indexRoute.name) }}
 {% endif %}
 {# {% for route in routes %}
@@ -34,7 +34,7 @@
 	{% endfor %}
 {% endfor %} #}
 
-{% for route in getBreadcrumbsRoutes(currentRouteSlug) %}
+{% for route in getBreadcrumbsRoutes(routes, currentRouteSlug) %}
 	{{ bcMenuItem(route.slug, route.name) }}
 {% endfor %}
 

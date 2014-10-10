@@ -4,7 +4,6 @@ var swigLocals = {
 	// routes: yaml.load('./src/templates/data/routes.yaml'),
 
 	getRouteBySlug: function(routes, slug) {
-		// var routes = swigLocals.routes;
 		var result = {};
 		var route = null;
 		var nestedRoute = null;
@@ -27,7 +26,50 @@ var swigLocals = {
 			}
 		}
 
+		console.log('result', result)
+
 		return result;
+	},
+
+	getObjectInArrayByParams: function(arr, params, arrKey) {
+		if (Object.prototype.toString.call(arr) !== '[object Array]') {
+			// throw new Error('Must be an array!')
+			// arr = [];
+		}
+
+		var item = null;
+		var result = null;
+		var paramVal = null;
+		var itemFound = true;
+
+		for (var i = 0, l = arr.length; i < l; ++i) {
+			item = arr[i];
+			itemFound = true;
+
+			for (var paramKey in params) {
+				paramVal = params[paramKey];
+
+				if (item[paramKey] !== paramVal) {
+					itemFound = false;
+				}
+			}
+
+			if (itemFound) {
+				result = item;
+
+				return result;
+			}
+
+			if (item[arrKey] && item[arrKey].length) {
+				result = swigLocals.getObjectInArrayByParams(item[arrKey], params, arrKey);
+
+				if (result) {
+					return result;
+				}
+			}
+		}
+
+		return {};
 	},
 
 	// getRouteBySlug: function(routes, slug) {

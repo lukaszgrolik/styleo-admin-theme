@@ -47,86 +47,276 @@
 ] %} #}
 {# {% include '../config/routes.swig' %} #}
 {% set routes = [
-    {
-        slug: 'index',
-        name: 'Dashboard',
-        iconClass: 'fa-home'
-    },
-    {
-        slug: 'ui-elements',
-        name: 'UI Elements',
-        iconClass: 'fa-wrench',
-        routes: [
-            {
-                slug: 'ui-elements-basic-elements',
-                name: 'Basic Elements'
-            },
-            {
-                slug: 'ui-elements-panels',
-                name: 'Panels'
-            },
-            {
-                slug: 'ui-elements-wells',
-                name: 'Wells'
-            },
-            {
-                slug: 'ui-elements-tabs-accordions',
-                name: 'Tabs & Accordions'
-            },
-            {
-                slug: 'ui-elements-buttons',
-                name: 'Buttons'
-            },
-            {
-                slug: 'ui-elements-notifications',
-                name: 'Notifications'
-            },
-            {
-                slug: 'ui-elements-alerts',
-                name: 'Alerts'
-            },
-            {
-                slug: 'ui-elements-progress-bars',
-                name: 'Progress Bars'
-            },
-            {
-                slug: 'ui-elements-typography',
-                name: 'Typography'
-            },
-            {
-                slug: 'ui-elements-grid',
-                name: 'Grid',
-                label: {
-                    class: 'label label-default',
-                    text: '12 COLUMNS'
-                }
-            },
-            {
-                slug: 'ui-elements-icons',
-                name: 'Icons',
-                routes: [
-                    {
-                        slug: 'ui-elements-icons-font-awesome',
-                        name: 'Font Awesome',
-                        iconClass: 'fa-flag',
-                        label: {
-                            class: 'badge badge-primary',
-                            text: 479
-                        }
-                    },
-                    {
-                        slug: 'ui-elements-icons-glyphicons',
-                        name: 'Glyphicons',
-                        iconClass: 'fa-plus-square',
-                        label: {
-                            class: 'badge badge-primary',
-                            text: 200
-                        }
-                    }
-                ]
-            },
+  {
+    "slug": "index",
+    "name": "Dashboard",
+    "iconClass": "fa-home"
+  },
+  {
+    "slug": "ui-elements",
+    "name": "UI Elements",
+    "iconClass": "fa-wrench",
+    "routes": [
+      {
+        "slug": "ui-elements-basic-elements",
+        "name": "Basic Elements"
+      },
+      {
+        "slug": "ui-elements-panels",
+        "name": "Panels"
+      },
+      {
+        "slug": "ui-elements-wells",
+        "name": "Wells"
+      },
+      {
+        "slug": "ui-elements-tabs-accordions",
+        "name": "Tabs & Accordions"
+      },
+      {
+        "slug": "ui-elements-buttons",
+        "name": "Buttons"
+      },
+      {
+        "slug": "ui-elements-notifications",
+        "name": "Notifications"
+      },
+      {
+        "slug": "ui-elements-alerts",
+        "name": "Alerts"
+      },
+      {
+        "slug": "ui-elements-progress-bars",
+        "name": "Progress Bars"
+      },
+      {
+        "slug": "ui-elements-typography",
+        "name": "Typography"
+      },
+      {
+        "slug": "ui-elements-grid",
+        "name": "Grid",
+        "label": {
+          "class": "label label-default",
+          "text": "12 COLUMNS"
+        }
+      },
+      {
+        "slug": "ui-elements-icons",
+        "name": "Icons",
+        "routes": [
+          {
+            "slug": "ui-elements-icons-font-awesome",
+            "name": "Font Awesome",
+            "iconClass": "fa-flag",
+            "label": {
+              "class": "badge badge-primary",
+              "text": 479
+            }
+          },
+          {
+            "slug": "ui-elements-icons-glyphicons",
+            "name": "Glyphicons",
+            "iconClass": "fa-plus-square",
+            "label": {
+              "class": "badge badge-primary",
+              "text": 200
+            }
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "slug": "tables",
+    "name": "Tables",
+    "iconClass": "fa-table",
+    "routes": [
+      {
+        "slug": "tables-simple-responsive-tables",
+        "name": "Simple & Responsive Tables"
+      },
+      {
+        "slug": "tables-datatables",
+        "name": "DataTables"
+      }
+    ]
+  },
+  {
+    "slug": "forms",
+    "name": "Forms",
+    "iconClass": "fa-edit",
+    "routes": [
+      {
+        "slug": "forms-form-text-fields",
+        "name": "Form Text Fields",
+        "iconClass": "fa-pencil"
+      },
+      {
+        "slug": "forms-form-controls",
+        "name": "Form Controls",
+        "iconClass": "fa-dot-circle-o"
+      },
+      {
+        "slug": "forms-form-layouts",
+        "name": "Form Layouts",
+        "iconClass": "fa-th-large"
+      },
+      {
+        "slug": "forms-form-wizard",
+        "name": "Form Wizard",
+        "iconClass": "fa-magic"
+      },
+      {
+        "slug": "forms-form-validation",
+        "name": "Form Validation",
+        "iconClass": "fa-check"
+      },
+      {
+        "slug": "forms-editors",
+        "name": "Editors",
+        "iconClass": "fa-edit",
+        "routes": [
+          {
+            "slug": "forms-editors-simple-wysiwyg",
+            "name": "Simple WYSIWYG Editors"
+          },
+          {
+            "slug": "forms-editors-markdown",
+            "name": "Markdown Editors"
+          },
+          {
+            "slug": "forms-editors-ckeditor",
+            "name": "CKEditor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "charts",
+    "name": "Charts",
+    "iconClass": "fa-bar-chart",
+    "routes": [
+      {
+        "slug": "charts-flot",
+        "name": "Flot Charts"
+      },
+      {
+        "slug": "charts-morris",
+        "name": "Morris Charts"
+      },
+      {
+        "slug": "charts-sparkline",
+        "name": "Sparkline Charts"
+      }
+    ]
+  },
+  {
+    "slug": "maps",
+    "name": "Maps",
+    "iconClass": "fa-map-marker",
+    "routes": [
+      {
+        "slug": "maps-google-maps",
+        "name": "Google Maps"
+      },
+      {
+        "slug": "maps-vector-maps",
+        "name": "Vector Maps"
+      }
+    ]
+  },
+  {
+    "slug": "pages",
+    "name": "Pages",
+    "iconClass": "fa-files-o",
+    "routes": [
+      {
+        "slug": "pages-profile",
+        "name": "Profile",
+        "iconClass": "fa-users"
+      },
+      {
+        "slug": "pages-login",
+        "name": "Login",
+        "iconClass": "fa-sign-in"
+      },
+      {
+        "slug": "pages-register",
+        "name": "Register",
+        "iconClass": "fa-user"
+      },
+      {
+        "slug": "pages-lock-screen",
+        "name": "Lock Screen",
+        "iconClass": "fa-lock"
+      },
+      {
+        "slug": "pages-forgotten-password",
+        "name": "Forgotten Password",
+        "iconClass": "fa-key"
+      },
+      {
+        "slug": "pages-timeline",
+        "name": "Timeline",
+        "iconClass": "fa-clock-o",
+        "label": {
+          "class": "label label-warning",
+          "text": "NEW"
+        }
+      },
+      {
+        "slug": "pages-pricing-tables",
+        "name": "Pricing Tables",
+        "iconClass": "fa-credit-card"
+      },
+      {
+        "slug": "pages-gallery",
+        "name": "Gallery",
+        "iconClass": "fa-th",
+        "label": {
+          "class": "label label-danger",
+          "text": "NEW"
+        }
+      },
+      {
+        "slug": "pages-invoice",
+        "name": "Invoice",
+        "iconClass": "fa-file-text-o"
+      },
+      {
+        "slug": "pages-calendar",
+        "name": "Calendar",
+        "iconClass": "fa-calendar"
+      },
+      {
+        "slug": "pages-search-results",
+        "name": "Search Results",
+        "iconClass": "fa-search"
+      },
+      {
+        "slug": "pages-error-404",
+        "name": "Error 404",
+        "iconClass": "fa-warning"
+      },
+      {
+        "slug": "pages-error-500",
+        "name": "Error 500",
+        "iconClass": "fa-warning"
+      },
+      {
+        "slug": "pages-blank-page",
+        "name": "Blank Page",
+        "iconClass": "fa-file-o"
+      }
+    ]
+  },
+  {
+    "slug": "documentation",
+    "name": "Documentation",
+    "iconClass": "fa-graduation-cap"
+  }
 ] %}
 
 {% macro getPageTitleBySlug(slug) %}

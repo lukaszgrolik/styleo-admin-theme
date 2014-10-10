@@ -1,6 +1,6 @@
 {% extends '../layouts/layout-1.swig' %}
 
-{% set currentRouteSlug = 'forms-form-controls-plugins' %}
+{% set currentRouteSlug = 'forms-form-controls' %}
 
 {% block headEnd %}
 <link rel="stylesheet" href="bower_components/select2/select2.css">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="bower_components/jquery-minicolors/jquery.minicolors.css">
 <link rel="stylesheet" href="bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/dropzone/downloads/css/dropzone.css">
+<link rel="stylesheet" href="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
 {% endblock %}
 
 {% block bodyEnd %}
@@ -25,6 +26,8 @@
 <script src="bower_components/jquery-minicolors/jquery.minicolors.min.js"></script>
 <script src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js"></script>
 <script src="bower_components/dropzone/downloads/dropzone.min.js"></script>
+<script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<script src="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 
 <script>
 $(function() {
@@ -143,7 +146,12 @@ $(function() {
         new Switchery($(this)[0], options);
     });
 
+    // Tags Inputs
 
+    // $('[data-role="tagsinput"]').tagsinput({
+    $('.tagsinput').tagsinput({
+        tagClass: 'label label-primary'
+    });
 
     // Color Pickers
 
@@ -171,6 +179,10 @@ $(function() {
             },
         });
     });
+
+    // Knobs
+
+    $(".knob").knob();
 
     // File Upload
 
@@ -596,6 +608,89 @@ $(function() {
 </div>
 
 <div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Sliders with <strong>jQuery Knob</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Knob Colors</h3>
+
+                        <div class="text-center">
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="0">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#2ecc71" data-thickness=".25" value="10">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#1abc9c" data-thickness=".25" value="20">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#e67e22" data-thickness=".25" value="30">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#e74c3c" data-thickness=".25" value="40">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#f1c40f" data-thickness=".25" value="50">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#9b59b6" data-thickness=".25" value="60">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#be643c" data-thickness=".25" value="70">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#34495e" data-thickness=".25" value="80">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Knob Types</h3>
+
+                        <div class="text-center">
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#e74c3c" data-thickness=".25" value="30">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-angleoffset="0" data-linecap=round data-fgcolor="#2ecc71" value="60" data-thickness=".25">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob"  data-width="100" data-height="100" data-angleoffset="-120" data-anglearc="240" data-fgcolor="#3498db" data-rotation="clockwise" value="30" data-thickness=".25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3>Knob Sizes</h3>
+
+                        <div class="text-center">
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="50" data-height="50" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="20">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="75" data-height="75" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="40">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="100" data-height="100" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="60">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="125" data-height="125" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="80">
+                            </div>
+                            <div class="knob-container vam">
+                                <input class="knob" data-width="150" data-height="150" data-cursor=true data-fgcolor="#3498db" data-thickness=".25" value="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -646,6 +741,19 @@ $(function() {
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Tags Input with <strong>Bootstrap Tags Input</strong> Plugin
+            </div>
+            <div class="panel-body">
+                <input type="text" value="Amsterdam,Washington,Sydney" class="tagsinput" placeholder="Add tags" />
             </div>
         </div>
     </div>

@@ -650,3 +650,29 @@ label.custom-switch-label {
 	// padding-top: 0;
 	// padding-bottom: 0;
 }
+
+//
+
+.knob-container {
+	padding: 5px;
+	display: inline-block;
+}
+
+.vam {
+	vertical-align: middle;
+}
+
+.vat {
+	vertical-align: top;
+}
+
+.vab {
+	vertical-align: bottom;
+}
+
+//
+
+.bootstrap-tagsinput {
+	box-shadow: none;
+	border-color: $color-grey-4;
+}

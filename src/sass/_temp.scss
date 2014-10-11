@@ -405,12 +405,12 @@ label.custom-switch-label {
 //
 
 .custom-control-checkbox-icheck {
-    cursor: pointer;
+	cursor: pointer;
 	// color: transparent;
 	color: $color-blue;
 	font-family: FontAwesome;
 	font-weight: 400;
-    // border: 3px solid $color-blue;
+	// border: 3px solid $color-blue;
 	display: inline-block;
 	font-size: 18px;
 	width: 18px;
@@ -634,11 +634,9 @@ label.custom-switch-label {
 	}
 
 	.btn {
+		background-color: transparent !important;
 		color: $color-light-grey;
-
-		&:hover {
-			background-color: transparent;
-		}
+		box-shadow: none;
 	}
 }
 
@@ -692,7 +690,7 @@ label.custom-switch-label {
 
 .table-responsive
 {
-    overflow-x: auto;
+	overflow-x: auto;
 }
 
 //
@@ -739,26 +737,26 @@ label.custom-switch-label {
 //
 
 .easyPieChart {
-    position: relative;
-    display: inline-block;
-    // width: 110px;
-    // height: 110px;
-    // margin-top: 50px;
-    // margin-bottom: 50px;
-    text-align: center;
+	position: relative;
+	display: inline-block;
+	// width: 110px;
+	// height: 110px;
+	// margin-top: 50px;
+	// margin-bottom: 50px;
+	text-align: center;
 
-    canvas {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 	.easyPieChart-value {
-	    display: inline-block;
-	    // line-height: 110px;
-	    z-index: 2;
-	    // position: absolute;
-	    // width: 100%;
-	    // height: 100%;
+		display: inline-block;
+		// line-height: 110px;
+		z-index: 2;
+		// position: absolute;
+		// width: 100%;
+		// height: 100%;
 	}
 }
 

@@ -33,6 +33,12 @@ gulp.task('livereload', function() {
 
 //
 
+gulp.task('markdown', function() {
+	return gulp.src('README.md')
+	.pipe(plugins.markdown())
+	.pipe(gulp.dest('./'))
+})
+
 gulp.task('templates', function() {
 	return gulp.src(config.paths.src + '/templates/pages/**/*.swig')
 	.pipe(plugins.plumber())
@@ -79,7 +85,8 @@ gulp.task('sass', function() {
 //
 
 gulp.task('watch', function() {
-	gulp.watch([config.paths.src + '/templates/**/*.swig', '*.md'], ['templates']);
+	gulp.watch('README.md', ['markdown']);
+	gulp.watch([config.paths.src + '/templates/**/*.swig', 'README.html'], ['templates']);
 	gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 	// gulp.watch(config.paths.web + '/*.html', ['livereload']);
 });
@@ -98,6 +105,6 @@ gulp.task('watch', function() {
 
 //
 
-gulp.task('build', ['templates', 'sass',]);
+gulp.task('build', ['markdown', 'templates', 'sass',]);
 gulp.task('server', ['connect', 'build', 'watch']);
 gulp.task('default', ['server']);

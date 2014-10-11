@@ -37,14 +37,14 @@
 ## Credits
 
 - [Bootstrap](http://getbootstrap.com/)
-- [jQuery](http://jquery.com/)
-- [Gulp](http://gulpjs.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [morris.js](http://morrisjs.github.io/morris.js/)
-- [Flot](http://www.flotcharts.org/)
 - [DataTables](http://www.datatables.net/)
-- [metisMenu](http://demo.onokumus.com/metisMenu/)
+- [Flot](http://www.flotcharts.org/)
+- [Font Awesome](http://fontawesome.io/)
 - [Google Fonts](http://www.google.com/fonts)
+- [Gulp](http://gulpjs.com/)
+- [jQuery](http://jquery.com/)
+- [metisMenu](http://demo.onokumus.com/metisMenu/)
+- [morris.js](http://morrisjs.github.io/morris.js/)
 
 - [CKEditor]
 - [Summernote]

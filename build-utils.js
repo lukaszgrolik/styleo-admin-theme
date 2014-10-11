@@ -18,7 +18,7 @@ var swigLocals = {
 			} else if (route.routes) {
 				nestedRoute = swigLocals.getRouteBySlug(route.routes, slug);
 
-				if (nestedRoute) {
+				if ('string' === typeof nestedRoute.slug) {
 					result = nestedRoute;
 
 					break;

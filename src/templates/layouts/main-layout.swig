@@ -282,7 +282,7 @@
       {
         "slug": "pages-gallery",
         "name": "Gallery",
-        "iconClass": "fa-th",
+        "iconClass": "fa-picture-o",
         "label": {
           "class": "label label-danger",
           "text": "NEW"

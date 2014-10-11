@@ -18,7 +18,7 @@
         <div class="alert alert-success sharp">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <i class="fa fa-check"></i>
-            Welcome to <strong>Styleo</strong> (v1.0.0) , the lightweight, feature-rich and easy to use admin template.
+            Welcome to <strong>Styleo</strong> (v2.0.0) , the lightweight, feature-rich and easy to use admin template.
         </div>
     </div>
 </div>

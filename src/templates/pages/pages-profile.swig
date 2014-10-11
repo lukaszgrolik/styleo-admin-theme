@@ -21,6 +21,7 @@
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#home" data-toggle="tab">Information</a></li>
                 <li><a href="#profile" data-toggle="tab">Friends</a></li>
+                <li><a href="#profile" data-toggle="tab">Pictures</a></li>
                 <li><a href="#messages" data-toggle="tab">Messages</a></li>
                 <li><a href="#settings" data-toggle="tab">Settings</a></li>
             </ul>

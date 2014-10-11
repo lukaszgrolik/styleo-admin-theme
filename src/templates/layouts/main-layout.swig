@@ -133,8 +133,12 @@
     "iconClass": "fa-table",
     "routes": [
       {
-        "slug": "tables-simple-responsive-tables",
-        "name": "Simple & Responsive Tables"
+        "slug": "tables-simple",
+        "name": "Simple Tables"
+      },
+      {
+        "slug": "tables-responsive",
+        "name": "Responsive Tables"
       },
       {
         "slug": "tables-datatables",
@@ -353,8 +357,6 @@ aaa
     <!-- MetisMenu CSS -->
     <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
 
-    <link rel="stylesheet" href="bower_components/nanoscroller/bin/css/nanoscroller.css">
-
     {% block headEnd %}{% endblock %}
 
     <!-- Custom CSS -->
@@ -387,7 +389,9 @@ aaa
     <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
 
-    <script src="bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+    {# // <script src="bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script> #}
+
+    <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/styleo-admin.js"></script>

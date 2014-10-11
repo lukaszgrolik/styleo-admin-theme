@@ -402,20 +402,9 @@
 //
 
 .sidebar {
-	.nano-pane,
-	.nano-pane .nano-slider {
-		border-radius: 0;
-
-	}
-
-	.nano-pane {
-		// background-color: rgba(0, 0, 0, 0.1);
-		background-color: transparent;
-		width: 5px;
-	}
-
-	.nano-pane .nano-slider {
-		background-color: rgba(0, 0, 0, 0.1);
-		margin: 0;
+	.slimScrollBar {
+		// opacity: 1 !important;
+		background-color: rgba(0, 0, 0, 0.25) !important;
+		border-radius: 0 !important;
 	}
 }

@@ -1,8 +1,5 @@
 {% extends '../layouts/main-layout.swig' %}
 
-{# {% block title %}Login page{% endblock %} #}
-{# {% block title %}{% endblock %} #}
-
 {% block content %}
 <div id="wrapper">
 
@@ -511,8 +508,8 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default sidebar nano" role="navigation">
-            <div class="sidebar-nav navbar-collapse nano-content">
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse scroll-container">
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
                         <div class="input-group custom-search-form">

@@ -1,12 +1,12 @@
 <optgroup label="Alaskan/Hawaiian Time Zone">
-	<option value="AK">Alaska</option>
+	<option value="AK" selected>Alaska</option>
 	<option value="HI">Hawaii</option>
 </optgroup>
 <optgroup label="Pacific Time Zone">
-	<option value="CA">California</option>
+	<option value="CA" selected>California</option>
 	<option value="NV">Nevada</option>
 	<option value="OR">Oregon</option>
-	<option value="WA">Washington</option>
+	<option value="WA" selected>Washington</option>
 </optgroup>
 <optgroup label="Mountain Time Zone">
 	<option value="AZ">Arizona</option>

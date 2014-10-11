@@ -23,7 +23,6 @@
     "flot.tooltip": "~0.8.4",
     "bootstrap-social": "~4.8.0",
     "datatables-plugins": "*",
-    "nanoscroller": "~0.8.4",
     "fullcalendar": "~2.1.1",
     "jquery-ui": "~1.11.1",
     "bootstrap-markdown": "~2.7.0",
@@ -39,6 +38,9 @@
     "parsleyjs": "~2.0.5",
     "jquery-knob": "~1.2.11",
     "bootstrap-tagsinput": "~0.4.2",
-    "relayfoods-jquery.sparkline": "~2.1.4"
+    "relayfoods-jquery.sparkline": "~2.1.4",
+    "jquery.slimscroll": "~1.3.3",
+    "jeditable": "~1.7.3",
+    "stacktable": "~1.0.0"
   }
 }

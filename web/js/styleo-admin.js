@@ -8,7 +8,9 @@ $(function() {
         sidebarMenuHeight();
     }
 
-    $('.nano').nanoScroller();
+    $('.scroll-container').slimScroll({
+        height: '100%'
+    });
 
     // needed for showing scrollbar when sidebar menu has greater height than sidebar itself (fixed sidebar only)
     function sidebarMenuHeight() {

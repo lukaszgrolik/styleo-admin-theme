@@ -701,14 +701,14 @@ $(function() {
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Date Picker</label>
                         <div class="col-sm-8">
-                            <input class="form-control date-picker-input" type="text">
+                            <input class="form-control date-picker-input" type="text" value="10/11/2014">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Date Range Picker</label>
                         <div class="col-sm-8">
-                            <input class="form-control date-range-picker-input" type="text">
+                            <input class="form-control date-range-picker-input" type="text" value="10/14/2014 - 01/25/2015">
                         </div>
                     </div>
                 </form>
@@ -735,7 +735,7 @@ $(function() {
                     <div class="form-group">
                         <label class="col-sm-4 control-label">Multiselect</label>
                         <div class="col-sm-8">
-                            <select multiple class="custom-select-select2" style="width: 100%">
+                            <select multiple class="custom-select-select2" style="width: 100%" value="CA,NV,OR">
                                 {% include '../partials/select-options-1.swig' %}
                             </select>
                         </div>

@@ -213,6 +213,10 @@
       {
         "slug": "charts-sparkline",
         "name": "Sparkline Charts"
+      },
+      {
+        "slug": "charts-easy-pie-chart",
+        "name": "Easy Pie Charts"
       }
     ]
   },

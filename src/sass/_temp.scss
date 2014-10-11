@@ -698,8 +698,6 @@ label.custom-switch-label {
 //
 
 .table-responsive-flipped-axis {
-	overflow-x: auto;
-
 	.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 	* html .cf { zoom: 1; }
 	*:first-child+html .cf { zoom: 1; }
@@ -737,3 +735,35 @@ label.custom-switch-label {
 .stacktable + .table-responsive-stacktable {
 	display: none;
 }
+
+//
+
+.easyPieChart {
+    position: relative;
+    display: inline-block;
+    // width: 110px;
+    // height: 110px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+    text-align: center;
+
+    canvas {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	.easyPieChart-value {
+	    display: inline-block;
+	    // line-height: 110px;
+	    z-index: 2;
+	    // position: absolute;
+	    // width: 100%;
+	    // height: 100%;
+	}
+}
+
+// .percent:after {
+//     content:'%';
+//     margin-left: 0.1em;
+//     font-size: .8em;
+// }

@@ -41,6 +41,7 @@
     "relayfoods-jquery.sparkline": "~2.1.4",
     "jquery.slimscroll": "~1.3.3",
     "jeditable": "~1.7.3",
-    "stacktable": "~1.0.0"
+    "stacktable": "~1.0.0",
+    "jquery.easy-pie-chart": "~2.1.4"
   }
 }

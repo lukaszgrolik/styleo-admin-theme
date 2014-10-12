@@ -372,7 +372,6 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle nav-profile-photo-link" data-toggle="dropdown" href="#">
-                    {# <i class="fa fa-user fa-fw"></i> #}
                     <img src="images/avatar6.jpg" class="nav-profile-photo" alt="">
                     <span>Jane Smith</span>
                     <i class="fa fa-caret-down"></i>
@@ -386,11 +385,8 @@
                     <li><a href="pages-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
-                <!-- /.dropdown-user -->
             </li>
-            <!-- /.dropdown -->
         </ul>
-        <!-- /.navbar-top-links -->
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse scroll-container">
@@ -404,32 +400,15 @@
                                 </button>
                             </span>
                         </div>
-                        <!-- /input-group -->
                     </li>
                     {% include '../partials/main-menu-items.swig' %}
-
-
                 </ul>
             </div>
-            <!-- /.sidebar-collapse -->
         </div>
-        <!-- /.navbar-static-side -->
     </nav>
 
-    <!-- Page Content -->
     <div id="page-wrapper">
-        {# <h1 class="page-header">{% block title %}{% endblock %}</h1> #}
-        {# <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">{% block title %}{% endblock %}</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-        </div> #}
-        <!-- /.row -->
         {% block content2 %}{% endblock %}
     </div>
-    <!-- /#page-wrapper -->
-
 </div>
-    <!-- /#wrapper -->
 {% endblock %}

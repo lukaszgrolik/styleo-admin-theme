@@ -1,0 +1,28 @@
+.fuelux .wizard {
+	box-shadow: none;
+
+	> .steps li {
+		border-radius: 0 !important;
+
+		&.active {
+			background-color: lighten($color-blue, 30%);
+			// color: #fff;
+
+			.badge {
+				background-color: $color-blue !important;
+			}
+
+			.chevron:before {
+				border-left-color: lighten($color-blue, 30%);
+			}
+		}
+	}
+
+	> .actions {
+		background-color: transparent;
+	}
+
+	> .step-content {
+		background-color: #fff;
+	}
+}

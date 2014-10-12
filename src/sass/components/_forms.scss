@@ -4,14 +4,26 @@
 
 	.has-success & {
 		border-color: $color-green;
+
+		&:focus {
+			border-color: darken($color-green, 20%);
+		}
 	}
 
 	.has-warning & {
 		border-color: $color-orange;
+
+		&:focus {
+			border-color: darken($color-orange, 20%);
+		}
 	}
 
 	.has-error & {
 		border-color: $color-red;
+
+		&:focus {
+			border-color: darken($color-red, 20%);
+		}
 	}
 }
 

@@ -4,7 +4,8 @@
 @import 'sb-admin-2/timeline';
 
 @import 'basic';
-@import 'layout';
+@import 'utils';
+
 
 @import 'components/buttons';
 @import 'components/panels';
@@ -26,5 +27,23 @@
 @import 'components/labels';
 @import 'components/slider';
 @import 'components/backgrounds';
+@import 'components/switchery';
+@import 'components/select2';
+@import 'components/icheck';
+@import 'components/form-wizard';
+@import 'components/tables';
+@import 'components/knobs';
+@import 'components/tagsinput';
+@import 'components/maps';
+@import 'components/easy-pie-chart';
+@import 'components/invoice';
+@import 'components/gallery';
+
+
+@import 'layout';
+
+@import 'pages/font-awesome';
+@import 'pages/glyphicons';
+
 
 @import 'temp';

@@ -1,23 +1,17 @@
-.easyPieChart {
+.easy-pie-chart {
 	position: relative;
 	display: inline-block;
-	// width: 110px;
-	// height: 110px;
-	// margin-top: 50px;
-	// margin-bottom: 50px;
 	text-align: center;
+	margin: 5px;
 
 	canvas {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
-	.easyPieChart-value {
+
+	.easy-pie-chart-value {
 		display: inline-block;
-		// line-height: 110px;
 		z-index: 2;
-		// position: absolute;
-		// width: 100%;
-		// height: 100%;
 	}
 }

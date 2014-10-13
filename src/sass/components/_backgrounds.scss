@@ -19,3 +19,15 @@
 .bg-violet {background-color: lighten($color-violet, 30%)}
 .bg-brown {background-color: lighten($color-brown, 30%)}
 .bg-navy {background-color: lighten($color-navy, 30%)}
+
+//
+
+.bgc-blue {background-color: $color-blue !important;}
+.bgc-green {background-color: $color-green !important;}
+.bgc-cyan {background-color: $color-cyan !important;}
+.bgc-orange {background-color: $color-orange !important;}
+.bgc-red {background-color: $color-red !important;}
+.bgc-yellow {background-color: $color-yellow !important;}
+.bgc-violet {background-color: $color-violet !important;}
+.bgc-brown {background-color: $color-brown !important;}
+.bgc-navy {background-color: $color-navy !important;}

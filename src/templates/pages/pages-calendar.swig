@@ -133,7 +133,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-3">
-        <div class="panel panel-warning sharp raised gradient">
+        <div class="panel panel-warning sharp raised">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-plus"></i>
                 Add Events By Dragging
@@ -158,7 +158,7 @@ $(function() {
     </div>
 
     <div class="col-lg-9">
-        <div class="panel panel-danger sharp raised gradient">
+        <div class="panel panel-danger sharp raised">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-calendar"></i>
                 Events and Schedules

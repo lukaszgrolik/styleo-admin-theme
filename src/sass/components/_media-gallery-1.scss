@@ -1,0 +1,28 @@
+.media-gallery-1 {
+  .media-item {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+    min-width: 23%;
+
+    .media-image {
+      border-radius: 50%;
+      max-width: 50px;
+      margin-right: 10px;
+      float: left;
+    }
+
+    .media-title {
+      margin: 0;
+    }
+
+    .media-desc {
+      color: $color-grey-2;
+    }
+  }
+
+  a.media-item {
+    text-decoration: none;
+    color: $color-light-grey;
+  }
+}

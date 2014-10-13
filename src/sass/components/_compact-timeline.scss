@@ -1,0 +1,115 @@
+.compact-timeline {
+  padding: 0 0 1px 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.compact-timeline:before {
+  content: "";
+  background-color: #e1e1e1;
+  width: 2px;
+  margin-left: -10px;
+  position: absolute;
+  left: 31px;
+  top: 2px;
+  bottom: 0;
+}
+
+.compact-timeline:after {
+  content: "";
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 17px;
+  bottom: -9px;
+}
+
+.compact-timeline li {
+  list-style: none;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.compact-timeline li > .fa {
+  background: $color-blue;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  position: absolute;
+  z-index: 2;
+  left: 2px;
+  top: 0;
+}
+
+.compact-timeline li .content {
+  background: #fff;
+  border-radius: 3px;
+  line-height: 15px;
+  padding: 12px 10px;
+  border: 1px solid #E8E8E6;
+  margin-left: 75px;
+  position: relative;
+}
+
+.compact-timeline li .content p {
+  margin: 0;
+}
+
+.compact-timeline li .content .img-thumbnail {
+  cursor: pointer;
+  border-radius: 0;
+  margin: 10px 5px 0 0;
+}
+
+.compact-timeline li .content blockquote {
+  margin: 10px 0 0 0;
+}
+
+.compact-timeline li .content blockquote p {
+  font-size: 14px;
+  margin: 0 0 5px 0 !important;
+}
+
+.compact-timeline li .content:before {
+  content: "";
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #E8E8E6;
+  border-bottom: 1px solid #E8E8E6;
+  transform: rotate(45deg);
+  position: absolute;
+  left: -6px;
+  top: 14px;
+}
+
+.compact-timeline li > .date {
+  background: #E8E8E8;
+  color: #7B7B7B;
+  border-radius: 1px;
+  font-size: 11px;
+  line-height: 19px;
+  text-shadow: 0 1px 0 #fafafa;
+  text-align: center;
+  padding: 0 5px;
+  width: 44px;
+  border: 1px solid #E1E1E1;
+  display: block;
+  position: absolute;
+  top: 49px;
+}
+
+// @media screen and (min-width: 1500px) {
+//   .cbp_compact-tmtimeline > li .cbp_tmtime {
+//     padding-right: 130px;
+//   }
+// }

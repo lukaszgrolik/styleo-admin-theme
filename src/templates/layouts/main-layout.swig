@@ -266,13 +266,23 @@
         "iconClass": "fa-key"
       },
       {
-        "slug": "pages-timeline",
-        "name": "Timeline",
+        "slug": "pages-timelines",
+        "name": "Timelines",
         "iconClass": "fa-clock-o",
-        "label": {
-          "class": "label label-warning",
-          "text": "NEW"
-        }
+        "routes": [
+            {
+                "slug": "pages-basic-timeline",
+                "name": "Basic Timeline",
+            },
+            {
+                "slug": "pages-compact-timeline",
+                "name": "Compact Timeline",
+                "label": {
+                  "class": "label label-warning",
+                  "text": "NEW"
+                }
+            }
+        ]
       },
       {
         "slug": "pages-pricing-tables",

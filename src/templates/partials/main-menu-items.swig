@@ -6,6 +6,7 @@
 	{% for route in routes %}
 		{% set currentClass  = '' %}
 		{% set activeClass  = '' %}
+		{% set noIconClass  = '' %}
 
 		{% if getBreadcrumbsRoutes(routes, currentRouteSlug)[0] and route.slug == getBreadcrumbsRoutes(routes, currentRouteSlug)[0].slug %}
 			{% set currentClass = 'current' %}
@@ -15,7 +16,11 @@
 			{% set activeClass = 'active' %}
 		{% endif %}
 
-		<li class="{{currentClass}} {{activeClass}}">
+		{% if mainMenuItemsLevel == 2 and !route.iconClass %}
+			{% set noIconClass = 'no-icon' %}
+		{% endif %}
+
+		<li class="{{currentClass}} {{activeClass}} {{noIconClass}}">
 			{% set link = '#' %}
 
 			{% if !route.routes %}

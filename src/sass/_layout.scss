@@ -216,7 +216,8 @@
 		}
 
 		&:focus {
-			outline: 1px dotted $color-grey-1;
+			// outline: 1px dotted $color-grey-1;
+			outline: 0;
 		}
 	}
 
@@ -270,6 +271,12 @@
 			> a {
 				background-color: lighten($color-red, 40%);
 				color: $color-red;
+			}
+		}
+
+		&.no-icon {
+			> a {
+				padding-left: 42px;
 			}
 		}
 	}

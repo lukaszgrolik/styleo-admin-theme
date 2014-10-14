@@ -28,6 +28,26 @@
 - Flot charts examples
 - Morris charts examples
 
+## Will be included in the future
+
+- Chat page
+- ChartJS plugin integration
+- Email pages (inbox, messages)
+- Email templates
+- FAQ page
+- jqGrid (advanced tables) plugin integration
+- jQuery UI elements integration
+- jQRangeSlider plugin integration
+- Nestable List element
+- More skins
+- Pricing Tables page
+- Product Details/Item Info page
+- RTL support
+- Search/Search Results page
+- Toastr/Gritter Notifications plugins integration
+- Tree View support
+- X-editable (inline editing) plugin integration
+
 ## Changelog
 
 ### 1.0.0 (23 September 2014)

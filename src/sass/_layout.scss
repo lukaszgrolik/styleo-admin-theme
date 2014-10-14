@@ -65,11 +65,15 @@
 	}
 
 	.dropdown-menu {
+		box-shadow: 0 1px 3px $color-grey-2;
 		font-size: 12px;
 		padding: 0;
+		border: 0;
+		margin-top: 0;
 
 		> li {
 			&.divider {
+				background-color: $color-grey-3;
 				padding: 0;
 				margin: 0;
 			}
@@ -118,8 +122,40 @@
 	}
 
 	.sidebar-search {
-		padding: 5px;
-		padding-left: 20px;
+		background-color: #fff;
+		padding: 10px 5px;
+		padding-left: 27px;
+		padding-right: 5px;
+		border-left: 0 !important;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.custom-search-form {
+	.form-control::placeholder,
+	.form-control {
+		color: $color-dark-grey;
+	}
+
+	.form-control,
+	.btn {
+		border: 0 !important;
+		// border-radius: 0;
+	}
+
+	.form-control {
+		background-color: $color-grey-3;
+		border-radius: 3px !important;
+	}
+
+	.btn {
+		background-color: transparent !important;
+		// color: $color-light-grey;
+		color: $color-blue;
+		box-shadow: none;
 	}
 }
 
@@ -203,6 +239,8 @@
 //
 
 #side-menu {
+	padding-bottom: 100px;
+
 	li {
 		border: 0;
 		border-left: 5px solid $color-grey-4;
@@ -332,7 +370,8 @@
 	}
 
 	.message-body {
-		margin-top: 5px;
+		color: $color-grey-1;
+		// margin-top: 5px;
 	}
 }
 
@@ -368,24 +407,4 @@
 
 .single-window {
 	margin-top: 25%;
-}
-
-//
-
-.custom-search-form {
-	.form-control::placeholder,
-	.form-control {
-		color: $color-dark-grey;
-	}
-
-	.form-control,
-	.btn {
-		border: 0 !important;
-	}
-
-	.btn {
-		background-color: transparent !important;
-		color: $color-light-grey;
-		box-shadow: none;
-	}
 }

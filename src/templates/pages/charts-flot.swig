@@ -13,44 +13,43 @@
 {% endblock %}
 
 {% block content2 %}
-<!-- /.row -->
 <div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
+    <div class="col-lg-6">
+        <div class="panel panel-success bordered sharp">
             <div class="panel-heading">
-                Line Chart Example
+                Line Chart
             </div>
-            <!-- /.panel-heading -->
+
             <div class="panel-body">
                 <div class="flot-chart">
                     <div class="flot-chart-content" id="flot-line-chart"></div>
                 </div>
             </div>
-            <!-- /.panel-body -->
         </div>
-        <!-- /.panel -->
     </div>
-    <!-- /.col-lg-12 -->
+
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-info bordered sharp">
             <div class="panel-heading">
-                Pie Chart Example
+                Bar Chart
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <div class="flot-chart">
-                    <div class="flot-chart-content" id="flot-pie-chart"></div>
+                    <div class="flot-chart-content" id="flot-bar-chart"></div>
                 </div>
             </div>
             <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
     </div>
-    <!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-primary bordered sharp">
             <div class="panel-heading">
-                Multiple Axes Line Chart Example
+                Multiple Axes Line Chart
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -64,9 +63,9 @@
     </div>
     <!-- /.col-lg-6 -->
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning bordered sharp">
             <div class="panel-heading">
-                Moving Line Chart Example
+                Moving Line Chart
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -79,20 +78,21 @@
         <!-- /.panel -->
     </div>
     <!-- /.col-lg-6 -->
+</div>
+
+<div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger bordered sharp">
             <div class="panel-heading">
-                Bar Chart Example
+                Pie Chart
             </div>
-            <!-- /.panel-heading -->
+
             <div class="panel-body">
                 <div class="flot-chart">
-                    <div class="flot-chart-content" id="flot-bar-chart"></div>
+                    <div class="flot-chart-content" id="flot-pie-chart"></div>
                 </div>
             </div>
-            <!-- /.panel-body -->
         </div>
-        <!-- /.panel -->
     </div>
     <!-- /.col-lg-6 -->
 </div>

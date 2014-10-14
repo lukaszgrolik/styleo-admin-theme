@@ -3,9 +3,7 @@
 {% set currentRouteSlug = 'ui-elements-panels' %}
 
 {% block content2 %}
-<h2>Panel Types</h2>
-
-<p>Panels can be rounded (default), rectangular, with or without borders.</p>
+<h2>Panels Types</h2>
 
 <div class="row">
     <div class="col-lg-3">
@@ -53,9 +51,7 @@
     </div>
 </div>
 
-<h2>Panel Colors</h2>
-
-<p>Panels come in different color versions - grey (default), primary (blue), success (green), info (cyan), warning (orange) or danger (red).</p>
+<h2>Panels Colors</h2>
 
 <div class="row">
     <div class="col-lg-2">
@@ -283,7 +279,7 @@
     </div>
 </div>
 
-<h2>Panel Heading Types</h2>
+<h2>Panels Heading Types</h2>
 
 <div class="row">
     <div class="col-lg-2">
@@ -456,7 +452,7 @@
     </div>
 </div>
 
-<h2>Panel Footers</h2>
+<h2>Panels Footers</h2>
 
 <div class="row">
     <div class="col-lg-3">
@@ -473,13 +469,13 @@
     <div class="col-lg-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Panel
+                Default Panel with Footer
             </div>
             <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ab numquam magni, praesentium voluptatem magnam?</p>
             </div>
             <div class="panel-footer">
-                Panel Footer
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iste labore quidem consequuntur voluptatem ducimus.
             </div>
         </div>
     </div>
@@ -487,7 +483,7 @@
     <div class="col-lg-3">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                Primary Panel
+                Colored Panel
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
@@ -498,13 +494,13 @@
     <div class="col-lg-3">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                Success Panel
+                Colored Panel with Footer
             </div>
             <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ex aspernatur, quasi minima veritatis nostrum.</p>
             </div>
             <div class="panel-footer">
-                Panel Footer
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repellat ad, ullam optio at eveniet?
             </div>
         </div>
     </div>
@@ -512,7 +508,7 @@
 </div>
 <!-- /.row -->
 
-<h2>Examples</h2>
+<h2>Panels Examples</h2>
 
 <div class="row">
     <div class="col-lg-4">
@@ -622,13 +618,13 @@
     </div>
 </div>
 
-<h2>Showcase</h2>
+<h2>Panels Showcase</h2>
 
 <div class="row">
     <div class="col-lg-2">
         <div class="panel panel-default separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -639,7 +635,7 @@
     <div class="col-lg-2">
         <div class="panel panel-primary separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -650,7 +646,7 @@
     <div class="col-lg-2">
         <div class="panel panel-success separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -661,7 +657,7 @@
     <div class="col-lg-2">
         <div class="panel panel-info separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -672,7 +668,7 @@
     <div class="col-lg-2">
         <div class="panel panel-warning separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -683,7 +679,7 @@
     <div class="col-lg-2">
         <div class="panel panel-danger separated">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -696,7 +692,7 @@
     <div class="col-lg-2">
         <div class="panel panel-default bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -707,7 +703,7 @@
     <div class="col-lg-2">
         <div class="panel panel-primary bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -718,7 +714,7 @@
     <div class="col-lg-2">
         <div class="panel panel-success bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -729,7 +725,7 @@
     <div class="col-lg-2">
         <div class="panel panel-info bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -740,7 +736,7 @@
     <div class="col-lg-2">
         <div class="panel panel-warning bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -751,7 +747,7 @@
     <div class="col-lg-2">
         <div class="panel panel-danger bordered">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -764,7 +760,7 @@
     <div class="col-lg-2">
         <div class="panel panel-default raised">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -775,7 +771,7 @@
     <div class="col-lg-2">
         <div class="panel panel-primary raised">
             <div class="panel-heading">
-                Raised
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -786,7 +782,7 @@
     <div class="col-lg-2">
         <div class="panel panel-success raised">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -797,7 +793,7 @@
     <div class="col-lg-2">
         <div class="panel panel-info raised">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -808,7 +804,7 @@
     <div class="col-lg-2">
         <div class="panel panel-warning raised">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -819,7 +815,7 @@
     <div class="col-lg-2">
         <div class="panel panel-danger raised">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -832,7 +828,7 @@
     <div class="col-lg-2">
         <div class="panel panel-default gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -843,7 +839,7 @@
     <div class="col-lg-2">
         <div class="panel panel-primary gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -854,7 +850,7 @@
     <div class="col-lg-2">
         <div class="panel panel-success gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -865,7 +861,7 @@
     <div class="col-lg-2">
         <div class="panel panel-info gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -876,7 +872,7 @@
     <div class="col-lg-2">
         <div class="panel panel-warning gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -887,7 +883,7 @@
     <div class="col-lg-2">
         <div class="panel panel-danger gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -900,7 +896,7 @@
     <div class="col-lg-2">
         <div class="panel panel-default raised gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -911,7 +907,7 @@
     <div class="col-lg-2">
         <div class="panel panel-primary raised gradient">
             <div class="panel-heading">
-                Raised
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -922,7 +918,7 @@
     <div class="col-lg-2">
         <div class="panel panel-success raised gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -933,7 +929,7 @@
     <div class="col-lg-2">
         <div class="panel panel-info raised gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -944,7 +940,7 @@
     <div class="col-lg-2">
         <div class="panel panel-warning raised gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>
@@ -955,7 +951,7 @@
     <div class="col-lg-2">
         <div class="panel panel-danger raised gradient">
             <div class="panel-heading">
-                Default Panel
+                Lorem Ipsum
             </div>
             <div class="panel-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati accusantium voluptatem aperiam suscipit explicabo laboriosam.</p>

@@ -45,8 +45,7 @@
                                     2 minutes ago
                                 </div>
                                 <div class="message-body">
-                                    Here's the recipe for apple pie
-                                    to identify the sending application when the senders image is shown for the main icon
+                                    Hey! How are you?
                                 </div>
                             </div>
                         </a>
@@ -62,7 +61,7 @@
                                     Divyia Austin
                                 </div>
                                 <div class="message-time">
-                                    2 minutes ago
+                                    1 hour ago
                                 </div>
                                 <div class="message-body">
                                     Here's the recipe for apple pie
@@ -81,7 +80,7 @@
                                     Divyia Austin
                                 </div>
                                 <div class="message-time">
-                                    2 minutes ago
+                                    14 Oct.
                                 </div>
                                 <div class="message-body">
                                     Here's the recipe for apple pie
@@ -104,7 +103,7 @@
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-warning fa-fw"></i>
-                    <i class="badge badge-danger badge-number">3</i>
+                    <i class="badge badge-danger badge-number">4</i>
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
                     <li class="message-item">
@@ -194,19 +193,19 @@
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-tasks fa-fw"></i>
-                    <i class="badge badge-danger badge-number">3</i>
+                    <i class="badge badge-danger badge-number">4</i>
                 </a>
                 <ul class="dropdown-menu dropdown-tasks">
                     <li class="task-item">
                         <a href="#" class="task-link">
                             <div class="task-header">
-                                <strong class="task-title">Task 1</strong>
-                                <span class="task-value pull-right text-muted">40% Complete</span>
+                                <strong class="task-title">Account Creation</strong>
+                                <span class="task-value pull-right text-muted">70% Complete</span>
                             </div>
 
-                            <div class="progress progress-striped active sharp progress-sm">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% Complete (success)</span>
+                            <div class="progress sharp progress-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                    <span class="sr-only">40% Complete</span>
                                 </div>
                             </div>
                         </a>
@@ -215,12 +214,12 @@
                     <li class="task-item">
                         <a href="#" class="task-link">
                             <div class="task-header">
-                                <strong class="task-title">Task 2</strong>
-                                <span class="task-value pull-right text-muted">20% Complete</span>
+                                <strong class="task-title">Profile Data</strong>
+                                <span class="task-value pull-right text-muted">40% Complete</span>
                             </div>
-                            <div class="progress progress-striped active sharp progress-sm">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                    <span class="sr-only">20% Complete</span>
+                            <div class="progress sharp progress-sm">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete</span>
                                 </div>
                             </div>
                         </a>
@@ -229,26 +228,26 @@
                     <li class="task-item">
                         <a href="#" class="task-link">
                             <div class="task-header">
-                                <strong class="task-title">Task 3</strong>
-                                <span class="task-value pull-right text-muted">60% Complete</span>
-                            </div>
-                            <div class="progress progress-striped active sharp progress-sm">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="task-item">
-                        <a href="#" class="task-link">
-                            <div class="task-header">
-                                <strong class="task-title">Task 4</strong>
+                                <strong class="task-title">Updating Resume</strong>
                                 <span class="task-value pull-right text-muted">80% Complete</span>
                             </div>
-                            <div class="progress progress-striped active sharp progress-sm">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                    <span class="sr-only">80% Complete (danger)</span>
+                            <div class="progress sharp progress-sm">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                    <span class="sr-only">80% Complete</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="task-item">
+                        <a href="#" class="task-link">
+                            <div class="task-header">
+                                <strong class="task-title">Adding Contacts</strong>
+                                <span class="task-value pull-right text-muted">25% Complete</span>
+                            </div>
+                            <div class="progress sharp progress-sm">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <span class="sr-only">25% Complete</span>
                                 </div>
                             </div>
                         </a>
@@ -267,7 +266,7 @@
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="fa fa-bell fa-fw"></i>
-                    <i class="badge badge-danger badge-number">3</i>
+                    <i class="badge badge-danger badge-number">9</i>
                 </a>
                 <ul class="dropdown-menu dropdown-alerts">
                     <li class="alert-item">
@@ -337,15 +336,6 @@
                         <a href="#" class="alert-link">
                             <div>
                                 <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                <span class="pull-right text-muted">4 minutes ago</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="alert-item">
-                        <a href="#" class="alert-link">
-                            <div>
-                                <i class="fa fa-tasks fa-fw"></i> New Task
                                 <span class="pull-right text-muted">4 minutes ago</span>
                             </div>
                         </a>

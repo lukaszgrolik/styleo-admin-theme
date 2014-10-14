@@ -298,6 +298,70 @@ $('[data-toggle=popover]').popover()
             </div>
         </div>
     </div>
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Modals
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <!-- Button trigger modal -->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Open Default Modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <!-- Button trigger modal -->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModalSharp">
+                    Open Sharp Modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModalSharp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content sharp">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default sharp" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary sharp">Save changes</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+            </div>
+            <!-- .panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
 </div>
 
 <div class="row">
@@ -309,7 +373,7 @@ $('[data-toggle=popover]').popover()
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <h4>Hoverable Tooltips</h4>
-                <div class="tooltip-demo text-center">
+                <div class="tooltip-demo">
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><i class="fa fa-chevron-circle-right"></i> On Right</button>
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><i class="fa fa-chevron-circle-up"></i> On Top</button>
                     <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><i class="fa fa-chevron-circle-down"></i> On Bottom</button>
@@ -373,7 +437,7 @@ $('[data-toggle=popover]').popover()
                     </a>
                     <a href="#" class="list-group-item">
                         <i class="fa fa-comment fa-fw"></i> List Group Item with Text
-                        <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                        <span class="pull-right text-muted small"><em>Lorem ipsum dolor sit amet.</em>
                         </span>
                     </a>
                     {# <a href="#" class="list-group-item">

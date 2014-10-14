@@ -1,3 +1,50 @@
+{# {% set mainMenu = [
+    {
+        slug: 'index',
+        title: 'Dashboard',
+        iconClass: 'fa-dashboard'
+    },
+    {
+        slug: 'ui-elements',
+        title: 'UI Elements',
+        iconClass: 'fa-wrench',
+        items: [
+            {
+                slug: 'basic-elements',
+                title: 'Basic Elements'
+            },
+            {
+                slug: 'icons',
+                title: 'Icons',
+                items: [
+                    {
+                        slug: 'font-awesome',
+                        title: 'Font Awesome'
+                    },
+                    {
+                        slug: 'glyphicons',
+                        title: 'Glyphicons'
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        slug: 'forms',
+        title: 'Forms',
+        iconClass: 'fa-edit',
+    },
+    {
+        slug: 'charts',
+        title: 'Charts',
+        iconClass: 'fa-bar-chart',
+    },
+    {
+        slug: 'maps',
+        title: 'Maps',
+        iconClass: 'fa-map-marker',
+    }
+] %} #}
 {# {% include '../config/routes.swig' %} #}
 {% set routes = [
   {
@@ -15,10 +62,6 @@
         "name": "Basic Elements"
       },
       {
-        "slug": "ui-elements-buttons",
-        "name": "Buttons"
-      },
-      {
         "slug": "ui-elements-panels",
         "name": "Panels"
       },
@@ -29,6 +72,10 @@
       {
         "slug": "ui-elements-tabs-accordions",
         "name": "Tabs & Accordions"
+      },
+      {
+        "slug": "ui-elements-buttons",
+        "name": "Buttons"
       },
       {
         "slug": "ui-elements-alerts",
@@ -195,23 +242,24 @@
         "iconClass": "fa-users"
       },
       {
-        "slug": "pages-gallery",
-        "name": "Gallery",
-        "iconClass": "fa-picture-o",
-        "label": {
-          "class": "label label-danger",
-          "text": "NEW"
-        }
+        "slug": "pages-login",
+        "name": "Login",
+        "iconClass": "fa-sign-in"
       },
       {
-        "slug": "pages-invoice",
-        "name": "Invoice",
-        "iconClass": "fa-file-text-o"
+        "slug": "pages-register",
+        "name": "Register",
+        "iconClass": "fa-user"
       },
       {
-        "slug": "pages-calendar",
-        "name": "Calendar",
-        "iconClass": "fa-calendar"
+        "slug": "pages-lock-screen",
+        "name": "Lock Screen",
+        "iconClass": "fa-lock"
+      },
+      {
+        "slug": "pages-forgotten-password",
+        "name": "Forgotten Password",
+        "iconClass": "fa-key"
       },
       {
         "slug": "pages-timelines",
@@ -233,24 +281,33 @@
         ]
       },
       {
-        "slug": "pages-register",
-        "name": "Register",
-        "iconClass": "fa-user"
+        "slug": "pages-pricing-tables",
+        "name": "Pricing Tables",
+        "iconClass": "fa-credit-card"
       },
       {
-        "slug": "pages-login",
-        "name": "Login",
-        "iconClass": "fa-sign-in"
+        "slug": "pages-gallery",
+        "name": "Gallery",
+        "iconClass": "fa-picture-o",
+        "label": {
+          "class": "label label-danger",
+          "text": "NEW"
+        }
       },
       {
-        "slug": "pages-lock-screen",
-        "name": "Lock Screen",
-        "iconClass": "fa-lock"
+        "slug": "pages-invoice",
+        "name": "Invoice",
+        "iconClass": "fa-file-text-o"
       },
       {
-        "slug": "pages-forgotten-password",
-        "name": "Forgotten Password",
-        "iconClass": "fa-key"
+        "slug": "pages-calendar",
+        "name": "Calendar",
+        "iconClass": "fa-calendar"
+      },
+      {
+        "slug": "pages-search-results",
+        "name": "Search Results",
+        "iconClass": "fa-search"
       },
       {
         "slug": "pages-error-404",
@@ -276,60 +333,78 @@
   }
 ] %}
 
+{% macro getPageTitleBySlug(slug) %}
+aaa
+{% endmacro %}
+
+{% macro getPageIsCurrentParent(slug) %}
+aaa
+{% endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Styleo Admin Theme 2.0.0 | {{getRouteBySlug(routes, currentRouteSlug).name}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="shortcut icon" href="favicon.ico">
+    {# <title>Styleo Admin 1.0 | {% block title %}{% endblock %}</title> #}
+    {# <title>Styleo Admin 1.0 | {{getPageTitleBySlug(currentPageSlug)}}</title> #}
+    <title>Styleo Admin 1.0 | {{getRouteBySlug(routes, currentRouteSlug).name}}</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Social Buttons CSS -->
-  <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- MetisMenu CSS -->
-  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+    <!-- Social Buttons CSS -->
+    <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 
-  {% block headEnd %}{% endblock %}
+    <!-- MetisMenu CSS -->
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
 
-  <!-- Custom CSS -->
-  <link href="css/styleo-admin.css" rel="stylesheet">
+    {% block headEnd %}{% endblock %}
 
-  <!-- Custom Fonts -->
-  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link href="css/styleo-admin.css" rel="stylesheet">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <!-- Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
-<!-- Main Content Block -->
-{% block content %}{% endblock %}
+    {% block content %}{% endblock %}
 
-<script src="bower_components/jquery-1.11.0/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-<script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="bower_components/jquery-1.11.0/dist/jquery.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="js/styleo-admin.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-{% block bodyEnd %}{% endblock %}
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/styleo-admin.js"></script>
+
+    {% block bodyEnd %}{% endblock %}
 
 </body>
+
 </html>

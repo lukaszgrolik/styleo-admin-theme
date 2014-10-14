@@ -12,8 +12,6 @@
 
 <script>
 $(function() {
-    // $('[data-sparkline]').sparkline();
-
     var styleoColors = {
         red: '#e74c3c',
         orange: '#e67e22',
@@ -28,203 +26,100 @@ $(function() {
         darkGrey: '#7f8c8d',
     };
 
-    /*Bar*/
-    var sparklinebars = $('[data-sparkline="bar"]');
+    var sparklineBar = $('[data-sparkline="bar"]');
 
-    $.each(sparklinebars, function () {
+    $.each(sparklineBar, function() {
         $(this).sparkline('html', {
             type: 'bar',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // barWidth: $(this).data('bar-width') || 7,
-            // barSpacing: $(this).data('bar-spacing') || 3,
-            // barColor: $(this).data('bar-color') || styleoColors.blue,
-            // negBarColor: $(this).data('neg-bar-color') || styleoColors.red,
-            // zeroColor: $(this).data('zero-color') || styleoColors.lightGrey,
-
-            // stackedBarColor: $(this).data('stacked-bar-color') || [styleoColors.green, styleoColors.orange]
         });
     });
 
-    /*Line*/
-    var sparklinelines = $('[data-sparkline="line"]');
+    var sparklineLine = $('[data-sparkline="line"]');
 
-    $.each(sparklinelines, function () {
+    $.each(sparklineLine, function() {
         $(this).sparkline('html', {
             type: 'line',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // fillColor: $(this).data('fill-color') || styleoColors.lightGrey,
             fillColor: false,
-            // lineColor: $(this).data('line-color') || styleoColors.red,
-            // spotRadius: $(this).data('spot-radius'),
-            // lineWidth: $(this).data('line-width'),
-            // spotColor: $(this).data('spot-color'),
-            // minSpotColor: $(this).data('min-spot-color'),
-            // maxSpotColor: $(this).data('max-spot-color'),
-            // highlightSpotColor: $(this).data('highlight-spot-color'),
-            // highlightLineColor: $(this).data('highlight-line-color')
         });
     });
 
-    /*Composite Line*/
-    var sparklinecompositelines = $('[data-sparkline="compositeline"]');
-    $.each(sparklinecompositelines, function () {
+    var sparklineCompositeLine = $('[data-sparkline="composite-line"]');
+
+    $.each(sparklineCompositeLine, function() {
         $(this).sparkline('html', {
             type: 'line',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // lineColor: getcolor($(this).data('linecolor')),
-            // fillColor: getcolor($(this).data('fillcolor')),
             fillColor: false,
-            // secondFillColor: false,
-            // spotRadius: $(this).data('spotradius'),
-            // lineWidth: $(this).data('linewidth'),
-            // spotColor: getcolor($(this).data('spotcolor')),
-            // minSpotColor: getcolor($(this).data('minspotcolor')),
-            // maxSpotColor: getcolor($(this).data('maxspotcolor')),
-            // highlightSpotColor: getcolor($(this).data('highlightspotcolor')),
-            // highlightLineColor: getcolor($(this).data('highlightlinecolor'))
         });
-        $(this).sparkline(stringtoarray($(this).attr("data-composite")), {
+
+        $(this).sparkline(getArrayFromString($(this).attr("data-composite")), {
             type: 'line',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // lineColor: getcolor($(this).data('secondlinecolor')),
-            // fillColor: getcolor($(this).data('secondfillcolor')),
             fillColor: false,
-            // lineWidth: $(this).data('secondlinewidth'),
-            // spotRadius: $(this).data('spotradius'),
-            // spotColor: getcolor($(this).data('spotcolor')),
-            // minSpotColor: getcolor($(this).data('minspotcolor')),
-            // maxSpotColor: getcolor($(this).data('maxspotcolor')),
-            // highlightSpotColor: getcolor($(this).data('highlightspotcolor')),
-            // highlightLineColor: getcolor($(this).data('highlightlinecolor')),
             composite: true
         });
     });
 
-    /*Composite Bar*/
-    var sparklinecompositebars = $('[data-sparkline=compositebar]');
-    $.each(sparklinecompositebars, function () {
+    var sparklineCompositeBar = $('[data-sparkline="composite-bar"]');
+
+    $.each(sparklineCompositeBar, function() {
         $(this).sparkline('html', {
             type: 'bar',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // barWidth: $(this).data('bar-width') || 7,
-            // barSpacing: $(this).data('bar-spacing') || 3,
-            // barColor: getcolor($(this).data('barcolor')),
-            // negBarColor: getcolor($(this).data('negbarcolor')),
-            // zeroColor: getcolor($(this).data('zerocolor')),
-
-            // stackedBarColor: getcolor($(this).data('stackedbarcolor'))
         });
-        $(this).sparkline(stringtoarray($(this).attr("data-composite")), {
+
+        $(this).sparkline(getArrayFromString($(this).attr("data-composite")), {
             type: 'line',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // lineColor: getcolor($(this).data('linecolor')),
-            // fillColor: getcolor($(this).data('fillcolor')),
             fillColor: false,
-            // spotRadius: $(this).data('spotradius'),
-            // lineWidth: $(this).data('linewidth'),
-            // spotRadius: $(this).data('spotradius'),
-            // spotColor: getcolor($(this).data('spotcolor')),
-            // minSpotColor: getcolor($(this).data('minspotcolor')),
-            // maxSpotColor: getcolor($(this).data('maxspotcolor')),
-            // highlightSpotColor: getcolor($(this).data('highlightspotcolor')),
-            // highlightLineColor: getcolor($(this).data('highlightlinecolor')),
             composite: true
         });
-
     });
 
-    /*Tristate*/
-    var sparklinetristates = $('[data-sparkline=tristate]');
-    $.each(sparklinetristates, function () {
+    var sparklineTristate = $('[data-sparkline="tristate"]');
+
+    $.each(sparklineTristate, function() {
         $(this).sparkline('html', {
             type: 'tristate',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // barWidth: $(this).data('bar-width') || 7,
-            // barSpacing: $(this).data('bar-spacing') || 3,
-            // posBarColor: getcolor($(this).data('posbarcolor')),
-            // negBarColor: getcolor($(this).data('negbarcolor')),
-            // zeroBarColor: getcolor($(this).data('zerobarcolor')),
-            // zeroAxis: $(this).data('zeroaxis')
         });
     });
 
-    /*Descrete*/
-    var sparklinediscretes = $('[data-sparkline="discrete"]');
-    $.each(sparklinediscretes, function () {
+    var sparklineDiscrete = $('[data-sparkline="discrete"]');
+
+    $.each(sparklineDiscrete, function() {
         $(this).sparkline('html', {
             type: 'discrete',
-            // disableHiddenCheck: true,
-            // lineHeight: $(this).data('lineheight'),
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // lineColor: $(this).data('linecolor') || ,
-            // lineColor: 'red',
-            // thresholdValue: $(this).data('thresholdvalue'),
-            // thresholdColor: $(this).data('thresholdcolor')
         });
     });
 
-    /*Bullet*/
-    var sparklinebullets = $('[data-sparkline=bullet]');
-    $.each(sparklinebullets, function () {
+    var sparklineBullet = $('[data-sparkline="bullet"]');
+
+    $.each(sparklineBullet, function() {
         $(this).sparkline('html', {
             type: 'bullet',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // targetColor: $(this).data('targetcolor'),
-            // performanceColor: $(this).data('performancecolor'),
-            // rangeColors: $(this).data('rangecolors')
         });
     });
 
-    /*Box Plot*/
-    var sparklinebox = $('[data-sparkline=box]');
-    $.each(sparklinebox, function () {
+    var sparklineBox = $('[data-sparkline="box"]');
+
+    $.each(sparklineBox, function() {
         $(this).sparkline('html', {
             type: 'box',
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // disableHiddenCheck: true,
         });
     });
 
-    /*Pie*/
-    var sparklinepie = $('[data-sparkline=pie]');
-    $.each(sparklinepie, function () {
+    var sparklinePie = $('[data-sparkline="pie"]');
+
+    $.each(sparklinePie, function() {
         $(this).sparkline('html', {
             type: 'pie',
-            // disableHiddenCheck: true,
-            // height: $(this).data('height') || '100px',
-            // width: $(this).data('width') || '100%',
-            // sliceColors: $(this).data('slicecolors'),
-            // borderColor: getcolor($(this).data('bordercolor'))
         });
     });
 
-    function stringtoarray(str) {
-        var myArray = str.split(",");
-        for (var i = 0; i < myArray.length; i++) {
-            myArray[i] = +myArray[i];
+    function getArrayFromString(str) {
+        var result = str.split(",");
+
+        for (var i = 0, l = result.length; i < l; ++i) {
+            result[i] = parseInt(result[i]);
         }
-        for (var i = 0; i < myArray.length; i++) {
-            myArray[i] = parseInt(myArray[i], 10);
-        }
-        return myArray;
+
+        return result;
     }
 });
 </script>
@@ -236,10 +131,32 @@ $(function() {
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
+                    <div class="panel-heading">Line Chart</div>
+                    <div class="panel-body text-center">
+                        <span data-sparkline="line">
+                            3,-2,5,6,4,7,-1,9,7,9,5,-3,4,-4,3,-3,4,2,7,5,9,11
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Composite Line Chart</div>
+                    <div class="panel-body text-center">
+                        <span data-sparkline="composite-line"  data-composite="4,-1,3,7,-8,9,12,6,5,6,4,7,12,17,12,7,15,13,16,17">
+                            8,-4,3,2,0,-1,1,3,4,-5,6,7,-9,8,6,4,4,-3,5,2,7
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="panel panel-default">
                     <div class="panel-heading">Bar Chart</div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bar">
-                            5,6,7,2,0,-4,-2,4
+                            1,5,6,-3,7,2,0,2,-4,4,-2,-1,4
                         </span>
                     </div>
                 </div>
@@ -250,94 +167,75 @@ $(function() {
                     <div class="panel-heading">Stacked Chart</div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bar">
-                            2:2,2:3,3:2,1:3
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Line Chart</div>
-                    <div class="panel-body text-center">
-                        <span data-sparkline="line" data-height="75px" data-width="100%" data-spotradius="5">
-                            5,6,7,9,9,5,3,4,4,3,6,7
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Composite Line Chart</div>
-                    <div class="panel-body text-center">
-                        <span data-sparkline="compositeline"  data-composite="4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7">
-                            8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10
+                            4:2,2:3,4:3,3:1,2:4,3:3
                         </span>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Composite Bar Chart</div>
                     <div class="panel-body text-center">
-                    <span data-sparkline="compositebar" data-composite="4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7">
-                        8,4,0,1,4,6,2,4,4,8,10,7,10
+                    <span data-sparkline="composite-bar" data-composite="4,2,7,8,9,-2,8,5,6,9,4,1,4">
+                        8,-4,0,2,4,-6,5,4,5,-8,10,-7,10,3,4,7
                     </span>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Tristate Chart</div>
                     <div class="panel-body text-center">
-                        <span data-sparkline="tristate" data-zeroaxis="false">
-                            1,1,0,1,-1,-1,1,-1,0,0,1,1
+                        <span data-sparkline="tristate">
+                            1,-1,0,1,1,-1,1,-1,0,1,1,0,1,-1,1
                         </span>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Discrete Chart</div>
-                    {# <div class="panel-body text-center">
-                        <span data-sparkline="discrete"  data-linecolor="#57b5e3" data-thresholdvalue="3" data-thresholdcolor="#d73d32" data-thresholdcolor="#d73d32">
-                            4,6,7,7,4,3,2,1,4,4
-                        </span>
-                    </div> #}
                     <div class="panel-body text-center">
                         <span data-sparkline="discrete">
-                            4,6,7,7,4,3,2,1,4,4
+                            1,3,2,4,3,4,5,3,1,3,2,1,2,4,5,3,6,7,8,6,7,5,4,3,1,2,4,3,5,4,6,7,4,5,4,6,7,6,7,8
                         </span>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Bullet Chart</div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bullet">
-                            10, 12, 12, 9, 7
+                            8,11,9,11,6
                         </span>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Box Plot Chart</div>
                     <div class="panel-body text-center">
-                        <span data-sparkline="box" data-height="30px" data-width="100%">4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100</span>
+                        <span data-sparkline="box">3,25,32,51,55,56,62,65,71,81,85,88,94,97,100</span>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Pie Chart</div>
                     <div class="panel-body text-center">
-                        <span data-sparkline="pie" data-height="75px" data-width="75px" data-bordercolor="#fafafa" data-slicecolors='["#5DB2FF", "#f4b400", "#d73d32","8cc474"]'>
-                            1,1,2,1
+                        <span data-sparkline="pie">
+                            1,2,3,1,1
                         </span>
                     </div>
                 </div>

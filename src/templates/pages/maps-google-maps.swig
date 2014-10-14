@@ -11,56 +11,42 @@
 
 <script>
 $(function() {
-  //initialize the javascript
-//Basic Map
-var map;
+  new google.maps.Map(document.getElementById('map1'), {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
 
-var mapOptions = {
-  zoom: 14,
-  center: new google.maps.LatLng(-33.877827, 151.188598),
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-map = new google.maps.Map(document.getElementById('map_one'), mapOptions);
+  new google.maps.Map(document.getElementById('map2'), {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644),
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  });
 
-//Hybrid Map
-var map2;
-
-var mapOptions = {
-  zoom: 14,
-  center: new google.maps.LatLng(-33.877827, 151.188598),
-  mapTypeId: google.maps.MapTypeId.HYBRID
-};
-map2 = new google.maps.Map(document.getElementById('map_two'), mapOptions);
-
-
-//Terrain Map
-var map3;
-
-var mapOptions = {
-  zoom: 14,
-  center: new google.maps.LatLng(-33.877827, 151.188598),
-  mapTypeId: google.maps.MapTypeId.TERRAIN
-};
-map3 = new google.maps.Map(document.getElementById('map_three'), mapOptions);
-
-
+  new google.maps.Map(document.getElementById('map3'), {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  });
 });
 </script>
 {% endblock %}
 
 {% block content2 %}
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
         Basic Map
       </div>
       <div class="panel-body">
-        <div id="map_one" style="height: 300px;"></div>
+        <div id="map1" style="height: 300px;"></div>
       </div>
     </div>
   </div>
+</div>
 
+<div class="row">
   <div class="col-lg-6">
 
     <div class="panel panel-default">
@@ -68,20 +54,18 @@ map3 = new google.maps.Map(document.getElementById('map_three'), mapOptions);
         Hybrid Map
       </div>
       <div class="panel-body">
-        <div id="map_two" style="height: 300px;"></div>
+        <div id="map2" style="height: 300px;"></div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-6">
     <div class="panel panel-default">
       <div class="panel-heading">
         Terrain Map
       </div>
       <div class="panel-body">
-        <div id="map_three" style="height: 350px;"></div>
+        <div id="map3" style="height: 300px;"></div>
       </div>
     </div>
   </div>

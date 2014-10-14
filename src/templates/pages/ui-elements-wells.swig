@@ -3,7 +3,7 @@
 {% set currentRouteSlug = 'ui-elements-wells' %}
 
 {% block content2 %}
-<h2>Well Sizes</h2>
+<h2>Wells Sizes</h2>
 
 <div class="row">
     <div class="col-lg-4">
@@ -30,7 +30,7 @@
 </div>
 <!-- /.row -->
 
-<h2>Well Variants</h2>
+<h2>Wells Variants</h2>
 
 <div class="row">
     <div class="col-lg-4">

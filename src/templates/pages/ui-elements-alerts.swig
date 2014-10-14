@@ -7,7 +7,7 @@
     <div class="col-lg-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Alert Sizes
+                Alerts Sizes
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -42,7 +42,7 @@
     <div class="col-lg-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Alert Types
+                Alerts Types
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -130,7 +130,7 @@
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Default Alerts
+                Alerts Examples
             </div>
 
             <div class="panel-body">
@@ -138,7 +138,7 @@
                     <div class="col-lg-4">
                         <div class="alert alert-primary alert-xl bordered sharp">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                            <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -199,6 +199,8 @@
     </div>
 </div>
 
+<h2>Alerts Showcase</h2>
+
 <div class="row">
     <div class="col-lg-4">
         <div class="panel panel-default">
@@ -209,7 +211,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -224,22 +226,6 @@
                     <i class="fa fa-fw fa-warning"></i> <strong>WARNING!</strong> Your monthly traffic is reaching limit.
                 </div>
                 <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
-                </div>
-                <div class="alert alert-yellow">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
-                </div>
-                <div class="alert alert-violet">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
-                </div>
-                <div class="alert alert-brown">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
-                </div>
-                <div class="alert alert-navy">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                     <i class="fa fa-fw fa-times"></i> <strong>DANGER!</strong> Update has failed.
                 </div>
@@ -258,7 +244,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -291,7 +277,7 @@
             <div class="panel-body">
             <div class="alert alert-primary sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -328,7 +314,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary alert-sm">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-sm">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -361,7 +347,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary alert-sm sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-sm sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -394,7 +380,7 @@
             <div class="panel-body">
             <div class="alert alert-primary alert-sm sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-sm sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -431,7 +417,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary alert-xs">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-xs">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -464,7 +450,7 @@
             <div class="panel-body">
             <div class="alert alert-primary alert-xs sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-xs sharp">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -497,7 +483,7 @@
             <div class="panel-body">
                 <div class="alert alert-primary alert-xs sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our new admin panel?
+                    <i class="fa fa-fw fa-comments"></i> <strong>HELLO!</strong> What do you think about our site?
                 </div>
                 <div class="alert alert-success alert-xs sharp bordered">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

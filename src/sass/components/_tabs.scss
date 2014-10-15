@@ -28,7 +28,7 @@
 	li a {
 		background-color: transparent !important;
 		color: $color-dark-grey;
-		border: 0;
+		border: 0 !important;
 		border-top: 3px solid transparent !important;
 
 		&:hover {

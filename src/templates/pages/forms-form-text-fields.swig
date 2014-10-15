@@ -56,7 +56,7 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Field Types
+                Basic Fields
             </div>
             <div class="panel-body">
                 <form class="form-horizontal" action="#">
@@ -413,6 +413,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-check"></i>
                 Validation States
             </div>
             <div class="panel-body">
@@ -484,6 +485,7 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-terminal"></i>
                 Input Masks with <strong>jQuery Masked Input</strong> Plugin
             </div>
 
@@ -552,7 +554,10 @@ $(function() {
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin</div>
+            <div class="panel-heading">
+            <i class="fa fa-fw fa-sort"></i>
+                Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin
+            </div>
             <div class="panel-body">
                 <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
                   <div class="form-group">

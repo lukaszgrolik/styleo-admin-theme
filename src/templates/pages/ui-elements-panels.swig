@@ -119,7 +119,9 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="row">
     <div class="col-lg-2">
         <div class="panel panel-yellow">
             <div class="panel-heading">
@@ -233,7 +235,9 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="row">
     <div class="col-lg-2">
         <div class="panel panel-yellow filled">
             <div class="panel-heading">

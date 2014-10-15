@@ -29,68 +29,13 @@
 <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
 <script src="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 
+<script src="js/custom-checkbox-icheck.js"></script>
+<script src="js/custom-checkbox-switchery.js"></script>
+<script src="js/custom-colorpicker-minicolors.js"></script>
+
 <script>
 $(function() {
-    // $('[type="checkbox"], [type="radio"]').iCheck({
-    $('.custom-checkbox-icheck').each(function() {
-        var colorClass = '';
-        var sizeClass = '';
-
-        if ($(this).hasClass('success')) {
-            colorClass = 'success';
-        } else if ($(this).hasClass('info')) {
-            colorClass = 'info';
-        } else if ($(this).hasClass('warning')) {
-            colorClass = 'warning';
-        } else if ($(this).hasClass('danger')) {
-            colorClass = 'danger';
-        } else if ($(this).hasClass('yellow')) {
-            colorClass = 'yellow';
-        } else if ($(this).hasClass('violet')) {
-            colorClass = 'violet';
-        } else if ($(this).hasClass('brown')) {
-            colorClass = 'brown';
-        } else if ($(this).hasClass('navy')) {
-            colorClass = 'navy';
-        }
-
-        if ($(this).hasClass('small')) {
-            sizeClass = 'small';
-        } else if ($(this).hasClass('large')) {
-            sizeClass = 'large';
-        } else if ($(this).hasClass('extra-large')) {
-            sizeClass = 'extra-large';
-        }
-
-        var baseClass = 'custom-control-checkbox-icheck';
-        var checkboxClass = baseClass + ' ' + baseClass + '-checkbox ' + colorClass + ' ' + sizeClass;
-        var radioClass = baseClass + ' ' + baseClass + '-radio ' + colorClass + ' ' + sizeClass;
-
-        $(this).iCheck({
-            checkboxClass: checkboxClass,
-            radioClass: radioClass
-        });
-    });
-
-
-
-    // // $('.colored-success').iCheck({
-    // $('.custom-checkbox-icheck.success').iCheck({
-    //     checkboxClass: 'icheckbox_flat-green',
-    //     radioClass: 'iradio_flat-green'
-    // });
-
-    // // $('.colored-warning').iCheck({
-    // $('.custom-checkbox-icheck.warning').iCheck({
-    //     checkboxClass: 'icheckbox_flat-orange',
-    //     radioClass: 'iradio_flat-orange'
-    // });
-
-    // // $('.colored-danger').iCheck({
-    // $('.custom-checkbox-icheck.danger').iCheck({
-    //     checkboxClass: 'icheckbox_flat-red',
-    //     radioClass: 'iradio_flat-red'
-    // });
+    CustomCheckboxICheck.init();
 
     //
 
@@ -107,44 +52,7 @@ $(function() {
 
     // Switches
 
-    $('.custom-checkbox-switchery').each(function() {
-        var options = {
-            color: '#3498db',
-            className: 'switchery'
-        };
-
-        if ($(this).hasClass('success')) {
-            options.color = '#2ecc71';
-        } else if ($(this).hasClass('info')) {
-            options.color = '#1abc9c';
-        } else if ($(this).hasClass('warning')) {
-            options.color = '#e67e22';
-        } else if ($(this).hasClass('danger')) {
-            options.color = '#e74c3c';
-        } else if ($(this).hasClass('yellow')) {
-            options.color = '#f1c40f';
-        } else if ($(this).hasClass('violet')) {
-            options.color = '#9b59b6';
-        } else if ($(this).hasClass('brown')) {
-            options.color = '#be643c';
-        } else if ($(this).hasClass('navy')) {
-            options.color = '#34495e';
-        }
-
-        if ($(this).hasClass('small')) {
-            options.className += ' switchery-sm';
-        } else if ($(this).hasClass('large')) {
-            options.className += ' switchery-lg';
-        } else if ($(this).hasClass('extra-large')) {
-            options.className += ' switchery-xl';
-        }
-
-        if ($(this).hasClass('sharp')) {
-            options.className += ' sharp';
-        }
-
-        new Switchery($(this)[0], options);
-    });
+    CustomCheckboxSwitchery.init();
 
     // Tags Inputs
 
@@ -155,30 +63,7 @@ $(function() {
 
     // Color Pickers
 
-    $('.colorpicker').each(function () {
-        $(this).minicolors({
-            control: $(this).attr('data-control') || 'hue',
-            defaultValue: $(this).attr('data-defaultValue') || '',
-            inline: $(this).attr('data-inline') === 'true',
-            letterCase: $(this).attr('data-letterCase') || 'lowercase',
-            opacity: $(this).attr('data-opacity'),
-            position: $(this).attr('data-position') || 'bottom left',
-            theme: 'bootstrap',
-            change: function (hex, opacity) {
-                if (!hex) {
-                    return;
-                }
-
-                if (opacity) {
-                    hex += ', ' + opacity;
-                }
-
-                try {
-                    console.log(hex);
-                } catch (e) {}
-            },
-        });
-    });
+    CustomColorpickerMinicolors.init();
 
     // Knobs
 
@@ -196,6 +81,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-check-square-o"></i>
                 Checkbox &amp; Radio Inputs with <strong>iCheck</strong> Plugin
             </div>
             <div class="panel-body">
@@ -462,6 +348,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-sliders"></i>
                 Sliders with <strong>Bootstrap Sliders</strong> Plugin
             </div>
 
@@ -554,6 +441,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-toggle-on"></i>
                 Switches with <strong>Switchery</strong> Plugin
             </div>
             <div class="panel-body">
@@ -611,6 +499,7 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-dashboard"></i>
                 Sliders with <strong>jQuery Knob</strong> Plugin
             </div>
             <div class="panel-body">
@@ -694,6 +583,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-clock-o"></i>
                 Date Pickers with <strong>Bootstrap Date Pickers</strong> Plugins
             </div>
             <div class="panel-body">
@@ -719,6 +609,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-toggle-down"></i>
                 Selects with <strong>Select2</strong> Plugin
             </div>
             <div class="panel-body">
@@ -750,6 +641,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-tag"></i>
                 Tags Input with <strong>Bootstrap Tags Input</strong> Plugin
             </div>
             <div class="panel-body">
@@ -762,7 +654,10 @@ $(function() {
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Color Pickers with <strong>jQuery MiniColors</strong> Plugin</div>
+            <div class="panel-heading">
+            <i class="fa fa-fw fa-eyedropper"></i>
+                Color Pickers with <strong>jQuery MiniColors</strong> Plugin
+            </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-3">
@@ -835,7 +730,7 @@ $(function() {
                         <div class="form-group">
                             <label for="default-value">Default Value</label>
                             <br>
-                            <input type="text" id="default-value" class="form-control colorpicker" data-defaultvalue="#9b59b6">
+                            <input type="text" id="default-value" class="form-control colorpicker" data-default-value="#9b59b6">
                             <span class="help-block">
                                 This field has a default value assigned to it, so it will never be empty.
                             </span>
@@ -843,7 +738,7 @@ $(function() {
                         <div class="form-group">
                             <label for="letter-case">Letter Case</label>
                             <br>
-                            <input type="text" id="letter-case" class="form-control colorpicker" data-lettercase="uppercase" value="#be643c">
+                            <input type="text" id="letter-case" class="form-control colorpicker" data-letter-case="uppercase" value="#be643c">
                             <span class="help-block">
                                 This field will always be uppercase.
                             </span>
@@ -859,6 +754,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-upload"></i>
                 File Upload with <strong>Jasny Bootstrap</strong> Plugin
             </div>
             <div class="panel-body">
@@ -908,6 +804,7 @@ $(function() {
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-cloud-upload"></i>
                 Multiple Files Upload with <strong>Dropzone</strong> Plugin
             </div>
             <div class="panel-body">

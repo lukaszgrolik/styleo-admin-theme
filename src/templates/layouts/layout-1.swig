@@ -35,11 +35,11 @@
                     <li class="message-item">
                         <a href="#" class="message-link clearfix">
                             <div class="message-avatar">
-                                <img src="images/avatar6.jpg" alt="Amy Parker">
+                                <img class="img-responsive" src="images/avatars/avatar2.jpg" alt="Jennifer Howard">
                             </div>
                             <div class="message">
                                 <div class="message-sender">
-                                    Amy Parker
+                                    Jennifer Howard
                                 </div>
                                 <div class="message-time">
                                     2 minutes ago
@@ -54,11 +54,11 @@
                     <li class="message-item">
                         <a href="#" class="message-link clearfix">
                             <div class="message-avatar">
-                                <img src="images/avatar6.jpg" alt="Adam West">
+                                <img class="img-responsive" src="images/avatars/avatar5.jpg" alt="Michael Hall">
                             </div>
                             <div class="message">
                                 <div class="message-sender">
-                                    Adam West
+                                    Michael Hall
                                 </div>
                                 <div class="message-time">
                                     1 hour ago
@@ -73,11 +73,11 @@
                     <li class="message-item">
                         <a href="#" class="message-link clearfix">
                             <div class="message-avatar">
-                                <img src="images/avatar6.jpg" alt="Warren Spencer">
+                                <img class="img-responsive" src="images/avatars/avatar3.jpg" alt="Sandra Rogers">
                             </div>
                             <div class="message">
                                 <div class="message-sender">
-                                    Warren Spencer
+                                    Sandra Rogers
                                 </div>
                                 <div class="message-time">
                                     14 Oct.
@@ -311,14 +311,14 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle nav-profile-photo-link" data-toggle="dropdown" href="#">
-                    <img src="images/avatar6.jpg" class="nav-profile-photo" alt="">
-                    <span>Jane Smith</span>
+                    <img src="images/avatars/avatar8.jpg" class="nav-profile-photo" alt="">
+                    <span>Ryan Parker</span>
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> My Profile</a>
                     </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="profile.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>
                     <li class="divider"></li>
                     <li><a href="pages-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>

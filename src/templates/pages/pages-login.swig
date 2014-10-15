@@ -19,7 +19,7 @@
                             <input class="form-control" placeholder="Password" name="password" type="password" value="">
                         </div>
                         <div>
-                            <a href="#">Forgot password?</a>
+                            <a href="pages-forgotten-password.html">Forgot password?</a>
                         </div>
                         <div class="checkbox">
                             <label>
@@ -34,7 +34,7 @@
 
                 <hr class="wide">
 
-                <p>Don't have account? <a href="pages-register.html">Sign up</a> now!</p>
+                <p>Don't have an account? <a href="pages-register.html">Sign up</a> now!</p>
             </div>
         </div>
     </div>

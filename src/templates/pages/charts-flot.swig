@@ -17,6 +17,7 @@
     <div class="col-lg-6">
         <div class="panel panel-success bordered sharp">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-line-chart"></i>
                 Line Chart
             </div>
 
@@ -31,6 +32,7 @@
     <div class="col-lg-6">
         <div class="panel panel-info bordered sharp">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-bar-chart"></i>
                 Bar Chart
             </div>
             <!-- /.panel-heading -->
@@ -49,6 +51,7 @@
     <div class="col-lg-6">
         <div class="panel panel-primary bordered sharp">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-line-chart"></i>
                 Multiple Axes Line Chart
             </div>
             <!-- /.panel-heading -->
@@ -65,6 +68,7 @@
     <div class="col-lg-6">
         <div class="panel panel-warning bordered sharp">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-line-chart"></i>
                 Moving Line Chart
             </div>
             <!-- /.panel-heading -->
@@ -84,6 +88,7 @@
     <div class="col-lg-6">
         <div class="panel panel-danger bordered sharp">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-pie-chart"></i>
                 Pie Chart
             </div>
 

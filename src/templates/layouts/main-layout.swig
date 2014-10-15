@@ -12,11 +12,19 @@
     "routes": [
       {
         "slug": "ui-elements-basic-elements",
-        "name": "Basic Elements"
+        "name": "Basic Elements",
+        "label": {
+          "class": "label label-violet",
+          "text": "9 COLORS"
+        }
       },
       {
         "slug": "ui-elements-buttons",
-        "name": "Buttons"
+        "name": "Buttons",
+        "label": {
+          "class": "label label-info sharp",
+          "text": "5 TYPES"
+        }
       },
       {
         "slug": "ui-elements-panels",
@@ -32,11 +40,19 @@
       },
       {
         "slug": "ui-elements-alerts",
-        "name": "Alerts"
+        "name": "Alerts",
+        "label": {
+          "class": "label label-primary",
+          "text": "5 SIZES"
+        }
       },
       {
         "slug": "ui-elements-progress-bars",
-        "name": "Progress Bars"
+        "name": "Progress Bars",
+        "label": {
+          "class": "label label-warning sharp",
+          "text": "ANIMATED"
+        }
       },
       {
         "slug": "ui-elements-typography",
@@ -87,7 +103,11 @@
       },
       {
         "slug": "tables-responsive",
-        "name": "Responsive Tables"
+        "name": "Responsive Tables",
+        "label": {
+          "class": "badge badge-success",
+          "text": 3
+        }
       },
       {
         "slug": "tables-datatables",
@@ -113,7 +133,11 @@
       {
         "slug": "forms-form-layouts",
         "name": "Form Layouts",
-        "iconClass": "fa-th-large"
+        "iconClass": "fa-th-large",
+        "label": {
+          "class": "badge badge-primary sharp",
+          "text": "3"
+        }
       },
       {
         "slug": "forms-form-wizard",
@@ -140,7 +164,11 @@
           },
           {
             "slug": "forms-editors-ckeditor",
-            "name": "CKEditor"
+            "name": "CKEditor",
+            "label": {
+              "class": "label label-danger",
+              "text": "NEW"
+            }
           }
         ]
       }
@@ -165,7 +193,11 @@
       },
       {
         "slug": "charts-easy-pie-chart",
-        "name": "Easy Pie Charts"
+        "name": "Easy Pie Charts",
+        "label": {
+          "class": "label label-danger",
+          "text": "NEW"
+        }
       }
     ]
   },
@@ -199,8 +231,8 @@
         "name": "Gallery",
         "iconClass": "fa-picture-o",
         "label": {
-          "class": "label label-danger",
-          "text": "NEW"
+          "class": "label label-navy sharp",
+          "text": "MASONRY"
         }
       },
       {
@@ -211,7 +243,11 @@
       {
         "slug": "pages-calendar",
         "name": "Calendar",
-        "iconClass": "fa-calendar"
+        "iconClass": "fa-calendar",
+        "label": {
+          "class": "label label-primary",
+          "text": "DRAG & DROP"
+        }
       },
       {
         "slug": "pages-timelines",
@@ -226,7 +262,7 @@
                 "slug": "pages-compact-timeline",
                 "name": "Compact Timeline",
                 "label": {
-                  "class": "label label-warning",
+                  "class": "label label-danger",
                   "text": "NEW"
                 }
             }
@@ -272,7 +308,11 @@
   {
     "slug": "documentation",
     "name": "Documentation",
-    "iconClass": "fa-graduation-cap"
+    "iconClass": "fa-graduation-cap",
+    "label": {
+      "class": "label label-success",
+      "text": "v2.0.0"
+    }
   }
 ] %}
 

@@ -4,6 +4,6 @@
 <div class="container">
     {% block content2 %}{% endblock %}
 
-    <p class="text-center">&copy; 2014 <a href="index.html">Your Company</a></p>
+    <p class="text-center">&copy; 2014 <a href="index.html">Styleo Admin Theme</a></p>
 </div>
 {% endblock %}

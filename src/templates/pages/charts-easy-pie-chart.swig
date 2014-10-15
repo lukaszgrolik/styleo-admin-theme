@@ -54,7 +54,7 @@ $(function() {
 
 {% block content2 %}
 <div class="row">
-    <div class="col-lg-4 text-center">
+    <div class="col-lg-4">
         <div class="panel panel-default">
             <div class="panel-heading">Easy Pie Chart Types</div>
 
@@ -82,7 +82,7 @@ $(function() {
         </div>
     </div>
 
-    <div class="col-lg-8 text-center">
+    <div class="col-lg-8">
         <div class="panel panel-default">
             <div class="panel-heading">Easy Pie Chart Sizes</div>
 
@@ -112,7 +112,7 @@ $(function() {
 </div>
 
 <div class="row">
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Easy Pie Chart Variations</div>
 

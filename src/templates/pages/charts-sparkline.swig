@@ -131,7 +131,10 @@ $(function() {
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Line Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-line-chart"></i>
+                        Line Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="line">
                             3,-2,5,6,4,7,-1,9,7,9,5,-3,4,-4,3,-3,4,2,7,5,9,11
@@ -142,7 +145,10 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Composite Line Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-line-chart"></i>
+                        Composite Line Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="composite-line"  data-composite="4,-1,3,7,-8,9,12,6,5,6,4,7,12,17,12,7,15,13,16,17">
                             8,-4,3,2,0,-1,1,3,4,-5,6,7,-9,8,6,4,4,-3,5,2,7
@@ -153,7 +159,10 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Bar Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-bar-chart"></i>
+                        Bar Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bar">
                             1,5,6,-3,7,2,0,2,-4,4,-2,-1,4
@@ -164,7 +173,10 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Stacked Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-bar-chart"></i>
+                        Stacked Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bar">
                             4:2,2:3,4:3,3:1,2:4,3:3
@@ -177,7 +189,10 @@ $(function() {
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Composite Bar Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-bar-chart"></i>
+                        Composite Bar Chart
+                    </div>
                     <div class="panel-body text-center">
                     <span data-sparkline="composite-bar" data-composite="4,2,7,8,9,-2,8,5,6,9,4,1,4">
                         8,-4,0,2,4,-6,5,4,5,-8,10,-7,10,3,4,7
@@ -188,7 +203,10 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Tristate Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-bar-chart"></i>
+                        Tristate Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="tristate">
                             1,-1,0,1,1,-1,1,-1,0,1,1,0,1,-1,1
@@ -199,7 +217,9 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Discrete Chart</div>
+                    <div class="panel-heading">
+                        Discrete Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="discrete">
                             1,3,2,4,3,4,5,3,1,3,2,1,2,4,5,3,6,7,8,6,7,5,4,3,1,2,4,3,5,4,6,7,4,5,4,6,7,6,7,8
@@ -210,7 +230,9 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Bullet Chart</div>
+                    <div class="panel-heading">
+                        Bullet Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="bullet">
                             8,11,9,11,6
@@ -223,7 +245,9 @@ $(function() {
         <div class="row">
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Box Plot Chart</div>
+                    <div class="panel-heading">
+                        Box Plot Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="box">3,25,32,51,55,56,62,65,71,81,85,88,94,97,100</span>
                     </div>
@@ -232,7 +256,10 @@ $(function() {
 
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Pie Chart</div>
+                    <div class="panel-heading">
+                        <i class="fa fa-fw fa-pie-chart"></i>
+                        Pie Chart
+                    </div>
                     <div class="panel-body text-center">
                         <span data-sparkline="pie">
                             1,2,3,1,1

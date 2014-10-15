@@ -2,12 +2,12 @@
 
 {% set currentRouteSlug = 'pages-lock-screen' %}
 
-{% block content %}
+{% block content2 %}
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
         <div class="single-window panel panel-default">
             <div class="panel-heading">
-                <div class="panel-title">Sign In as <b>John Doe</b></div>
+                <div class="panel-title">Sign In as <b>Jack Simpson</b></div>
             </div>
             <div class="panel-body">
                 <form role="form" class="form-inline text-center">

@@ -397,6 +397,7 @@ $(function() {
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-html5"></i>
                 HTML5 Inputs Validation
             </div>
             <div class="panel-body">

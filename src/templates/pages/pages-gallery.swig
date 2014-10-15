@@ -66,7 +66,7 @@ $(function() {
 		</div>
 
 		<div class="gallery-image">
-			<img src="images/gallery/{{file}}" alt="gallery-image" />
+			<img src="images/photos/{{file}}" alt="gallery-image" />
 
 			<div class="gallery-overlay">
 				<div class="gallery-overlay-icons-container">
@@ -74,7 +74,7 @@ $(function() {
 						<i class="fa fa-link icon"></i>
 					</a>
 
-					<a class="gallery-image-zoom-action" href="images/gallery/{{file}}">
+					<a class="gallery-image-zoom-action" href="images/photos/{{file}}">
 						<i class="fa fa-search icon"></i>
 					</a>
 				</div>
@@ -86,13 +86,13 @@ $(function() {
 
 {% block content2 %}
 <div class="gallery-container">
-	{{galleryItem('Ocean', 'My Trips', 'sunset2.jpg')}}
-	{{galleryItem('Night Street', 'My Trips', 'img3.jpg')}}
-	{{galleryItem('Mountains', 'Landscapes', 'img6.jpg')}}
-	{{galleryItem('Sunset', 'My Pictures', 'img2.jpg')}}
-	{{galleryItem('Road', 'My Trips', 'img4.jpg', true)}}
-	{{galleryItem('Valley', 'My Trips', 'img5.jpg')}}
-	{{galleryItem('Ocean', 'My Trips', 'sunset2.jpg')}}
-	{{galleryItem('Forest', 'My Trips', 'img6.jpg')}}
+	{{galleryItem('Boats', 'My Trips', 'photo1.jpg')}}
+	{{galleryItem('Ocean', 'My Trips', 'photo2.jpg')}}
+	{{galleryItem('Mountains', 'Landscapes', 'photo3.jpg')}}
+	{{galleryItem('Forest Railroad', 'My Pictures', 'photo4.jpg')}}
+	{{galleryItem('Lake', 'My Pictures', 'photo5.jpg', true)}}
+	{{galleryItem('Book', 'My Pictures', 'photo6.jpg')}}
+	{{galleryItem('Bear', 'Favourites', 'photo7.jpg')}}
+	{{galleryItem('Concert', 'My Pictures', 'photo8.jpg')}}
 </div>
 {% endblock %}

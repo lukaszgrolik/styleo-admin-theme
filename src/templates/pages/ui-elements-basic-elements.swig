@@ -421,7 +421,8 @@ $('[data-toggle=popover]').popover()
     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <i class="fa fa-bell fa-fw"></i> List Group
+                <i class="fa fa-fw fa-list"></i>
+                List Group
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">

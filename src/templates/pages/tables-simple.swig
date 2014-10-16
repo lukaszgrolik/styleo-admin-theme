@@ -42,7 +42,7 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-success gradient">
             <div class="panel-heading">
                 Default Table with Hover
             </div>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-info gradient">
             <div class="panel-heading">
                 Condensed Table
             </div>
@@ -74,7 +74,7 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning gradient">
             <div class="panel-heading">
                 Bordered Table
             </div>
@@ -89,7 +89,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger gradient">
             <div class="panel-heading">
                 Bordered &amp; Striped Table
             </div>
@@ -106,7 +106,7 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-violet gradient">
             <div class="panel-heading">
                 Contextual Rows
             </div>
@@ -148,7 +148,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-brown gradient">
             <div class="panel-heading">
                 Contextual Cells
             </div>

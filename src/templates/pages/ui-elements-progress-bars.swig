@@ -5,7 +5,7 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-success raised">
             <div class="panel-heading">
                 Default Progress Bars
             </div>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-info raised">
             <div class="panel-heading">
                 Striped Progress Bars
             </div>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-warning raised">
             <div class="panel-heading">
                 Animated Progress Bars
             </div>
@@ -226,7 +226,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-danger raised">
             <div class="panel-heading">
                 Stacked Progress Bars
             </div>
@@ -293,7 +293,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-violet raised">
             <div class="panel-heading">
                 Sharp Progress Bars
             </div>
@@ -348,7 +348,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-brown raised">
             <div class="panel-heading">
                 Progress Bars Sizes
             </div>

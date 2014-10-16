@@ -130,7 +130,7 @@ $(function() {
     <div class="col-lg-12">
         <div class="row">
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-line-chart"></i>
                         Line Chart
@@ -144,7 +144,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-line-chart"></i>
                         Composite Line Chart
@@ -158,7 +158,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-bar-chart"></i>
                         Bar Chart
@@ -172,7 +172,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-bar-chart"></i>
                         Stacked Chart
@@ -188,7 +188,7 @@ $(function() {
 
         <div class="row">
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-bar-chart"></i>
                         Composite Bar Chart
@@ -202,7 +202,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-bar-chart"></i>
                         Tristate Chart
@@ -216,7 +216,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         Discrete Chart
                     </div>
@@ -229,7 +229,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         Bullet Chart
                     </div>
@@ -244,7 +244,7 @@ $(function() {
 
         <div class="row">
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         Box Plot Chart
                     </div>
@@ -255,7 +255,7 @@ $(function() {
             </div>
 
             <div class="col-lg-3">
-                <div class="panel panel-default">
+                <div class="panel panel-default raised sharp">
                     <div class="panel-heading">
                         <i class="fa fa-fw fa-pie-chart"></i>
                         Pie Chart

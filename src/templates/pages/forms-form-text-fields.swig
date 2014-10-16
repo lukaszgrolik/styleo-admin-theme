@@ -54,7 +54,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-success sharp raised gradient">
             <div class="panel-heading">
                 Basic Fields
             </div>
@@ -109,7 +109,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-info sharp raised gradient">
             <div class="panel-heading">
                 Field Types
             </div>
@@ -129,7 +129,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning sharp raised gradient">
             <div class="panel-heading">
                 Field Sizes
             </div>
@@ -155,7 +155,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger sharp raised gradient">
             <div class="panel-heading">
                 Input Groups
             </div>
@@ -220,7 +220,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-info raised gradient">
+        <div class="panel panel-yellow sharp raised gradient">
             <div class="panel-heading">
                 <i class="fa fa-flag"></i>
                 Input Icons
@@ -287,7 +287,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-violet sharp raised gradient">
             <div class="panel-heading">
                 Button Addons
             </div>
@@ -411,7 +411,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-brown sharp raised gradient">
             <div class="panel-heading">
             <i class="fa fa-fw fa-check"></i>
                 Validation States
@@ -445,7 +445,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-navy sharp raised gradient">
             <div class="panel-heading">
                 Input Group Validation States
             </div>
@@ -483,7 +483,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-primary sharp raised gradient">
             <div class="panel-heading">
             <i class="fa fa-fw fa-terminal"></i>
                 Input Masks with <strong>jQuery Masked Input</strong> Plugin
@@ -553,7 +553,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-success sharp raised gradient">
             <div class="panel-heading">
             <i class="fa fa-fw fa-sort"></i>
                 Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin

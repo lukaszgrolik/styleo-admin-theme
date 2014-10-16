@@ -108,7 +108,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
                 Basic Tabs Inside Panel
             </div>
@@ -197,7 +197,7 @@
 
     <div class="col-lg-6">
 
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
                 Collapsible Accordion Panel Group
             </div>

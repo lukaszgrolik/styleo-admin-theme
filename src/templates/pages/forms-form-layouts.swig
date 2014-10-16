@@ -5,7 +5,7 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Default Form
             </div>
@@ -27,14 +27,14 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-blue">Submit</button>
+                    <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
         </div>
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Horizontal Form
             </div>
@@ -76,7 +76,7 @@
 
 <div class="row">
 	<div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Inline Form
             </div>

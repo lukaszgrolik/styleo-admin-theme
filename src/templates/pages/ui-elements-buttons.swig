@@ -5,7 +5,7 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button Shapes</div>
             <div class="panel-body text-center">
                 <button type="button" class="btn btn-primary">DEFAULT</button>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button Types</div>
             <div class="panel-body text-center">
                 <button type="button" class="btn btn-primary">DEFAULT</button>
@@ -32,7 +32,7 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button Sizes</div>
             <div class="panel-body text-center">
                 <button type="button" class="btn btn-primary btn-xs">EXTRA SMALL</button>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button Colors</div>
             <div class="panel-body text-center">
                 <div>
@@ -72,7 +72,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Normal Buttons</div>
             <div class="panel-body text-center">
                 <p>
@@ -142,7 +142,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Outline Buttons</div>
             <div class="panel-body text-center">
                 <p>
@@ -212,7 +212,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Raised Buttons</div>
             <div class="panel-body text-center">
                 <p>
@@ -282,7 +282,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Gradient Buttons</div>
             <div class="panel-body text-center">
                 <p>
@@ -352,7 +352,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Raised Gradient Buttons</div>
             <div class="panel-body text-center">
                 <p>
@@ -424,7 +424,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button with Icons</div>
             <div class="panel-body text-center">
                 <button type="button" class="btn btn-default"><i class="fa fa-flag"></i> DEFAULT</button>
@@ -444,7 +444,7 @@
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">Button Examples</div>
             <div class="panel-body">
                 <p class="text-center">
@@ -466,7 +466,7 @@
     <!-- /.col-lg-6 -->
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Button Groups
             </div>
@@ -520,7 +520,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Button Dropdowns
             </div>
@@ -727,7 +727,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Split Button Dropdowns
             </div>
@@ -924,7 +924,7 @@
 
 <div class="row">
     <div class="col-lg-3">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Social Buttons
             </div>
@@ -948,7 +948,7 @@
     </div>
 
     <div class="col-lg-9">
-        <div class="panel panel-default">
+        <div class="panel panel-default raised">
             <div class="panel-heading">
                 Social Icon Buttons
             </div>

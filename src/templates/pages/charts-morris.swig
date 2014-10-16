@@ -19,7 +19,7 @@
     <div class="col-lg-6">
         <div class="panel panel-success raised gradient">
             <div class="panel-heading">
-            <i class="fa fa-fw fa-line-chart"></i>
+                <i class="fa fa-fw fa-line-chart"></i>
                 Line Chart
             </div>
             <!-- /.panel-heading -->
@@ -33,7 +33,7 @@
     <div class="col-lg-6">
         <div class="panel panel-info raised gradient">
             <div class="panel-heading">
-            <i class="fa fa-fw fa-area-chart"></i>
+                <i class="fa fa-fw fa-area-chart"></i>
                 Area Chart
             </div>
             <!-- /.panel-heading -->
@@ -53,7 +53,7 @@
     <div class="col-lg-6">
         <div class="panel panel-warning raised gradient">
             <div class="panel-heading">
-            <i class="fa fa-fw fa-bar-chart"></i>
+                <i class="fa fa-fw fa-bar-chart"></i>
                 Bar Chart
             </div>
             <!-- /.panel-heading -->
@@ -68,7 +68,7 @@
     <div class="col-lg-6">
         <div class="panel panel-danger raised gradient">
             <div class="panel-heading">
-            <i class="fa fa-fw fa-pie-chart"></i>
+                <i class="fa fa-fw fa-pie-chart"></i>
                 Donut Chart
             </div>
             <!-- /.panel-heading -->

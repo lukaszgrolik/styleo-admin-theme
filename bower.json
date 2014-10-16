@@ -44,6 +44,7 @@
     "stacktable": "~1.0.0",
     "jquery.easy-pie-chart": "~2.1.4",
     "masonry": "~3.1.5",
-    "magnific-popup": "~0.9.9"
+    "magnific-popup": "~0.9.9",
+    "flot-spline": "*"
   }
 }

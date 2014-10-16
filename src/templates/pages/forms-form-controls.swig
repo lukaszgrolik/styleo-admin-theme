@@ -79,7 +79,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-check-square-o"></i>
                 Checkbox &amp; Radio Inputs with <strong>iCheck</strong> Plugin
@@ -346,7 +346,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-info separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-sliders"></i>
                 Sliders with <strong>Bootstrap Sliders</strong> Plugin
@@ -439,7 +439,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-toggle-on"></i>
                 Switches with <strong>Switchery</strong> Plugin
@@ -497,7 +497,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-dashboard"></i>
                 Sliders with <strong>jQuery Knob</strong> Plugin
@@ -581,7 +581,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-clock-o"></i>
                 Date Pickers with <strong>Bootstrap Date Pickers</strong> Plugins
@@ -607,7 +607,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-violet separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-toggle-down"></i>
                 Selects with <strong>Select2</strong> Plugin
@@ -639,7 +639,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-brown separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-tag"></i>
                 Tags Input with <strong>Bootstrap Tags Input</strong> Plugin
@@ -653,7 +653,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-navy separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-eyedropper"></i>
                 Color Pickers with <strong>jQuery MiniColors</strong> Plugin
@@ -752,7 +752,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-primary separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-upload"></i>
                 File Upload with <strong>Jasny Bootstrap</strong> Plugin
@@ -802,7 +802,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-cloud-upload"></i>
                 Multiple Files Upload with <strong>Dropzone</strong> Plugin
@@ -846,7 +846,7 @@ $(function() {
 
 {# <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-primary separated">
             <div class="panel-heading">
                 <strong>Pure CSS</strong> Checkbox &amp; Radio Inputs
             </div>
@@ -1032,7 +1032,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-primary separated">
             <div class="panel-heading">
                 <strong>Pure CSS</strong> Switches
             </div>
@@ -1047,7 +1047,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-primary separated">
             <div class="panel-heading">
                 <strong>Pure CSS</strong> Switches
             </div>

@@ -211,7 +211,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated">
             <div class="panel-heading">
                 Basic Form Validation
             </div>
@@ -296,7 +296,7 @@ $(function() {
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated">
             <div class="panel-heading">
                 Tabbed Form Validation
             </div>
@@ -395,7 +395,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
             <i class="fa fa-fw fa-html5"></i>
                 HTML5 Inputs Validation

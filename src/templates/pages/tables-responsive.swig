@@ -19,7 +19,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-info sharp">
             <div class="panel-heading">
                 Responsive Table with Horizontal Scrollbar
             </div>
@@ -36,7 +36,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-info sharp">
             <div class="panel-heading">
                 Responsive Table with Flipped Axis
             </div>
@@ -53,7 +53,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-info sharp">
             <div class="panel-heading">
                 Responsive Table with <strong>StackTable</strong> Plugin
             </div>

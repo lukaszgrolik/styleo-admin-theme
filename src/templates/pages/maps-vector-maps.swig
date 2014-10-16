@@ -112,7 +112,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
   <div class="col-lg-12">
-    <div class="panel panel-default">
+    <div class="panel panel-primary sharp">
       <div class="panel-heading">
         World Map
       </div>
@@ -125,7 +125,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-default">
+    <div class="panel panel-warning sharp">
       <div class="panel-heading">
         United States
       </div>
@@ -136,7 +136,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-default">
+    <div class="panel panel-info sharp">
       <div class="panel-heading">
         Chicago
       </div>
@@ -147,7 +147,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-default">
+    <div class="panel panel-brown sharp">
       <div class="panel-heading">
         United Kingdom
       </div>
@@ -158,7 +158,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-default">
+    <div class="panel panel-violet sharp">
       <div class="panel-heading">
         France
       </div>

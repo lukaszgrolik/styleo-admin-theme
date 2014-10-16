@@ -316,9 +316,9 @@
                     <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="profile.html"><i class="fa fa-user fa-fw"></i> My Profile</a>
+                    <li><a href="pages-profile.html"><i class="fa fa-user fa-fw"></i> My Profile</a>
                     </li>
-                    <li><a href="profile.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="pages-profile.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>
                     <li class="divider"></li>
                     <li><a href="pages-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>

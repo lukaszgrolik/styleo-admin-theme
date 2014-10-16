@@ -129,7 +129,7 @@ $(document).ready(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-navy raised">
             <div class="panel-heading">
                 Basic DataTable
             </div>
@@ -152,8 +152,9 @@ $(document).ready(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-navy raised">
             <div class="panel-heading">
+                <i class="fa fa-fw fa-plus"></i>
                 Row Details
             </div>
             <!-- /.panel-heading -->
@@ -170,8 +171,9 @@ $(document).ready(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-navy raised">
             <div class="panel-heading">
+            <i class="fa fa-fw fa-edit"></i>
                 Editable Cells
             </div>
             <!-- /.panel-heading -->

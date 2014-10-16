@@ -5,7 +5,7 @@
 {% block content2 %}
 <div class="row">
     <div class="col-lg-3">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated sharp">
             <div class="panel-heading">
                 Alerts Sizes
             </div>
@@ -40,7 +40,7 @@
 
     <!-- /.col-lg-4 -->
     <div class="col-lg-3">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated sharp">
             <div class="panel-heading">
                 Alerts Types
             </div>
@@ -69,7 +69,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated sharp">
             <div class="panel-heading">
                 Alerts Colors
             </div>
@@ -128,7 +128,7 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated sharp">
             <div class="panel-heading">
                 Alerts Examples
             </div>
@@ -203,7 +203,7 @@
 
 <div class="row">
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated sharp">
             <div class="panel-heading">
                 Default Alerts
             </div>
@@ -236,7 +236,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated sharp">
             <div class="panel-heading">
                 Sharp Alerts
             </div>
@@ -269,7 +269,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated sharp">
             <div class="panel-heading">
                 Bordered Sharp Alerts
             </div>
@@ -306,7 +306,7 @@
 
 <div class="row">
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated sharp">
             <div class="panel-heading">
                 Small Alerts
             </div>
@@ -339,7 +339,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated sharp">
             <div class="panel-heading">
                 Small Sharp Alerts
             </div>
@@ -372,7 +372,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated sharp">
             <div class="panel-heading">
                 Small Bordered Sharp Alerts
             </div>
@@ -409,7 +409,7 @@
 
 <div class="row">
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated sharp">
             <div class="panel-heading">
                 Extra Small Alerts
             </div>
@@ -442,7 +442,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated sharp">
             <div class="panel-heading">
                 Extra Small Sharp Alerts
             </div>
@@ -475,7 +475,7 @@
     </div>
     <!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated sharp">
             <div class="panel-heading">
                 Extra Small Bordered Sharp Alerts
             </div>

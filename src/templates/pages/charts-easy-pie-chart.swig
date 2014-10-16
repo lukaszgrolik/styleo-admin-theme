@@ -4,50 +4,11 @@
 
 {% block bodyEnd %}
 <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<script src="js/easy-pie-chart.js"></script>
 
 <script>
 $(function() {
-    var gridbordercolor = "#eee";
-
-    var easypiecharts = $('[data-toggle="easy-pie-chart"]');
-
-    $.each(easypiecharts, function () {
-        // var barColor = getcolor($(this).data('barcolor')) || themeprimary;
-        var barColor = $(this).data('barcolor');
-        // var trackColor = getcolor($(this).data('trackcolor')) || false;
-        var trackColor = $(this).data('trackcolor') || false;
-        // var scaleColor = getcolor($(this).data('scalecolor')) || false;
-        var scaleColor = $(this).data('scalecolor') || false;
-        var lineCap = $(this).data('linecap') || "round";
-        var lineWidth = $(this).data('linewidth') || 3;
-        var size = $(this).data('size') || 100;
-        var animate = $(this).data('animate') || false;
-
-        $(this).easyPieChart({
-            barColor: barColor,
-            trackColor: trackColor,
-            scaleColor: scaleColor,
-            lineCap: lineCap,
-            lineWidth: lineWidth,
-            size: size,
-            animate : animate
-        });
-
-        var chartContainerCss = {
-            width: size,
-            height: size,
-        };
-        var chartValueCss = {
-            lineHeight: size + 'px'
-        };
-
-        $(this).css(chartContainerCss)
-        $(this).children('.easy-pie-chart-value').css(chartValueCss);
-    });
-
-    function getcolor() {
-        return 'red'
-    }
+    EasyPieChart.init();
 });
 </script>
 {% endblock %}
@@ -55,7 +16,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
     <div class="col-lg-4">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated">
             <div class="panel-heading">Easy Pie Chart Types</div>
 
             <div class="panel-body text-center">
@@ -83,7 +44,7 @@ $(function() {
     </div>
 
     <div class="col-lg-8">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">Easy Pie Chart Sizes</div>
 
             <div class="panel-body text-center">
@@ -113,7 +74,7 @@ $(function() {
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="panel panel-default">
+        <div class="panel panel-primary separated">
             <div class="panel-heading">Easy Pie Chart Variations</div>
 
             <div class="panel-body text-center">

@@ -18,7 +18,7 @@ $('[data-toggle=popover]').popover()
 {% block content2 %}
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-success separated">
             <div class="panel-heading">
                 Labels
             </div>
@@ -99,7 +99,7 @@ $('[data-toggle=popover]').popover()
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-info separated">
             <div class="panel-heading">
                 Badges
             </div>
@@ -182,7 +182,7 @@ $('[data-toggle=popover]').popover()
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-warning separated">
             <div class="panel-heading">
                 Background Colors
             </div>
@@ -212,7 +212,7 @@ $('[data-toggle=popover]').popover()
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-danger separated">
             <div class="panel-heading">
                 Button Dropdowns
             </div>
@@ -300,7 +300,7 @@ $('[data-toggle=popover]').popover()
     </div>
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-yellow separated">
             <div class="panel-heading">
                 Modals
             </div>
@@ -366,7 +366,7 @@ $('[data-toggle=popover]').popover()
 
 <div class="row">
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-violet separated">
             <div class="panel-heading">
                 Tooltips and Popovers
             </div>
@@ -419,7 +419,7 @@ $('[data-toggle=popover]').popover()
     <!-- /.col-lg-6 -->
 
     <div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-brown separated">
             <div class="panel-heading">
                 <i class="fa fa-fw fa-list"></i>
                 List Group
@@ -492,7 +492,7 @@ $('[data-toggle=popover]').popover()
 
 <div class="row"> #}
 	<div class="col-lg-6">
-        <div class="panel panel-default">
+        <div class="panel panel-navy separated">
             <div class="panel-heading">
                 Pagination
             </div>

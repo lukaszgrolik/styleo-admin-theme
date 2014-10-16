@@ -27,7 +27,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
 	<div class="col-lg-12">
-		<div class="panel panel-info separated">
+		<div class="panel panel-violet separated">
 			<div class="panel-heading">
 				Bootstrap Markdown
 			</div>

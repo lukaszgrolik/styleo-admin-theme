@@ -1,94 +1,94 @@
 .alert {
-	color: #fff;
-	border: 0;
+  color: #fff;
+  border: 0;
 
-	&.sharp {
-		border-radius: 0;
-	}
+  &.sharp {
+    border-radius: 0;
+  }
 
-	&.bordered {
-		border-left-width: 15px;
-		border-left-style: solid;
-	}
+  &.bordered {
+    border-left-width: 15px;
+    border-left-style: solid;
+  }
 }
 
 .alert-xs {
-	font-size: 12px;
-	padding: 5px;
+  font-size: 12px;
+  padding: 5px;
 
-	&.bordered {
-		border-left-width: 5px;
-	}
+  &.bordered {
+    border-left-width: 5px;
+  }
 }
 
 .alert-sm {
-	font-size: 13px;
-	padding: 10px;
+  font-size: 13px;
+  padding: 10px;
 
-	&.bordered {
-		border-left-width: 10px;
-	}
+  &.bordered {
+    border-left-width: 10px;
+  }
 }
 
 .alert-lg {
-	font-size: 15px;
-	padding: 20px;
+  font-size: 15px;
+  padding: 20px;
 
-	&.bordered {
-		border-left-width: 20px;
-	}
+  &.bordered {
+    border-left-width: 20px;
+  }
 }
 
 .alert-xl {
-	font-size: 16px;
-	padding: 25px;
+  font-size: 16px;
+  padding: 25px;
 
-	&.bordered {
-		border-left-width: 25px;
-	}
+  &.bordered {
+    border-left-width: 25px;
+  }
 }
 
 .alert-primary {
-	background-color: $color-blue;
-	border-left-color: darken($color-blue, 20%) !important;
+  background-color: $color-blue;
+  border-left-color: darken($color-blue, 20%) !important;
 }
 
 .alert-success {
-	background-color: $color-green;
-	border-left-color: darken($color-green, 20%) !important;
+  background-color: $color-green;
+  border-left-color: darken($color-green, 20%) !important;
 }
 
 .alert-info {
-	background-color: $color-cyan;
-	border-left-color: darken($color-cyan, 20%) !important;
+  background-color: $color-cyan;
+  border-left-color: darken($color-cyan, 20%) !important;
 }
 
 .alert-warning {
-	background-color: $color-orange;
-	border-left-color: darken($color-orange, 20%) !important;
+  background-color: $color-orange;
+  border-left-color: darken($color-orange, 20%) !important;
 }
 
 .alert-danger {
-	background-color: $color-red;
-	border-left-color: darken($color-red, 20%) !important;
+  background-color: $color-red;
+  border-left-color: darken($color-red, 20%) !important;
 }
 
 .alert-yellow {
-	background-color: $color-yellow;
-	border-left-color: darken($color-yellow, 20%) !important;
+  background-color: $color-yellow;
+  border-left-color: darken($color-yellow, 20%) !important;
 }
 
 .alert-violet {
-	background-color: $color-violet;
-	border-left-color: darken($color-violet, 20%) !important;
+  background-color: $color-violet;
+  border-left-color: darken($color-violet, 20%) !important;
 }
 
 .alert-brown {
-	background-color: $color-brown;
-	border-left-color: darken($color-brown, 20%) !important;
+  background-color: $color-brown;
+  border-left-color: darken($color-brown, 20%) !important;
 }
 
 .alert-navy {
-	background-color: $color-navy;
-	border-left-color: darken($color-navy, 20%) !important;
+  background-color: $color-navy;
+  border-left-color: darken($color-navy, 20%) !important;
 }

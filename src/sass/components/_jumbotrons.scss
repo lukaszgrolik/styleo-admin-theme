@@ -1,12 +1,12 @@
 .jumbotron {
-	background-color: #fff;
-	border-radius: 10px;
+  background-color: #fff;
+  border-radius: 10px;
 
-	&.sharp {
-		border-radius: 0;
-	}
+  &.sharp {
+    border-radius: 0;
+  }
 
-	&.bordered {
-		border: 1px solid $color-grey-1;
-	}
+  &.bordered {
+    border: 1px solid $color-grey-1;
+  }
 }

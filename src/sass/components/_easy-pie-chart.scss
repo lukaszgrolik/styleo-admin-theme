@@ -1,17 +1,17 @@
 .easy-pie-chart {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	margin: 5px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
 
-	canvas {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-	.easy-pie-chart-value {
-		display: inline-block;
-		z-index: 2;
-	}
+  .easy-pie-chart-value {
+    display: inline-block;
+    z-index: 2;
+  }
 }

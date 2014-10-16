@@ -13,74 +13,56 @@
 {% endblock %}
 
 {% block content2 %}
-<!-- /.row -->
 <div class="row">
-
-    <div class="col-lg-6">
-        <div class="panel panel-success raised gradient">
-            <div class="panel-heading">
-                <i class="fa fa-fw fa-line-chart"></i>
-                Line Chart
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <div id="morris-line-chart"></div>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
+  <div class="col-lg-6">
+    <div class="panel panel-success raised gradient">
+      <div class="panel-heading">
+        <i class="fa fa-fw fa-line-chart"></i>
+        Line Chart
+      </div>
+      <div class="panel-body">
+        <div id="morris-line-chart"></div>
+      </div>
     </div>
-    <div class="col-lg-6">
-        <div class="panel panel-info raised gradient">
-            <div class="panel-heading">
-                <i class="fa fa-fw fa-area-chart"></i>
-                Area Chart
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <div id="morris-area-chart"></div>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-6 -->
+  </div>
 
+  <div class="col-lg-6">
+    <div class="panel panel-info raised gradient">
+      <div class="panel-heading">
+        <i class="fa fa-fw fa-area-chart"></i>
+        Area Chart
+      </div>
+      <div class="panel-body">
+        <div id="morris-area-chart"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row">
-    <!-- /.col-lg-6 -->
-    <div class="col-lg-6">
-        <div class="panel panel-warning raised gradient">
-            <div class="panel-heading">
-                <i class="fa fa-fw fa-bar-chart"></i>
-                Bar Chart
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <div id="morris-bar-chart"></div>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
+  <div class="col-lg-6">
+    <div class="panel panel-warning raised gradient">
+      <div class="panel-heading">
+        <i class="fa fa-fw fa-bar-chart"></i>
+        Bar Chart
+      </div>
+      <div class="panel-body">
+        <div id="morris-bar-chart"></div>
+      </div>
     </div>
-    <!-- /.col-lg-6 -->
-    <div class="col-lg-6">
-        <div class="panel panel-danger raised gradient">
-            <div class="panel-heading">
-                <i class="fa fa-fw fa-pie-chart"></i>
-                Donut Chart
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <div id="morris-donut-chart"></div>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
+  </div>
+
+  <div class="col-lg-6">
+    <div class="panel panel-danger raised gradient">
+      <div class="panel-heading">
+        <i class="fa fa-fw fa-pie-chart"></i>
+        Donut Chart
+      </div>
+      <div class="panel-body">
+        <div id="morris-donut-chart"></div>
+      </div>
     </div>
-    <!-- /.col-lg-6 -->
+  </div>
 </div>
-<!-- /.row -->
 {% endblock %}
 

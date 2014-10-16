@@ -4,131 +4,131 @@
 }
 
 .table > tbody > tr {
-	&.primary > td,
-	> td.primary {
-		background-color: lighten($color-blue, 40%) !important;
-	}
+  &.primary > td,
+  > td.primary {
+    background-color: lighten($color-blue, 40%) !important;
+  }
 
-	&.primary:hover > td,
-	> td.primary:hover {
-		background-color: lighten($color-blue, 35%) !important;
-	}
+  &.primary:hover > td,
+  > td.primary:hover {
+    background-color: lighten($color-blue, 35%) !important;
+  }
 
-	&.success > td,
-	> td.success {
-		background-color: lighten($color-green, 42.5%) !important;
-	}
+  &.success > td,
+  > td.success {
+    background-color: lighten($color-green, 42.5%) !important;
+  }
 
-	&.success:hover > td,
-	> td.success:hover {
-		background-color: lighten($color-green, 37.5%) !important;
-	}
+  &.success:hover > td,
+  > td.success:hover {
+    background-color: lighten($color-green, 37.5%) !important;
+  }
 
-	&.info > td,
-	> td.info {
-		background-color: lighten($color-cyan, 50%) !important;
-	}
+  &.info > td,
+  > td.info {
+    background-color: lighten($color-cyan, 50%) !important;
+  }
 
-	&.info:hover > td,
-	> td.info:hover {
-		background-color: lighten($color-cyan, 45%) !important;
-	}
+  &.info:hover > td,
+  > td.info:hover {
+    background-color: lighten($color-cyan, 45%) !important;
+  }
 
-	&.warning > td,
-	> td.warning {
-		background-color: lighten($color-orange, 40%) !important;
-	}
+  &.warning > td,
+  > td.warning {
+    background-color: lighten($color-orange, 40%) !important;
+  }
 
-	&.warning:hover > td,
-	> td.warning:hover {
-		background-color: lighten($color-orange, 35%) !important;
-	}
+  &.warning:hover > td,
+  > td.warning:hover {
+    background-color: lighten($color-orange, 35%) !important;
+  }
 
-	&.danger > td,
-	> td.danger {
-		background-color: lighten($color-red, 37.5%) !important;
-	}
+  &.danger > td,
+  > td.danger {
+    background-color: lighten($color-red, 37.5%) !important;
+  }
 
-	&.danger:hover > td,
-	> td.danger:hover {
-		background-color: lighten($color-red, 32.5%) !important;
-	}
+  &.danger:hover > td,
+  > td.danger:hover {
+    background-color: lighten($color-red, 32.5%) !important;
+  }
 
-	&.yellow > td,
-	> td.yellow {
-		background-color: lighten($color-yellow, 40%) !important;
-	}
+  &.yellow > td,
+  > td.yellow {
+    background-color: lighten($color-yellow, 40%) !important;
+  }
 
-	&.yellow:hover > td,
-	> td.yellow:hover {
-		background-color: lighten($color-yellow, 35%) !important;
-	}
+  &.yellow:hover > td,
+  > td.yellow:hover {
+    background-color: lighten($color-yellow, 35%) !important;
+  }
 
-	&.violet > td,
-	> td.violet {
-		background-color: lighten($color-violet, 40%) !important;
-	}
+  &.violet > td,
+  > td.violet {
+    background-color: lighten($color-violet, 40%) !important;
+  }
 
-	&.violet:hover > td,
-	> td.violet:hover {
-		background-color: lighten($color-violet, 35%) !important;
-	}
+  &.violet:hover > td,
+  > td.violet:hover {
+    background-color: lighten($color-violet, 35%) !important;
+  }
 
-	&.brown > td,
-	> td.brown {
-		background-color: lighten($color-brown, 45%) !important;
-	}
+  &.brown > td,
+  > td.brown {
+    background-color: lighten($color-brown, 45%) !important;
+  }
 
-	&.brown:hover > td,
-	> td.brown:hover {
-		background-color: lighten($color-brown, 40%) !important;
-	}
+  &.brown:hover > td,
+  > td.brown:hover {
+    background-color: lighten($color-brown, 40%) !important;
+  }
 
-	&.navy > td,
-	> td.navy {
-		background-color: lighten($color-navy, 60%) !important;
-	}
+  &.navy > td,
+  > td.navy {
+    background-color: lighten($color-navy, 60%) !important;
+  }
 
-	&.navy:hover > td,
-	> td.navy:hover {
-		background-color: lighten($color-navy, 55%) !important;
-	}
+  &.navy:hover > td,
+  > td.navy:hover {
+    background-color: lighten($color-navy, 55%) !important;
+  }
 }
 
 //
 
 .table-responsive
 {
-	overflow-x: auto;
+  overflow-x: auto;
 }
 
 //
 
 .table-responsive-flipped-axis {
-	.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-	* html .cf { zoom: 1; }
-	*:first-child+html .cf { zoom: 1; }
-	table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+  .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+  * html .cf { zoom: 1; }
+  *:first-child+html .cf { zoom: 1; }
+  table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 
-	th,
-	td { margin: 0; vertical-align: top; }
-	th { text-align: left; }
-	table { display: block; position: relative; width: 100%; }
-	thead { display: block; float: left; }
-	tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
-	thead tr { display: block; }
-	th { display: block; text-align: right; }
-	tbody tr { display: inline-block; vertical-align: top; }
-	td { display: block; min-height: 1.25em; text-align: left; }
+  th,
+  td { margin: 0; vertical-align: top; }
+  th { text-align: left; }
+  table { display: block; position: relative; width: 100%; }
+  thead { display: block; float: left; }
+  tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+  thead tr { display: block; }
+  th { display: block; text-align: right; }
+  tbody tr { display: inline-block; vertical-align: top; }
+  td { display: block; min-height: 1.25em; text-align: left; }
 
 
-	/* sort out borders */
+  /* sort out borders */
 
-	th { border-bottom: 0; border-left: 0; }
-	td { border-left: 0; border-right: 0; border-bottom: 0; }
-	tbody tr { border-left: 1px solid #ddd; }
-	th:last-child,
-	td:last-child { border-bottom: 1px solid #ddd; }
+  th { border-bottom: 0; border-left: 0; }
+  td { border-left: 0; border-right: 0; border-bottom: 0; }
+  tbody tr { border-left: 1px solid #ddd; }
+  th:last-child,
+  td:last-child { border-bottom: 1px solid #ddd; }
 }
 
 //
@@ -140,5 +140,5 @@
 .st-val { width: 49%; padding-left: 1%; }
 
 .stacktable + .table-responsive-stacktable {
-	display: none;
+  display: none;
 }

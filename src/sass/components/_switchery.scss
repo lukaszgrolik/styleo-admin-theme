@@ -1,32 +1,32 @@
 @mixin switchery($width, $height, $radius) {
-	border-radius: $radius;
-	width: $width;
-	height: $height;
+  border-radius: $radius;
+  width: $width;
+  height: $height;
 
-	> small {
-		width: $height;
-		height: $height;
-	}
+  > small {
+    width: $height;
+    height: $height;
+  }
 }
 
 .switchery {
-	@include switchery(36px, 18px, 18px);
+  @include switchery(36px, 18px, 18px);
 
-	&.switchery-sm {
-		@include switchery(28px, 14px, 14px);
-	}
+  &.switchery-sm {
+    @include switchery(28px, 14px, 14px);
+  }
 
-	&.switchery-lg {
-		@include switchery(52px, 26px, 26px);
-	}
+  &.switchery-lg {
+    @include switchery(52px, 26px, 26px);
+  }
 
-	&.switchery-xl {
-		@include switchery(72px, 36px, 36px);
-	}
+  &.switchery-xl {
+    @include switchery(72px, 36px, 36px);
+  }
 
-	&.sharp {
-		&, > small {
-			border-radius: 0;
-		}
-	}
+  &.sharp {
+    &, > small {
+      border-radius: 0;
+    }
+  }
 }

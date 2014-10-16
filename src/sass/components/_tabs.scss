@@ -1,75 +1,75 @@
 .nav-tabs > li > a,
 .nav-pills > li > a {
-	&:hover {
-		background-color: $color-grey-3;
-	}
+  &:hover {
+    background-color: $color-grey-3;
+  }
 }
 
 .sharp {
-	.nav-tabs > li > a,
-	.nav-pills > li > a {
-		border-radius: 0;
-	}
+  .nav-tabs > li > a,
+  .nav-pills > li > a {
+    border-radius: 0;
+  }
 }
 
 .tabs-container {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .nav-tabs {
-	border-bottom: 0;
-	margin-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
 
-	li {
-		box-shadow: none !important;
-		margin: 0;
-	}
+  li {
+    box-shadow: none !important;
+    margin: 0;
+  }
 
-	li a {
-		background-color: transparent !important;
-		color: $color-dark-grey;
-		border: 0 !important;
-		border-top: 3px solid transparent !important;
+  li a {
+    background-color: transparent !important;
+    color: $color-dark-grey;
+    border: 0 !important;
+    border-top: 3px solid transparent !important;
 
-		&:hover {
-			color: $color-dark-navy;
-		}
+    &:hover {
+      color: $color-dark-navy;
+    }
 
-		&:focus {
-			// outline: 1px dotted $color-grey-1;
-			outline: 0;
-		}
-	}
+    &:focus {
+      // outline: 1px dotted $color-grey-1;
+      outline: 0;
+    }
+  }
 
-	li.active a {
-		background-color: #fff !important;
-		border-top-color: $color-blue !important;
-	}
+  li.active a {
+    background-color: #fff !important;
+    border-top-color: $color-blue !important;
+  }
 }
 
 .tab-content {
-	background-color: #fff;
-	border-radius: 0 0 4px 4px;
-	padding: 15px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  padding: 15px;
 
-	.sharp & {
-		border-radius: 0;
-	}
+  .sharp & {
+    border-radius: 0;
+  }
 }
 
 .tabs-container.bordered {
-	.nav-tabs {
-		li {
-			margin-bottom: -1px;
-		}
+  .nav-tabs {
+    li {
+      margin-bottom: -1px;
+    }
 
-		li.active a {
-			border-left: 1px solid $color-grey-1 !important;
-			border-right: 1px solid $color-grey-1 !important;
-		}
-	}
+    li.active a {
+      border-left: 1px solid $color-grey-1 !important;
+      border-right: 1px solid $color-grey-1 !important;
+    }
+  }
 
-	.tab-content {
-		border: 1px solid $color-grey-1;
-	}
+  .tab-content {
+    border: 1px solid $color-grey-1;
+  }
 }

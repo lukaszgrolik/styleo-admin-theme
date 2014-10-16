@@ -32,6 +32,106 @@
 $(function() {
   EasyPieChart.init();
 
+
+  //
+  //
+  //
+
+  var container = $("#flot-line-chart-moving");
+
+    // Determine how many data points to keep based on the placeholder's initial size;
+    // this gives us a nice high-res plot while avoiding more than one point per pixel.
+
+    var maximum = container.outerWidth() / 2 || 300;
+
+    //
+
+    var data = [];
+
+    function getRandomData() {
+
+        if (data.length) {
+            data = data.slice(1);
+        }
+
+        while (data.length < maximum) {
+            var previous = data.length ? data[data.length - 1] : 50;
+            var y = previous + Math.random() * 10 - 5;
+            data.push(y < 0 ? 0 : y > 100 ? 100 : y);
+        }
+
+        // zip the generated y values with the x values
+
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+            res.push([i, data[i]])
+        }
+
+        return res;
+    }
+
+    //
+
+    series = [{
+        data: getRandomData(),
+        lines: {
+            fill: true
+        },
+        color: '#1abc9c'
+    }];
+
+    //
+
+    var plot = $.plot(container, series, {
+        grid: {
+            borderWidth: 1,
+            minBorderMargin: 20,
+            labelMargin: 10,
+            backgroundColor: {
+                colors: ["#fff", "#e4f4f4"]
+            },
+            margin: {
+                top: 8,
+                bottom: 20,
+                left: 20
+            },
+            markings: function(axes) {
+                var markings = [];
+                var xaxis = axes.xaxis;
+                for (var x = Math.floor(xaxis.min); x < xaxis.max; x += xaxis.tickSize * 2) {
+                    markings.push({
+                        xaxis: {
+                            from: x,
+                            to: x + xaxis.tickSize
+                        },
+                        color: "rgba(232, 232, 255, 0.2)"
+                    });
+                }
+                return markings;
+            }
+        },
+        xaxis: {
+            tickFormatter: function() {
+                return "";
+            }
+        },
+        yaxis: {
+            min: 0,
+            max: 110
+        },
+        legend: {
+            show: true
+        }
+    });
+
+    // Update the random dataset at 25FPS for a smoothly-animating chart
+
+    setInterval(function updateRandom() {
+        series[0].data = getRandomData();
+        plot.setData(series);
+        plot.draw();
+    }, 1000);
+
   //
   //
   //
@@ -147,18 +247,19 @@ $(function() {
       },
        hover: {
         r: 10,
+        stroke: '#e74c3c',
         "stroke-width": 5
       }
     },
     markers: [
-      {latLng: [40.6643 , -73.9385], name: '2.532 Visits'},
-      {latLng: [34.0194, -118.4108], name: '1.932 Visits'},
-      {latLng: [41.8376, -87.6818], name: '492 Visits'},
-      {latLng: [29.7805, -95.3863], name: '1.142 Visits'},
-      {latLng: [40.0094, -75.1333], name: '1.311 Visits'},
-      {latLng: [33.5722, -112.0880], name: '2.192 Visits'},
-      {latLng: [29.4724, -98.5251], name: '2.192 Visits'},
-      {latLng: [32.8153, -117.1350], name: '288 Visits'},
+      {latLng: [40.6643 , -73.9385], name: 'New York - 2.532'},
+      {latLng: [34.0194, -118.4108], name: 'Los Angeles - 1.932'},
+      {latLng: [41.8376, -87.6818], name: 'Chicago - 492'},
+      {latLng: [29.7805, -95.3863], name: 'Houston - 1.142'},
+      {latLng: [40.0094, -75.1333], name: 'Philadelphia - 1.311'},
+      {latLng: [33.5722, -112.0880], name: 'Phoenix - 2.192'},
+      {latLng: [29.4724, -98.5251], name: 'San Antonio - 2.192'},
+      {latLng: [32.8153, -117.1350], name: 'San Diego - 288'},
     ]
   });
 
@@ -240,27 +341,29 @@ $(function() {
 	</div>
 
 	<div class="col-lg-4">
-		<div class="panel panel-primary filled">
+		<div class="panel panel-primary filled text-center">
 			<div class="panel-heading">
 				Bandwidth Used
 			</div>
 
-			<div class="panel-body text-center">
-				<div data-toggle="easy-pie-chart" class="easy-pie-chart" data-percent="65" data-barcolor="#f1c40f" data-trackcolor="#fff" data-line-width="15" data-size="150">
+			<div class="panel-body">
+				<div data-toggle="easy-pie-chart" class="easy-pie-chart" data-percent="65" data-barcolor="#fff" data-line-width="15" data-size="150" data-linecap="butt">
 		        <div class="easy-pie-chart-value">65%</div>
 		    </div>
 
-		    <hr class="wide">
+		    {# <hr class="wide"> #}
+		    <br><br>
 
 		    <span data-sparkline="bar">
             2,5,6,3,7,4,2,5,4,2,6,3,2,4,3,4,5,6,3,2,5,4,2,3,4,2,6,4,3,7,4,6,3,2,3,4
         </span>
 
-        <hr class="wide">
+        {# <hr class="wide"> #}
+        <br><br>
 
     		<div>
     			<i class="fa fa-fw fa-upload"></i>
-        	This month: 215 GB
+        	This month: <b>215 GB</b>
     		</div>
 			</div>
 		</div>
@@ -271,7 +374,8 @@ $(function() {
   <div class="col-lg-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        United States
+      	<div class="fa fa-fw fa-map-marker"></div>
+        Sales Statistics
       </div>
       <div class="panel-body">
         <div id="usa-map" style="height: 300px"></div>
@@ -296,72 +400,72 @@ $(function() {
 					<tbody>
 						<tr>
 							<td>1</td>
-							<td><a href="#">Product Review Problem</a></td>
-							<td><span class="label label-info">High</span></td>
+							<td><a href="#">Minor Bugs</a></td>
+							<td><span class="label label-warning">Medium</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
-				                    <div class="progress-bar progress-bar-success" style="width: 50%">
-				                        <span class="sr-only">
-				                            50% Complete
-				                        </span>
-				                    </div>
-				                </div>
+                    <div class="progress-bar progress-bar-success" style="width: 50%">
+                        <span class="sr-only">
+                            50% Complete
+                        </span>
+                    </div>
+                </div>
 							</td>
 						</tr>
 						<tr>
 							<td>2</td>
-							<td><a href="#">Can't Download the Guide Doc</a></td>
-							<td><span class="label label-primary">Medium</span></td>
+							<td><a href="#">Can't Download Sample Files</a></td>
+							<td><span class="label label-danger">High</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
-				                    <div class="progress-bar progress-bar-info" style="width: 30%">
-				                        <span class="sr-only">
-				                            30% Complete
-				                        </span>
-				                    </div>
-				                </div>
+	                  <div class="progress-bar progress-bar-info" style="width: 30%">
+	                      <span class="sr-only">
+	                          30% Complete
+	                      </span>
+	                  </div>
+	              </div>
 							</td>
 						</tr>
 						<tr>
 							<td>3</td>
-							<td><a href="#">Regarding Customer Support</a></td>
-							<td><span class="label label-primary">Medium</span></td>
+							<td><a href="#">Connection Timeout</a></td>
+							<td><span class="label label-warning">Medium</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
-				                    <div class="progress-bar progress-bar-warning" style="width: 75%">
-				                        <span class="sr-only">
-				                            75% Complete
-				                        </span>
-				                    </div>
-				                </div>
+                    <div class="progress-bar progress-bar-warning" style="width: 75%">
+                        <span class="sr-only">
+                            75% Complete
+                        </span>
+                    </div>
+                </div>
 							</td>
 						</tr>
 						<tr>
 							<td>4</td>
-							<td><a href="#">Can't Change My Address</a></td>
-							<td><span class="label label-yellow">Urgent</span></td>
+							<td><a href="#">Can't Change My Password</a></td>
+							<td><span class="label label-primary">Low</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
-				                    <div class="progress-bar progress-bar-danger" style="width: 40%">
-				                        <span class="sr-only">
-				                            40% Complete
-				                        </span>
-				                    </div>
-				                </div>
+                    <div class="progress-bar progress-bar-danger" style="width: 40%">
+                        <span class="sr-only">
+                            40% Complete
+                        </span>
+                    </div>
+                </div>
 							</td>
 						</tr>
 						<tr>
 							<td>5</td>
-							<td><a href="#">Review Tab Malfunction</a></td>
-							<td><span class="label label-violet">Low</span></td>
+							<td><a href="#">Tab Malfunction</a></td>
+							<td><span class="label label-danger">High</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
-				                    <div class="progress-bar progress-bar-progress-bar" style="width: 65%">
-				                        <span class="sr-only">
-				                            65% Complete
-				                        </span>
-				                    </div>
-				                </div>
+                    <div class="progress-bar progress-bar-progress-bar" style="width: 65%">
+                        <span class="sr-only">
+                            65% Complete
+                        </span>
+                    </div>
+                </div>
 							</td>
 						</tr>
 					</tbody>
@@ -375,43 +479,12 @@ $(function() {
   <div class="col-lg-6">
     <div class="panel panel-default">
     	<div class="panel-heading">
-    		Team Messages
+    		Disk Usage Analytics
     	</div>
     	<div class="panel-body">
-    		<ul class="compact-timeline">
-    		  <li>
-    		    <i class="fa fa-comment"></i>
-    		    <span class="date">5 Jan</span>
-    		    <div class="content">
-    		      <p><strong>Jason</strong> has invited you to conversation.</p>
-    		      <small>2 hours ago</small>
-    		    </div>
-    		  </li>
-
-    		  <li>
-    		    <i class="fa fa-envelope bgc-green"></i>
-    		    <span class="date">5 Jan</span>
-    		    <div class="content">
-    		      <i class="fa fa-paperclip pull-right"></i>
-    		      <p><strong>Bruce Burns</strong> has sent you photos:</p>
-    		      <a class="image-zoom" href="images/photos/photo4.jpg"><img src="images/photos/photo4.jpg" class="img-thumbnail" style="height:64px;" /></a>
-    		      <a class="image-zoom" href="images/photos/photo2.jpg"><img src="images/photos/photo2.jpg" class="img-thumbnail" style="height:64px;" /></a>
-    		    </div>
-    		  </li>
-
-    		  <li>
-    		    <i class="fa fa-file bgc-orange"></i>
-    		    <span class="date">5 Jan</span>
-    		    <div class="content">
-    		      <p><strong>Nicholas Rivera</strong> has wrote on your wall:</p>
-    		      <blockquote>
-    		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    		      </blockquote>
-    		    </div>
-    		  </li>
-
-    		  <li><i class="fa fa-globe bgc-red"></i><span class="date">5 Jan</span><div class="content"><p><strong>Catherine</strong> has updated her profile.</p></div></li>
-    		</ul>
+    		<div class="flot-chart" style="height: 300px">
+    			<div class="flot-chart-content" id="flot-line-chart-moving"></div>
+    		</div>
     	</div>
     </div>
   </div>

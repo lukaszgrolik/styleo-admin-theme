@@ -1,65 +1,61 @@
 .custom-control-checkbox-icheck {
-	cursor: pointer;
-	// color: transparent;
-	color: $color-blue;
-	font-family: FontAwesome;
-	font-weight: 400;
-	// border: 3px solid $color-blue;
-	display: inline-block;
-	font-size: 18px;
-	width: 18px;
-	line-height: 1;
-	vertical-align: middle;
+  cursor: pointer;
+  color: $color-blue;
+  font-family: FontAwesome;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 18px;
+  width: 18px;
+  line-height: 1;
+  vertical-align: middle;
 
-	&:before {
-		content: '\f096';
-	}
+  &:before {
+    content: '\f096';
+  }
 
-	&.checked {
-		&:before {
-			content: '\f046';
-		}
-	}
+  &.checked {
+    &:before {
+      content: '\f046';
+    }
+  }
 
-	&.small {
-		font-size: 14px;
-		width: 14px;
-	}
+  &.small {
+    font-size: 14px;
+    width: 14px;
+  }
 
-	&.large {
-		font-size: 26px;
-		width: 26px;
-	}
+  &.large {
+    font-size: 26px;
+    width: 26px;
+  }
 
-	&.extra-large {
-		font-size: 36px;
-		width: 36px;
-	}
+  &.extra-large {
+    font-size: 36px;
+    width: 36px;
+  }
 
-	&.success {color: $color-green;}
-	&.info {color: $color-cyan;}
-	&.warning {color: $color-orange;}
-	&.danger {color: $color-red;}
-	&.yellow {color: $color-yellow;}
-	&.violet {color: $color-violet;}
-	&.brown {color: $color-brown;}
-	&.navy {color: $color-navy;}
+  &.success {color: $color-green;}
+  &.info {color: $color-cyan;}
+  &.warning {color: $color-orange;}
+  &.danger {color: $color-red;}
+  &.yellow {color: $color-yellow;}
+  &.violet {color: $color-violet;}
+  &.brown {color: $color-brown;}
+  &.navy {color: $color-navy;}
 
-	&.disabled {
-		color: $color-light-grey;
-	}
+  &.disabled {
+    color: $color-light-grey;
+  }
 }
 
 .custom-control-checkbox-icheck-radio {
-	&:before {
-		content: '\f10c';
-	}
+  &:before {
+    content: '\f10c';
+  }
 
-	&.checked {
-		&:before {
-			content: '\f192';
-		}
-	}
-
-	// border-radius: 50%;
+  &.checked {
+    &:before {
+      content: '\f192';
+    }
+  }
 }

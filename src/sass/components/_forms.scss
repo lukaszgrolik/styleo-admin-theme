@@ -1,138 +1,136 @@
 .form-control,
 .input-group-addon {
-	border-color: $color-grey-4;
+  border-color: $color-grey-4;
 
-	.has-success & {
-		border-color: $color-green;
+  .has-success & {
+    border-color: $color-green;
 
-		&:focus {
-			border-color: darken($color-green, 20%);
-		}
-	}
+    &:focus {
+      border-color: darken($color-green, 20%);
+    }
+  }
 
-	.has-warning & {
-		border-color: $color-orange;
+  .has-warning & {
+    border-color: $color-orange;
 
-		&:focus {
-			border-color: darken($color-orange, 20%);
-		}
-	}
+    &:focus {
+      border-color: darken($color-orange, 20%);
+    }
+  }
 
-	.has-error & {
-		border-color: $color-red;
+  .has-error & {
+    border-color: $color-red;
 
-		&:focus {
-			border-color: darken($color-red, 20%);
-		}
-	}
+    &:focus {
+      border-color: darken($color-red, 20%);
+    }
+  }
 }
 
 .form-control,
 .input-group-addon {
-	&.sharp {
-		border-radius: 0;
-	}
+  &.sharp {
+    border-radius: 0;
+  }
 }
 
 .form-control {
-	box-shadow: none !important;
+  box-shadow: none !important;
 
-	&:focus {
-		border-color: $color-blue;
-	}
+  &:focus {
+    border-color: $color-blue;
+  }
 }
 
 .input-group-addon {
-	background-color: $color-grey-4;
+  background-color: $color-grey-4;
 
-	.has-success &,
-	.has-warning &,
-	.has-error & {
-		color: #fff;
-	}
+  .has-success &,
+  .has-warning &,
+  .has-error & {
+    color: #fff;
+  }
 
-	.has-success & {
-		background-color: $color-green;
-	}
+  .has-success & {
+    background-color: $color-green;
+  }
 
-	.has-warning & {
-		background-color: $color-orange;
-	}
+  .has-warning & {
+    background-color: $color-orange;
+  }
 
-	.has-error & {
-		background-color: $color-red;
-	}
+  .has-error & {
+    background-color: $color-red;
+  }
 }
 
 .control-label {
-	.has-success & {
-		color: $color-green;
-	}
+  .has-success & {
+    color: $color-green;
+  }
 
-	.has-warning & {
-		color: $color-orange;
-	}
+  .has-warning & {
+    color: $color-orange;
+  }
 
-	.has-error & {
-		color: $color-red;
-	}
+  .has-error & {
+    color: $color-red;
+  }
 }
 
 //
 
 .form-control-feedback {
-	.has-success & {
-		color: $color-green;
-	}
+  .has-success & {
+    color: $color-green;
+  }
 
-	.has-warning & {
-		color: $color-orange;
-	}
+  .has-warning & {
+    color: $color-orange;
+  }
 
-	.has-error & {
-		color: $color-red;
-	}
+  .has-error & {
+    color: $color-red;
+  }
 }
 
 //
 
 .input-icon {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 
-	input {
-		// background-color: pink;
-		// padding-left: 35px;
-		&.input-lg {
-			+ i {
-				font-size: 26px;
-			}
-		}
-	}
+  input {
+    &.input-lg {
+      + i {
+        font-size: 26px;
+      }
+    }
+  }
 
-	i {
-		position: absolute;
-		top: 10px;
-	}
+  i {
+    position: absolute;
+    top: 10px;
+  }
 
-	&:not(.icon-right) {
-		input {
-			padding-left: 30px;
-		}
+  &:not(.icon-right) {
+    input {
+      padding-left: 30px;
+    }
 
-		i {
-			left: 10px;
-		}
-	}
+    i {
+      left: 10px;
+    }
+  }
 
-	&.icon-right {
-		input {
-			padding-right: 30px;
-		}
+  &.icon-right {
+    input {
+      padding-right: 30px;
+    }
 
-		i {
+    i {
 
-			right: 15px;
-		}
-	}
+      right: 15px;
+    }
+  }
 }

@@ -38,6 +38,7 @@ $(function() {
       },
        hover: {
         r: 10,
+        stroke: '#e74c3c',
         "stroke-width": 5
       }
     },

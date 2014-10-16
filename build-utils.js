@@ -1,151 +1,151 @@
 var yaml = require('yamljs');
 
 var swigLocals = {
-	// routes: yaml.load('./src/templates/data/routes.yaml'),
+  // routes: yaml.load('./src/templates/data/routes.yaml'),
 
-	getRouteBySlug: function(routes, slug) {
-		var result = {};
-		var route = null;
-		var nestedRoute = null;
+  getRouteBySlug: function(routes, slug) {
+    var result = {};
+    var route = null;
+    var nestedRoute = null;
 
-		for (var i = 0, l = routes.length; i < l; ++i) {
-			route = routes[i];
+    for (var i = 0, l = routes.length; i < l; ++i) {
+      route = routes[i];
 
-			if (slug === route.slug) {
-				result = route;
+      if (slug === route.slug) {
+        result = route;
 
-				break;
-			} else if (route.routes) {
-				nestedRoute = swigLocals.getRouteBySlug(route.routes, slug);
+        break;
+      } else if (route.routes) {
+        nestedRoute = swigLocals.getRouteBySlug(route.routes, slug);
 
-				if ('string' === typeof nestedRoute.slug) {
-					result = nestedRoute;
+        if ('string' === typeof nestedRoute.slug) {
+          result = nestedRoute;
 
-					break;
-				}
-			}
-		}
+          break;
+        }
+      }
+    }
 
-		// console.log('result', result)
+    // console.log('result', result)
 
-		return result;
-	},
+    return result;
+  },
 
-	getObjectInArrayByParams: function(arr, params, arrKey) {
-		if (Object.prototype.toString.call(arr) !== '[object Array]') {
-			// throw new Error('Must be an array!')
-			// arr = [];
-		}
+  getObjectInArrayByParams: function(arr, params, arrKey) {
+    if (Object.prototype.toString.call(arr) !== '[object Array]') {
+      // throw new Error('Must be an array!')
+      // arr = [];
+    }
 
-		var item = null;
-		var result = null;
-		var paramVal = null;
-		var itemFound = true;
+    var item = null;
+    var result = null;
+    var paramVal = null;
+    var itemFound = true;
 
-		for (var i = 0, l = arr.length; i < l; ++i) {
-			item = arr[i];
-			itemFound = true;
+    for (var i = 0, l = arr.length; i < l; ++i) {
+      item = arr[i];
+      itemFound = true;
 
-			for (var paramKey in params) {
-				paramVal = params[paramKey];
+      for (var paramKey in params) {
+        paramVal = params[paramKey];
 
-				if (item[paramKey] !== paramVal) {
-					itemFound = false;
-				}
-			}
+        if (item[paramKey] !== paramVal) {
+          itemFound = false;
+        }
+      }
 
-			if (itemFound) {
-				result = item;
+      if (itemFound) {
+        result = item;
 
-				return result;
-			}
+        return result;
+      }
 
-			if (item[arrKey] && item[arrKey].length) {
-				result = swigLocals.getObjectInArrayByParams(item[arrKey], params, arrKey);
+      if (item[arrKey] && item[arrKey].length) {
+        result = swigLocals.getObjectInArrayByParams(item[arrKey], params, arrKey);
 
-				if (result) {
-					return result;
-				}
-			}
-		}
+        if (result) {
+          return result;
+        }
+      }
+    }
 
-		return {};
-	},
+    return {};
+  },
 
-	// getRouteBySlug: function(routes, slug) {
-	// 	// var routes = swigLocals.routes;
-	// 	var result = {};
+  // getRouteBySlug: function(routes, slug) {
+  //  // var routes = swigLocals.routes;
+  //  var result = {};
 
-	// 	routes.forEach(function(route) {
-	// 		if (slug === route.slug) {
-	// 			result = route;
+  //  routes.forEach(function(route) {
+  //    if (slug === route.slug) {
+  //      result = route;
 
-	// 			return;
-	// 		}
+  //      return;
+  //    }
 
-	// 		if (route.routes) {
-	// 			route.routes.forEach(function(route1) {
-	// 				if (slug === route1.slug) {
-	// 					result = route1;
+  //    if (route.routes) {
+  //      route.routes.forEach(function(route1) {
+  //        if (slug === route1.slug) {
+  //          result = route1;
 
-	// 					return;
-	// 				}
+  //          return;
+  //        }
 
-	// 				if (route1.routes) {
-	// 					route1.routes.forEach(function(route2) {
-	// 						if (slug === route2.slug) {
-	// 							result = route2;
+  //        if (route1.routes) {
+  //          route1.routes.forEach(function(route2) {
+  //            if (slug === route2.slug) {
+  //              result = route2;
 
-	// 							return;
-	// 						}
-	// 					});
-	// 				}
-	// 			});
-	// 		}
-	// 	});
+  //              return;
+  //            }
+  //          });
+  //        }
+  //      });
+  //    }
+  //  });
 
-	// 	return result;
-	// },
+  //  return result;
+  // },
 
-	getBreadcrumbsRoutes: function(routes, slug) {
-		// var routes = swigLocals.routes;
-		var result = [];
+  getBreadcrumbsRoutes: function(routes, slug) {
+    // var routes = swigLocals.routes;
+    var result = [];
 
-		routes.forEach(function(route) {
-			if (slug === route.slug) {
-				result.push(route);
+    routes.forEach(function(route) {
+      if (slug === route.slug) {
+        result.push(route);
 
-				return;
-			}
+        return;
+      }
 
-			if (route.routes) {
-				route.routes.forEach(function(route1) {
-					// if (slug === route.slug + '-' + route1.slug) {
-					if (slug === route1.slug) {
-						result.push(route);
-						result.push(route1);
+      if (route.routes) {
+        route.routes.forEach(function(route1) {
+          // if (slug === route.slug + '-' + route1.slug) {
+          if (slug === route1.slug) {
+            result.push(route);
+            result.push(route1);
 
-						return;
-					}
+            return;
+          }
 
-					if (route1.routes) {
-						route1.routes.forEach(function(route2) {
-							// if (slug === route.slug + '-' + route1.slug + '-' + route2.slug) {
-							if (slug === route2.slug) {
-								result.push(route);
-								result.push(route1);
-								result.push(route2);
+          if (route1.routes) {
+            route1.routes.forEach(function(route2) {
+              // if (slug === route.slug + '-' + route1.slug + '-' + route2.slug) {
+              if (slug === route2.slug) {
+                result.push(route);
+                result.push(route1);
+                result.push(route2);
 
-								return;
-							}
-						});
-					}
-				});
-			}
-		});
+                return;
+              }
+            });
+          }
+        });
+      }
+    });
 
-		return result;
-	}
+    return result;
+  }
 };
 
 module.exports = swigLocals;
@@ -153,82 +153,82 @@ module.exports = swigLocals;
 // var yaml = require('yamljs');
 
 // var swigLocals = {
-// 	routes: yaml.load('./src/templates/data/routes.yaml'),
+//  routes: yaml.load('./src/templates/data/routes.yaml'),
 
-// 	getRouteBySlug: function(slug) {
-// 		var routes = swigLocals.routes;
-// 		var result = {};
+//  getRouteBySlug: function(slug) {
+//    var routes = swigLocals.routes;
+//    var result = {};
 
-// 		routes.forEach(function(route) {
-// 			if (slug === route.slug) {
-// 				result = route;
+//    routes.forEach(function(route) {
+//      if (slug === route.slug) {
+//        result = route;
 
-// 				return;
-// 			}
+//        return;
+//      }
 
-// 			if (route.routes) {
-// 				route.routes.forEach(function(route1) {
-// 					if (slug === route1.slug) {
-// 						result = route1;
+//      if (route.routes) {
+//        route.routes.forEach(function(route1) {
+//          if (slug === route1.slug) {
+//            result = route1;
 
-// 						return;
-// 					}
+//            return;
+//          }
 
-// 					if (route1.routes) {
-// 						route1.routes.forEach(function(route2) {
-// 							if (slug === route2.slug) {
-// 								result = route2;
+//          if (route1.routes) {
+//            route1.routes.forEach(function(route2) {
+//              if (slug === route2.slug) {
+//                result = route2;
 
-// 								return;
-// 							}
-// 						});
-// 					}
-// 				});
-// 			}
-// 		});
+//                return;
+//              }
+//            });
+//          }
+//        });
+//      }
+//    });
 
-// 		return result;
-// 	},
+//    return result;
+//  },
 
-// 	getBreadcrumbsRoutes: function(slug) {
-// 		var routes = swigLocals.routes;
-// 		var result = [];
+//  getBreadcrumbsRoutes: function(slug) {
+//    var routes = swigLocals.routes;
+//    var result = [];
 
-// 		routes.forEach(function(route) {
-// 			if (slug === route.slug) {
-// 				result.push(route);
+//    routes.forEach(function(route) {
+//      if (slug === route.slug) {
+//        result.push(route);
 
-// 				return;
-// 			}
+//        return;
+//      }
 
-// 			if (route.routes) {
-// 				route.routes.forEach(function(route1) {
-// 					// if (slug === route.slug + '-' + route1.slug) {
-// 					if (slug === route1.slug) {
-// 						result.push(route);
-// 						result.push(route1);
+//      if (route.routes) {
+//        route.routes.forEach(function(route1) {
+//          // if (slug === route.slug + '-' + route1.slug) {
+//          if (slug === route1.slug) {
+//            result.push(route);
+//            result.push(route1);
 
-// 						return;
-// 					}
+//            return;
+//          }
 
-// 					if (route1.routes) {
-// 						route1.routes.forEach(function(route2) {
-// 							// if (slug === route.slug + '-' + route1.slug + '-' + route2.slug) {
-// 							if (slug === route2.slug) {
-// 								result.push(route);
-// 								result.push(route1);
-// 								result.push(route2);
+//          if (route1.routes) {
+//            route1.routes.forEach(function(route2) {
+//              // if (slug === route.slug + '-' + route1.slug + '-' + route2.slug) {
+//              if (slug === route2.slug) {
+//                result.push(route);
+//                result.push(route1);
+//                result.push(route2);
 
-// 								return;
-// 							}
-// 						});
-// 					}
-// 				});
-// 			}
-// 		});
+//                return;
+//              }
+//            });
+//          }
+//        });
+//      }
+//    });
 
-// 		return result;
-// 	}
+//    return result;
+//  }
 // };
 
 // module.exports = swigLocals;

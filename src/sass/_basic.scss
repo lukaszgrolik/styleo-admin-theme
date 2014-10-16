@@ -1,38 +1,38 @@
 @function get-font-list($name) {
-	$ssp: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	$rw: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	$result: '';
+  $ssp: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  $rw: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  $result: '';
 
-	@if $name == 'ssp' {
-		$result: $ssp;
-	} @else if $name == 'rw' {
-		$result: $rw;
-	}
+  @if $name == 'ssp' {
+    $result: $ssp;
+  } @else if $name == 'rw' {
+    $result: $rw;
+  }
 
-	@return $result;
+  @return $result;
 }
 
 body {
-	background-color: $color-grey-3;
-	color: $color-dark-grey;
-	font-family: get-font-list(ssp);
+  background-color: $color-grey-3;
+  color: $color-dark-grey;
+  font-family: get-font-list(ssp);
 }
 
 h1,
 h2,
 h3 {
-	font-family: get-font-list(rw);
-	font-weight: 200;
+  font-family: get-font-list(rw);
+  font-weight: 200;
 }
 
 pre {
-	border-radius: 0;
-	border: 0;
+  border-radius: 0;
+  border: 0;
 }
 
 //
 
 hr.wide {
-	margin-left: -15px;
-	margin-right: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }

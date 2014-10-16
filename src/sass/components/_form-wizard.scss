@@ -1,28 +1,27 @@
 .fuelux .wizard {
-	box-shadow: none;
+  box-shadow: none;
 
-	> .steps li {
-		border-radius: 0 !important;
+  > .steps li {
+    border-radius: 0 !important;
 
-		&.active {
-			background-color: lighten($color-blue, 30%);
-			// color: #fff;
+    &.active {
+      background-color: lighten($color-blue, 30%);
 
-			.badge {
-				background-color: $color-blue !important;
-			}
+      .badge {
+        background-color: $color-blue !important;
+      }
 
-			.chevron:before {
-				border-left-color: lighten($color-blue, 30%);
-			}
-		}
-	}
+      .chevron:before {
+        border-left-color: lighten($color-blue, 30%);
+      }
+    }
+  }
 
-	> .actions {
-		background-color: transparent;
-	}
+  > .actions {
+    background-color: transparent;
+  }
 
-	> .step-content {
-		background-color: #fff;
-	}
+  > .step-content {
+    background-color: #fff;
+  }
 }

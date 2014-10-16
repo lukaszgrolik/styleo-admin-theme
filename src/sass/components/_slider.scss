@@ -1,87 +1,87 @@
 .slider {
-	.slider-track {
-		background: $color-grey-4;
-		box-shadow: none;
-	}
+  .slider-track {
+    background: $color-grey-4;
+    box-shadow: none;
+  }
 
-	&.slider-horizontal .slider-track {
-		height: 3px;
-	}
+  &.slider-horizontal .slider-track {
+    height: 3px;
+  }
 
-	&.slider-vertical .slider-track {
-		width: 3px;
-	}
+  &.slider-vertical .slider-track {
+    width: 3px;
+  }
 
-	.slider-selection {
-		background: $color-light-grey;
-	}
+  .slider-selection {
+    background: $color-light-grey;
+  }
 
-	.slider-handle {
-		background: lighten($color-light-grey, 20%);
-		opacity: 1;
-		box-shadow: none;
-		border: 3px solid #fff;
-	}
+  .slider-handle {
+    background: lighten($color-light-grey, 20%);
+    opacity: 1;
+    box-shadow: none;
+    border: 3px solid #fff;
+  }
 
-	&.slider-horizontal .slider-handle {
-		margin-top: -9px;
-	}
+  &.slider-horizontal .slider-handle {
+    margin-top: -9px;
+  }
 
-	&.slider-vertical .slider-handle {
-		margin-left: -9px;
-	}
+  &.slider-vertical .slider-handle {
+    margin-left: -9px;
+  }
 
-	&.sharp {
-		.slider-track,
-		.slider-selection {
-			border-radius: 0;
-		}
-	}
+  &.sharp {
+    .slider-track,
+    .slider-selection {
+      border-radius: 0;
+    }
+  }
 
 
 }
 
 .slider-primary {
-	.slider-selection {background: $color-blue;}
-	.slider-handle {background: lighten($color-blue, 20%);}
+  .slider-selection {background: $color-blue;}
+  .slider-handle {background: lighten($color-blue, 20%);}
 }
 
 .slider-success {
-	.slider-selection {background: $color-green;}
-	.slider-handle {background: lighten($color-green, 20%);}
+  .slider-selection {background: $color-green;}
+  .slider-handle {background: lighten($color-green, 20%);}
 }
 
 .slider-info {
-	.slider-selection {background: $color-cyan;}
-	.slider-handle {background: lighten($color-cyan, 20%);}
+  .slider-selection {background: $color-cyan;}
+  .slider-handle {background: lighten($color-cyan, 20%);}
 }
 
 .slider-warning {
-	.slider-selection {background: $color-orange;}
-	.slider-handle {background: lighten($color-orange, 20%);}
+  .slider-selection {background: $color-orange;}
+  .slider-handle {background: lighten($color-orange, 20%);}
 }
 
 .slider-danger {
-	.slider-selection {background: $color-red;}
-	.slider-handle {background: lighten($color-red, 20%);}
+  .slider-selection {background: $color-red;}
+  .slider-handle {background: lighten($color-red, 20%);}
 }
 
 .slider-yellow {
-	.slider-selection {background: $color-yellow;}
-	.slider-handle {background: lighten($color-yellow, 20%);}
+  .slider-selection {background: $color-yellow;}
+  .slider-handle {background: lighten($color-yellow, 20%);}
 }
 
 .slider-violet {
-	.slider-selection {background: $color-violet;}
-	.slider-handle {background: lighten($color-violet, 20%);}
+  .slider-selection {background: $color-violet;}
+  .slider-handle {background: lighten($color-violet, 20%);}
 }
 
 .slider-brown {
-	.slider-selection {background: $color-brown;}
-	.slider-handle {background: lighten($color-brown, 20%);}
+  .slider-selection {background: $color-brown;}
+  .slider-handle {background: lighten($color-brown, 20%);}
 }
 
 .slider-navy {
-	.slider-selection {background: $color-navy;}
-	.slider-handle {background: lighten($color-navy, 20%);}
+  .slider-selection {background: $color-navy;}
+  .slider-handle {background: lighten($color-navy, 20%);}
 }

@@ -1,8 +1,7 @@
 var gulp = require('gulp');
-var watch = require('gulp-watch')
 var plugins = require('gulp-load-plugins')();
 var swigExtras = require('swig-extras');
-var swigLocals = require('./build-utils');
+var swigLocals = require('./gulp-swig-locals');
 
 var config = {
   name: 'styleo-admin',
@@ -12,8 +11,6 @@ var config = {
   }
 };
 
-//
-
 gulp.task('connect', function() {
   plugins.connect.server({
     root: config.paths.web,
@@ -21,17 +18,6 @@ gulp.task('connect', function() {
     livereload: true
   });
 });
-
-//
-
-gulp.task('livereload', function() {
-  // gulp.src(config.paths.web + '/**/*.{html,js}')
-  gulp.src(config.paths.web + '/*.html')
-  .pipe(plugins.plumber())
-  .pipe(plugins.connect.reload());
-});
-
-//
 
 gulp.task('markdown', function() {
   return gulp.src('README.md')
@@ -44,7 +30,6 @@ gulp.task('templates', function() {
   .pipe(plugins.plumber())
   .pipe(plugins.swig({
     setup: function(swig) {
-      swigExtras.useTag(swig, 'markdown');
       swigExtras.useFilter(swig, 'trim');
     },
     defaults: {
@@ -52,10 +37,8 @@ gulp.task('templates', function() {
       locals: swigLocals
     }
   }))
-  .pipe(gulp.dest(config.paths.web))
+  .pipe(gulp.dest(config.paths.web));
 });
-
-//
 
 gulp.task('sass', function() {
   return gulp.src(config.paths.src + '/sass/main.scss')
@@ -82,28 +65,11 @@ gulp.task('sass', function() {
   .pipe(plugins.connect.reload());
 });
 
-//
-
 gulp.task('watch', function() {
   gulp.watch('README.md', ['markdown']);
   gulp.watch([config.paths.src + '/templates/**/*.swig', 'README.html'], ['templates']);
   gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
-  // gulp.watch(config.paths.web + '/*.html', ['livereload']);
 });
-
-// gulp.task('watchTemplates', function() {
-//  gulp.watch(config.paths.src + '/templates/**/*.swig', ['templates']);
-// });
-
-// gulp.task('watchSass', function() {
-//  gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
-// });
-
-// gulp.task('watchWeb', function() {
-//  gulp.watch(config.paths.web + '/*.html', ['livereload']);
-// });
-
-//
 
 gulp.task('build', ['markdown', 'templates', 'sass',]);
 gulp.task('server', ['connect', 'build', 'watch']);

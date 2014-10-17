@@ -3,7 +3,7 @@
 {% set currentRouteSlug = 'maps-vector-maps' %}
 
 {% block headEnd %}
-<link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+<link rel="stylesheet" href="bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css">
 {% endblock %}
 
 {% block bodyEnd %}

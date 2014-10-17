@@ -4,11 +4,11 @@
 
 {% block bodyEnd %}
 <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-<script src="js/easy-pie-chart.js"></script>
+<script src="js/custom-easy-pie-charts.js"></script>
 
 <script>
 $(function() {
-  EasyPieChart.init();
+  CustomEasyPieCharts.init();
 });
 </script>
 {% endblock %}

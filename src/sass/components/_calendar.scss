@@ -1,0 +1,14 @@
+.calendar-draggable-event {
+  cursor: move;
+  background-color: $color-grey-3;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.calendar {
+  .fc-event {
+    background-color: $color-blue;
+    border: 0;
+  }
+}

@@ -32,7 +32,7 @@
           <li class="message-item">
             <a href="#" class="message-link clearfix">
               <div class="message-avatar">
-                <img class="img-responsive" src="images/avatars/avatar2.jpg" alt="Jennifer Howard">
+                <img class="img-responsive" src="images/avatars/avatar7.jpg" alt="Jennifer Howard">
               </div>
               <div class="message">
                 <div class="message-sender">

@@ -127,10 +127,6 @@
     padding-left: 27px;
     padding-right: 5px;
     border-left: 0 !important;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
   }
 }
 
@@ -143,7 +139,6 @@
   .form-control,
   .btn {
     border: 0 !important;
-    // border-radius: 0;
   }
 
   .form-control {
@@ -153,7 +148,6 @@
 
   .btn {
     background-color: transparent !important;
-    // color: $color-light-grey;
     color: $color-blue;
     box-shadow: none;
   }
@@ -205,8 +199,6 @@
 
     &:hover .link-text {
       text-decoration: underline;
-      // color: $color-grey-4;
-      // color: $color-dark-navy;
     }
   }
 
@@ -248,6 +240,7 @@
 
   li a {
     color: $color-dark-grey;
+    color: #666;
 
     &:hover {
       background-color: #fbfbfb;
@@ -256,6 +249,10 @@
     &:focus {
       // outline: 1px dotted $color-grey-1;
       outline: 0;
+    }
+
+    > .arrow {
+      color: $color-dark-grey;
     }
   }
 
@@ -268,7 +265,7 @@
   > li {
     > a {
       padding-left: 10px;
-      border-top: 1px solid $color-grey-4;
+      border-top: 1px solid $color-grey-3;
     }
 
     &.current {
@@ -372,7 +369,6 @@
 
   .message-body {
     color: $color-grey-1;
-    // margin-top: 5px;
   }
 }
 

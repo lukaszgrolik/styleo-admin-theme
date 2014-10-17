@@ -137,15 +137,14 @@ $(".spk5").sparkline([5,3,5,6,5,7,4,8,6,9,8,], { type: 'bar', width: '80px', bar
               <div class="col-sm-9">
                 <div class="avatar-upload">
                   <img src="images/avatars/avatar1.jpg" class="profile-avatar img-thumbnail" />
-                  <input id="fileupload" type="file" name="files[]">
-                  <div id="progress" class="overlay"></div>
+                  <input type="file" name="files[]">
                 </div>
               </div>
             </div>
             <div class="form-group">
               <label class="col-sm-3 control-label" for="name">Name</label>
               <div class="col-sm-9">
-                <input type="email" value="Philip Gray" id="name" class="form-control">
+                <input type="email" value="Philip Gray" class="form-control">
               </div>
             </div>
             <div class="form-group">

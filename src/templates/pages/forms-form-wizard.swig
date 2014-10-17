@@ -98,11 +98,6 @@ $(function() {
                 placeholder="YYYY/MM/DD" />
             </div>
           </div>
-          <div class="form-group">
-            <div class="col-lg-offset-4 col-lg-8">
-              <input class="btn btn-palegreen" type="submit" value="Validate" />
-            </div>
-          </div>
         </div>
         <div class="step-pane sample-pane" data-step="3">
         <div class="form-group">

@@ -11,20 +11,6 @@
 
 <script>
 $(function() {
-  var styleoColors = {
-    red: '#e74c3c',
-    orange: '#e67e22',
-    yellow: '#f1c40f',
-    green: '#2ecc71',
-    cyan: '#1abc9c',
-    blue: '#3498db',
-    violet: '#9b59b6',
-    brown: '#be643c',
-    navy: '#34495e',
-    lightGrey: '#95a5a6',
-    darkGrey: '#7f8c8d',
-  };
-
   var sparklineBar = $('[data-sparkline="bar"]');
 
   $.each(sparklineBar, function() {

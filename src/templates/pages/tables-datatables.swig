@@ -12,115 +12,103 @@
 <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
 <script>
-$(document).ready(function() {
-  $('#dataTables-example').dataTable();
+$(function() {
+  //
+  // table1
+  //
 
-  //Search input style
-  $('.dataTables_filter input').addClass('form-control').attr('placeholder','Search');
+  $('#table1').dataTable();
+
+  // Add input style
+  $('.dataTables_filter input').addClass('form-control').attr('placeholder', 'Search');
   $('.dataTables_length select').addClass('form-control');
 
-  /* Formating function for row details */
-  function fnFormatDetails ( oTable, nTr )
-  {
-    var aData = oTable.fnGetData( nTr );
-    var sOut = '<table class="table">';
-    sOut += '<tr><th>Rendering engine:</th><td>'+aData[1]+' '+aData[4]+'</td></tr>';
-    sOut += '<tr><th>Link to source:</th><td>Could provide a link here</td></tr>';
-    sOut += '<tr><th>Extra info:</th><td>And any further details here (images etc)</td></tr>';
-    sOut += '</table>';
+  // Formating function for row details
+  function tableDetailsFormat(table, row) {
+    var aData = table.fnGetData(row);
+    var result = '<table class="table">';
+    result += '<tr><th>Rendering engine:</th><td>' + aData[1] + ' ' + aData[4] + '</td></tr>';
+    result += '<tr><th>Link to source:</th><td><a href="http://example.com">example.com</a></td></tr>';
+    result += '<tr><th>Details:</th><td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tenetur dignissimos odio consequatur sequi odit quos reprehenderit enim quo perferendis, inventore et soluta ullam perspiciatis, architecto natus autem, nobis amet!</td></tr>';
+    result += '</table>';
 
-    return sOut;
+    return result;
   }
 
-  /*
-   * Insert a 'details' column to the table
-   */
-  var nCloneTh = document.createElement( 'th' );
-  var nCloneTd = document.createElement( 'td' );
-  // nCloneTd.innerHTML = '<img class="toggle-details" src="images/plus.png" />';
-  nCloneTd.innerHTML = '<i class="fa fa-fw fa-plus toggle-row-details-action"></i>';
-  nCloneTd.className = "text-center";
+  //
+  // table2
+  //
 
-  $('#datatable2 thead tr').each( function () {
-    this.insertBefore( nCloneTh, this.childNodes[0] );
-  } );
+  // Insert a 'details' column to the table
+  var thCopy = document.createElement('th');
+  var tdCopy = document.createElement('td');
 
-  $('#datatable2 tbody tr').each( function () {
-    this.insertBefore(  nCloneTd.cloneNode( true ), this.childNodes[0] );
-  } );
+  tdCopy.innerHTML = '<i class="fa fa-fw fa-plus toggle-row-details-action"></i>';
+  tdCopy.className = 'text-center';
 
-  /*
-   * Initialse DataTables, with no sorting on the 'details' column
-   */
-  var oTable = $('#datatable2').dataTable( {
-    "aoColumnDefs": [
-      { "bSortable": false, "aTargets": [ 0 ] }
-    ],
-    "aaSorting": [[1, 'asc']]
+  $('#table2 thead tr').each(function () {
+    this.insertBefore(thCopy, this.childNodes[0]);
   });
 
-  /* Add event listener for opening and closing details
-   * Note that the indicator for showing which row is open is not controlled by DataTables,
-   * rather it is done here
-   */
-  $('#datatable2').delegate('tbody td .toggle-row-details-action','click', function () {
-    var nTr = $(this).parents('tr')[0];
-    if ( oTable.fnIsOpen(nTr) )
-    {
-      /* This row is already open - close it */
-      // this.src = "images/plus.png";
+  $('#table2 tbody tr').each(function () {
+    this.insertBefore(tdCopy.cloneNode(true), this.childNodes[0]);
+  });
+
+  var table2 = $('#table2').dataTable({
+    aoColumnDefs: [
+      {
+        bSortable: false,
+        aTargets: [0]
+      }
+    ],
+    aaSorting: [
+      [1, 'asc']
+    ]
+  });
+
+  // Add event listener for opening and closing details
+  $('#table2').delegate('tbody td .toggle-row-details-action','click', function() {
+    var row = $(this).parents('tr')[0];
+
+    if (table2.fnIsOpen(row)) {
       $(this)
       .removeClass('fa-minus')
       .addClass('fa-plus');
 
-      oTable.fnClose( nTr );
-    }
-    else
-    {
-      /* Open this row */
-      // this.src = "images/minus.png";
+      table2.fnClose(row);
+    } else {
       $(this)
       .removeClass('fa-plus')
       .addClass('fa-minus');
 
-      oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
+      table2.fnOpen(row, tableDetailsFormat(table2, row), 'details');
     }
   });
-  // $('#datatable2').delegate('tbody td img','click', function () {
-  //     var nTr = $(this).parents('tr')[0];
-  //     if ( oTable.fnIsOpen(nTr) )
-  //     {
-  //         /* This row is already open - close it */
-  //         this.src = "images/plus.png";
-  //         oTable.fnClose( nTr );
-  //     }
-  //     else
-  //     {
-  //         /* Open this row */
-  //         this.src = "images/minus.png";
-  //         oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
-  //     }
-  // });
 
   $('.dataTables_filter input').addClass('form-control').attr('placeholder','Search');
   $('.dataTables_length select').addClass('form-control');
 
-  /* Init DataTables */
-  var aTable = $('#datatable3').dataTable();
+  //
+  // table3
+  //
 
-  /* Apply the jEditable handlers to the table */
-  aTable.$('td').editable( 'js/jquery.datatables/examples/examples_support/editable_ajax.php', {
-    "callback": function( sValue, y ) {
-      var aPos = aTable.fnGetPosition( this );
-      aTable.fnUpdate( sValue, aPos[0], aPos[1] );
+  var table3 = $('#table3').dataTable();
+
+  // Apply jEditable handlers to the table
+  // First argument is the URL of server-side processing script
+  table3.$('td').editable('#', {
+    callback: function(value) {
+      var pos = table3.fnGetPosition(this);
+
+      table3.fnUpdate(value, pos[0], pos[1]);
     },
-    "submitdata": function ( value, settings ) {
+    submitdata: function() {
       return {
-        "row_id": this.parentNode.getAttribute('id'),
-        "column": aTable.fnGetPosition( this )[2]
+        row_id: this.parentNode.getAttribute('id'),
+        column: table3.fnGetPosition(this)[2]
       };
     },
-    "height": "14px",
+    height: '14px',
   });
 });
 </script>
@@ -135,7 +123,7 @@ $(document).ready(function() {
       </div>
       <div class="panel-body">
         <div class="table-responsive">
-          <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+          <table class="table table-striped table-bordered table-hover" id="table1">
             {% include '../partials/table-rows-2.swig' %}
           </table>
         </div>
@@ -153,7 +141,7 @@ $(document).ready(function() {
       </div>
       <div class="panel-body">
         <div class="table-responsive">
-          <table class="table table-bordered" id="datatable2" >
+          <table class="table table-bordered" id="table2" >
             {% include '../partials/table-rows-2.swig' %}
           </table>
         </div>
@@ -171,7 +159,7 @@ $(document).ready(function() {
       </div>
       <div class="panel-body">
         <div class="table-responsive">
-          <table class="table table-bordered" id="datatable3" >
+          <table class="table table-bordered" id="table3" >
             {% include '../partials/table-rows-2.swig' %}
           </table>
         </div>

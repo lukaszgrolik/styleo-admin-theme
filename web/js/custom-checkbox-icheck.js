@@ -4,7 +4,8 @@ var CustomCheckboxICheck = {
     $('.custom-checkbox-icheck').each(function() {
       var colorClass = '';
       var sizeClass = '';
-      var colors = ['success', 'info', 'warning', 'danger', 'yellow', 'violet', 'brown', 'navy'];
+      // StyleoAdminColors is a global variable defined in styleo-admin.js
+      var colors = Object.keys(StyleoAdminColors);
       var sizes = ['small', 'large', 'extra-large'];
 
       for (var i = 0, l = colors.length; i < l; ++i) {

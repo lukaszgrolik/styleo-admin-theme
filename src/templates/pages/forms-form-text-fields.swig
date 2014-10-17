@@ -24,8 +24,8 @@ $(function() {
   $('[data-mask="currency"]').mask('$999,999,999.99');
 
   // Spinners
-  $('input[name="cleaninit"]').TouchSpin();
-  $('input[name="demo1"]').TouchSpin({
+  $('input[name="spinner1"]').TouchSpin();
+  $('input[name="spinner2"]').TouchSpin({
     min: 0,
     max: 100,
     step: 0.1,
@@ -34,14 +34,14 @@ $(function() {
     maxboostedstep: 10,
     postfix: '%'
   });
-  $('input[name="demo2"]').TouchSpin({
+  $('input[name="spinner3"]').TouchSpin({
     min: -1000000000,
     max: 1000000000,
     stepinterval: 50,
     maxboostedstep: 10000000,
     prefix: '$'
   });
-  $('input[name="demo4"]').TouchSpin({
+  $('input[name="spinner4"]').TouchSpin({
     postfix: 'a button',
     postfix_extraclass: 'btn btn-default'
   });
@@ -52,7 +52,7 @@ $(function() {
 {% block content2 %}
 <div class="row">
   <div class="col-lg-12">
-    <div class="panel panel-success sharp raised gradient">
+    <div class="panel panel-success sharp separated">
       <div class="panel-heading">
         Basic Fields
       </div>
@@ -107,7 +107,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-info sharp raised gradient">
+    <div class="panel panel-info sharp separated">
       <div class="panel-heading">
         Field Types
       </div>
@@ -127,7 +127,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-warning sharp raised gradient">
+    <div class="panel panel-warning sharp separated">
       <div class="panel-heading">
         Field Sizes
       </div>
@@ -153,7 +153,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-danger sharp raised gradient">
+    <div class="panel panel-danger sharp separated">
       <div class="panel-heading">
         Input Groups
       </div>
@@ -218,7 +218,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-yellow sharp raised gradient">
+    <div class="panel panel-yellow sharp separated">
       <div class="panel-heading">
         <i class="fa fa-flag"></i>
         Input Icons
@@ -265,7 +265,7 @@ $(function() {
             <div class="col-sm-6">
               <div class="form-group">
                 <span class="input-icon icon-right">
-                  <input class="form-control date-picker" id="id-date-picker-1" data-date-format="dd-mm-yyyy" placeholder="Birth Date" type="text">
+                  <input class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="Birth Date" type="text">
                   <i class="fa fa-calendar"></i>
                 </span>
               </div>
@@ -285,7 +285,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-violet sharp raised gradient">
+    <div class="panel panel-violet sharp separated">
       <div class="panel-heading">
         Button Addons
       </div>
@@ -334,7 +334,7 @@ $(function() {
               <div class="input-group">
                 <div class="input-group-btn">
                   <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                  <ul class="dropdown-menu dropdown-blue">
+                  <ul class="dropdown-menu">
                     <li>
                       <a href="javascript:void(0);">Action</a>
                     </li>
@@ -381,7 +381,7 @@ $(function() {
                 <div class="input-group-btn">
                   <a class="btn btn-danger" href="javascript:void(0);">Actions</a>
                   <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-angle-down"></i></a>
-                  <ul class="dropdown-menu dropdown-blue">
+                  <ul class="dropdown-menu">
                     <li>
                       <a href="javascript:void(0);">Action</a>
                     </li>
@@ -409,7 +409,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-brown sharp raised gradient">
+    <div class="panel panel-brown sharp separated">
       <div class="panel-heading">
       <i class="fa fa-fw fa-check"></i>
         Validation States
@@ -424,7 +424,6 @@ $(function() {
           <div class="form-group has-warning has-feedback">
             <label class="control-label" for="inputWarning2">Input with warning</label>
             <input class="form-control" id="inputWarning2" value="Unconvincing Value" type="text">
-            {# <span class="fa fa-warning form-control-feedback"></span> #}
             <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
           </div>
           <div class="form-group has-error has-feedback">
@@ -443,7 +442,7 @@ $(function() {
   </div>
 
   <div class="col-lg-6">
-    <div class="panel panel-navy sharp raised gradient">
+    <div class="panel panel-navy sharp separated">
       <div class="panel-heading">
         Input Group Validation States
       </div>
@@ -481,7 +480,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-12">
-    <div class="panel panel-primary sharp raised gradient">
+    <div class="panel panel-primary sharp separated">
       <div class="panel-heading">
       <i class="fa fa-fw fa-terminal"></i>
         Input Masks with <strong>jQuery Masked Input</strong> Plugin
@@ -551,7 +550,7 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-12">
-    <div class="panel panel-success sharp raised gradient">
+    <div class="panel panel-success sharp separated">
       <div class="panel-heading">
       <i class="fa fa-fw fa-sort"></i>
         Input Spinners with <strong>Bootstrap TouchSpin</strong> Plugin
@@ -561,25 +560,25 @@ $(function() {
           <div class="form-group">
           <label class="col-sm-3 control-label">Init with empty value</label>
           <div class="col-sm-3">
-            <input id="cleaninit" type="text" value="" name="cleaninit" />
+            <input type="text" value="" name="spinner1" />
           </div>
           </div>
           <div class="form-group">
           <label class="col-sm-3 control-label">Example with postfix</label>
           <div class="col-sm-3">
-            <input id="demo1" type="text" value="55" name="demo1" />
+            <input type="text" value="55" name="spinner2" />
           </div>
           </div>
           <div class="form-group">
           <label class="col-sm-3 control-label">Example with prefix</label>
           <div class="col-sm-3">
-            <input id="demo2" type="text" value="0" name="demo2" class="col-md-8 form-control">
+            <input type="text" value="0" name="spinner3" class="col-md-8 form-control">
           </div>
           </div>
           <div class="form-group">
           <label class="col-sm-3 control-label">Button postfix</label>
           <div class="col-sm-3">
-            <input id="demo4" type="text" value="" name="demo4" class="input-sm">
+            <input type="text" value="" name="spinner4" class="input-sm">
           </div>
           </div>
         </form>

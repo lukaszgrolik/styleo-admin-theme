@@ -130,7 +130,7 @@ $(function() {
         Basic Form Validation
       </div>
       <div class="panel-body">
-        <form id="registrationForm1" method="post" class="form-horizontal bootstrap-validator-form">
+        <form method="post" class="form-horizontal bootstrap-validator-form">
 
           <div class="form-group">
             <label class="col-lg-4 control-label">Username</label>
@@ -201,7 +201,7 @@ $(function() {
           </div>
           <div class="form-group">
             <div class="col-lg-offset-4 col-lg-8">
-              <input class="btn btn-palegreen" type="submit" value="Validate" />
+              <input class="btn btn-primary" type="submit" value="Validate" />
             </div>
           </div>
         </form>
@@ -297,7 +297,7 @@ $(function() {
 
             <div class="form-group">
               <div class="col-lg-8 col-lg-offset-4">
-                <button type="submit" class="btn btn-blue">Validate</button>
+                <button type="submit" class="btn btn-primary">Validate</button>
               </div>
             </div>
           </form>

@@ -6,16 +6,9 @@ var CustomCheckboxSwitchery = {
         color: '#3498db',
         className: 'switchery'
       };
-      var colors = {
-        success: '#2ecc71',
-        info: '#1abc9c',
-        warning: '#e67e22',
-        danger: '#e74c3c',
-        yellow: '#f1c40f',
-        violet: '#9b59b6',
-        brown: '#be643c',
-        navy: '#34495e',
-      };
+
+      // StyleoAdminColors is a global variable defined in styleo-admin.js
+      var colors = StyleoAdminColors;
       var sizes = {
         small: 'switchery-sm',
         large: 'switchery-lg',

@@ -14,7 +14,6 @@
 <script>
 $(function() {
 	// init Bootstrap Editor
-
 	$("#bootstrap-markdown").markdown({
 		autofocus: false,
 		savable: false,

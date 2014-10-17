@@ -13,17 +13,17 @@
 
 <script>
 $(function() {
-  $('#external-events div.external-event').each(function () {
-    var eventObject = {
+  $('.calendar-draggable-event').each(function() {
+    var eventObj = {
       title: $.trim($(this).text())
     };
-    $(this).data('eventObject', eventObject);
+
+    $(this).data('eventObj', eventObj);
     $(this).draggable({
       zIndex: 999,
       revert: true,
       revertDuration: 0
     });
-
   });
 
   var date = new Date();
@@ -31,124 +31,109 @@ $(function() {
   var m = date.getMonth();
   var y = date.getFullYear();
 
-  $('#calendar').fullCalendar({
+  $('.calendar').fullCalendar({
     header: {
       right: 'month,agendaWeek,agendaDay prev,next',
       left: 'title'
     },
     editable: true,
     buttonText: {
-      // prev: '<i class="fa fa-chevron-left"></i>',
-      // next: '<i class="fa fa-chevron-right"></i>',
-      today: 'Today',
       month: 'Month',
       week: 'Week',
-      day: 'Day'
+      day: 'Day',
+      today: 'Today'
     },
     droppable: true,
     drop: function (date, allDay) {
+      var eventObj = $(this).data('eventObj');
+      var eventObjCopy = $.extend({}, eventObj);
 
-      var originalEventObject = $(this).data('eventObject');
+      eventObjCopy.start = date;
+      eventObjCopy.allDay = allDay;
 
-      var copiedEventObject = $.extend({}, originalEventObject);
+      $('.calendar').fullCalendar('renderEvent', eventObjCopy, true);
 
-      copiedEventObject.start = date;
-      copiedEventObject.allDay = allDay;
-
-      $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-      if ($('#drop-remove').is(':checked')) {
+      if ($('.calendar-remove-after-drop-option').is(':checked')) {
         $(this).remove();
       }
-
     },
     events: [
-      {
-        title: 'All Day Event',
-        start: new Date(y, m, 1),
-        textColor: '#5db2ff',
-        borderColor: '#5db2ff'
-      },
-      {
-        title: 'Long Event',
-        start: new Date(y, m, d - 5),
-        end: new Date(y, m, d - 2),
-        borderColor: '#a0d468'
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d - 3, 16, 0),
-        allDay: false,
-        borderColor: '#ffce55'
-
-      },
-      {
-        id: 999,
-        title: 'Repeating Event',
-        start: new Date(y, m, d + 4, 16, 0),
-        allDay: false,
-        borderColor: '#fb6e52'
-      },
       {
         title: 'Meeting',
         start: new Date(y, m, d, 10, 30),
         allDay: false,
-        borderColor: '#e75b8d'
-      }
-      ,
+      },
+      {
+        title: 'Long Event',
+        start: new Date(y, m, d - 6),
+        end: new Date(y, m, d - 1),
+      },
+      {
+        title: 'All Day Event',
+        start: new Date(y, m, 8),
+        textColor: '#5db2ff',
+      },
       {
         title: 'Awesome Plan',
-        start: new Date(y, m, d - 17, 2, 20),
+        start: new Date(y, m, d - 17, 4, 30),
         end: new Date(y, m, d - 14, 14, 0),
         allDay: false,
-        borderColor: '#a0d468'
-      },
-      {
-        title: 'Lunch',
-        start: new Date(y, m, d, 12, 0),
-        end: new Date(y, m, d, 14, 0),
-        allDay: false,
-        borderColor: '#2dc3e8'
-      },
-      {
-        title: 'Birthday Party',
-        start: new Date(y, m, d + 1, 19, 0),
-        end: new Date(y, m, d + 1, 22, 30),
-        allDay: false,
-        borderColor: '#ed4e2a'
       },
       {
         title: 'Click for Google',
-        start: new Date(y, m, 28),
-        end: new Date(y, m, 29),
+        start: new Date(y, m, 29),
+        end: new Date(y, m, 30),
         url: 'http://google.com/'
+      },
+      {
+        title: 'Lunch',
+        start: new Date(y, m, d - 1, 12, 30),
+        end: new Date(y, m, d - 1, 13, 0),
+        allDay: false,
+      },
+      {
+        title: 'Birthday Party',
+        start: new Date(y, m, d + 8, 17, 30),
+        end: new Date(y, m, d + 8, 23, 30),
+        allDay: false,
+      },
+      {
+        id: 123,
+        title: 'Repeating Event',
+        start: new Date(y, m, d + 2, 16, 0),
+        allDay: false,
+      },
+      {
+        id: 123,
+        title: 'Repeating Event',
+        start: new Date(y, m, d - 5, 16, 0),
+        allDay: false,
       }
     ]
-  })
-})
+  });
+});
 </script>
 {% endblock %}
 
 {% block content2 %}
 <div class="row">
   <div class="col-lg-3">
-    <div class="panel panel-warning sharp raised">
+    <div class="panel panel-success sharp raised">
       <div class="panel-heading">
         <i class="fa fa-fw fa-plus"></i>
         Add Events By Dragging
       </div>
 
       <div class="panel-body">
-        <div id="external-events">
-          <div class="external-event">Lunch with Mary</div>
-          <div class="external-event">Session in Office</div>
-          <div class="external-event">Jane's Birthday</div>
-          <div class="external-event">University Lecture</div>
-          <div class="external-event">Shopping Time</div>
+        <div class="calendar-draggable-events-container">
+          <div class="calendar-draggable-event">Dinner with Amy</div>
+          <div class="calendar-draggable-event">Skype Meeting</div>
+          <div class="calendar-draggable-event">Free Time</div>
+          <div class="calendar-draggable-event">University Lecture</div>
+          <div class="calendar-draggable-event">John's Birthday</div>
           <p>
             <label>
-              <input type="checkbox" id="drop-remove" checked="checked">
+              <input type="checkbox" class="calendar-remove-after-drop-option" checked="checked">
               <span class="text">Remove After Drop</span>
             </label>
           </p>
@@ -158,14 +143,14 @@ $(function() {
   </div>
 
   <div class="col-lg-9">
-    <div class="panel panel-danger sharp raised">
+    <div class="panel panel-info sharp raised">
       <div class="panel-heading">
         <i class="fa fa-fw fa-calendar"></i>
         Events and Schedules
       </div>
 
       <div class="panel-body">
-        <div id="calendar"></div>
+        <div class="calendar"></div>
       </div>
     </div>
   </div>

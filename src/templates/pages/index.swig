@@ -4,7 +4,7 @@
 
 {% block headEnd %}
 <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
-<link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+<link rel="stylesheet" href="bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css">
 {% endblock %}
 
 {% block bodyEnd %}
@@ -12,7 +12,7 @@
 <script src="bower_components/morrisjs/morris.min.js"></script>
 
 <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-<script src="js/easy-pie-chart.js"></script>
+<script src="js/custom-easy-pie-charts.js"></script>
 
 <script src="bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="js/plugins/jvectormap/jquery-jvectormap-us-merc-en.js"></script>
@@ -30,7 +30,7 @@
 
 <script>
 $(function() {
-  EasyPieChart.init();
+  CustomEasyPieCharts.init();
 
 
   //
@@ -85,16 +85,19 @@ $(function() {
     var plot = $.plot(container, series, {
         grid: {
             borderWidth: 1,
+            tickColor: "#d5d5d5",
+            color: '#d5d5d5',
             minBorderMargin: 20,
             labelMargin: 10,
             backgroundColor: {
-                colors: ["#fff", "#e4f4f4"]
+                colors: ["#fff", "#fff"]
             },
             margin: {
                 top: 8,
                 bottom: 20,
                 left: 20
             },
+
             markings: function(axes) {
                 var markings = [];
                 var xaxis = axes.xaxis;
@@ -180,10 +183,10 @@ $(function() {
 	//
 
 	var data1 = [
-      [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+      [0,4],[1,12],[2,4],[3,8],[4,6],[5,16],[6,5],[7,7],[8,4],[9,12],[10,34],[11,10],[12,22],[13,8],[14,2],[15,8],[16,6]
   ];
   var data2 = [
-      [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+      [0,2],[1,4],[2,10],[3,4],[4,2],[5,4],[6,2],[7,6],[8,18],[9,6],[10,2],[11,4],[12,2],[13,8],[14,20],[15,10],[16,4]
   ];
 
 	$("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
@@ -191,34 +194,34 @@ $(function() {
   ],
     {
       series: {
-          lines: {
-              show: false,
-              fill: true
-          },
-          splines: {
-              show: true,
-              tension: 0.5,
-              lineWidth: 1,
-              fill: 0.5
-          },
-          points: {
-              radius: 2,
-              show: true
-          },
-          shadowSize: 2
+        lines: {
+          show: false,
+          fill: true
+        },
+        splines: {
+          show: true,
+          tension: 0.5,
+          lineWidth: 1,
+          fill: 0.5
+        },
+        points: {
+          radius: 2,
+          show: true
+        },
+        shadowSize: 2
       },
       grid: {
-          hoverable: true,
-          clickable: true,
-          tickColor: "#d5d5d5",
-          borderWidth: 1,
-          color: '#d5d5d5'
+        hoverable: true,
+        clickable: true,
+        tickColor: "#d5d5d5",
+        borderWidth: 1,
+        color: '#d5d5d5'
       },
       colors: ["#2ecc71", "#e74c3c"],
       xaxis:{
       },
       yaxis: {
-          ticks: 4
+        ticks: 4
       },
       tooltip: true
     }
@@ -325,7 +328,7 @@ $(function() {
 
 <div class="row">
 	<div class="col-lg-8">
-    <div class="panel panel-default">
+    <div class="panel panel-primary separated">
       <div class="panel-heading">
       	<i class="fa fa-fw fa-area-chart"></i>
         Visitors Statistics
@@ -371,8 +374,143 @@ $(function() {
 </div>
 
 <div class="row">
+  <div class="col-lg-8">
+    <div class="panel panel-default raised gradient">
+      <div class="panel-heading">
+        Disk Usage Analytics
+      </div>
+      <div class="panel-body">
+        <div class="flot-chart" style="height: 300px">
+          <div class="flot-chart-content" id="flot-line-chart-moving"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="chat-panel panel panel-info raised gradient">
+      <div class="panel-heading">
+        <i class="fa fa-comments fa-fw"></i>
+        Chat
+        <div class="btn-group pull-right">
+          <button type="button" class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu slidedown">
+            <li>
+                <a href="#">
+                    <i class="fa fa-refresh fa-fw"></i> Refresh
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-check-circle fa-fw"></i> Available
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-times fa-fw"></i> Busy
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-clock-o fa-fw"></i> Away
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <!-- /.panel-heading -->
+      <div class="panel-body">
+        <ul class="chat">
+          <li class="left clearfix">
+            <span class="chat-img pull-left">
+                <img src="images/avatars/avatar6.jpg" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+                <div class="header">
+                    <strong class="primary-font">Jack Sparrow</strong>
+                    <small class="pull-right text-muted">
+                        <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                    </small>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                </p>
+            </div>
+          </li>
+          <li class="right clearfix">
+            <span class="chat-img pull-right">
+                <img src="images/avatars/avatar1.jpg" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+                <div class="header">
+                    <small class=" text-muted">
+                        <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                </p>
+            </div>
+          </li>
+          <li class="left clearfix">
+            <span class="chat-img pull-left">
+                <img src="images/avatars/avatar5.jpg" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+                <div class="header">
+                    <strong class="primary-font">Jack Sparrow</strong>
+                    <small class="pull-right text-muted">
+                        <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                </p>
+            </div>
+          </li>
+          <li class="right clearfix">
+            <span class="chat-img pull-right">
+                <img src="images/avatars/avatar7.jpg" alt="User Avatar" class="img-circle" />
+            </span>
+            <div class="chat-body clearfix">
+              <div class="header">
+                  <small class=" text-muted">
+                      <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                  <strong class="pull-right primary-font">Bhaumik Patel</strong>
+              </div>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+        <!-- /.panel-body -->
+      <div class="panel-footer">
+        <div class="input-group">
+          <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+          <span class="input-group-btn">
+            <button class="btn btn-danger btn-sm" id="btn-chat">
+                Send
+            </button>
+          </span>
+        </div>
+      </div>
+        <!-- /.panel-footer -->
+    </div>
+  </div>
+</div>
+
+<div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-default">
+    <div class="panel panel-success sharp">
       <div class="panel-heading">
       	<div class="fa fa-fw fa-map-marker"></div>
         Sales Statistics
@@ -384,14 +522,14 @@ $(function() {
   </div>
 
 	<div class="col-lg-6">
-		<div class="panel panel-default">
+		<div class="panel panel-default raised sharp">
 			<div class="panel-heading">Support Tickets</div>
 
 			<div class="panel-body">
 				<table id="ticket-table" class="table">
 					<thead>
 						<tr>
-							<th>#</th>
+							<th></th>
 							<th>Issue</th>
 							<th>Priority</th>
 							<th>Progress</th>
@@ -399,7 +537,7 @@ $(function() {
 					</thead>
 					<tbody>
 						<tr>
-							<td>1</td>
+							<td>#1</td>
 							<td><a href="#">Minor Bugs</a></td>
 							<td><span class="label label-warning">Medium</span></td>
 							<td>
@@ -413,7 +551,7 @@ $(function() {
 							</td>
 						</tr>
 						<tr>
-							<td>2</td>
+							<td>#2</td>
 							<td><a href="#">Can't Download Sample Files</a></td>
 							<td><span class="label label-danger">High</span></td>
 							<td>
@@ -427,7 +565,7 @@ $(function() {
 							</td>
 						</tr>
 						<tr>
-							<td>3</td>
+							<td>#3</td>
 							<td><a href="#">Connection Timeout</a></td>
 							<td><span class="label label-warning">Medium</span></td>
 							<td>
@@ -441,7 +579,7 @@ $(function() {
 							</td>
 						</tr>
 						<tr>
-							<td>4</td>
+							<td>#4</td>
 							<td><a href="#">Can't Change My Password</a></td>
 							<td><span class="label label-primary">Low</span></td>
 							<td>
@@ -455,7 +593,7 @@ $(function() {
 							</td>
 						</tr>
 						<tr>
-							<td>5</td>
+							<td>#5</td>
 							<td><a href="#">Tab Malfunction</a></td>
 							<td><span class="label label-danger">High</span></td>
 							<td>
@@ -473,20 +611,5 @@ $(function() {
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="row">
-  <div class="col-lg-6">
-    <div class="panel panel-default">
-    	<div class="panel-heading">
-    		Disk Usage Analytics
-    	</div>
-    	<div class="panel-body">
-    		<div class="flot-chart" style="height: 300px">
-    			<div class="flot-chart-content" id="flot-line-chart-moving"></div>
-    		</div>
-    	</div>
-    </div>
-  </div>
 </div>
 {% endblock %}

@@ -1,15 +1,16 @@
 .media-gallery-1 {
+  text-align: center;
+
   .media-item {
     vertical-align: top;
-    display: inline-block;
+    text-align: center;
     padding: 10px;
-    min-width: 23%;
+    display: inline-block;
 
     .media-image {
       border-radius: 50%;
       max-width: 50px;
       margin-right: 10px;
-      float: left;
     }
 
     .media-title {

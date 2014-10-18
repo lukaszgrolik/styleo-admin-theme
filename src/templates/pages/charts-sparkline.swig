@@ -114,7 +114,7 @@ $(function() {
 <div class="row">
   <div class="col-lg-12">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-line-chart"></i>
@@ -128,7 +128,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-line-chart"></i>
@@ -142,7 +142,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-bar-chart"></i>
@@ -156,7 +156,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-bar-chart"></i>
@@ -172,7 +172,7 @@ $(function() {
     </div>
 
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-bar-chart"></i>
@@ -186,7 +186,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-bar-chart"></i>
@@ -200,7 +200,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             Discrete Chart
@@ -213,7 +213,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             Bullet Chart
@@ -225,10 +225,8 @@ $(function() {
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             Box Plot Chart
@@ -239,7 +237,7 @@ $(function() {
         </div>
       </div>
 
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="panel panel-default raised sharp">
           <div class="panel-heading">
             <i class="fa fa-fw fa-pie-chart"></i>

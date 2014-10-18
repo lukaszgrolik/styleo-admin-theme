@@ -1,9 +1,19 @@
 .bs-glyphicons-list {
+  list-style: none;
+  padding: 0;
+
   li {
-    display: inline-block;
     vertical-align: top;
     padding: 5px;
-    width: 24%;
+
+    @media (min-width: 480px) {
+      width: 48%;
+      display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+      width: 24%;
+    }
   }
 
   .glyphicon {

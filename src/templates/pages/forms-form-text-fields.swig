@@ -202,13 +202,13 @@ $(function() {
           <h5>With Icon</h5>
           <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
               <input class="form-control" placeholder="Username" type="text">
             </div>
           </div>
           <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+              <span class="input-group-addon"><i class="fa fa-fw fa-envelope-o"></i></span>
               <input class="form-control" placeholder="Email Address" type="text">
             </div>
           </div>
@@ -225,30 +225,32 @@ $(function() {
       </div>
       <div class="panel-body">
         <form role="form">
-          <div class="form-group">
-            <span class="input-icon icon-right">
-              <input class="form-control" id="userameInput" placeholder="Username" type="text">
-              <i class="glyphicon glyphicon-user circular"></i>
-            </span>
-          </div>
-          <div class="form-group">
-            <span class="input-icon icon-right">
-              <input class="form-control" id="emailInput" placeholder="Email Address" type="text">
-              <i class="fa fa-envelope-o circular"></i>
-            </span>
-          </div>
-          <div class="form-group">
-            <span class="input-icon icon-right">
-              <input class="form-control" id="passwordInput" placeholder="Password" type="text">
-              <i class="fa fa-lock circular"></i>
-            </span>
+
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="input-icon icon-right">
+                  <input class="form-control" placeholder="Username" type="text">
+                  <i class="fa fa-fw fa-user"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="input-icon icon-right">
+                  <input class="form-control" id="passwordInput" placeholder="Password" type="text">
+                  <i class="fa fa-fw fa-lock"></i>
+                </span>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <span class="input-icon icon-right">
-                  <input class="form-control" placeholder="Name" type="text">
-                  <i class="fa fa-user"></i>
+                  <input class="form-control" id="emailInput" placeholder="Email Address" type="text">
+                  <i class="fa fa-fw fa-envelope-o"></i>
                 </span>
               </div>
             </div>
@@ -256,7 +258,7 @@ $(function() {
               <div class="form-group">
                 <span class="input-icon icon-right">
                   <input class="form-control" placeholder="Phone" type="text">
-                  <i class="glyphicon glyphicon-earphone"></i>
+                  <i class="fa fa-fw fa-phone"></i>
                 </span>
               </div>
             </div>
@@ -266,7 +268,7 @@ $(function() {
               <div class="form-group">
                 <span class="input-icon icon-right">
                   <input class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="Birth Date" type="text">
-                  <i class="fa fa-calendar"></i>
+                  <i class="fa fa-fw fa-calendar"></i>
                 </span>
               </div>
             </div>
@@ -274,7 +276,7 @@ $(function() {
               <div class="form-group">
                 <span class="input-icon icon-right">
                   <input class="form-control" placeholder="Mobile" type="text">
-                  <i class="glyphicon glyphicon-phone"></i>
+                  <i class="fa fa-fw fa-mobile"></i>
                 </span>
               </div>
             </div>
@@ -444,6 +446,7 @@ $(function() {
   <div class="col-lg-6">
     <div class="panel panel-navy sharp separated">
       <div class="panel-heading">
+        <div class="fa fa-fw fa-warning"></div>
         Input Group Validation States
       </div>
       <div class="panel-body">

@@ -142,3 +142,22 @@
 .stacktable + .table-responsive-stacktable {
   display: none;
 }
+
+.stacktable {
+  .st-head-row {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-grey-3;
+    margin-bottom: 10px !important;
+  }
+
+  td {
+    &.st-key {
+      padding-right: 10px;
+      border-right: 1px solid $color-grey-3;
+    }
+
+    &.st-val {
+      padding-left: 10px;
+    }
+  }
+}

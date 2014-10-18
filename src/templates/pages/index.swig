@@ -57,19 +57,19 @@ $(function() {
 {% endmacro %}
 
 <div class="row">
-	<div class="col-lg-3">
+	<div class="col-sm-6 col-lg-3">
 		{{mediaWidget1('New Users', '123', '+4', 'users', 'warning')}}
 	</div>
 
-	<div class="col-lg-3">
+	<div class="col-sm-6 col-lg-3">
 		{{mediaWidget1('Profit', '6,250', '+7', 'dollar', 'success')}}
 	</div>
 
-	<div class="col-lg-3">
+	<div class="col-sm-6 col-lg-3">
 		{{mediaWidget1('Sales', '252', '+5', 'shopping-cart', 'danger')}}
 	</div>
 
-	<div class="col-lg-3">
+	<div class="col-sm-6 col-lg-3">
 		{{mediaWidget1('Uploads', '719', '+13', 'cloud-upload', 'info')}}
 	</div>
 </div>

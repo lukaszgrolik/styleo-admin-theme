@@ -194,11 +194,11 @@
             <a href="#" class="task-link">
               <div class="task-header">
                 <strong class="task-title">Account Updating</strong>
-                <span class="task-value pull-right text-muted">70%</span>
+                <span class="task-value pull-right text-muted">73%</span>
               </div>
 
               <div class="progress sharp progress-sm">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%">
                   <span class="sr-only">40%</span>
                 </div>
               </div>
@@ -209,11 +209,11 @@
             <a href="#" class="task-link">
               <div class="task-header">
                 <strong class="task-title">Page Configuration</strong>
-                <span class="task-value pull-right text-muted">40%</span>
+                <span class="task-value pull-right text-muted">45%</span>
               </div>
               <div class="progress sharp progress-sm">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">40%</span>
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                  <span class="sr-only">45%</span>
                 </div>
               </div>
             </a>
@@ -223,11 +223,11 @@
             <a href="#" class="task-link">
               <div class="task-header">
                 <strong class="task-title">Disk Backup</strong>
-                <span class="task-value pull-right text-muted">80%</span>
+                <span class="task-value pull-right text-muted">89%</span>
               </div>
               <div class="progress sharp progress-sm">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                  <span class="sr-only">80%</span>
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%">
+                  <span class="sr-only">89%</span>
                 </div>
               </div>
             </a>

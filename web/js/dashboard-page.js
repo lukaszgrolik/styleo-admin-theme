@@ -240,14 +240,86 @@ var DashboardPage = {
         }
       },
       markers: [
-        {latLng: [40.6643 , -73.9385], name: 'New York - 2.532'},
-        {latLng: [34.0194, -118.4108], name: 'Los Angeles - 1.932'},
-        {latLng: [41.8376, -87.6818], name: 'Chicago - 492'},
-        {latLng: [29.7805, -95.3863], name: 'Houston - 1.142'},
-        {latLng: [40.0094, -75.1333], name: 'Philadelphia - 1.311'},
-        {latLng: [33.5722, -112.0880], name: 'Phoenix - 2.192'},
-        {latLng: [29.4724, -98.5251], name: 'San Antonio - 2.192'},
-        {latLng: [32.8153, -117.1350], name: 'San Diego - 288'},
+        {
+          latLng: [40.6643 , -73.9385],
+          name: 'New York - 2,532'
+        },
+        {
+          latLng: [34.0194, -118.4108],
+          name: 'Los Angeles - 1,932'
+        },
+        {
+          latLng: [41.8376, -87.6818],
+          name: 'Chicago - 492'
+        },
+        {
+          latLng: [29.7805, -95.3863],
+          name: 'Houston - 1,142'
+        },
+        {
+          latLng: [40.0094, -75.1333],
+          name: 'Philadelphia - 1,311'
+        },
+        {
+          latLng: [33.5722, -112.0880],
+          name: 'Phoenix - 2,192'
+        },
+        {
+          latLng: [29.4724, -98.5251],
+          name: 'San Antonio - 2,192'
+        },
+        {
+          latLng: [32.8153, -117.1350],
+          name: 'San Diego - 2,818'
+        },
+        {
+          latLng: [32.7757, -96.7967],
+          name: 'Dallas - 158'
+        },
+        {
+          latLng: [37.2969, -121.8193],
+          name: 'San Jose - 1,368'
+        },
+        {
+          latLng: [30.3072, -97.7560],
+          name: 'Austin - 651'
+        },
+        {
+          latLng: [39.7767, -86.1459],
+          name: 'Indianapolis - 835'
+        },
+        {
+          latLng: [30.3370, -81.6613],
+          name: 'Jacksonville - 966'
+        },
+        {
+          latLng: [37.7751, -122.4193],
+          name: 'San Francisco - 176'
+        },
+        {
+          latLng: [39.9848, -82.9850],
+          name: 'Columbus - 623'
+        },
+        {
+          latLng: [35.2087, -80.8307],
+          name: 'Charlotte - 198'
+        },
+        {
+          latLng: [32.7795, -97.3463],
+          name: 'Fort Worth - 283'
+        },
+        {
+          latLng: [42.3830, -83.1022],
+          name: 'Detroit - 1,154'
+        },
+        {
+          latLng: [31.8484, -106.4270],
+          name: 'El Paso - 1,918'
+        },
+        {
+          latLng: [35.1035, -89.9785],
+          name: 'Memphis - 1,899'
+        },
       ]
     });
   }

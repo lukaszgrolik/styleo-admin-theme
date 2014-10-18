@@ -490,7 +490,7 @@
           <hr class="wide">
 
           <div class="row">
-            <div class="col-lg-3 col-lg-push-3">
+            <div class="col-xs-6 col-sm-3 col-sm-offset-3">
               <div class="btn-group-vertical">
                 <button type="button" class="btn btn-primary">PRIMARY</button>
                 <button type="button" class="btn btn-success">SUCCESS</button>
@@ -499,7 +499,7 @@
                 <button type="button" class="btn btn-danger">DANGER</button>
               </div>
             </div>
-            <div class="col-lg-3 col-lg-push-3">
+            <div class="col-xs-6 col-sm-3">
               <div class="btn-group-vertical">
                 <button type="button" class="btn btn-yellow">YELLOW</button>
                 <button type="button" class="btn btn-violet">VIOLET</button>

@@ -54,43 +54,45 @@
           </div>
         </div>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Description</th>
-              <th>Hrs/Qty</th>
-              <th>Rate/Price</th>
-              <th>Sub Total</th>
-            </tr>
-          </thead>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Hrs/Qty</th>
+                <th>Rate/Price</th>
+                <th>Sub Total</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Article</td>
-              <td>Title of your article here</td>
-              <td>-</td>
-              <td>$200.00</td>
-              <td>$200.00</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>Article</td>
+                <td>Title of your article here</td>
+                <td>-</td>
+                <td>$200.00</td>
+                <td>$200.00</td>
+              </tr>
 
-            <tr>
-              <td>Template Design</td>
-              <td>Details of project here</td>
-              <td>10</td>
-              <td>$75.00</td>
-              <td>$750.00</td>
-            </tr>
+              <tr>
+                <td>Template Design</td>
+                <td>Details of project here</td>
+                <td>10</td>
+                <td>$75.00</td>
+                <td>$750.00</td>
+              </tr>
 
-            <tr>
-              <td>Development</td>
-              <td>WordPress Blogging theme</td>
-              <td>5</td>
-              <td>$50.00</td>
-              <td>$250.00</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>Development</td>
+                <td>WordPress Blogging theme</td>
+                <td>5</td>
+                <td>$50.00</td>
+                <td>$250.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <div class="row">
           <div class="col-lg-8">

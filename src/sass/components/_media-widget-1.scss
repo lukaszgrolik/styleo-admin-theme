@@ -48,8 +48,10 @@
   .media-widget-growth {
     font-size: 16px;
     font-weight: bold;
+    text-align: right;
     margin-top: -10px;
-    float: right;
+    // float: right;
+
 
     &.media-widget-growth-success {
       color: $color-green;

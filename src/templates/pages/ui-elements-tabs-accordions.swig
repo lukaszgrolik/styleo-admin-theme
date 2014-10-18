@@ -197,7 +197,7 @@
   <div class="col-lg-6">
     <div class="panel panel-success separated">
       <div class="panel-heading">
-        Collapsible Accordion Panel Group
+        Collapsible Accordion Inside Panel
       </div>
       <div class="panel-body">
         <div class="panel-group" id="accordion2">

@@ -12,25 +12,67 @@
 - Build with Sass CSS (SCSS files are included) - you can create your own color theme by changing just a few variables
 - Tasks automation with Gulp
 - Cross-browser compatible
+- Bower
+- Swig templating
 
 ## HTML pages
 
 - Dashboard
-- Blank page
-- Login page
+- UI Elements
+  - Basic Elements
+  - Buttons
+  - Panels
+  - Wells
+  - Tabs & Accordions
+  - Alerts
+  - Progress Bars
+  - Typography
+  - Grid
+  - Icons
+    - Font Awesome
+    - Glyphicons
 - Tables
-- Form elements
-- Panels and Wells
-- Buttons
-- Notifications
-- Typography
-- Bootstrap grid
-- Flot charts examples
-- Morris charts examples
+  - Simple Tables
+  - Responsive Tables
+  - DataTables
+- Forms
+  - Form Text Fields
+  - Form Controls
+  - Form Layouts 3
+  - Form Wizard
+  - Form Validation
+  - Editors
+    - Simple WYSIWYG Editors
+    - Markdown Editors
+    - CKEditor
+- Charts
+  - Flot Charts
+  - Morris Charts
+  - Sparkline Charts
+  - Easy Pie Charts
+- Maps
+  - Google Maps
+  - Vector Maps
+- Pages
+  - Profile
+  - Gallery
+  - Invoice
+  - Calendar
+  - Timelines
+    - Basic Timeline
+    - Compact Timeline
+  - Chat
+  - Register
+  - Login
+  - Lock Screen
+  - Forgotten Password
+  - Error 404
+  - Error 500
+  - Blank Page
+- Documentation
 
 ## Will be included in the future
 
-- Chat page
 - ChartJS plugin integration
 - Email pages (inbox, messages)
 - Email templates

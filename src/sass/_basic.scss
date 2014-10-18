@@ -36,3 +36,9 @@ hr.wide {
   margin-left: -15px;
   margin-right: -15px;
 }
+
+.dropdown-menu > li > a {
+  &, &:hover {
+    color: $color-dark-grey;
+  }
+}

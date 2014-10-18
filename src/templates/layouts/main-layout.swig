@@ -269,6 +269,11 @@
         ]
       },
       {
+        "slug": "pages-chat",
+        "name": "Chat",
+        "iconClass": "fa-comments",
+      },
+      {
         "slug": "pages-register",
         "name": "Register",
         "iconClass": "fa-user"

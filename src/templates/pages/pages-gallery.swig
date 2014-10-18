@@ -12,7 +12,7 @@
 
 <script>
 $(function() {
-  $('.gallery-container');.masonry({
+  $('.gallery-container').masonry({
     columnWidth: 0,
     itemSelector: '.gallery-item'
   });

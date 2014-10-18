@@ -27,7 +27,7 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-success">Submit</button>
         </form>
       </div>
     </div>
@@ -65,7 +65,7 @@
           </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Sign in</button>
+              <button type="submit" class="btn btn-success">Sign in</button>
             </div>
           </div>
         </form>
@@ -96,7 +96,7 @@
               <span class="text">Remember me</span>
             </label>
           </div>
-          <button type="submit" class="btn btn-default">Sign in</button>
+          <button type="submit" class="btn btn-success">Sign in</button>
         </form>
       </div>
     </div>

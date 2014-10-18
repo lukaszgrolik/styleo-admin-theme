@@ -45,6 +45,21 @@
     width: 100%;
   }
 
+  .media-widget-growth {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+    float: right;
+
+    &.media-widget-growth-success {
+      color: $color-green;
+    }
+
+    &.media-widget-growth-danger {
+      color: $color-red;
+    }
+  }
+
   .media-widget-value {
     font-size: 36px;
   }

@@ -12,6 +12,20 @@
 <script>
 $(function() {
   $('.wizard').wizard();
+
+  $('.wizard-next').click(function(e){
+    e.preventDefault();
+
+    var id = $(this).data('wizard');
+    $(id).wizard('next');
+  });
+
+  $('.wizard-prev').click(function(e){
+    e.preventDefault();
+
+    var id = $(this).data('wizard');
+    $(id).wizard('previous');
+  });
 });
 </script>
 {% endblock %}
@@ -27,8 +41,8 @@ $(function() {
         <li data-step="3"><span class="badge">3</span>Step 3<span class="chevron"></span></li>
       </ul>
       <div class="actions">
-        <button class="btn btn-default btn-prev"><span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
-        <button class="btn btn-default btn-next" data-last="Complete">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
+        <button class="btn btn-default btn-prev wizard-prev"><span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+        <button class="btn btn-default btn-next wizard-next" data-last="Complete">Next<span class="glyphicon glyphicon-arrow-right"></span></button>
       </div>
       <div class="step-content">
         <div class="step-pane active sample-pane" data-step="1">

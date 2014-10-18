@@ -695,27 +695,17 @@ $(function() {
               <label for="opacity">Opacity</label>
               <br>
               <input type="text" id="opacity" class="form-control colorpicker" data-opacity=".5" value="#1abc9c">
-              <span class="help-block">
-                Opacity can be assigned by including the <code>data-opacity</code> attribute
-                or by setting the <code>opacity</code> option to <code>true</code>.
-              </span>
             </div>
 
             <div class="form-group">
               <label for="default-value">Default Value</label>
               <br>
               <input type="text" id="default-value" class="form-control colorpicker" data-default-value="#9b59b6">
-              <span class="help-block">
-                This field has a default value assigned to it, so it will never be empty.
-              </span>
             </div>
             <div class="form-group">
               <label for="letter-case">Letter Case</label>
               <br>
               <input type="text" id="letter-case" class="form-control colorpicker" data-letter-case="uppercase" value="#be643c">
-              <span class="help-block">
-                This field will always be uppercase.
-              </span>
             </div>
           </div>
         </div>

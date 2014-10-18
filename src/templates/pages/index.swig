@@ -3,14 +3,10 @@
 {% set currentRouteSlug = 'index' %}
 
 {% block headEnd %}
-<link href="bower_components/morrisjs/morris.css" rel="stylesheet">
 <link rel="stylesheet" href="bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css">
 {% endblock %}
 
 {% block bodyEnd %}
-<script src="bower_components/raphael/raphael-min.js"></script>
-<script src="bower_components/morrisjs/morris.min.js"></script>
-
 <script src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
 <script src="js/custom-easy-pie-charts.js"></script>
 
@@ -21,178 +17,88 @@
 
 <script src="bower_components/flot/excanvas.js"></script>
 <script src="bower_components/flot/jquery.flot.js"></script>
-{# <script src="bower_components/flot/jquery.flot.time.js"></script> #}
-{# <script src="bower_components/flot/jquery.flot.pie.js"></script> #}
+<script src="bower_components/flot/jquery.flot.time.js"></script>
 <script src="bower_components/flot-spline/js/jquery.flot.spline.js"></script>
 <script src="bower_components/flot/jquery.flot.resize.js"></script>
 <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-{# <script src="js/plugins/flot/flot-data.js"></script> #}
 
 <script>
 $(function() {
   CustomEasyPieCharts.init();
 
-
   //
-  //
-  //
-
-  var container = $("#flot-line-chart-moving");
-
-    // Determine how many data points to keep based on the placeholder's initial size;
-    // this gives us a nice high-res plot while avoiding more than one point per pixel.
-
-    var maximum = container.outerWidth() / 2 || 300;
-
-    //
-
-    var data = [];
-
-    function getRandomData() {
-
-        if (data.length) {
-            data = data.slice(1);
-        }
-
-        while (data.length < maximum) {
-            var previous = data.length ? data[data.length - 1] : 50;
-            var y = previous + Math.random() * 10 - 5;
-            data.push(y < 0 ? 0 : y > 100 ? 100 : y);
-        }
-
-        // zip the generated y values with the x values
-
-        var res = [];
-        for (var i = 0; i < data.length; ++i) {
-            res.push([i, data[i]])
-        }
-
-        return res;
-    }
-
-    //
-
-    series = [{
-        data: getRandomData(),
-        lines: {
-            fill: true
-        },
-        color: '#1abc9c'
-    }];
-
-    //
-
-    var plot = $.plot(container, series, {
-        grid: {
-            borderWidth: 1,
-            tickColor: "#d5d5d5",
-            color: '#d5d5d5',
-            minBorderMargin: 20,
-            labelMargin: 10,
-            backgroundColor: {
-                colors: ["#fff", "#fff"]
-            },
-            margin: {
-                top: 8,
-                bottom: 20,
-                left: 20
-            },
-
-            markings: function(axes) {
-                var markings = [];
-                var xaxis = axes.xaxis;
-                for (var x = Math.floor(xaxis.min); x < xaxis.max; x += xaxis.tickSize * 2) {
-                    markings.push({
-                        xaxis: {
-                            from: x,
-                            to: x + xaxis.tickSize
-                        },
-                        color: "rgba(232, 232, 255, 0.2)"
-                    });
-                }
-                return markings;
-            }
-        },
-        xaxis: {
-            tickFormatter: function() {
-                return "";
-            }
-        },
-        yaxis: {
-            min: 0,
-            max: 110
-        },
-        legend: {
-            show: true
-        }
-    });
-
-    // Update the random dataset at 25FPS for a smoothly-animating chart
-
-    setInterval(function updateRandom() {
-        series[0].data = getRandomData();
-        plot.setData(series);
-        plot.draw();
-    }, 1000);
-
-  //
-  //
+  // Sparkline
   //
 
-	// Morris.Bar({
- //    element: 'morris-bar-chart',
- //    data: [{
- //        y: '2008',
- //        a: 100,
- //        b: 90
- //    }, {
- //        y: '2009',
- //        a: 75,
- //        b: 65
- //    }, {
- //        y: '2010',
- //        a: 50,
- //        b: 40
- //    }, {
- //        y: '2011',
- //        a: 75,
- //        b: 65
- //    }, {
- //        y: '2012',
- //        a: 50,
- //        b: 40
- //    }, {
- //        y: '2013',
- //        a: 75,
- //        b: 65
- //    }, {
- //        y: '2014',
- //        a: 100,
- //        b: 90
- //    }],
- //    xkey: 'y',
- //    ykeys: ['a', 'b'],
- //    labels: ['Series A', 'Series B'],
- //    hideHover: 'auto',
- //    resize: true,
- //    barColors: ['#e67e22', '#e74c3c']
-	// });
+  var sparklineBar = $('[data-sparkline="bar"]');
 
-	//
-	//
-	//
+  $.each(sparklineBar, function() {
+      $(this).sparkline('html', {
+          type: 'bar',
+          height: '50px',
+          barWidth: '5px',
+          barColor: '#fff'
+      });
+  });
 
-	var data1 = [
-      [0,4],[1,12],[2,4],[3,8],[4,6],[5,16],[6,5],[7,7],[8,4],[9,12],[10,34],[11,10],[12,22],[13,8],[14,2],[15,8],[16,6]
+  //
+  // Flot Spline Chart
+  //
+
+  var data1 = [
+    [1413763200000,4000],
+    [1413849600000,12000],
+    [1413936000000,4000],
+    [1414022400000,8000],
+    [1414108800000,6000],
+    [1414195200000,16000],
+    [1414281600000,5000],
+    [1414371600000,7000],
+    [1414458000000,4000],
+    [1414544400000,12000],
+    [1414630800000,34000],
+    [1414717200000,10000],
+    [1414803600000,22000],
+    [1414890000000,8000],
+    [1414976400000,2000],
+    [1415062800000,8000],
+    [1415149200000,6000]
   ];
   var data2 = [
-      [0,2],[1,4],[2,10],[3,4],[4,2],[5,4],[6,2],[7,6],[8,18],[9,6],[10,2],[11,4],[12,2],[13,8],[14,20],[15,10],[16,4]
+    [1413763200000,2000],
+    [1413849600000,4000],
+    [1413936000000,10000],
+    [1414022400000,4000],
+    [1414108800000,2000],
+    [1414195200000,4000],
+    [1414281600000,2000],
+    [1414371600000,6000],
+    [1414458000000,18000],
+    [1414544400000,6000],
+    [1414630800000,2000],
+    [1414717200000,4000],
+    [1414803600000,2000],
+    [1414890000000,8000],
+    [1414976400000,20000],
+    [1415062800000,10000],
+    [1415149200000,4000]
   ];
 
-	$("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
-      data1, data2
+  $("#flot-spline-chart").length && $.plot($("#flot-spline-chart"), [
+      {
+        data: data1,
+        label: 'Old Visitors'
+      },
+      {
+        data: data2,
+        label: 'New Visitors'
+      }
   ],
     {
+      xaxes: [{
+        mode: 'time',
+        timeformat: "%m/%d",
+      }],
       series: {
         lines: {
           show: false,
@@ -223,12 +129,117 @@ $(function() {
       yaxis: {
         ticks: 4
       },
-      tooltip: true
+      tooltip: true,
+      tooltipOpts: {
+        content: "%y"
+      }
     }
   );
 
+  //
+  // Flot Moving Line Chart
+  //
+
+  var container = $("#flot-line-chart-moving");
+
+  // Determine how many data points to keep based on the placeholder's initial size;
+  // this gives us a nice high-res plot while avoiding more than one point per pixel.
+
+  var maximum = container.outerWidth() / 2 || 300;
+
+  //
+
+  var data = [];
+
+  function getRandomData() {
+
+      if (data.length) {
+          data = data.slice(1);
+      }
+
+      while (data.length < maximum) {
+          var previous = data.length ? data[data.length - 1] : 50;
+          var y = previous + Math.random() * 10 - 5;
+          data.push(y < 0 ? 0 : y > 100 ? 100 : y);
+      }
+
+      // zip the generated y values with the x values
+
+      var res = [];
+      for (var i = 0; i < data.length; ++i) {
+          res.push([i, data[i]])
+      }
+
+      return res;
+  }
+
+  //
+
+  series = [{
+      data: getRandomData(),
+      lines: {
+          fill: true
+      },
+      color: '#e67e22'
+  }];
+
+  //
+
+  var plot = $.plot(container, series, {
+      grid: {
+          borderWidth: 1,
+          tickColor: "#d5d5d5",
+          color: '#d5d5d5',
+          minBorderMargin: 20,
+          labelMargin: 10,
+          backgroundColor: {
+              colors: ["#fff", "#fff"]
+          },
+          margin: {
+              top: 8,
+              bottom: 20,
+              left: 20
+          },
+
+          markings: function(axes) {
+              var markings = [];
+              var xaxis = axes.xaxis;
+              for (var x = Math.floor(xaxis.min); x < xaxis.max; x += xaxis.tickSize * 2) {
+                  markings.push({
+                      xaxis: {
+                          from: x,
+                          to: x + xaxis.tickSize
+                      },
+                      color: "rgba(232, 232, 255, 0.2)"
+                  });
+              }
+              return markings;
+          }
+      },
+      xaxis: {
+          tickFormatter: function() {
+              return "";
+          }
+      },
+      yaxis: {
+          min: 0,
+          max: 110
+      },
+      legend: {
+          show: true
+      }
+  });
+
+  // Update the random dataset at 25FPS for a smoothly-animating chart
+
+  setInterval(function updateRandom() {
+      series[0].data = getRandomData();
+      plot.setData(series);
+      plot.draw();
+  }, 1000);
+
 	//
-	//
+	// Vector Map
 	//
 
   $('#usa-map').vectorMap({
@@ -265,21 +276,6 @@ $(function() {
       {latLng: [32.8153, -117.1350], name: 'San Diego - 288'},
     ]
   });
-
-  //
-  //
-  //
-
-  var sparklineBar = $('[data-sparkline="bar"]');
-
-  $.each(sparklineBar, function() {
-      $(this).sparkline('html', {
-          type: 'bar',
-          height: '50px',
-          barWidth: '5px',
-          barColor: '#fff'
-      });
-  });
 });
 </script>
 {% endblock %}
@@ -295,13 +291,14 @@ $(function() {
     </div>
 </div>
 
-{% macro mediaWidget1(name, value, icon, type) %}
+{% macro mediaWidget1(name, value, growth, icon, type) %}
 <div class="media-widget-1 media-widget-{{type}}">
 	<div class="media-widget-icon-container">
 		<div class="fa fa-fw fa-{{icon}} media-widget-icon"></div>
 	</div>
 
 	<div class="media-widget-content-area">
+    <div class="media-widget-growth media-widget-growth-success">{{growth}}%</div>
 		<div class="media-widget-value">{{value}}</div>
 		<div class="media-widget-name">{{name}}</div>
 	</div>
@@ -310,19 +307,19 @@ $(function() {
 
 <div class="row">
 	<div class="col-lg-3">
-		{{mediaWidget1('New Users', '112', 'users', 'warning')}}
+		{{mediaWidget1('New Users', '123', '+4', 'users', 'warning')}}
 	</div>
 
 	<div class="col-lg-3">
-		{{mediaWidget1('Profit', '4,550', 'dollar', 'success')}}
+		{{mediaWidget1('Profit', '6,250', '+7', 'dollar', 'success')}}
 	</div>
 
 	<div class="col-lg-3">
-		{{mediaWidget1('Sales', '262', 'shopping-cart', 'danger')}}
+		{{mediaWidget1('Sales', '252', '+5', 'shopping-cart', 'danger')}}
 	</div>
 
 	<div class="col-lg-3">
-		{{mediaWidget1('Uploads', '540', 'cloud-upload', 'info')}}
+		{{mediaWidget1('Uploads', '719', '+13', 'cloud-upload', 'info')}}
 	</div>
 </div>
 
@@ -335,23 +332,22 @@ $(function() {
       </div>
 
       <div class="panel-body">
-        {# <div id="morris-bar-chart"></div> #}
-        <div class="flot-chart" style="height: 300px">
-          <div class="flot-chart-content" id="flot-dashboard-chart"></div>
+        <div class="flot-chart" style="height: 252px">
+          <div class="flot-chart-content" id="flot-spline-chart"></div>
         </div>
       </div>
     </div>
 	</div>
 
 	<div class="col-lg-4">
-		<div class="panel panel-primary filled text-center">
+		<div class="panel panel-primary filled sharp text-center">
 			<div class="panel-heading">
 				Bandwidth Used
 			</div>
 
 			<div class="panel-body">
-				<div data-toggle="easy-pie-chart" class="easy-pie-chart" data-percent="65" data-barcolor="#fff" data-line-width="15" data-size="150" data-linecap="butt">
-		        <div class="easy-pie-chart-value">65%</div>
+				<div data-toggle="easy-pie-chart" class="easy-pie-chart" data-percent="68" data-barcolor="#fff" data-line-width="15" data-size="150" data-linecap="butt">
+		        <div class="easy-pie-chart-value">68%</div>
 		    </div>
 
 		    {# <hr class="wide"> #}
@@ -366,7 +362,7 @@ $(function() {
 
     		<div>
     			<i class="fa fa-fw fa-upload"></i>
-        	This month: <b>215 GB</b>
+        	This month: <b>193 GB</b>
     		</div>
 			</div>
 		</div>
@@ -375,14 +371,13 @@ $(function() {
 
 <div class="row">
   <div class="col-lg-8">
-    <div class="panel panel-default raised gradient">
+    <div class="panel panel-success sharp">
       <div class="panel-heading">
-        Disk Usage Analytics
+        <div class="fa fa-fw fa-map-marker"></div>
+        Sales Statistics
       </div>
       <div class="panel-body">
-        <div class="flot-chart" style="height: 300px">
-          <div class="flot-chart-content" id="flot-line-chart-moving"></div>
-        </div>
+        <div id="usa-map" style="height: 373px"></div>
       </div>
     </div>
   </div>
@@ -426,7 +421,7 @@ $(function() {
           </ul>
         </div>
       </div>
-        <!-- /.panel-heading -->
+
       <div class="panel-body">
         <ul class="chat">
           <li class="left clearfix">
@@ -435,13 +430,13 @@ $(function() {
             </span>
             <div class="chat-body clearfix">
                 <div class="header">
-                    <strong class="primary-font">Jack Sparrow</strong>
+                    <strong class="primary-font">Jerry Phillips</strong>
                     <small class="pull-right text-muted">
                         <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
                     </small>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, odit!
                 </p>
             </div>
           </li>
@@ -453,10 +448,10 @@ $(function() {
                 <div class="header">
                     <small class=" text-muted">
                         <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                    <strong class="pull-right primary-font">Joseph Walker</strong>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
                 </p>
             </div>
           </li>
@@ -466,12 +461,12 @@ $(function() {
             </span>
             <div class="chat-body clearfix">
                 <div class="header">
-                    <strong class="primary-font">Jack Sparrow</strong>
+                    <strong class="primary-font">Charles Schneider</strong>
                     <small class="pull-right text-muted">
                         <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, veritatis delectus earum explicabo impedit consequuntur?
                 </p>
             </div>
           </li>
@@ -483,47 +478,50 @@ $(function() {
               <div class="header">
                   <small class=" text-muted">
                       <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                  <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                  <strong class="pull-right primary-font">Julia Hill</strong>
               </div>
               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, dicta.
               </p>
             </div>
           </li>
         </ul>
       </div>
-        <!-- /.panel-body -->
       <div class="panel-footer">
         <div class="input-group">
           <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
           <span class="input-group-btn">
-            <button class="btn btn-danger btn-sm" id="btn-chat">
+            <button class="btn btn-info btn-sm" id="btn-chat">
                 Send
             </button>
           </span>
         </div>
       </div>
-        <!-- /.panel-footer -->
     </div>
   </div>
 </div>
 
 <div class="row">
   <div class="col-lg-6">
-    <div class="panel panel-success sharp">
+    <div class="panel panel-warning separated">
       <div class="panel-heading">
-      	<div class="fa fa-fw fa-map-marker"></div>
-        Sales Statistics
+        <i class="fa fa-fw fa-line-chart"></i>
+        Disk Usage Analytics
       </div>
       <div class="panel-body">
-        <div id="usa-map" style="height: 300px"></div>
+        <div class="flot-chart" style="height: 293px">
+          <div class="flot-chart-content" id="flot-line-chart-moving"></div>
+        </div>
       </div>
     </div>
   </div>
 
 	<div class="col-lg-6">
-		<div class="panel panel-default raised sharp">
-			<div class="panel-heading">Support Tickets</div>
+		<div class="panel panel-danger separated sharp">
+			<div class="panel-heading">
+        <i class="fa fa-fw fa-tags"></i>
+        Support Tickets
+      </div>
 
 			<div class="panel-body">
 				<table id="ticket-table" class="table">
@@ -581,7 +579,7 @@ $(function() {
 						<tr>
 							<td>#4</td>
 							<td><a href="#">Can't Change My Password</a></td>
-							<td><span class="label label-primary">Low</span></td>
+							<td><span class="label label-yellow">Low</span></td>
 							<td>
 								<div class="progress progress-sm sharp">
                     <div class="progress-bar progress-bar-danger" style="width: 40%">

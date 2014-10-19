@@ -3,7 +3,7 @@
 {% set currentRouteSlug = 'pages-register' %}
 
 {% block headEnd %}
-
+<link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
 {% endblock %}
 
 {% block bodyEnd %}

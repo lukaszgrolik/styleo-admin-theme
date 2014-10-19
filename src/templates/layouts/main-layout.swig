@@ -1,4 +1,3 @@
-{# {% include '../config/routes.swig' %} #}
 {% set routes = [
   {
     "slug": "index",

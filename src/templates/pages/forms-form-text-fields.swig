@@ -28,22 +28,19 @@ $(function() {
   $('input[name="spinner2"]').TouchSpin({
     min: 0,
     max: 100,
-    step: 0.1,
+    step: 0.2,
     decimals: 2,
-    boostat: 5,
-    maxboostedstep: 10,
     postfix: '%'
   });
   $('input[name="spinner3"]').TouchSpin({
-    min: -1000000000,
-    max: 1000000000,
-    stepinterval: 50,
-    maxboostedstep: 10000000,
+    min: -100000,
+    max: 100000,
+    step: 50,
     prefix: '$'
   });
   $('input[name="spinner4"]').TouchSpin({
-    postfix: 'a button',
-    postfix_extraclass: 'btn btn-default'
+    postfix: 'Click Me',
+    postfix_extraclass: 'btn btn-deafult'
   });
 });
 </script>
@@ -561,28 +558,31 @@ $(function() {
       <div class="panel-body">
         <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
           <div class="form-group">
-          <label class="col-sm-3 control-label">Init with empty value</label>
-          <div class="col-sm-3">
-            <input type="text" value="" name="spinner1" />
+            <label class="col-sm-3 control-label">Init with Empty Value</label>
+            <div class="col-sm-3">
+              <input type="text" value="" name="spinner1" />
+            </div>
           </div>
-          </div>
+
           <div class="form-group">
-          <label class="col-sm-3 control-label">Example with postfix</label>
-          <div class="col-sm-3">
-            <input type="text" value="55" name="spinner2" />
+            <label class="col-sm-3 control-label">Example with Postfix</label>
+            <div class="col-sm-3">
+              <input type="text" value="55" name="spinner2" />
+            </div>
           </div>
-          </div>
+
           <div class="form-group">
-          <label class="col-sm-3 control-label">Example with prefix</label>
-          <div class="col-sm-3">
-            <input type="text" value="0" name="spinner3" class="col-md-8 form-control">
+            <label class="col-sm-3 control-label">Example with Prefix</label>
+            <div class="col-sm-3">
+              <input type="text" value="0" name="spinner3" class="col-md-8 form-control">
+            </div>
           </div>
-          </div>
+
           <div class="form-group">
-          <label class="col-sm-3 control-label">Button postfix</label>
-          <div class="col-sm-3">
-            <input type="text" value="" name="spinner4" class="input-sm">
-          </div>
+            <label class="col-sm-3 control-label">Button Postfix</label>
+            <div class="col-sm-3">
+              <input type="text" value="" name="spinner4" class="input-sm">
+            </div>
           </div>
         </form>
       </div>

@@ -2,6 +2,10 @@
 
 {% set currentRouteSlug = 'ui-elements-buttons' %}
 
+{% block headEnd %}
+<link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+{% endblock %}
+
 {% block content2 %}
 <div class="row">
   <div class="col-lg-6">

@@ -5,8 +5,8 @@
 }
 
 .compact-timeline:before {
-  content: "";
-  background-color: #e1e1e1;
+  content: '';
+  background-color: #fff;
   width: 2px;
   margin-left: -10px;
   position: absolute;
@@ -16,8 +16,8 @@
 }
 
 .compact-timeline:after {
-  content: "";
-  background-color: #e1e1e1;
+  content: '';
+  background-color: #fff;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -28,17 +28,20 @@
 
 .compact-timeline li {
   list-style: none;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
 }
 
-.compact-timeline li > .fa {
+.compact-timeline li > .compact-timeline-icon {
   background: $color-blue;
   color: #fff;
   border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1px $color-grey-1;
   font-size: 14px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 10px;
   width: 40px;
@@ -50,60 +53,57 @@
   top: 0;
 }
 
-.compact-timeline li .content {
+.compact-timeline li > .compact-timeline-date {
+  background: #fff;
+  color: $color-light-grey;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 5px;
+  width: 45px;
+  display: block;
+  position: absolute;
+  top: 45px;
+}
+
+.compact-timeline li .compact-timeline-content {
   background: #fff;
   border-radius: 3px;
-  line-height: 15px;
-  padding: 12px 10px;
-  border: 1px solid #E8E8E6;
+  line-height: 14px;
+  padding: 10px;
+  border: 1px solid $color-grey-2;
   margin-left: 75px;
   position: relative;
 }
 
-.compact-timeline li .content p {
-  margin: 0;
-}
-
-.compact-timeline li .content .img-thumbnail {
-  cursor: pointer;
-  border-radius: 0;
-  margin: 10px 5px 0 0;
-}
-
-.compact-timeline li .content blockquote {
-  margin: 10px 0 0 0;
-}
-
-.compact-timeline li .content blockquote p {
-  font-size: 14px;
-  margin: 0 0 5px 0 !important;
-}
-
-.compact-timeline li .content:before {
-  content: "";
+.compact-timeline li .compact-timeline-content:before {
+  content: '';
   background: #fff;
   width: 10px;
   height: 10px;
-  border-left: 1px solid #E8E8E6;
-  border-bottom: 1px solid #E8E8E6;
+  border-left: 1px solid $color-grey-2;
+  border-bottom: 1px solid $color-grey-2;
   transform: rotate(45deg);
   position: absolute;
   left: -6px;
   top: 14px;
 }
 
-.compact-timeline li > .date {
-  background: #E8E8E8;
-  color: #7B7B7B;
-  border-radius: 1px;
-  font-size: 11px;
-  line-height: 19px;
-  text-shadow: 0 1px 0 #fafafa;
-  text-align: center;
-  padding: 0 5px;
-  width: 44px;
-  border: 1px solid #E1E1E1;
-  display: block;
-  position: absolute;
-  top: 49px;
+.compact-timeline li .compact-timeline-content p {
+  margin: 0;
+}
+
+.compact-timeline li .compact-timeline-content .img-thumbnail {
+  cursor: pointer;
+  border-radius: 0;
+  margin: 10px 5px 0 0;
+}
+
+.compact-timeline li .compact-timeline-content blockquote {
+  margin: 10px 0 0 0;
+
+  p {
+    font-size: 14px;
+    margin: 0 0 5px 0 !important;
+  }
 }

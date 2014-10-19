@@ -339,6 +339,11 @@
     </div>
   </nav>
 
+  <!-- show only on small & medium size screen -->
+  <ul class="main-breadcrumbs-secondary">
+    {% include '../partials/breadcrumbs-menu-items.swig' %}
+  </ul>
+
   <div id="page-wrapper">
     {% block content2 %}{% endblock %}
   </div>

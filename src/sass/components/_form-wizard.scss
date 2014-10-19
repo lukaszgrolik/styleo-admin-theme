@@ -1,8 +1,17 @@
 .fuelux .wizard {
   box-shadow: none;
 
+  > .steps {
+    display: block;
+  }
+
   > .steps li {
     border-radius: 0 !important;
+
+    @media (max-width: 768px) {
+      float: none;
+      padding-left: 20px;
+    }
 
     &.active {
       background-color: lighten($color-blue, 30%);
@@ -19,6 +28,8 @@
 
   > .actions {
     background-color: transparent;
+    border-left: 0;
+    position: static;
   }
 
   > .step-content {

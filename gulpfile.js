@@ -11,6 +11,27 @@ var config = {
   }
 };
 
+function templatesTask(options) {
+  return gulp.src(config.paths.src + '/templates/pages/**/*.swig')
+  .pipe(plugins.plumber())
+  .pipe(plugins.swig({
+    setup: function(swig) {
+      swigExtras.useFilter(swig, 'trim');
+    },
+    defaults: {
+      cache: false,
+      locals: {
+        getRouteBySlug: swigLocals.getRouteBySlug,
+        getBreadcrumbsRoutes: swigLocals.getBreadcrumbsRoutes,
+        includeGA: options.ga
+      }
+    }
+  }))
+  .pipe(gulp.dest(options.dest));
+}
+
+//
+
 gulp.task('connect', function() {
   plugins.connect.server({
     root: config.paths.web,
@@ -20,24 +41,15 @@ gulp.task('connect', function() {
 });
 
 gulp.task('markdown', function() {
-  return gulp.src('README.md')
+  return gulp.src('web/README.md')
   .pipe(plugins.markdown())
-  .pipe(gulp.dest('./'))
+  .pipe(gulp.dest('web'))
 })
 
 gulp.task('templates', function() {
-  return gulp.src(config.paths.src + '/templates/pages/**/*.swig')
-  .pipe(plugins.plumber())
-  .pipe(plugins.swig({
-    setup: function(swig) {
-      swigExtras.useFilter(swig, 'trim');
-    },
-    defaults: {
-      cache: false,
-      locals: swigLocals
-    }
-  }))
-  .pipe(gulp.dest(config.paths.web));
+  return templatesTask({
+    dest: 'web'
+  });
 });
 
 gulp.task('sass', function() {
@@ -50,7 +62,7 @@ gulp.task('sass', function() {
   .pipe(plugins.rename({
     basename: config.name
   }))
-  .pipe(gulp.dest(config.paths.web + '/css'))
+  .pipe(gulp.dest('web/css'))
   .pipe(plugins.size({
     showFiles: true
   }))
@@ -58,7 +70,7 @@ gulp.task('sass', function() {
   .pipe(plugins.rename({
     basename: config.name + '.min'
   }))
-  .pipe(gulp.dest(config.paths.web + '/css'))
+  .pipe(gulp.dest('web/css'))
   .pipe(plugins.size({
     showFiles: true
   }))
@@ -66,11 +78,25 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('README.md', ['markdown']);
-  gulp.watch([config.paths.src + '/templates/**/*.swig', 'README.html'], ['templates']);
+  gulp.watch('web/README.md', ['markdown']);
+  gulp.watch([config.paths.src + '/templates/**/*.swig', 'web/README.html'], ['templates']);
   gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('build', ['markdown', 'templates', 'sass',]);
 gulp.task('server', ['connect', 'build', 'watch']);
 gulp.task('default', ['server']);
+
+gulp.task('copyWeb', function(){
+  return gulp.src('web/**/*.*')
+  .pipe(gulp.dest('webDemo'));
+});
+
+gulp.task('templatesDemo', ['copyWeb'], function() {
+  return templatesTask({
+    dest: 'webDemo',
+    ga: true
+  });
+});
+
+gulp.task('buildDemo', ['copyWeb', 'templatesDemo']);

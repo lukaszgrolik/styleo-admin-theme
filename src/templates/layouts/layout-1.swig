@@ -12,7 +12,6 @@
       </button>
       <div class="navbar-header-logo-area clearfix">
         <a class="navbar-brand" href="index.html">
-          <span class="fa fa-fw fa-rocket"></span>
           Styleo Admin
         </a>
       </div>

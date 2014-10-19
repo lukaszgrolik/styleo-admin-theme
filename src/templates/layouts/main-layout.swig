@@ -332,7 +332,7 @@
 
   <title>Styleo Admin Theme 2.0.0 | {{getRouteBySlug(routes, currentRouteSlug).name}}</title>
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico?v=3">
 
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">

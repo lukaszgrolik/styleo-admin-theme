@@ -334,24 +334,18 @@
 
   <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Bootstrap Core CSS -->
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Social Buttons CSS -->
   <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
-
-  <!-- MetisMenu CSS -->
   <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
 
   {% block headEnd %}{% endblock %}
 
-  <!-- Custom CSS -->
-  <link href="css/styleo-admin.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
   <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
+
+  <!-- Styleo Admin CSS -->
+  <link href="css/styleo-admin.css" rel="stylesheet">
 
   {% if includeGA %}
     {% include '../partials/ga.swig' %}
@@ -374,7 +368,7 @@
 <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
+<!-- Styleo Admin JavaScript -->
 <script src="js/styleo-admin.js"></script>
 
 {% block bodyEnd %}{% endblock %}

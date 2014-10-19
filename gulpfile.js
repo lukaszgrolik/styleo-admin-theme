@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
+var gp = require('gulp-load-plugins')();
 var swigExtras = require('swig-extras');
 var swigLocals = require('./gulp-swig-locals');
 
@@ -13,8 +13,8 @@ var config = {
 
 function templatesTask(options) {
   return gulp.src(config.paths.src + '/templates/pages/**/*.swig')
-  .pipe(plugins.plumber())
-  .pipe(plugins.swig({
+  .pipe(gp.plumber())
+  .pipe(gp.swig({
     setup: function(swig) {
       swigExtras.useFilter(swig, 'trim');
     },
@@ -33,7 +33,7 @@ function templatesTask(options) {
 //
 
 gulp.task('connect', function() {
-  plugins.connect.server({
+  gp.connect.server({
     root: config.paths.web,
     port: 3020,
     livereload: true
@@ -42,7 +42,7 @@ gulp.task('connect', function() {
 
 gulp.task('markdown', function() {
   return gulp.src('web/docs/*.md')
-  .pipe(plugins.markdown())
+  .pipe(gp.markdown())
   .pipe(gulp.dest('web/docs'))
 })
 
@@ -52,38 +52,52 @@ gulp.task('templates', function() {
   });
 });
 
+gulp.task('prettifyHtml', ['templates'], function() {
+  return gulp.src('web/*.html')
+  .pipe(gp.prettify({
+    indent_size: 2
+  }))
+  .pipe(gulp.dest('web/'))
+});
+
 gulp.task('sass', function() {
   return gulp.src(config.paths.src + '/sass/main.scss')
-  .pipe(plugins.plumber())
-  .pipe(plugins.sass())
-  .pipe(plugins.autoprefixer({
+  .pipe(gp.plumber())
+  .pipe(gp.sass())
+  .pipe(gp.autoprefixer({
     browsers: ['> 0.5%']
   }))
-  .pipe(plugins.rename({
+  .pipe(gp.rename({
     basename: config.name
   }))
   .pipe(gulp.dest('web/css'))
-  .pipe(plugins.size({
+  .pipe(gp.size({
     showFiles: true
   }))
-  .pipe(plugins.minifyCss())
-  .pipe(plugins.rename({
+  .pipe(gp.minifyCss())
+  .pipe(gp.rename({
     basename: config.name + '.min'
   }))
   .pipe(gulp.dest('web/css'))
-  .pipe(plugins.size({
+  .pipe(gp.size({
     showFiles: true
   }))
-  .pipe(plugins.connect.reload());
+  .pipe(gp.connect.reload());
+});
+
+gulp.task('copyBower', function() {
+  return gulp.src('bower.json')
+  .pipe(gulp.dest('web'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('web/README.md', ['markdown']);
-  gulp.watch([config.paths.src + '/templates/**/*.swig', 'web/README.html'], ['templates']);
+  gulp.watch('web/docs/*.md', ['markdown']);
+  gulp.watch([config.paths.src + '/templates/**/*.swig', 'web/docs/*.html'], ['templates', 'prettifyHtml']);
   gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
+  gulp.watch('bower.json', ['copyBower']);
 });
 
-gulp.task('build', ['markdown', 'templates', 'sass',]);
+gulp.task('build', ['markdown', 'templates', 'prettifyHtml', 'sass', 'copyBower']);
 gulp.task('server', ['connect', 'build', 'watch']);
 gulp.task('default', ['server']);
 

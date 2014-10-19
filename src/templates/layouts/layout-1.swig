@@ -98,7 +98,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           <i class="fa fa-warning fa-fw"></i>
-          <i class="badge badge-danger badge-number">4</i>
+          <i class="badge badge-yellow badge-number">4</i>
         </a>
         <ul class="dropdown-menu dropdown-messages">
           <li class="message-item">
@@ -187,7 +187,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           <i class="fa fa-tasks fa-fw"></i>
-          <i class="badge badge-danger badge-number">3</i>
+          <i class="badge badge-navy badge-number">3</i>
         </a>
         <ul class="dropdown-menu dropdown-tasks">
           <li class="task-item">
@@ -245,7 +245,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           <i class="fa fa-bell fa-fw"></i>
-          <i class="badge badge-danger badge-number">5</i>
+          <i class="badge badge-warning badge-number">5</i>
         </a>
         <ul class="dropdown-menu dropdown-alerts">
           <li class="alert-item">

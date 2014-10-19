@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="well">
-      {% include '../../../web/README.html' %}
+      {% include '../../../web/docs/README.html' %}
     </div>
   </div>
 </div>

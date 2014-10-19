@@ -2,5 +2,6 @@ node_modules
 web/bower_components
 web/css/styleo-admin.css
 web/css/styleo-admin.min.css
+web/docs/*.html
 web/*.html
 webDemo

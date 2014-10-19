@@ -41,9 +41,9 @@ gulp.task('connect', function() {
 });
 
 gulp.task('markdown', function() {
-  return gulp.src('web/README.md')
+  return gulp.src('web/docs/*.md')
   .pipe(plugins.markdown())
-  .pipe(gulp.dest('web'))
+  .pipe(gulp.dest('web/docs'))
 })
 
 gulp.task('templates', function() {

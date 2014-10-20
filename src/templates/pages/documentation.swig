@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2">
     <div class="well">
-      {% include '../../../web/docs/README.html' %}
+      {% include '../../../web/docs/Documentation.html' %}
     </div>
   </div>
 </div>

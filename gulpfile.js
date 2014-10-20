@@ -113,4 +113,9 @@ gulp.task('templatesDemo', ['copyWeb'], function() {
   });
 });
 
-gulp.task('buildDemo', ['copyWeb', 'templatesDemo']);
+gulp.task('copySass', function(){
+  return gulp.src('src/sass/**/*.*')
+  .pipe(gulp.dest('webDemo/sass'));
+});
+
+gulp.task('buildDemo', ['copyWeb', 'templatesDemo', 'copySass']);

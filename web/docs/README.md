@@ -4,13 +4,14 @@
 
 ## Features
 
-- Built with Bootstrap 3
-- Responsive design
-- HTML5 and CSS3
-- Clean design
-- Build with Sass CSS (SCSS files included)
-- Cross-browser compatible
-- Built with Bower
+- **Fully Responsive**
+- Built with latest version of **Bootstrap 3**
+- **53 pages** including pages such as **User Profile**, **Gallery**, **Calendar**, **Timeline**, **Chat**, **Login**, **Register** and **Error Pages**
+- Responsive **Graphs/Charts**
+- Latest **Glyphicons** and **Font Awesome** icons
+- **Google Maps** and **Vector Maps**
+- Built with **Sass** (*SCSS* files included)
+- Front-end dependency management with **Bower**
 
 ## HTML pages
 
@@ -68,31 +69,11 @@
   - Blank Page
 - Documentation
 
-## Will be included in the next releases
-
-- Collapsible Sidebar
-- ChartJS plugin integration
-- Email pages (inbox, messages)
-- Email templates
-- jqGrid (advanced tables) plugin integration
-- jQuery UI elements integration
-- jQRangeSlider plugin integration
-- Nestable List element
-- More skins
-- Pricing Tables page
-- Product Details/Item Info page
-- RTL support
-- Search Results page
-- Toastr/Gritter Notifications plugins integration
-- Tree View support
-- Wide/Boxed Layout
-- X-editable (inline editing) plugin integration
-
 ## Changelog
 
 ### 2.0.0 (19 October 2014)
 
-- Completely rebuilt version with improved appearance and added a lot of functionality
+- Completely rebuilt version with improved appearance and added lots of functionality
 
 ### 1.0.0 (23 September 2014)
 
@@ -128,16 +109,21 @@
 - [jquery.easy-pie-chart](http://rendro.github.io/easy-pie-chart/)
 - [jquery.maskedinput](http://digitalbush.com/projects/masked-input-plugin/)
 - [jquery.slimscroll](http://rocha.la/jQuery-slimScroll)
+- [jquery.sparkline](http://omnipotent.net/jquery.sparkline/)
 - [magnific-popup](http://dimsemenov.com/plugins/magnific-popup/)
 - [markdown](https://github.com/evilstreak/markdown-js)
 - [masonry](http://masonry.desandro.com/)
 - [metisMenu](http://demo.onokumus.com/metisMenu/)
 - [moment](http://momentjs.com/)
 - [morrisjs](http://morrisjs.github.io/morris.js/)
-- [jquery.sparkline](http://omnipotent.net/jquery.sparkline/)
 - [seiyria-bootstrap-slider](http://seiyria.github.io/bootstrap-slider/)
 - [select2](http://ivaynberg.github.io/select2/)
 - [stacktable](http://johnpolacek.github.io/stacktable.js/)
 - [summernote](http://hackerwins.github.io/summernote/)
 - [switchery](http://abpetkov.github.io/switchery/)
 - [to-markdown](http://domchristie.github.io/to-markdown/)
+
+### Demo Images
+
+- [uifaces.com](http://uifaces.com/)
+- [unsplash.com](https://unsplash.com/)

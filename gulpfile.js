@@ -85,37 +85,55 @@ gulp.task('sass', function() {
   .pipe(gp.connect.reload());
 });
 
-gulp.task('copyBower', function() {
-  return gulp.src('bower.json')
-  .pipe(gulp.dest('web'));
-});
-
 gulp.task('watch', function() {
   gulp.watch('web/docs/*.md', ['markdown']);
   gulp.watch([config.paths.src + '/templates/**/*.swig', 'web/docs/*.html'], ['templates', 'prettifyHtml']);
   gulp.watch(config.paths.src + '/sass/**/*.scss', ['sass']);
-  gulp.watch('bower.json', ['copyBower']);
 });
 
-gulp.task('build', ['markdown', 'templates', 'prettifyHtml', 'sass', 'copyBower']);
+gulp.task('build', ['markdown', 'templates', 'prettifyHtml', 'sass']);
 gulp.task('server', ['connect', 'build', 'watch']);
 gulp.task('default', ['server']);
 
-gulp.task('copyWeb', function(){
+//
+//
+//
+
+gulp.task('copyWebToPreviewBundle', function(){
   return gulp.src('web/**/*.*')
-  .pipe(gulp.dest('webDemo'));
+  .pipe(gulp.dest('previewBundle'));
 });
 
-gulp.task('templatesDemo', ['copyWeb'], function() {
+gulp.task('copyWebToDistBundle', function(){
+  return gulp.src('web/**/*.*')
+  .pipe(gulp.dest('distBundle'));
+});
+
+gulp.task('templatesToPreviewBundle', ['copyWebToPreviewBundle'], function() {
   return templatesTask({
-    dest: 'webDemo',
+    dest: 'previewBundle',
     ga: true
   });
 });
 
-gulp.task('copySass', function(){
-  return gulp.src('src/sass/**/*.*')
-  .pipe(gulp.dest('webDemo/sass'));
+gulp.task('prettifyHtmlInPreviewBundle', ['templatesToPreviewBundle'], function() {
+  return gulp.src('previewBundle/*.html')
+  .pipe(gp.prettify({
+    indent_size: 2
+  }))
+  .pipe(gulp.dest('previewBundle'))
 });
 
-gulp.task('buildDemo', ['copyWeb', 'templatesDemo', 'copySass']);
+gulp.task('copySassToDistBundle', function(){
+  return gulp.src('src/sass/**/*.*')
+  .pipe(gulp.dest('distBundle/sass'));
+});
+
+gulp.task('copyBowerToDistBundle', function() {
+  return gulp.src('bower.json')
+  .pipe(gulp.dest('web'));
+});
+
+gulp.task('buildPreview', ['copyWebToPreviewBundle', 'templatesToPreviewBundle', 'prettifyHtmlInPreviewBundle']);
+
+gulp.task('buildDist', ['copyWebToDistBundle', 'copyBowerToDistBundle', 'copySassToDistBundle']);

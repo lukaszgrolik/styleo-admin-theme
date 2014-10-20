@@ -1,11 +1,11 @@
 # Styleo Admin - Responsive Admin Theme
 
-*Styleo Admin* is a fully responsive bootstrap admin theme built with Sass. It has tons of features and ready-to-use UI elements, widgets, form plugins, charts and pages.
+*Styleo Admin* is a fully responsive bootstrap admin theme built with Sass. It has a lot of features and ready-to-use UI elements, widgets, form plugins, charts and extra pages.
 
 ## Features
 
 - **Fully Responsive**
-- Built with latest version of **Bootstrap 3**
+- Built with the latest version of **Bootstrap 3**
 - **53 pages** including pages such as **User Profile**, **Gallery**, **Calendar**, **Timeline**, **Chat**, **Login**, **Register** and **Error Pages**
 - Responsive **Graphs/Charts**
 - Latest **Glyphicons** and **Font Awesome** icons
@@ -69,9 +69,11 @@
   - Blank Page
 - Documentation
 
+**New pages and features will be added soon**
+
 ## Changelog
 
-### 2.0.0 (19 October 2014)
+### 2.0.0 (20 October 2014)
 
 - Completely rebuilt version with improved appearance and added lots of functionality
 

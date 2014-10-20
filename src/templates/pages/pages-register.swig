@@ -45,7 +45,7 @@
             </div>
             <div class="checkbox">
               <label>
-                <input name="remember" type="checkbox" value="Remember Me">I agree to the Company <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                <input name="remember" type="checkbox" value="Remember Me">I agree with the Company <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
               </label>
             </div>
 

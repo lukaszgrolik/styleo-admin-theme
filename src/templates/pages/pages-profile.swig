@@ -29,7 +29,7 @@ $(".spk5").sparkline([5,3,5,6,5,7,4,8,6,9,8,], { type: 'bar', width: '80px', bar
 
       <br><br>
 
-      <table class="table">
+      <table class="table table-condensed">
         <tr>
             <th>Following</th>
             <td>127</td>

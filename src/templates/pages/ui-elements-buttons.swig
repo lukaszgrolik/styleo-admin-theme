@@ -10,7 +10,7 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button Shapes</div>
+      <div class="panel-heading">Buttons Shapes</div>
       <div class="panel-body text-center">
         <button type="button" class="btn btn-primary">DEFAULT</button>
         <button type="button" class="btn btn-primary sharp">SHARP</button>
@@ -22,7 +22,7 @@
 
   <div class="col-lg-6">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button Types</div>
+      <div class="panel-heading">Buttons Types</div>
       <div class="panel-body text-center">
         <button type="button" class="btn btn-primary">DEFAULT</button>
         <button type="button" class="btn btn-primary btn-outline">OUTLINE</button>
@@ -37,7 +37,7 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button Sizes</div>
+      <div class="panel-heading">Buttons Sizes</div>
       <div class="panel-body text-center">
         <button type="button" class="btn btn-primary btn-xs">EXTRA SMALL</button>
         <button type="button" class="btn btn-primary btn-sm">SMALL</button>
@@ -50,7 +50,7 @@
 
   <div class="col-lg-6">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button Colors</div>
+      <div class="panel-heading">Buttons Colors</div>
       <div class="panel-body text-center">
         <div>
           <button type="button" class="btn btn-default">DEFAULT</button>
@@ -427,7 +427,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button with Icons</div>
+      <div class="panel-heading">Buttons with Icons</div>
       <div class="panel-body text-center">
         <button type="button" class="btn btn-default"><i class="fa fa-flag"></i> DEFAULT</button>
         <button type="button" class="btn btn-primary"><i class="fa fa-comments"></i> PRIMARY</button>
@@ -447,7 +447,7 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="panel panel-default raised">
-      <div class="panel-heading">Button Examples</div>
+      <div class="panel-heading">Buttons Examples</div>
       <div class="panel-body">
         <p class="text-center">
           <button type="button" class="btn btn-primary btn-lg">LARGE BUTTON</button>
@@ -522,7 +522,7 @@
   <div class="col-lg-12">
     <div class="panel panel-default raised">
       <div class="panel-heading">
-        Button Dropdowns
+        Buttons Dropdowns
       </div>
       <div class="panel-body">
         <div class="text-center">

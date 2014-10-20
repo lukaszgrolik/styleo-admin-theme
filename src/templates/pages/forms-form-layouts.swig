@@ -12,22 +12,22 @@
       <div class="panel-body">
         <form role="form">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+            <label for="email1">Email</label>
+            <input class="form-control" id="email1" placeholder="Email" type="email">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+            <label for="password1">Password</label>
+            <input class="form-control" id="password1" placeholder="Password" type="password">
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
                 <input type="checkbox">
-                <span class="text">Remember me next time.</span>
+                <span class="text">Remember me</span>
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-success">Sign in</button>
         </form>
       </div>
     </div>
@@ -41,16 +41,15 @@
       <div class="panel-body">
         <form class="form-horizontal" role="form">
           <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label no-padding-right">Email</label>
+            <label for="email2" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-              <input class="form-control" id="inputEmail3" placeholder="Email" type="email">
-              <p class="help-block">Example block-level help text here.</p>
+              <input class="form-control" id="email2" placeholder="Email" type="email">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label no-padding-right">Password</label>
+            <label for="password2" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-10">
-              <input class="form-control" id="inputPassword3" placeholder="Password" type="password">
+              <input class="form-control" id="password2" placeholder="Password" type="password">
             </div>
           </div>
           <div class="form-group">
@@ -58,7 +57,7 @@
               <div class="checkbox">
                 <label>
                   <input type="checkbox">
-                  <span class="text">Remember me next time.</span>
+                  <span class="text">Remember me</span>
                 </label>
               </div>
             </div>
@@ -83,12 +82,12 @@
       <div class="panel-body">
         <form class="form-inline" role="form">
           <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input class="form-control" id="exampleInputEmail2" placeholder="Enter email" type="email">
+            <label class="sr-only" for="email3">Email</label>
+            <input class="form-control" id="email3" placeholder="Email" type="email">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword2">Password</label>
-            <input class="form-control" id="exampleInputPassword2" placeholder="Password" type="password">
+            <label class="sr-only" for="password3">Password</label>
+            <input class="form-control" id="password3" placeholder="Password" type="password">
           </div>
           <div class="checkbox">
             <label>

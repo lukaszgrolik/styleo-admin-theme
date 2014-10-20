@@ -22,7 +22,7 @@
 
         <hr class="wide">
 
-        <p class="text-center">Sign in as a different user? <a href="pages-register.html">Sign In Now!</a></p>
+        <p class="text-center">Sign in as a different user? <a href="pages-login.html">Sign In Now!</a></p>
       </div>
     </div>
   </div>

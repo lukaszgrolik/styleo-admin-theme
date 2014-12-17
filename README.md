@@ -1,5 +1,7 @@
 # Styleo Admin - Free Bootstrap Admin Theme
 
+[Preview](http://lukaszgrolik.pl/themes/styleo-admin/latest/)
+
 ## License
 
 Copyright (c) 2014 [Łukasz Grolik](http://lukaszgrolik.pl)

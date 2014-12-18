@@ -2,6 +2,12 @@
 
 [Preview](http://lukaszgrolik.pl/themes/styleo-admin/latest/)
 
+## Build
+
+- `npm install` - installs gulp & gulp plugins
+- `bower install` - installs front-end dependencies in `web/bower_components` directory
+- `gulp` - sets up simple web server with livereloading and CSS injecting, compiles Swig templates to HTML and compiles Sass to CSS
+
 ## License
 
 Copyright (c) 2014 [Łukasz Grolik](http://lukaszgrolik.pl)

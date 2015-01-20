@@ -1,0 +1,35 @@
+<h1 id="styleo-admin-responsive-admin-theme">Styleo Admin - Responsive Admin Theme</h1>
+<h2 id="overview">Overview</h2>
+<p>This document aims to explain the best way to work with the product and its components.</p>
+<h2 id="getting-started">Getting started</h2>
+<ul>
+<li>Do not start from scratch - use an existing asset instead and modify it to learn how it works.</li>
+<li>Use Firefox or Chrome Developer Tools to find bugs and inspect HTML structure and CSS styles on your website.</li>
+<li>If you see error messages showing up in your browser&#39;s console you can try a google search for a quick fix - most likely someone has already had a similar problem.</li>
+</ul>
+<h2 id="project-structure">Project Structure</h2>
+<p>This project&#39;s files are organized in the following folders structure:</p>
+<pre><code>- bower_components/
+- css/
+- docs/
+- images/
+- js/
+- sass/
+- bower.json
+- *.html
+</code></pre><h2 id="bower">Bower</h2>
+<p>Bower is a front-end package manager. It makes easy to organize and maintain vendor plugins and external libraries.</p>
+<p>This project includes <code>bower.json</code> file in the main directory which lists all required front-end dependencies.</p>
+<ul>
+<li>To install Bower itself, you have to install <strong>node.js</strong> and <strong>npm</strong> first - go to <a href="http://nodejs.org/">nodejs.org</a> for instructions.</li>
+<li>Open a terminal and run the command <code>npm install -g bower</code>. This command will install Bower globally on your computer.</li>
+<li>Go to this project&#39;s main directory in a terminal and run <code>bower install</code> to install all front-end dependencies listed in <code>bower.json</code> into the <code>bower_components/</code> directory.</li>
+</ul>
+<p>Visit official <a href="http://bower.io/">Bower</a> site for details.</p>
+<h2 id="sass-autoprefixer">Sass &amp; Autoprefixer</h2>
+<p>Basically you have two ways to work with CSS regarding this project:</p>
+<ol>
+<li>Load <code>css/styleo-admin.css</code> file in the HTML files and overwrite existing CSS rules in your own stylesheets (recommended), or</li>
+<li>Work directly inside <code>sass/</code> directory compiling Sass by yourself.</li>
+</ol>
+<p>This project has been built with <a href="http://sass-lang.com/">Sass</a> (more precisely <a href="https://github.com/sass/node-sass">node-sass</a>, much faster version of Sass) and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>. Go to these projects&#39; websites for instructions if you choose the second option.</p>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Styleo Admin Theme 2.0.0 | Calendar</title>
+    <link rel="shortcut icon" href="favicon.ico?v=3">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css" />
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
+    <!-- Styleo Admin CSS -->
+    <link href="css/styleo-admin.css" rel="stylesheet">
+    <script>
+      (function(i, s, o, g, r, a, m)
+      {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function()
+        {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-53853356-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body>
+    <!-- Main Content Block -->
+    <div id="wrapper">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <div class="navbar-header-logo-area clearfix"> <a class="navbar-brand" href="index.html">
+          Styleo Admin
+        </a> </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-left main-breadcrumbs">
+          <li>
+            <a href="index.html"> <i class="fa fa-fw fa-home"></i> <span class="link-text">Dashboard</span> </a>
+          </li>
+          <li>
+            <a href="pages.html"> <span class="link-text">Pages</span> </a>
+          </li>
+          <li>
+            <a href="pages-calendar.html"> <span class="link-text">Calendar</span> </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-envelope fa-fw"></i> <i class="badge badge-danger badge-number">3</i> </a>
+            <ul class="dropdown-menu dropdown-messages">
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar"> <img class="img-responsive" src="images/avatars/avatar7.jpg" alt="Jennifer Howard"> </div>
+                  <div class="message">
+                    <div class="message-sender"> Jennifer Howard </div>
+                    <div class="message-time"> 2 minutes ago </div>
+                    <div class="message-body"> Hey! How are you? </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar"> <img class="img-responsive" src="images/avatars/avatar5.jpg" alt="Michael Hall"> </div>
+                  <div class="message">
+                    <div class="message-sender"> Michael Hall </div>
+                    <div class="message-time"> 1 hour ago </div>
+                    <div class="message-body"> Hey dude, cool theme! </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar"> <img class="img-responsive" src="images/avatars/avatar3.jpg" alt="Sandra Rogers"> </div>
+                  <div class="message">
+                    <div class="message-sender"> Sandra Rogers </div>
+                    <div class="message-time"> 14 Oct. </div>
+                    <div class="message-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fuga ullam aspernatur... </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a class="text-center" href="#"> <strong>Read All Messages</strong> <i class="fa fa-angle-right"></i> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-warning fa-fw"></i> <i class="badge badge-yellow badge-number">4</i> </a>
+            <ul class="dropdown-menu dropdown-messages">
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar">
+                    <div class="btn btn-primary btn-circle"><i class="fa fa-fw fa-phone"></i>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="message-sender"> Skype meeting with Roy </div>
+                    <div class="message-time"> 11:00 am </div>
+                    <div class="message-body"> office </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar">
+                    <div class="btn btn-danger btn-circle"><i class="fa fa-fw fa-check"></i>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="message-sender"> Dinner break </div>
+                    <div class="message-time"> 02:00 pm - 02:45 pm </div>
+                    <div class="message-body"> </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar">
+                    <div class="btn btn-warning btn-circle"><i class="fa fa-fw fa-gift"></i>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="message-sender"> Amy's birthday party </div>
+                    <div class="message-time"> 08:00 pm </div>
+                    <div class="message-body"> at home </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="message-item">
+                <a href="#" class="message-link clearfix">
+                  <div class="message-avatar">
+                    <div class="btn btn-success btn-circle"><i class="fa fa-fw fa-glass"></i>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="message-sender"> Dinner with friends </div>
+                    <div class="message-time"> Tomorrow 13:30 pm </div>
+                    <div class="message-body"> </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a class="text-center" href="#"> <strong>See All Plans</strong> <i class="fa fa-angle-right"></i> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-tasks fa-fw"></i> <i class="badge badge-navy badge-number">3</i> </a>
+            <ul class="dropdown-menu dropdown-tasks">
+              <li class="task-item">
+                <a href="#" class="task-link">
+                  <div class="task-header"> <strong class="task-title">Account Updating</strong> <span class="task-value pull-right text-muted">73%</span> </div>
+                  <div class="progress sharp progress-sm">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%"> <span class="sr-only">40%</span> </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="task-item">
+                <a href="#" class="task-link">
+                  <div class="task-header"> <strong class="task-title">Page Configuration</strong> <span class="task-value pull-right text-muted">45%</span> </div>
+                  <div class="progress sharp progress-sm">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> <span class="sr-only">45%</span> </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="task-item">
+                <a href="#" class="task-link">
+                  <div class="task-header"> <strong class="task-title">Disk Backup</strong> <span class="task-value pull-right text-muted">89%</span> </div>
+                  <div class="progress sharp progress-sm">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%"> <span class="sr-only">89%</span> </div>
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-bell fa-fw"></i> <i class="badge badge-warning badge-number">5</i> </a>
+            <ul class="dropdown-menu dropdown-alerts">
+              <li class="alert-item">
+                <a href="#" class="alert-link">
+                  <div> <i class="fa fa-comment fa-fw"></i> New Comment <span class="pull-right text-muted">4 minutes ago</span> </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="alert-item">
+                <a href="#" class="alert-link">
+                  <div> <i class="fa fa-twitter fa-fw"></i> 3 New Followers <span class="pull-right text-muted">12 minutes ago</span> </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="alert-item">
+                <a href="#" class="alert-link">
+                  <div> <i class="fa fa-envelope fa-fw"></i> Message Sent <span class="pull-right text-muted">4 minutes ago</span> </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="alert-item">
+                <a href="#" class="alert-link">
+                  <div> <i class="fa fa-tasks fa-fw"></i> New Task <span class="pull-right text-muted">4 minutes ago</span> </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li class="alert-item">
+                <a href="#" class="alert-link">
+                  <div> <i class="fa fa-upload fa-fw"></i> Server Rebooted <span class="pull-right text-muted">4 minutes ago</span> </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a class="text-center" href="#"> <strong>See All Notifications</strong> <i class="fa fa-angle-right"></i> </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle nav-profile-photo-link" data-toggle="dropdown" href="#"> <img src="images/avatars/avatar8.jpg" class="nav-profile-photo" alt=""> <span>Ryan Parker</span> <i class="fa fa-caret-down"></i> </a>
+            <ul class="dropdown-menu dropdown-user">
+              <li><a href="pages-profile.html"><i class="fa fa-user fa-fw"></i> My Profile</a> </li>
+              <li><a href="pages-profile.html"><i class="fa fa-gear fa-fw"></i> Settings</a> </li>
+              <li class="divider"></li>
+              <li><a href="pages-login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a> </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="navbar-default sidebar" role="navigation">
+          <div class="sidebar-nav navbar-collapse scroll-container">
+            <ul class="nav" id="side-menu">
+              <li class="sidebar-search">
+                <div class="input-group custom-search-form">
+                  <input type="text" class="form-control" placeholder="Search..."> <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span> </div>
+              </li>
+              <li class="  ">
+                <a href="index.html"> <i class="fa fa-fw fa-home"></i> Dashboard </a>
+              </li>
+              <li class="  ">
+                <a href="#"> <i class="fa fa-fw fa-wrench"></i> UI Elements <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  "> <a href="ui-elements-basic-elements.html">
+        
+        Basic Elements
+        
+          <span class="label label-violet pull-right">9 COLORS</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-buttons.html">
+        
+        Buttons
+        
+          <span class="label label-info sharp pull-right">5 TYPES</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-panels.html">
+        
+        Panels
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-wells.html">
+        
+        Wells
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-tabs-accordions.html">
+        
+        Tabs &amp; Accordions
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-alerts.html">
+        
+        Alerts
+        
+          <span class="label label-primary pull-right">5 SIZES</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-progress-bars.html">
+        
+        Progress Bars
+        
+          <span class="label label-warning sharp pull-right">ANIMATED</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-typography.html">
+        
+        Typography
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="ui-elements-grid.html">
+        
+        Grid
+        
+          <span class="label label-default pull-right">12 COLUMNS</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="#">
+        
+        Icons
+        
+        
+          <span class="fa arrow"></span>
+        
+      </a>
+                    <ul class="nav nav-third-level">
+                      <li class="  ">
+                        <a href="ui-elements-icons-font-awesome.html"> <i class="fa fa-fw fa-flag"></i> Font Awesome <span class="badge badge-primary pull-right">479</span> </a>
+                      </li>
+                      <li class="  ">
+                        <a href="ui-elements-icons-glyphicons.html"> <i class="fa fa-fw fa-plus-square"></i> Glyphicons <span class="badge badge-primary pull-right">200</span> </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="  ">
+                <a href="#"> <i class="fa fa-fw fa-table"></i> Tables <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  "> <a href="tables-simple.html">
+        
+        Simple Tables
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="tables-responsive.html">
+        
+        Responsive Tables
+        
+          <span class="badge badge-success pull-right">3</span>
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="tables-datatables.html">
+        
+        DataTables
+        
+        
+      </a> </li>
+                </ul>
+              </li>
+              <li class="  ">
+                <a href="#"> <i class="fa fa-fw fa-edit"></i> Forms <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  ">
+                    <a href="forms-form-text-fields.html"> <i class="fa fa-fw fa-pencil"></i> Form Text Fields </a>
+                  </li>
+                  <li class="  ">
+                    <a href="forms-form-controls.html"> <i class="fa fa-fw fa-dot-circle-o"></i> Form Controls </a>
+                  </li>
+                  <li class="  ">
+                    <a href="forms-form-layouts.html"> <i class="fa fa-fw fa-th-large"></i> Form Layouts <span class="badge badge-primary sharp pull-right">3</span> </a>
+                  </li>
+                  <li class="  ">
+                    <a href="forms-form-wizard.html"> <i class="fa fa-fw fa-magic"></i> Form Wizard </a>
+                  </li>
+                  <li class="  ">
+                    <a href="forms-form-validation.html"> <i class="fa fa-fw fa-check"></i> Form Validation </a>
+                  </li>
+                  <li class="  ">
+                    <a href="#"> <i class="fa fa-fw fa-edit"></i> Editors <span class="fa arrow"></span> </a>
+                    <ul class="nav nav-third-level">
+                      <li class="  no-icon"> <a href="forms-editors-simple-wysiwyg.html">
+        
+        Simple WYSIWYG Editors
+        
+        
+      </a> </li>
+                      <li class="  no-icon"> <a href="forms-editors-markdown.html">
+        
+        Markdown Editors
+        
+        
+      </a> </li>
+                      <li class="  no-icon"> <a href="forms-editors-ckeditor.html">
+        
+        CKEditor
+        
+          <span class="label label-danger pull-right">NEW</span>
+        
+        
+      </a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="  ">
+                <a href="#"> <i class="fa fa-fw fa-bar-chart"></i> Charts <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  "> <a href="charts-flot.html">
+        
+        Flot Charts
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="charts-morris.html">
+        
+        Morris Charts
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="charts-sparkline.html">
+        
+        Sparkline Charts
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="charts-easy-pie-chart.html">
+        
+        Easy Pie Charts
+        
+          <span class="label label-danger pull-right">NEW</span>
+        
+        
+      </a> </li>
+                </ul>
+              </li>
+              <li class="  ">
+                <a href="#"> <i class="fa fa-fw fa-map-marker"></i> Maps <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  "> <a href="maps-google-maps.html">
+        
+        Google Maps
+        
+        
+      </a> </li>
+                  <li class="  "> <a href="maps-vector-maps.html">
+        
+        Vector Maps
+        
+        
+      </a> </li>
+                </ul>
+              </li>
+              <li class="current active ">
+                <a href="#"> <i class="fa fa-fw fa-files-o"></i> Pages <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                  <li class="  ">
+                    <a href="pages-profile.html"> <i class="fa fa-fw fa-users"></i> Profile </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-gallery.html"> <i class="fa fa-fw fa-picture-o"></i> Gallery <span class="label label-navy sharp pull-right">MASONRY</span> </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-invoice.html"> <i class="fa fa-fw fa-file-text-o"></i> Invoice </a>
+                  </li>
+                  <li class="current  ">
+                    <a href="pages-calendar.html"> <i class="fa fa-fw fa-calendar"></i> Calendar <span class="label label-primary pull-right">DRAG &amp; DROP</span> </a>
+                  </li>
+                  <li class="  ">
+                    <a href="#"> <i class="fa fa-fw fa-clock-o"></i> Timelines <span class="fa arrow"></span> </a>
+                    <ul class="nav nav-third-level">
+                      <li class="  no-icon"> <a href="pages-basic-timeline.html">
+        
+        Basic Timeline
+        
+        
+      </a> </li>
+                      <li class="  no-icon"> <a href="pages-compact-timeline.html">
+        
+        Compact Timeline
+        
+          <span class="label label-danger pull-right">NEW</span>
+        
+        
+      </a> </li>
+                    </ul>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-chat.html"> <i class="fa fa-fw fa-comments"></i> Chat </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-register.html"> <i class="fa fa-fw fa-user"></i> Register </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-login.html"> <i class="fa fa-fw fa-sign-in"></i> Login </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-lock-screen.html"> <i class="fa fa-fw fa-lock"></i> Lock Screen </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-forgotten-password.html"> <i class="fa fa-fw fa-key"></i> Forgotten Password </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-error-404.html"> <i class="fa fa-fw fa-warning"></i> Error 404 </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-error-500.html"> <i class="fa fa-fw fa-warning"></i> Error 500 </a>
+                  </li>
+                  <li class="  ">
+                    <a href="pages-blank-page.html"> <i class="fa fa-fw fa-file-o"></i> Blank Page </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="  ">
+                <a href="documentation.html"> <i class="fa fa-fw fa-graduation-cap"></i> Documentation <span class="label label-success pull-right">v2.0.0</span> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- show only on small & medium size screen -->
+      <ul class="main-breadcrumbs-secondary">
+        <li>
+          <a href="index.html"> <i class="fa fa-fw fa-home"></i> <span class="link-text">Dashboard</span> </a>
+        </li>
+        <li>
+          <a href="pages.html"> <span class="link-text">Pages</span> </a>
+        </li>
+        <li>
+          <a href="pages-calendar.html"> <span class="link-text">Calendar</span> </a>
+        </li>
+      </ul>
+      <div id="page-wrapper">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="panel panel-success sharp raised">
+              <div class="panel-heading"> <i class="fa fa-fw fa-plus"></i> Add Events By Dragging </div>
+              <div class="panel-body">
+                <div class="calendar-draggable-events-container">
+                  <div class="calendar-draggable-event">Dinner with Amy</div>
+                  <div class="calendar-draggable-event">Skype Meeting</div>
+                  <div class="calendar-draggable-event">Free Time</div>
+                  <div class="calendar-draggable-event">University Lecture</div>
+                  <div class="calendar-draggable-event">John's Birthday</div>
+                  <p>
+                    <label>
+                      <input type="checkbox" class="calendar-remove-after-drop-option" checked="checked"> <span class="text">Remove After Drop</span> </label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="panel panel-info sharp raised">
+              <div class="panel-heading"> <i class="fa fa-fw fa-calendar"></i> Events and Schedules </div>
+              <div class="panel-body">
+                <div class="calendar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/jquery-1.11.0/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Styleo Admin JavaScript -->
+    <script src="js/styleo-admin.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script>
+      $(function()
+      {
+        $('.calendar-draggable-event').each(function()
+        {
+          var eventObj = {
+            title: $.trim($(this).text())
+          };
+          $(this).data('eventObj', eventObj);
+          $(this).draggable(
+          {
+            zIndex: 999,
+            revert: true,
+            revertDuration: 0
+          });
+        });
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        $('.calendar').fullCalendar(
+        {
+          header:
+          {
+            right: 'month,agendaWeek,agendaDay prev,next',
+            left: 'title'
+          },
+          editable: true,
+          buttonText:
+          {
+            month: 'Month',
+            week: 'Week',
+            day: 'Day',
+            today: 'Today'
+          },
+          droppable: true,
+          drop: function(date, allDay)
+          {
+            var eventObj = $(this).data('eventObj');
+            var eventObjCopy = $.extend(
+            {}, eventObj);
+            eventObjCopy.start = date;
+            eventObjCopy.allDay = allDay;
+            $('.calendar').fullCalendar('renderEvent', eventObjCopy, true);
+            if ($('.calendar-remove-after-drop-option').is(':checked'))
+            {
+              $(this).remove();
+            }
+          },
+          events: [
+          {
+            title: 'Meeting',
+            start: new Date(y, m, d, 10, 30),
+            allDay: false,
+          },
+          {
+            title: 'Long Event',
+            start: new Date(y, m, d - 6),
+            end: new Date(y, m, d - 1),
+          },
+          {
+            title: 'All Day Event',
+            start: new Date(y, m, 8),
+            textColor: '#5db2ff',
+          },
+          {
+            title: 'Awesome Plan',
+            start: new Date(y, m, d - 17, 4, 30),
+            end: new Date(y, m, d - 14, 14, 0),
+            allDay: false,
+          },
+          {
+            title: 'Click for Google',
+            start: new Date(y, m, 29),
+            end: new Date(y, m, 30),
+            url: 'http://google.com/'
+          },
+          {
+            title: 'Lunch',
+            start: new Date(y, m, d - 1, 12, 30),
+            end: new Date(y, m, d - 1, 13, 0),
+            allDay: false,
+          },
+          {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 8, 17, 30),
+            end: new Date(y, m, d + 8, 23, 30),
+            allDay: false,
+          },
+          {
+            id: 123,
+            title: 'Repeating Event',
+            start: new Date(y, m, d + 2, 16, 0),
+            allDay: false,
+          },
+          {
+            id: 123,
+            title: 'Repeating Event',
+            start: new Date(y, m, d - 5, 16, 0),
+            allDay: false,
+          }]
+        });
+      });
+    </script>
+  </body>
+
+</html>

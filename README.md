@@ -1,6 +1,6 @@
 # Styleo Admin - Free Bootstrap Admin Theme
 
-[Preview](http://lukaszgrolik.pl/themes/styleo-admin/latest/)
+[Preview](http://lukaszgrolik.github.io/styleo-admin-theme)
 
 ## Build
 
